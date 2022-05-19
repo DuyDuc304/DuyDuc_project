@@ -245,7 +245,7 @@
  }
 
  .btnmenubar {
-
+   display: flex;
    font-style: normal;
    font-weight: 600;
    font-size: 16px;
@@ -254,11 +254,10 @@
    flex: none;
    order: 1;
    flex-grow: 0;
-   width: 190px;
+   width: 200px;
    height: 48px;
    left: 0px;
-   padding-top: 20px;
-   padding-left: 10px;
+
    margin: auto;
    text-align: left;
 
@@ -266,6 +265,7 @@
 
  .ab {
    color: #7E7D88;
+
  }
 
  .ab:hover {
@@ -296,16 +296,14 @@
 
  .btnmenubar:hover {
    margin: 0;
-   width: 190px;
+   width: 200px;
    height: 48px;
    background: #FFF2E7;
    color: #FF9138;
-
  }
 
  .logout {
-   padding-top: 20px;
-   padding-left: 10px;
+
    position: absolute;
    margin: 10px;
    font-weight: 600;
@@ -317,6 +315,11 @@
    background: #FFF2E7;
    color: #FF9138;
    border-radius: 8px;
+ }
+
+ .logout p {
+   flex: 4;
+   margin: auto;
  }
 
  .logout a {
@@ -331,18 +334,23 @@
    text-decoration: none;
  }
 
+ .ab p {
+   flex: 4;
+   margin: auto;
+ }
 
  .icon {
    width: 20px;
    height: 20px;
-   margin: 3px;
-
+   margin: auto;
+   flex: 1;
  }
 
  .icon1 {
    width: 20px;
    height: 20px;
-
+   margin: auto;
+   flex: 1;
  }
 
 

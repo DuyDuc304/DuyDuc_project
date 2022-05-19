@@ -21,10 +21,16 @@
 }
 
 .dropdown {
-    width: 190px;
+    display: flex;
+    width: 200px;
     height: 48px;
     float: left;
     overflow: hidden;
+}
+
+.dropdown p {
+    flex: 4;
+    margin: auto;
 }
 
 /* Style the dropdown button to fit inside the topnav */
@@ -40,9 +46,8 @@
 
 /* Style the dropdown content (hidden by default) */
 .dropdown-content {
-    margin-top: -46px;
-    margin-left: 190px;
-
+    margin-top: 0px;
+    margin-left: 200px;
     display: none;
     position: absolute;
     background-color: #f9f9f9;

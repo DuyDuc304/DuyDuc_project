@@ -23,7 +23,7 @@ class Login extends React.Component {
                 </div>
                 <div className='col2'>
                   <div className='magin'>
-                    <Link to="/Dashboad">
+                    <Link to="/Dashboard">
                       <div>
                         <button type='submit' >Đăng nhập</button>
                       </div>
