@@ -25,15 +25,15 @@ export const Menubar = () => {
                         <a href="/NumberOrder" className='ab'><MdAutoAwesomeMotion className='icon' />  Cấp số</a >
                     </div>
                     <div className='btnmenubar'>
-                        <a href="#" className='ab'> <MdOutlinePoll className='icon' />Báo cáo</a>
+                        <a href="/Report" className='ab'> <MdOutlinePoll className='icon' />Báo cáo</a>
                     </div>
                     <div className='btnmenubar'>
                         <div className="dropdown">
                             <RiSettingsLine className='icon1' />  Cài đặt hệ thống   <MdMoreVert className='icon1' />
                             <div className="dropdown-content">
-                                <a href="#">Quản lý vai trò</a>
-                                <a href="#">Quản lý tài khoản</a>
-                                <a href="#">Nhật ký người dùng</a>
+                                <a href="/RoleUser">Quản lý vai trò</a>
+                                <a href="/AccountUser">Quản lý tài khoản</a>
+                                <a href="/DiaryUser">Nhật ký người dùng</a>
                             </div>
                         </div >
                     </div>

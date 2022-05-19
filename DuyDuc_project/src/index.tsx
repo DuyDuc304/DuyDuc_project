@@ -13,7 +13,11 @@ import Info from './components/info';
 import Device from './components/device';
 import NumberOrder from './components/numberorder';
 import Service from './components/service';
-import Dashboad from './components/dashboad';
+import Dashboard from './components/dashboard';
+import Report from './components/report';
+import RoleUser from './components/roleuser';
+import AccountUser from './components/accountuser';
+import DiaryUser from './components/diatyuser';
 
 
 const root = ReactDOM.createRoot(
@@ -24,10 +28,14 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Login />} />
-        <Route path="/Dashboad" element={<Dashboad />} />
+        <Route path="/Dashboard" element={<Dashboard />} />
         <Route path="/Device" element={<Device />} />
         <Route path="/Service" element={<Service />} />
+        <Route path="/Report" element={<Report />} />
+        <Route path="/AccountUser" element={<AccountUser />} />
+        <Route path="/RoleUser" element={<RoleUser />} />
         <Route path='/NumberOrder' element={<NumberOrder />} />
+        <Route path="/DiaryUser" element={<DiaryUser />} />
         <Route path="/Info" element={<Info />} />
         <Route path="/login" element={<Login />} />
         <Route path="/loginfail" element={<Loginfail />} />
