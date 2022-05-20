@@ -693,3 +693,11 @@
  .button-active p {
    color: #FFFF;
  }
+
+ .loginfail {
+   display: none;
+ }
+
+ .login {
+   display: block;
+ }

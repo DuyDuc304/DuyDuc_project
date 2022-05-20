@@ -18,7 +18,7 @@ import Report from './components/report';
 import RoleUser from './components/roleuser';
 import AccountUser from './components/accountuser';
 import DiaryUser from './components/diaryuser';
-import Notice from './components/adddevice';
+
 import AddDevice from './components/adddevice';
 ;
 
