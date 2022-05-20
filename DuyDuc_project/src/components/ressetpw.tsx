@@ -24,7 +24,7 @@ class RessetPW extends React.Component {
                                         <br />
                                         <br />
                                         <div className='rowbtn'>
-                                            <Link to="/" >
+                                            <Link to="/login" >
                                                 <div className='buttonhuy'>
                                                     <button >Hủy</button >
                                                 </div>

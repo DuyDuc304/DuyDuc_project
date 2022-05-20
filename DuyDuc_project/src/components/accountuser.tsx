@@ -11,7 +11,7 @@ class AccountUser extends React.Component {
             <div className='bg'>
                 <div className="Backgroundapp">
                     <Topbar nametitle='Cài đặt hệ thống > Quản lý tài khoản' />
-                    <Menubar />
+                    <Menubar buttonid="qltk" />
 
                 </div>
             </div>

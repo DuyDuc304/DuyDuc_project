@@ -12,7 +12,7 @@ class Info extends React.Component {
             <div className='bg'>
                 <div className="Backgroundapp">
                     <Topbar nametitle='Thông tin cá nhân' />
-                    <Menubar />
+                    <Menubar buttonid="" />
                     <div className='info'>
                         <img src="https://tinhte.vn/store/2016/10/3893837_1_1.jpg" alt='avata' />
                         <a href="#"><div className='camera'><FiCamera className='iconcamera' /></div></a>

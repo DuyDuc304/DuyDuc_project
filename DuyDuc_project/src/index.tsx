@@ -17,7 +17,10 @@ import Dashboard from './components/dashboard';
 import Report from './components/report';
 import RoleUser from './components/roleuser';
 import AccountUser from './components/accountuser';
-import DiaryUser from './components/diatyuser';
+import DiaryUser from './components/diaryuser';
+import Notice from './components/notice';
+;
+
 
 
 const root = ReactDOM.createRoot(
@@ -27,7 +30,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Login />} />
+        <Route path="/" element={<Notice />} />
         <Route path="/Dashboard" element={<Dashboard />} />
         <Route path="/Device" element={<Device />} />
         <Route path="/Service" element={<Service />} />

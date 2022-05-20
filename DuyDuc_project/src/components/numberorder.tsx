@@ -11,7 +11,7 @@ class NumberOrder extends React.Component {
             <div className='bg'>
                 <div className="Backgroundapp">
                     <Topbar nametitle='Cấp số > Danh sách cấp số' />
-                    <Menubar />
+                    <Menubar buttonid="cs" />
 
                 </div>
             </div>

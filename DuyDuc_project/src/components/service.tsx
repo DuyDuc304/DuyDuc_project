@@ -11,7 +11,7 @@ class Service extends React.Component {
             <div className='bg'>
                 <div className="Backgroundapp">
                     <Topbar nametitle='Dịch vụ > Danh sách dịch vụ' />
-                    <Menubar />
+                    <Menubar buttonid="dv" />
 
                 </div>
             </div>

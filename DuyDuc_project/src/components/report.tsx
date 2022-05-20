@@ -11,7 +11,7 @@ class Report extends React.Component {
             <div className='bg'>
                 <div className="Backgroundapp">
                     <Topbar nametitle='Báo cáo' />
-                    <Menubar />
+                    <Menubar buttonid="bc" />
 
                 </div>
             </div>
