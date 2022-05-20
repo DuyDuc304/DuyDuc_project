@@ -690,3 +690,101 @@
  .login {
    display: block;
  }
+
+ .chart {
+   position: absolute;
+   Width: 791px;
+   Height: 484px;
+   border-Radius: 12px;
+   left: 224px;
+   bottom: 30px;
+   background: #FFFFFF;
+   border-radius: 12px;
+ }
+
+ .chart img {
+   position: absolute;
+   width: 754px;
+   height: 373px;
+   left: 24px;
+   top: 78px;
+   border-radius: 8px
+ }
+
+ .title-chart {
+   position: absolute;
+   left: 3.03%;
+   top: 4.96%;
+   width: auto;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 30px;
+   color: #282739;
+ }
+
+ .select-type {
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 12px;
+   gap: 24px;
+   width: 106px;
+   height: 42px;
+   background: #FFFFFF;
+   border: 0.5px solid #D4D4D7;
+   border-radius: 8px;
+
+   order: 1;
+   flex-grow: 0;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 24px;
+   color: #7E7D88;
+ }
+
+ .select-type select option {
+   align-items: center;
+   padding: 10px 12px;
+   gap: 24px;
+   width: 106px;
+   height: 44px;
+   background: #FFFFFF;
+ }
+
+ .select-type-row {
+
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   padding: 0px;
+   gap: 8px;
+   position: absolute;
+   right: 3.03%;
+   top: 4.96%;
+ }
+
+ .select-type-row span {
+   margin: auto;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 24px;
+   color: #282739;
+   width: 80px;
+ }
+
+ .chart p {
+   position: absolute;
+   left: 3.03%;
+   top: 11.98%;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 21px;
+   color: #A9A9B0;
+ }
