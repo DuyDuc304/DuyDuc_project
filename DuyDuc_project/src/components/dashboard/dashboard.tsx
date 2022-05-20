@@ -4,7 +4,8 @@ import '../layout/menubar';
 import { Topbar } from '../layout/topbar';
 import { Menubar } from '../layout/menubar';
 import Chart from './chart';
-
+import AllAbout from './allabout';
+import Calendar from "./calenda/calenda"
 
 
 
@@ -13,10 +14,11 @@ class Dashboard extends React.Component {
         return (
             <div className='bg'>
                 <div className="Backgroundapp">
-                    <Chart defaulchart='ngày' />
+                    {/* <Chart defaulchart='ngày' />
+                    <AllAbout />
                     <Topbar nametitle1='' nametitle2='' nametitle3='Dashboard' href='' />
-                    <Menubar buttonid="db" />
-
+                    <Menubar buttonid="db" /> */}
+                    <Calendar />
                 </div>
             </div>
         );

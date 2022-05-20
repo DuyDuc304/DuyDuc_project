@@ -788,3 +788,14 @@
    line-height: 21px;
    color: #A9A9B0;
  }
+
+ .allabout {
+   position: absolute;
+   width: 401px;
+   height: 810px;
+   left: 1039px;
+   top: 0px;
+   background: #FFFFFF;
+   box-shadow: 0px 4px 6px rgba(219, 219, 219, 0.5);
+   border-radius: 0px 8px 8px 0px;
+ }

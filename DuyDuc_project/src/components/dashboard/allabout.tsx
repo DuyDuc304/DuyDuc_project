@@ -1,9 +1,12 @@
 import React from "react"
 
+
 class AllAbout extends React.Component {
     render() {
         return (
-            < div ></div >
+            < div className="allabout">
+
+            </div >
         )
     }
 }
