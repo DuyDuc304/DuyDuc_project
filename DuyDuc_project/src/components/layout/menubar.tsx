@@ -12,6 +12,14 @@ export const Menubar = (id: idbuton) => {
     const changebutton = (id: string) => {
         const btn: any = document.getElementById(id);
         btn.classList.toggle("button-active");
+        if (id === "nknd") {
+            const btn: any = document.getElementById("nknd");
+            btn.classList.toggle("button-nknd");
+        }
+        if (id === "qlvt") {
+            const btn: any = document.getElementById("qlvt");
+            btn.classList.toggle("button-qlvt");
+        }
     }
 
     return (
@@ -36,7 +44,7 @@ export const Menubar = (id: idbuton) => {
                     <div className='btnmenubar' id='bc'>
                         <a href="/Report" className='ab'> <MdOutlinePoll className='icon' /><p>Báo cáo</p></a>
                     </div>
-                    <div className='btnmenubar'>
+                    <div className='btnmenubar' id='setting'>
                         <div className="dropdown">
                             <RiSettingsLine className='icon1' /> <p> Cài đặt hệ thống</p>   <MdMoreVert className='icon1' />
                             <div className="dropdown-content">

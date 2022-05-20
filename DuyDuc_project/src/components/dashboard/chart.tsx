@@ -23,13 +23,13 @@ export const Chart: FC<FruitProps> = ({ defaulchart }) => {
 
     const daytime = (a: string) => {
         if (a === 'năm') {
-            setday = 'năm ' + year
+            setday = 'Năm ' + year
         } else
             if (a === 'ngày') {
-                setday = 'ngày ' + date + "/" + month + "/" + year
+                setday = 'Ngày ' + date + "/" + month + "/" + year
             } else
                 if (a === 'tháng') {
-                    setday = 'tháng ' + month + '/' + year
+                    setday = 'Tháng ' + month + '/' + year
                 }
         return setday;
 

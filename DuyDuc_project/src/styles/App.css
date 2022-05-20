@@ -257,7 +257,6 @@
  }
 
  .ab:hover {
-   background: #FFF2E7;
    color: #FF9138;
  }
 
@@ -657,6 +656,30 @@
    flex-direction: column;
  }
 
+ .button-alway-active {
+   background: #FF7506;
+   color: #FFFF;
+ }
+
+ .button-nknd {
+   background: #FF7506;
+   color: #FFFF;
+   border-bottom-right-radius: 8px;
+ }
+
+ .button-qlvt {
+   background: #FF7506;
+   color: #FFFF;
+   border-top-right-radius: 8px;
+ }
+
+
+
+
+ .button-alway-active .icon1 {
+   color: #FFFF;
+ }
+
  .button-notice-active {
    position: absolute;
    width: 32px;
@@ -812,6 +835,7 @@
 
  .title-Sumary {
    margin-left: 24px;
+   margin-bottom: 20px;
    font-style: normal;
    font-weight: 700;
    font-size: 24px;
@@ -825,7 +849,7 @@
    flex-direction: column;
    width: 353px;
    height: 290px;
-
+   gap: 12px
  }
 
  .sumary-item {
@@ -839,7 +863,7 @@
    border-radius: 12px;
  }
 
- .sumary-item img {
+ .sumary-item-img {
    width: 60px;
    height: 60px;
    display: flex;
@@ -896,7 +920,8 @@
  }
 
  .text-sumary {
-
+   margin: auto;
+   display: flex;
    font-style: normal;
    font-weight: 400;
    font-size: 12px;
@@ -911,4 +936,119 @@
    font-size: 14px;
    line-height: 18px;
    color: #FF7506;
+ }
+
+ .point {
+   width: 4px;
+   height: 4px;
+ }
+
+ .notline {
+   text-decoration: none;
+ }
+
+ .title-report-type {
+
+   position: absolute;
+   height: 36px;
+   left: 224px;
+   top: 104px;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 36px;
+   color: #FF7506;
+ }
+
+ .report-chart-type-list {
+   gap: 14px;
+   display: flex;
+   flex-direction: row;
+   position: absolute;
+   width: 790px;
+   height: 128px;
+   left: 224px;
+   top: 156px;
+ }
+
+ .report-chart-type-item {
+   display: flex;
+   flex-direction: column;
+   margin: auto;
+   width: 186px;
+   height: 120px;
+   background: #FFFFFF;
+   border-radius: 10px;
+ }
+
+ .title-chart-type-item-name {
+   display: flex;
+   flex-direction: row;
+
+   flex: 5;
+ }
+
+ .title-chart-type-item-name p {
+
+   width: 70px;
+   height: 36px;
+   margin: 15px;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 18px;
+   color: #535261;
+ }
+
+ .title-chart-type-item-name-img {
+   display: flex;
+   border-radius: 24px;
+   margin: auto;
+   width: 48px;
+   height: 48px;
+
+ }
+
+
+
+ .phantram {
+   margin: auto;
+   display: flex;
+   width: 48px;
+   height: 14.98px;
+   left: 130.3px;
+   top: 85.53px;
+   background: rgba(255, 149, 1, 0.15);
+   border-radius: 7.18115px;
+ }
+
+ .phantram-a {
+   margin: auto;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 8px;
+   line-height: 12px;
+   color: #FF9138;
+ }
+
+ .phantram-up {
+   margin: auto;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 12px;
+   color: #FF9138;
+ }
+
+ .solieu {
+   margin: auto;
+   width: 80px;
+   height: 45px;
+
+   font-style: normal;
+   font-weight: 700;
+   font-size: 30px;
+   line-height: 45px;
+
+   color: #535261;
  }
