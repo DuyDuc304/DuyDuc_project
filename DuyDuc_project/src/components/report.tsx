@@ -1,8 +1,8 @@
 import React from 'react';
 
-import './menubar';
-import { Topbar } from './topbar';
-import { Menubar } from './menubar';
+import './layout/menubar';
+import { Topbar } from './layout/topbar';
+import { Menubar } from './layout/menubar';
 
 
 class Report extends React.Component {
@@ -10,7 +10,7 @@ class Report extends React.Component {
         return (
             <div className='bg'>
                 <div className="Backgroundapp">
-                    <Topbar nametitle1='' nametitle2='' nametitle3='Báo cáo' href='' />
+                    <Topbar nametitle1='Báo cáo >' nametitle2='' nametitle3='Lập báo cáo' href='' />
                     <Menubar buttonid="bc" />
 
                 </div>

@@ -1,4 +1,4 @@
-import small_logo from './images/small_logo.svg';
+import small_logo from './small_logo.svg';
 import { MdOutlineDashboard, MdDesktopWindows, MdOutlineForum, MdOutlinePoll, MdLogout, MdMoreVert } from "react-icons/md";
 import { RiSettingsLine } from "react-icons/ri";
 import { ImStack } from "react-icons/im";

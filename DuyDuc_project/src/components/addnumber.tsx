@@ -1,6 +1,6 @@
 import React from 'react';
-import { Menubar } from './menubar';
-import { Topbar } from './topbar';
+import { Menubar } from './layout/menubar';
+import { Topbar } from './layout/topbar';
 
 
 class AddNumber extends React.Component {

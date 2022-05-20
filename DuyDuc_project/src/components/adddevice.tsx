@@ -1,8 +1,8 @@
 import React from 'react';
 
-import './menubar';
-import { Topbar } from './topbar';
-import { Menubar } from './menubar';
+import './layout/menubar';
+import { Topbar } from './layout/topbar';
+import { Menubar } from './layout/menubar';
 
 
 class AddDevice extends React.Component {

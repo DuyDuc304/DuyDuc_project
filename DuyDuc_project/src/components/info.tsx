@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { Topbar } from './topbar';
+import { Topbar } from './layout/topbar';
 import { FiCamera } from "react-icons/fi";
-import { Menubar } from './menubar';
+import { Menubar } from './layout/menubar';
 
 
 class Info extends React.Component {

@@ -1,8 +1,9 @@
 import React from 'react';
 import logo from './images/logo.svg';
 import htqlxh from './images/htqlxh.svg';
-import { Link, } from "react-router-dom"
+import { render, screen } from '@testing-library/react';
 import { BiErrorCircle } from "react-icons/bi";
+import Dashboard from '../dashboard';
 
 
 class Login extends React.Component {
@@ -20,7 +21,7 @@ class Login extends React.Component {
     const password = target.password.value;
     if (name === "duc" && password === "123"
     ) {
-
+      return (render(<Dashboard />));
     }
     else {
       loginfail.style.display = 'block';

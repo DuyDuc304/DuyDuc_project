@@ -1,6 +1,6 @@
 import React from 'react';
-import { Menubar } from './menubar';
-import { Topbar } from './topbar';
+import { Menubar } from './layout/menubar';
+import { Topbar } from './layout/topbar';
 
 
 class AddService extends React.Component {
@@ -8,8 +8,8 @@ class AddService extends React.Component {
         return (
             <div className='bg'>
                 <div className="Backgroundapp">
-                    <Topbar nametitle1='Thiết bị > ' nametitle2='Danh sách dịch vụ >' nametitle3=' Thêm dịch vụ' href='/Service' />
-                    <Menubar buttonid="tb" />
+                    <Topbar nametitle1='Dịch vụ > ' nametitle2='Danh sách dịch vụ >' nametitle3=' Thêm dịch vụ' href='/Service' />
+                    <Menubar buttonid="dv" />
 
                 </div>
             </div>
