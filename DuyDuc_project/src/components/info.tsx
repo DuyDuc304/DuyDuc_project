@@ -46,7 +46,7 @@ class Info extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <Topbar nametitle1='Thông tin cá nhân' nametitle2='' nametitle3='' href='' />
+                    <Topbar nametitle1='' nametitle2='' nametitle3='Thông tin cá nhân' href='' />
                     <Menubar buttonid="" />
                 </div>
             </div>

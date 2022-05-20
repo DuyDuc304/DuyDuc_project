@@ -3,7 +3,7 @@ import logo from './images/logo.svg';
 import htqlxh from './images/htqlxh.svg';
 import { render, screen } from '@testing-library/react';
 import { BiErrorCircle } from "react-icons/bi";
-import Dashboard from '../dashboard';
+import Dashboard from '../dashboard/dashboard';
 
 
 class Login extends React.Component {

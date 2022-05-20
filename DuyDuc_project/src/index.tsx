@@ -9,17 +9,17 @@ import { BrowserRouter, Routes, Route, } from "react-router-dom";
 import './styles/App.css';
 
 import Info from './components/info';
-import Device from './components/device';
-import NumberOrder from './components/numberorder';
-import Service from './components/service';
-import Dashboard from './components/dashboard';
+import Device from './components/device/device';
+import NumberOrder from './components/numberoder/numberorder';
+import Service from './components/service/service';
+import Dashboard from './components/dashboard/dashboard';
 import Report from './components/report';
-import RoleUser from './components/roleuser';
-import AccountUser from './components/accountuser';
-import DiaryUser from './components/diaryuser';
-import AddDevice from './components/adddevice';
-import AddService from './components/addservice';
-import AddNumber from './components/addnumber';
+import RoleUser from './components/setting/roleuser/roleuser';
+import AccountUser from './components/setting/accountuser/accountuser';
+import DiaryUser from './components/setting/diaryuser/diaryuser';
+import AddDevice from './components/device/adddevice';
+import AddService from './components/service/addservice';
+import AddNumber from './components/numberoder/addnumber';
 import RessetPW from './components/login/ressetpw';
 
 
@@ -39,7 +39,7 @@ root.render(
         <Route path="/Report" element={<Report />} />
         <Route path="/AccountUser" element={<AccountUser />} />
         <Route path="/RoleUser" element={<RoleUser />} />
-        <Route path='/NumberOder' element={<NumberOrder />} />
+        <Route path='/NumberOrder' element={<NumberOrder />} />
         <Route path="/DiaryUser" element={<DiaryUser />} />
         <Route path="/Info" element={<Info />} />
         <Route path="/login" element={<Login />} />
