@@ -10,7 +10,7 @@ class Service extends React.Component {
         return (
             <div className='bg'>
                 <div className="Backgroundapp">
-                    <Topbar nametitle='Dịch vụ > Danh sách dịch vụ' />
+                    <Topbar nametitle1='Dịch vụ > ' nametitle2='' nametitle3='Danh sách dịch vụ' href='' />
                     <Menubar buttonid="dv" />
 
                 </div>

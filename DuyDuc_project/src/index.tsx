@@ -18,7 +18,8 @@ import Report from './components/report';
 import RoleUser from './components/roleuser';
 import AccountUser from './components/accountuser';
 import DiaryUser from './components/diaryuser';
-import Notice from './components/notice';
+import Notice from './components/adddevice';
+import AddDevice from './components/adddevice';
 ;
 
 
@@ -30,7 +31,8 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Notice />} />
+        <Route path="/" element={<Login />} />
+        <Route path="/AddDevice" element={<AddDevice />} />
         <Route path="/Dashboard" element={<Dashboard />} />
         <Route path="/Device" element={<Device />} />
         <Route path="/Service" element={<Service />} />

@@ -10,7 +10,8 @@ class Device extends React.Component {
         return (
             <div className='bg'>
                 <div className="Backgroundapp">
-                    <Topbar nametitle='Thiết bị > Danh sách thiết bị' />
+                    <div className='info'><a href='/AddDevice'>thêm thiêt bị</a></div>
+                    <Topbar nametitle1='Thiết bị > ' nametitle2='' nametitle3='Danh sách thiết bị' href='' />
                     <Menubar buttonid="tb" />
 
                 </div>

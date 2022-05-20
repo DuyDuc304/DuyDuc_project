@@ -10,7 +10,7 @@ class RoleUser extends React.Component {
         return (
             <div className='bg'>
                 <div className="Backgroundapp">
-                    <Topbar nametitle='Cài đặt hệ thống > Quản lý vai trò' />
+                    <Topbar nametitle1='Cài đặt hệ thống > ' nametitle2='' nametitle3='Quản lý vai trò' href='' />
                     <Menubar buttonid="qlvt" />
 
                 </div>

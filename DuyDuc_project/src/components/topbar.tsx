@@ -1,7 +1,10 @@
 import { BsFillBellFill } from "react-icons/bs";
 
 type titlepros = {
-    nametitle: string
+    nametitle1?: string
+    nametitle2: string
+    href: string
+    nametitle3: string
 }
 
 export const Topbar = (props: titlepros) => {
@@ -18,7 +21,11 @@ export const Topbar = (props: titlepros) => {
     }
     return (
         <div className='topbar'>
-            <label id='title'>{props.nametitle}</label>
+            <div className="title">
+                <label className="title1">{props.nametitle1}</label>
+                <a href={props.href}>{props.nametitle2}</a>
+                <label className="title3">{props.nametitle3}</label>
+            </div>
             <div className='notice' id="ntc" onClick={() => handleNotice()}><BsFillBellFill className='bell' /></div>
             <a href='/info' >
                 <div className='avata'>

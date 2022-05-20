@@ -10,7 +10,7 @@ class DiaryUser extends React.Component {
         return (
             <div className='bg'>
                 <div className="Backgroundapp">
-                    <Topbar nametitle='Cài đặt hệ thống > Nhật ký người dùng' />
+                    <Topbar nametitle1='Cài đặt hệ thống >' nametitle2='' nametitle3=' Nhật ký người dùng' href='' />
                     <Menubar buttonid="nknd" />
 
                 </div>

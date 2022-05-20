@@ -10,7 +10,7 @@ class Dashboard extends React.Component {
         return (
             <div className='bg'>
                 <div className="Backgroundapp">
-                    <Topbar nametitle='Dashboard' />
+                    <Topbar nametitle1='' nametitle2='' nametitle3='Dashboard' href='' />
                     <Menubar buttonid="db" />
 
                 </div>

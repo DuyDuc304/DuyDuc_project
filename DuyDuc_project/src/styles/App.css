@@ -363,12 +363,46 @@
 
  }
 
- .topbar label {
-   position: absolute;
-   width: 500px;
+ .title {
+
+   display: flex;
+   flex-direction: row;
+   width: 600px;
    height: 40px;
-   left: 24px;
-   top: 29px;
+   padding-top: 29px;
+   padding-left: 20px;
+   align-items: flex-start;
+ }
+
+ .title1 {
+
+   font-style: normal;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 30px;
+   color: #7E7D88;
+ }
+
+ .title a {
+   padding-left: 5px;
+   padding-right: 5px;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 30px;
+   color: #7E7D88;
+ }
+
+ .title a:link {
+   text-decoration: none;
+ }
+
+ .title a:hover {
+   color: #FF9138;
+ }
+
+ .title3 {
+
    font-style: normal;
    font-weight: 700;
    font-size: 20px;
@@ -407,7 +441,7 @@
 
  .name {
    font-weight: 700;
-   margin-top: 20px;
+   top: 20px;
    display: flex;
    font-size: 16px;
    position: absolute;
@@ -608,7 +642,6 @@
  .notice-name-user {
    padding-top: 16px;
    margin-left: 24px;
-
    font-style: normal;
    font-weight: 700;
    font-size: 16px;
@@ -649,10 +682,6 @@
  }
 
  .button-active {
-   background: #FF7506;
- }
-
- .button-active:hover {
    background: #FF7506;
 
  }

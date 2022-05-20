@@ -10,7 +10,7 @@ class Report extends React.Component {
         return (
             <div className='bg'>
                 <div className="Backgroundapp">
-                    <Topbar nametitle='Báo cáo' />
+                    <Topbar nametitle1='' nametitle2='' nametitle3='Báo cáo' href='' />
                     <Menubar buttonid="bc" />
 
                 </div>

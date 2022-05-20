@@ -11,8 +11,7 @@ class Info extends React.Component {
         return (
             <div className='bg'>
                 <div className="Backgroundapp">
-                    <Topbar nametitle='Thông tin cá nhân' />
-                    <Menubar buttonid="" />
+
                     <div className='info'>
                         <img src="https://tinhte.vn/store/2016/10/3893837_1_1.jpg" alt='avata' />
                         <a href="#"><div className='camera'><FiCamera className='iconcamera' /></div></a>
@@ -47,7 +46,8 @@ class Info extends React.Component {
                             </div>
                         </div>
                     </div>
-
+                    <Topbar nametitle1='Thông tin cá nhân' nametitle2='' nametitle3='' href='' />
+                    <Menubar buttonid="" />
                 </div>
             </div>
         );
