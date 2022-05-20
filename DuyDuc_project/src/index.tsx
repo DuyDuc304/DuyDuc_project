@@ -3,10 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './styles/index.css';
 import './styles/menu.css';
 import Login from './components/login';
-import Loginfail from './components/loginfail';
+import Loginfail from './components/addnumber';
 import reportWebVitals from './reportWebVitals';
 import RessetPW from './components/ressetpw';
-import RessetPWStep2 from './components/ressetpwstep2';
 import { BrowserRouter, Routes, Route, } from "react-router-dom";
 import './styles/App.css';
 import Info from './components/info';
@@ -20,6 +19,8 @@ import AccountUser from './components/accountuser';
 import DiaryUser from './components/diaryuser';
 
 import AddDevice from './components/adddevice';
+import AddService from './components/addservice';
+import AddNumber from './components/addnumber';
 ;
 
 
@@ -32,7 +33,7 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Login />} />
-        <Route path="/AddDevice" element={<AddDevice />} />
+        <Route path="/Device/AddDevice" element={<AddDevice />} />
         <Route path="/Dashboard" element={<Dashboard />} />
         <Route path="/Device" element={<Device />} />
         <Route path="/Service" element={<Service />} />
@@ -43,8 +44,8 @@ root.render(
         <Route path="/DiaryUser" element={<DiaryUser />} />
         <Route path="/Info" element={<Info />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/loginfail" element={<Loginfail />} />
-        <Route path="/ressetpwstep2" element={<RessetPWStep2 />} />
+        <Route path="/NumberOrder/AddNumber" element={<AddNumber />} />
+        <Route path="/Service/AddService" element={<AddService />} />
         <Route path="/ressetpw" element={<RessetPW />} />
       </Routes>
     </BrowserRouter>
