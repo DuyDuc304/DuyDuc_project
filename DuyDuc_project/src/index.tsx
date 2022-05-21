@@ -18,9 +18,11 @@ import RoleUser from './components/setting/roleuser/roleuser';
 import AccountUser from './components/setting/accountuser/accountuser';
 import DiaryUser from './components/setting/diaryuser/diaryuser';
 import AddDevice from './components/device/adddevice';
+import InfoDevice from './components/device/infodevice';
 import AddService from './components/service/addservice';
 import AddNumber from './components/numberoder/addnumber';
 import RessetPW from './components/login/ressetpw';
+import UpdateDevice from './components/device/updatedevice';
 
 
 
@@ -33,6 +35,8 @@ root.render(
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/Device/AddDevice" element={<AddDevice />} />
+        <Route path="/Device/InfoDevice" element={<InfoDevice />} />
+        <Route path="/Device/UpdateDevice" element={<UpdateDevice />} />
         <Route path="/Dashboard" element={<Dashboard />} />
         <Route path="/Device" element={<Device />} />
         <Route path="/Service" element={<Service />} />

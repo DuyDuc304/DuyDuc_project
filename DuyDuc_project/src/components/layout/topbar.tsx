@@ -20,6 +20,7 @@ export const Topbar = (props: titlepros) => {
             notice.style.display = 'none';
         }
 
+
     }
     return (
         <div className='topbar'>
