@@ -41,7 +41,7 @@ class Device extends React.Component {
                         <p className='ppp'>Từ khóa</p>
                         <div className='sreach'>
                             <form >
-                                <input type="text" name='timkiem' placeholder="Nhập từ khóa"></input>
+                                <input type="text" name='timkiem' placeholder="Nhập từ khóa ..."></input>
                                 <button type='submit'><AiOutlineSearch /></button>
                             </form>
                         </div>

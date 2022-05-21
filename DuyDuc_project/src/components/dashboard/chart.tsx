@@ -11,6 +11,7 @@ type FruitProps = {
 }
 let newDate = new Date()
 let date = newDate.getDate();
+
 let month = newDate.getMonth() + 1;
 let year = newDate.getFullYear();
 export const Chart: FC<FruitProps> = ({ defaulchart }) => {
@@ -22,8 +23,8 @@ export const Chart: FC<FruitProps> = ({ defaulchart }) => {
     }
 
     const daytime = (a: string) => {
-        if (a === 'năm') {
-            setday = 'Năm ' + year
+        if (a === 'tuần') {
+            setday = 'Tuần ' + date + "/" + month + "/" + year
         } else
             if (a === 'ngày') {
                 setday = 'Ngày ' + date + "/" + month + "/" + year
@@ -43,8 +44,8 @@ export const Chart: FC<FruitProps> = ({ defaulchart }) => {
                 <form  >
                     <select className='select-type' onChange={(event) => changetype(event.target.value)} value={currentType}>
                         <option value="ngày">Ngày</option>
+                        <option value="tuần">Tuần</option>
                         <option value="tháng">Tháng</option>
-                        <option value="năm">Năm</option>
                     </select>
                 </form>
             </div>
