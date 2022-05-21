@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { FaFileDownload } from 'react-icons/fa';
 import './layout/menubar';
 import { Topbar } from './layout/topbar';
 import { Menubar } from './layout/menubar';
@@ -10,7 +10,16 @@ class Report extends React.Component {
         return (
             <div className='bg'>
                 <div className="Backgroundapp">
-                    <Topbar nametitle1='Báo cáo >' nametitle2='' nametitle3='Lập báo cáo' href='' />
+                    <a href='#'>
+                        <div className='div-add-download'>
+                            <FaFileDownload className='download' />
+                            <div className='add'>
+
+                                <p >Tải về</p>
+                            </div>
+                        </div>
+                    </a>
+                    <Topbar nametitle1='Báo cáo >' nametitle2='' nametitle3='Lập báo cáo' href='' href2='' nametitle21='' />
                     <Menubar buttonid="bc" />
 
                 </div>

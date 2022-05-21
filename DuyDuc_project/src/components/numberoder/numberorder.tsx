@@ -3,6 +3,7 @@ import React from 'react';
 import '../layout/menubar';
 import { Topbar } from '../layout/topbar';
 import { Menubar } from '../layout/menubar';
+import { AiOutlinePlus } from 'react-icons/ai';
 
 
 class NumberOrder extends React.Component {
@@ -10,8 +11,16 @@ class NumberOrder extends React.Component {
         return (
             <div className='bg'>
                 <div className="Backgroundapp">
-                    <div className='info'><a href='/NumberOrder/AddNumber'>thêm thiêt bị</a></div>
-                    <Topbar nametitle1='Cấp số > ' nametitle2='' nametitle3='Danh sách cấp số' href='' />
+                    <a href='/NumberOrder/AddNumber'>
+                        <div className='div-add'>
+                            <div className='plus'><AiOutlinePlus className='cong' /></div>
+                            <div className='add'>
+                                <p > Cấp </p>
+                                <p >số mới</p>
+                            </div>
+                        </div>
+                    </a>
+                    <Topbar nametitle1='Cấp số > ' nametitle2='' nametitle3='Danh sách cấp số' href='' href2='' nametitle21='' />
                     <Menubar buttonid="cs" />
 
                 </div>

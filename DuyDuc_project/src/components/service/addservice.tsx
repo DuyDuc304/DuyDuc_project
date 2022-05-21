@@ -8,7 +8,7 @@ class AddService extends React.Component {
         return (
             <div className='bg'>
                 <div className="Backgroundapp">
-                    <Topbar nametitle1='Dịch vụ > ' nametitle2='Danh sách dịch vụ >' nametitle3=' Thêm dịch vụ' href='/Service' />
+                    <Topbar nametitle1='Dịch vụ > ' nametitle2='Danh sách dịch vụ >' nametitle3=' Thêm dịch vụ' href='/Service' href2='' nametitle21='' />
                     <Menubar buttonid="dv" />
 
                 </div>

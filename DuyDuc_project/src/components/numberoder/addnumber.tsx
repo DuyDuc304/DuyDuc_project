@@ -8,7 +8,7 @@ class AddNumber extends React.Component {
         return (
             <div className='bg'>
                 <div className="Backgroundapp">
-                    <Topbar nametitle1='Cấp số > ' nametitle2='Danh sách cấp số > ' nametitle3='Thêm số mới' href='/NumberOrder' />
+                    <Topbar nametitle1='Cấp số > ' nametitle2='Danh sách cấp số > ' nametitle3='Thêm số mới' href='/NumberOrder' href2='' nametitle21='' />
                     <Menubar buttonid="cs" />
 
                 </div>

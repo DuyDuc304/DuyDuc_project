@@ -4,6 +4,8 @@ type titlepros = {
     nametitle1?: string
     nametitle2: string
     href: string
+    nametitle21: string
+    href2: string
     nametitle3: string
 }
 
@@ -24,6 +26,7 @@ export const Topbar = (props: titlepros) => {
             <div className="title">
                 <label className="title1">{props.nametitle1}</label>
                 <a href={props.href}>{props.nametitle2}</a>
+                <a href={props.href2}>{props.nametitle21}</a>
                 <label className="title3">{props.nametitle3}</label>
             </div>
             <div className='notice' id="ntc" onClick={() => handleNotice()}><BsFillBellFill className='bell' /></div>
