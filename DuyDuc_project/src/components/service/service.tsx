@@ -11,7 +11,7 @@ class Service extends React.Component {
         return (
             <div className='bg'>
                 <div className="Backgroundapp">
-
+                    <div className='title-report-type'>Quản lý dịch vụ</div>
                     <a href='/Service/AddService'>
                         <div className='div-add'>
                             <div className='plus'><AiOutlinePlus className='cong' /></div>
