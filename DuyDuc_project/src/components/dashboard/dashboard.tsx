@@ -9,7 +9,7 @@ import sttdc from './sttdc.svg';
 import sttdd from './sttdd.svg';
 import sttc from './sttc.svg';
 import sttdx from './sttdx.svg';
-import { BsArrowUpShort } from 'react-icons/bs';
+import { BsArrowDownShort, BsArrowUpShort } from 'react-icons/bs';
 
 
 
@@ -31,8 +31,8 @@ class Dashboard extends React.Component {
                                 </div>
                                 <div className='title-chart-type-item-name'>
 
-                                    <label className='solieu'>4520</label>
-                                    <div className='phantram'><BsArrowUpShort className='phantram-up' /><a className='phantram-a'>23%</a></div>
+                                    <label className='solieu'>4.520</label>
+                                    <div className='phantram'><BsArrowUpShort className='phantram-up' /><a className='phantram-a'>32.41%</a></div>
                                 </div>
                             </div>
                         </a>
@@ -40,12 +40,12 @@ class Dashboard extends React.Component {
                             <div className='report-chart-type-item'>
                                 <div className='title-chart-type-item-name'>
                                     <img src={sttdd} className="title-chart-type-item-name-img" />
-                                    <p>Số thứ tự đã cấp</p>
+                                    <p>Số thứ tự đã sử dụng</p>
                                 </div>
                                 <div className='title-chart-type-item-name'>
 
-                                    <label className='solieu'>4520</label>
-                                    <div className='phantram'><BsArrowUpShort className='phantram-up' /><a className='phantram-a'>23%</a></div>
+                                    <label className='solieu'>3.721</label>
+                                    <div className='phantram' style={{ background: 'rgba(231, 63, 63, 0.15)' }}><BsArrowDownShort className='phantram-down' /><a className='phantram-a' style={{ color: '#E73F3F ' }}>32.41%</a></div>
                                 </div>
                             </div>
                         </a>
@@ -53,11 +53,11 @@ class Dashboard extends React.Component {
                             <div className='report-chart-type-item'>
                                 <div className='title-chart-type-item-name'>
                                     <img src={sttc} className="title-chart-type-item-name-img" />
-                                    <p>Số thứ tự đã cấp</p>
+                                    <p>Số thứ tự đang chờ</p>
                                 </div>
                                 <div className='title-chart-type-item-name'>
-                                    <label className='solieu'>4520</label>
-                                    <div className='phantram'><BsArrowUpShort className='phantram-up' /><a className='phantram-a'>23%</a></div>
+                                    <label className='solieu'>468</label>
+                                    <div className='phantram'><BsArrowUpShort className='phantram-up' /><a className='phantram-a'>56.41%</a></div>
                                 </div>
                             </div>
                         </a>
@@ -65,12 +65,14 @@ class Dashboard extends React.Component {
                             <div className='report-chart-type-item'>
                                 <div className='title-chart-type-item-name'>
                                     <img src={sttdx} className="title-chart-type-item-name-img" />
-                                    <p>Số thứ tự đã cấp</p>
+                                    <p>Số thứ tự đã bỏ qua</p>
                                 </div>
                                 <div className='title-chart-type-item-name'>
 
-                                    <label className='solieu'>4520</label>
-                                    <div className='phantram'><BsArrowUpShort className='phantram-up' /><a className='phantram-a'>23%</a></div>
+                                    <label className='solieu'>32</label>
+                                    <div className='phantram' style={{ background: 'rgba(231, 63, 63, 0.15)' }}>
+                                        <BsArrowDownShort className='phantram-down' />
+                                        <a className='phantram-a' style={{ color: '#E73F3F ' }}>22.41%</a></div>
                                 </div>
                             </div>
                         </a>

@@ -7,9 +7,7 @@ class Table extends React.Component {
         const btn: any = document.getElementById(id)
         if (btn.style.display == 'none')
             btn.style.display = 'flex';
-        else {
-            btn.style.display = 'none';
-        }
+
         document.addEventListener("mousedown", (event) => {
             btn.style.display = 'none';
         })

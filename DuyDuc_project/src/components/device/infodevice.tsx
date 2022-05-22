@@ -11,8 +11,50 @@ class InfoDevice extends React.Component {
         return (
             <div className='bg'>
                 <div className="Backgroundapp">
+                    <div className='div-infodevice'>
+                        <div className='div-infortext'>
+                            <p className='text-tttb'>Thông tin thiết bị</p>
+                            <div className='div-rowdevice'>
+                                <div className='div-coldevice '>
+                                    <table className='table-info'>
+                                        <tr>
+                                            <th>Mã thiết bị:</th>
+                                            <td>KIO_01</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Tên thiết bị:</th>
+                                            <td>Kiosk</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Địa chỉ IP:</th>
+                                            <td>128.172.308</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div className='div-coldevice '>
+                                    <table className='table-info'>
+                                        <tr>
+                                            <th>Loại thiết bị:</th>
+                                            <td>Kiosk</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Tên đăng nhập:</th>
+                                            <td>linhkyo011</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Mật khẩu:</th>
+                                            <td>CMS</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <p className='text-dvsd'>Dịch vụ sử dụng</p>
+                            <p className='text-info-dvsd'> Khám tim mạch, Khám sản - Phụ khoa, Khám răng hàm mặt,
+                                Khám tai mũi họng, Khám hô hấp, Khám tổng quát.</p>
+                        </div>
+                    </div>
                     <a href='/Device/UpdateDevice'>
-                        <div className='div-add'>
+                        <div className='div-add' style={{ top: '156px' }}>
                             <div className='plus'><FaPen className='cong' /></div>
                             <div className='add'>
                                 <p > Cập nhật</p>
