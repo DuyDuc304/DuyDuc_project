@@ -719,6 +719,13 @@
    height: 80px;
    margin: auto;
    flex-direction: column;
+   border-bottom: 1px solid #535261;
+ }
+
+ .notice-item:hover {
+   background-color: #FFF2E7;
+   border-bottom: none;
+   border-bottom-left-radius: 8px;
  }
 
  .button-alway-active {
