@@ -931,6 +931,11 @@
    border-radius: 12px;
  }
 
+ .chart-dv {
+   width: 60px;
+   height: 60px;
+ }
+
  .sumary-item-img {
    width: 60px;
    height: 60px;

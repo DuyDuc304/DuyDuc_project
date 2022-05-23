@@ -10,7 +10,8 @@ import sttdd from './sttdd.svg';
 import sttc from './sttc.svg';
 import sttdx from './sttdx.svg';
 import { BsArrowDownShort, BsArrowUpShort } from 'react-icons/bs';
-import { AllAbout } from './allabout';
+import AllAbout from './allabout';
+
 
 
 
