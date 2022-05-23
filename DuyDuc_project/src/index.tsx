@@ -23,6 +23,7 @@ import AddService from './components/service/addservice';
 import AddNumber from './components/numberoder/addnumber';
 import RessetPW from './components/login/ressetpw';
 import UpdateDevice from './components/device/updatedevice';
+import UpdateService from './components/service/updateservice';
 
 
 
@@ -50,6 +51,7 @@ root.render(
         <Route path="/NumberOrder/AddNumber" element={<AddNumber />} />
         <Route path="/Service/AddService" element={<AddService />} />
         <Route path="/ressetpw" element={<RessetPW />} />
+        <Route path="/Service/UpdateService" element={<UpdateService />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
