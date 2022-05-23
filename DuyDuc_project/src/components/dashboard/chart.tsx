@@ -11,7 +11,6 @@ type FruitProps = {
 }
 let newDate = new Date()
 let date = newDate.getDate();
-
 let month = newDate.getMonth() + 1;
 let year = newDate.getFullYear();
 export const Chart: FC<FruitProps> = ({ defaulchart }) => {

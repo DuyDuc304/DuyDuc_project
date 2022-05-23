@@ -1,12 +1,12 @@
 import { BsFillBellFill } from "react-icons/bs";
 
 type titlepros = {
-    nametitle1?: string
-    nametitle2: string
-    href: string
-    nametitle21: string
-    href2: string
-    nametitle3: string
+    nametitle1?: string | undefined
+    nametitle2: string | undefined
+    href: string | undefined
+    nametitle21: string | undefined
+    href2: string | undefined
+    nametitle3: string | undefined
 }
 
 export const Topbar = (props: titlepros) => {
@@ -44,6 +44,18 @@ export const Topbar = (props: titlepros) => {
                 <div className="notice-title"><p>Thông báo</p></div>
                 <div className="notice-list" id="style-1" >
                     <ul >
+                        <a href="#" className="notline">
+                            <li className="notice-item">
+                                <p className="notice-name-user"> Người dùng: Nguyễn Duy Đức</p>
+                                <p className="notice-content-user">Thời gian nhận sô: 12h ngày 18/05/2022</p>
+                            </li>
+                        </a>
+                        <a href="#" className="notline">
+                            <li className="notice-item">
+                                <p className="notice-name-user"> Người dùng: Nguyễn Duy Đức</p>
+                                <p className="notice-content-user">Thời gian nhận sô: 12h ngày 18/05/2022</p>
+                            </li>
+                        </a>
                         <a href="#" className="notline">
                             <li className="notice-item">
                                 <p className="notice-name-user"> Người dùng: Nguyễn Duy Đức</p>

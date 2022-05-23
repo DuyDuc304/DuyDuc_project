@@ -655,15 +655,7 @@
    color: #FFFFFF;
  }
 
- .notice-item hr {
-   margin: auto;
-   height: 0px;
-   width: 320px;
-   bottom: 0px;
-   background-color: #37474F;
-   opacity: 0.4;
-   border: 1.5px solid #D4D4D7;
- }
+
 
  #style-1::-webkit-scrollbar {
    width: 4px;
@@ -687,7 +679,7 @@
    overflow: hidden scroll;
    position: absolute;
    width: 360px;
-   height: 478px;
+   height: 480px;
    left: 0px;
    top: 48px;
  }
@@ -719,13 +711,14 @@
    height: 80px;
    margin: auto;
    flex-direction: column;
-   border-bottom: 1px solid #535261;
+   border-bottom: 0.5px solid #535261;
+
  }
 
  .notice-item:hover {
    background-color: #FFF2E7;
    border-bottom: none;
-   border-bottom-left-radius: 8px;
+   border-bottom-left-radius: 10px;
  }
 
  .button-alway-active {
