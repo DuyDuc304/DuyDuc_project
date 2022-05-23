@@ -1773,3 +1773,13 @@
    font-size: 20px;
    color: #FF7506;
  }
+
+ .daytime-picker-caledar {
+   position: absolute;
+   width: 320px;
+   height: 336px;
+
+   top: 228px;
+   left: 548px;
+   display: none;
+ }
