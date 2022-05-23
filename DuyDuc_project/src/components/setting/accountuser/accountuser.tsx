@@ -11,7 +11,7 @@ class AccountUser extends React.Component {
             <div className='bg'>
                 <div className="Backgroundapp">
                     <div className='title-report-type'>Danh sách tài khoản</div>
-                    <Topbar nametitle1='Cài đặt hệ thống >' nametitle2='' nametitle3='Quản lý tài khoản' href='' href2='' nametitle21='' />
+                    <Topbar nametitle1='Cài đặt hệ thống ﹥' nametitle2='' nametitle3='Quản lý tài khoản' href='' href2='' nametitle21='' />
                     <Menubar buttonid="qltk" />
                 </div>
             </div>

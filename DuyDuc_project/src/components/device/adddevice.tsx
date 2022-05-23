@@ -82,7 +82,7 @@ class AddDevice extends React.Component {
                         </div>
                     </form>
                     <div className='title-report-type'>Quản lý thiết bị</div>
-                    <Topbar nametitle1='Thiết bị > ' nametitle2='Danh sách thiết bị >' nametitle3=' Thêm thiêt bị' href='/Device' href2='' nametitle21='' />
+                    <Topbar nametitle1='Thiết bị ﹥ ' nametitle2='Danh sách thiết bị ﹥' nametitle3=' Thêm thiêt bị' href='/Device' href2='' nametitle21='' />
                     <Menubar buttonid="tb" />
 
                 </div>

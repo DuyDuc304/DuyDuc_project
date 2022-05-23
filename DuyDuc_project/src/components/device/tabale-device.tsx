@@ -1,7 +1,7 @@
 import React from "react";
-import './table.css'
+import './tabledevice.css'
 
-class Table extends React.Component {
+class TableDevice extends React.Component {
     showmore(id: string) {
 
         const btn: any = document.getElementById(id)
@@ -373,4 +373,4 @@ class Table extends React.Component {
         )
     }
 }
-export default Table;
+export default TableDevice;

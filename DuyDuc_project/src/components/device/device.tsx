@@ -4,7 +4,7 @@ import '../layout/menubar';
 import { Topbar } from '../layout/topbar';
 import { Menubar } from '../layout/menubar';
 import { AiOutlinePlus, AiOutlineSearch } from "react-icons/ai";
-import Table from './tabale';
+import TableDevice from './tabale-device';
 
 class Device extends React.Component {
     render() {
@@ -47,8 +47,8 @@ class Device extends React.Component {
                         </div>
                     </div>
                     <div className='title-report-type'>Danh sách thiết bị</div>
-                    <Table />
-                    <Topbar nametitle1='Thiết bị > ' nametitle2='' nametitle3='Danh sách thiết bị' href='' href2='' nametitle21='' />
+                    <TableDevice />
+                    <Topbar nametitle1='Thiết bị ﹥ ' nametitle2='' nametitle3='Danh sách thiết bị' href='' href2='' nametitle21='' />
                     <Menubar buttonid="tb" />
 
                 </div>

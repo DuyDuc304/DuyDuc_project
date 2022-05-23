@@ -19,7 +19,7 @@ class Report extends React.Component {
                             </div>
                         </div>
                     </a>
-                    <Topbar nametitle1='Báo cáo >' nametitle2='' nametitle3='Lập báo cáo' href='' href2='' nametitle21='' />
+                    <Topbar nametitle1='Báo cáo ﹥' nametitle2='' nametitle3='Lập báo cáo' href='' href2='' nametitle21='' />
                     <Menubar buttonid="bc" />
 
                 </div>

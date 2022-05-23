@@ -6,7 +6,7 @@ const Calenda: React.FC = () => {
     const [value, onChange] = useState(new Date());
     return (
         <div className='calendar'>
-            <Calendar onChange={onChange} value={value} />
+            <Calendar onChange={onChange} value={value} locale='en' />
         </div>
     );
 };
