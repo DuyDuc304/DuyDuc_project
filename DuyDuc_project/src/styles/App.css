@@ -790,7 +790,7 @@
    border-radius: 12px;
  }
 
- .chart img {
+ .chart-line {
    position: absolute;
    width: 754px;
    height: 373px;

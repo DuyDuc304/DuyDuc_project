@@ -19,6 +19,7 @@ class Dashboard extends React.Component {
         return (
             <div className='bg'>
                 <div className="Backgroundapp">
+                    <Chart defaulchart='ngày' />
                     <span className='title-report-type'>Biểu đồ cấp số</span>
                     <div className='report-chart-type-list'>
 
@@ -77,12 +78,8 @@ class Dashboard extends React.Component {
                             </div>
                         </a>
 
-
-
-
-
                     </div>
-                    <Chart defaulchart='ngày' />
+
                     <AllAbout />
                     <Topbar nametitle1='' nametitle2='' nametitle3='Dashboard' href='' href2='' nametitle21='' />
                     <Menubar buttonid="db" />

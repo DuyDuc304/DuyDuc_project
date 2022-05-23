@@ -13,7 +13,7 @@ import Device from './components/device/device';
 import NumberOrder from './components/numberoder/numberorder';
 import Service from './components/service/service';
 import Dashboard from './components/dashboard/dashboard';
-import Report from './components/report';
+import Report from './components/report/report';
 import RoleUser from './components/setting/roleuser/roleuser';
 import AccountUser from './components/setting/accountuser/accountuser';
 import DiaryUser from './components/setting/diaryuser/diaryuser';
