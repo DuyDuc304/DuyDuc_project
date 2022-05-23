@@ -55,13 +55,13 @@ class TableDevice extends React.Component {
                     </div>
                     <div className="colum4">
                         <div className="div-center">
-                            <p style={{ color: " red", fontSize: '30px', margin: 'auto' }}>•</p>
+                            <p style={{ color: " #EC3740", fontSize: '30px', margin: 'auto' }}>•</p>
                             <p> Ngừng hoạt động</p>
                         </div>
                     </div>
                     <div className="colum5">
                         <div className="div-center">
-                            <p style={{ color: " red", fontSize: '30px' }}>•</p>
+                            <p style={{ color: " #EC3740", fontSize: '30px' }}>•</p>
                             <p> Ngừng kết nối</p>
                         </div>
 
@@ -134,7 +134,7 @@ class TableDevice extends React.Component {
                     </div>
                     <div className="colum5">
                         <div className="div-center">
-                            <p style={{ color: " red", fontSize: '30px' }}>•</p>
+                            <p style={{ color: " #EC3740", fontSize: '30px' }}>•</p>
                             <p>Mất kết nối</p>
                         </div>
 
@@ -170,7 +170,7 @@ class TableDevice extends React.Component {
                     </div>
                     <div className="colum5">
                         <div className="div-center">
-                            <p style={{ color: " red", fontSize: '30px' }}>•</p>
+                            <p style={{ color: " #EC3740", fontSize: '30px' }}>•</p>
                             <p>Mất kết nối</p>
                         </div>
 
@@ -206,7 +206,7 @@ class TableDevice extends React.Component {
                     </div>
                     <div className="colum5">
                         <div className="div-center">
-                            <p style={{ color: " red", fontSize: '30px' }}>•</p>
+                            <p style={{ color: " #EC3740", fontSize: '30px' }}>•</p>
                             <p>Mát kết nối</p>
                         </div>
 
@@ -236,7 +236,7 @@ class TableDevice extends React.Component {
                     </div>
                     <div className="colum4">
                         <div className="div-center">
-                            <p style={{ color: " red", fontSize: '30px', margin: 'auto' }}>•</p>
+                            <p style={{ color: " #EC3740", fontSize: '30px', margin: 'auto' }}>•</p>
                             <p> Ngừng hoạt động</p>
                         </div>
                     </div>
@@ -308,7 +308,7 @@ class TableDevice extends React.Component {
                     </div>
                     <div className="colum4">
                         <div className="div-center">
-                            <p style={{ color: " red", fontSize: '30px', margin: 'auto' }}>•</p>
+                            <p style={{ color: " #EC3740", fontSize: '30px', margin: 'auto' }}>•</p>
                             <p> Ngừng hoạt động</p>
                         </div>
                     </div>
@@ -344,7 +344,7 @@ class TableDevice extends React.Component {
                     </div>
                     <div className="colum4">
                         <div className="div-center">
-                            <p style={{ color: " red", fontSize: '30px', margin: 'auto' }}>•</p>
+                            <p style={{ color: " #EC3740", fontSize: '30px', margin: 'auto' }}>•</p>
                             <p> Ngừng hoạt động</p>
                         </div>
                     </div>

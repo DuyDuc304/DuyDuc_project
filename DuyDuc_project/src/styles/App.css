@@ -1725,3 +1725,51 @@
    background-color: #FF9138;
    color: #FFFFFF;
  }
+
+ .ctg {
+   display: flex;
+   flex-direction: column;
+   position: absolute;
+   width: 320px;
+   height: 72px;
+   left: 548px;
+   top: 156px;
+ }
+
+ .ctg-row {
+   display: flex;
+   flex-direction: row;
+   margin: auto;
+ }
+
+ .daytime-picker {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   margin: auto;
+   gap: 8px;
+   height: 44px;
+   width: 150px;
+
+   background: #FFFFFF;
+   border: 1.5px solid #D4D4D7;
+   border-radius: 8px;
+ }
+
+ .daytime-picker p {
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 24px;
+   color: #A9A9B0;
+   display: flex;
+   flex: 3;
+ }
+
+ .icon-calendar {
+   display: flex;
+   flex: 1;
+   font-size: 20px;
+   color: #FF7506;
+ }
