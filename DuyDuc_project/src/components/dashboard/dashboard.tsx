@@ -4,12 +4,13 @@ import '../layout/menubar';
 import { Topbar } from '../layout/topbar';
 import { Menubar } from '../layout/menubar';
 import Chart from './chart';
-import AllAbout from './allabout';
+
 import sttdc from './sttdc.svg';
 import sttdd from './sttdd.svg';
 import sttc from './sttc.svg';
 import sttdx from './sttdx.svg';
 import { BsArrowDownShort, BsArrowUpShort } from 'react-icons/bs';
+import { AllAbout } from './allabout';
 
 
 

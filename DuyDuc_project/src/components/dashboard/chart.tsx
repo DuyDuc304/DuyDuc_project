@@ -1,8 +1,7 @@
-
+import 'chart.js/auto';
 import { FC, useState } from 'react';
-import ApexChartss from 'apexcharts';
-
-
+import 'chart.js/auto';
+import { Line } from 'react-chartjs-2';
 type FruitProps = {
     defaulchart: string;
 }
@@ -38,7 +37,7 @@ export const Chart: FC<FruitProps> = ({ defaulchart }) => {
 
     };
     const datatuan = {
-        labels: ["tuần 1", "tuần 2", "tuần 3", "tuần4"],
+        labels: ["Tuần 1", "Tuần 2", "Tuần 3", "Tuần 4"],
         datasets: [
             {
                 label: "Số người sử dụng trong tuần",
@@ -51,10 +50,26 @@ export const Chart: FC<FruitProps> = ({ defaulchart }) => {
         ],
 
     };
+    const datangay = {
+        labels: ["1", '15', '22', '25', '31'],
+        datasets: [
+            {
+                label: 'Số người sử dụng trong ngày',
+                data: [3300, 5300, 6500, 4100, 4400],
+                fill: true,
+                backgroundColor: 'rgba(206, 221, 255, 0.5)',
+                tension: 0.3,
+                borderColor: " #5185F7",
+            },
+
+        ],
 
 
 
 
+
+
+    };
 
     const daytime = (a: string) => {
 
@@ -114,19 +129,17 @@ export const Chart: FC<FruitProps> = ({ defaulchart }) => {
                     </select>
                 </form>
             </div>
-            <div className='chart-line' id='ngay' style={{ display: "block" }} >
+            <div className='chart-line' >
+                <Line data={datangay} id='ngay' style={{ display: "block" }} />
 
             </div>
+            <div className='chart-line'  >
 
-
-
-            <div className='chart-line' id='tuan' style={{ display: "none" }}  >
-
-
+                <Line data={datatuan} id='tuan' style={{ display: "none" }} />
             </div>
-            <div className='chart-line' id='thang' style={{ display: "none" }}  >
+            <div className='chart-line' >
 
-
+                <Line data={datathang} id='thang' style={{ display: "none" }} />
 
             </div>
 
@@ -139,8 +152,4 @@ export const Chart: FC<FruitProps> = ({ defaulchart }) => {
 
 
 export default Chart;
-
-function props(props: any) {
-    throw new Error('Function not implemented.');
-}
 //  <img src={ChartImg} alt="chart" />
