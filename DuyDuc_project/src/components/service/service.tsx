@@ -5,6 +5,7 @@ import { Topbar } from '../layout/topbar';
 import { Menubar } from '../layout/menubar';
 import { AiOutlinePlus } from 'react-icons/ai';
 import TableService from './table-service';
+import Nextpage from '../layout/nextpage';
 
 
 class Service extends React.Component {
@@ -23,6 +24,7 @@ class Service extends React.Component {
                         </div>
                     </a>
                     <TableService />
+                    <Nextpage />
                     <Topbar nametitle1='Dịch vụ ﹥ ' nametitle2='' nametitle3='Danh sách dịch vụ' href='' href2='' nametitle21='' />
                     <Menubar buttonid="dv" />
 

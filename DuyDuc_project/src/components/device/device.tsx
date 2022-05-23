@@ -5,6 +5,7 @@ import { Topbar } from '../layout/topbar';
 import { Menubar } from '../layout/menubar';
 import { AiOutlinePlus, AiOutlineSearch } from "react-icons/ai";
 import TableDevice from './tabale-device';
+import Nextpage from '../layout/nextpage';
 
 class Device extends React.Component {
     render() {
@@ -48,6 +49,7 @@ class Device extends React.Component {
                     </div>
                     <div className='title-report-type'>Danh sách thiết bị</div>
                     <TableDevice />
+                    <Nextpage />
                     <Topbar nametitle1='Thiết bị ﹥ ' nametitle2='' nametitle3='Danh sách thiết bị' href='' href2='' nametitle21='' />
                     <Menubar buttonid="tb" />
 

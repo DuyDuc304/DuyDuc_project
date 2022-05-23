@@ -1656,3 +1656,67 @@
    background-color: #FFF2E7;
 
  }
+
+ .row-nextpage {
+   margin: auto;
+   display: flex;
+   flex-direction: row;
+   align-items: flex-start;
+
+   position: absolute;
+   width: 288px;
+   height: 32px;
+   left: 1048px;
+   top: 750px;
+ }
+
+ .page-number {
+   display: flex;
+   margin: auto;
+   width: 32px;
+   height: 32px;
+   color: #7E7D88;
+   border-radius: 4px;
+   flex: none;
+   order: 1;
+   flex-grow: 0;
+
+ }
+
+ .page-number-onclick {
+   display: flex;
+   margin: auto;
+   width: 32px;
+   height: 32px;
+   background-color: #FF9138;
+   color: #FFFFFF;
+   border-radius: 4px;
+   flex: none;
+   order: 1;
+   flex-grow: 0;
+
+ }
+
+ .page-number-onclick p {
+   display: flex;
+   margin: auto;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 22px;
+ }
+
+ .page-number p {
+   display: flex;
+   margin: auto;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 22px;
+
+ }
+
+ .page-number:hover {
+   background-color: #FF9138;
+   color: #FFFFFF;
+ }
