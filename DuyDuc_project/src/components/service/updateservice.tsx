@@ -71,7 +71,7 @@ class UpdateService extends React.Component {
 
                             </div>
                             <div className='row-checkbox'>
-                                <label className="container">reset mỗi ngày
+                                <label className="container">Reset mỗi ngày
                                     <input name='reset' type="checkbox" ></input>
                                     <span className="checkmark"></span>
                                 </label>

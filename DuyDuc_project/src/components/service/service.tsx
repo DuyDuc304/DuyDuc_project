@@ -62,12 +62,12 @@ class Service extends React.Component {
                         <div className='ctg-row '>
                             <div className='daytime-picker' onClick={this.OnClick}>
                                 <FaRegCalendarAlt className='icon-calendar' />
-                                <p>{setday}</p>
+                                <p > {setday}</p>
                             </div>
                             <p style={{ color: '#535261', margin: '10px', display: 'flex' }} >▸</p>
                             <div className='daytime-picker'>
                                 <FaRegCalendarAlt className='icon-calendar' />
-                                <p>{setday}</p>
+                                <p >{setday}</p>
                             </div>
 
                         </div>
