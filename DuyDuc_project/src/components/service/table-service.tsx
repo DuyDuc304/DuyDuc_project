@@ -54,7 +54,7 @@ class TableService extends React.Component {
                         </div>
                     </div>
                     <div className="colum5-service">
-                        <a href="">Chi tiết</a>
+                        <a href="/Service/InfoService">Chi tiết</a>
                     </div>
                     <div className="colum6-service">
                         <a href="/Service/UpdateService"> Cập nhật</a>
@@ -77,7 +77,7 @@ class TableService extends React.Component {
                         </div>
                     </div>
                     <div className="colum5-service">
-                        <a href="">Chi tiết</a>
+                        <a href="/Service/InfoService">Chi tiết</a>
                     </div>
                     <div className="colum6-service">
                         <a href="/Service/UpdateService"> Cập nhật</a>
@@ -100,7 +100,7 @@ class TableService extends React.Component {
                         </div>
                     </div>
                     <div className="colum5-service">
-                        <a href="">Chi tiết</a>
+                        <a href="/Service/InfoService">Chi tiết</a>
                     </div>
                     <div className="colum6-service">
                         <a href="/Service/UpdateService"> Cập nhật</a>
@@ -123,7 +123,7 @@ class TableService extends React.Component {
                         </div>
                     </div>
                     <div className="colum5-service">
-                        <a href="">Chi tiết</a>
+                        <a href="/Service/InfoService">Chi tiết</a>
                     </div>
                     <div className="colum6-service">
                         <a href="/Service/UpdateService"> Cập nhật</a>
@@ -146,7 +146,7 @@ class TableService extends React.Component {
                         </div>
                     </div>
                     <div className="colum5-service">
-                        <a href="">Chi tiết</a>
+                        <a href="/Service/InfoService">Chi tiết</a>
                     </div>
                     <div className="colum6-service">
                         <a href="/Service/UpdateService"> Cập nhật</a>
@@ -169,7 +169,7 @@ class TableService extends React.Component {
                         </div>
                     </div>
                     <div className="colum5-service">
-                        <a href="">Chi tiết</a>
+                        <a href="/Service/InfoService">Chi tiết</a>
                     </div>
                     <div className="colum6-service">
                         <a href="/Service/UpdateService"> Cập nhật</a>
@@ -192,7 +192,7 @@ class TableService extends React.Component {
                         </div>
                     </div>
                     <div className="colum5-service">
-                        <a href="">Chi tiết</a>
+                        <a href="/Service/InfoService">Chi tiết</a>
                     </div>
                     <div className="colum6-service">
                         <a href="/Service/UpdateService"> Cập nhật</a>
@@ -215,7 +215,7 @@ class TableService extends React.Component {
                         </div>
                     </div>
                     <div className="colum5-service">
-                        <a href="">Chi tiết</a>
+                        <a href="/Service/InfoService">Chi tiết</a>
                     </div>
                     <div className="colum6-service">
                         <a href="/Service/UpdateService"> Cập nhật</a>
@@ -238,7 +238,7 @@ class TableService extends React.Component {
                         </div>
                     </div>
                     <div className="colum5-service">
-                        <a href="">Chi tiết</a>
+                        <a href="/Service/InfoService">Chi tiết</a>
                     </div>
                     <div className="colum6-service">
                         <a href="/Service/UpdateService"> Cập nhật</a>

@@ -14,6 +14,7 @@ let day = newDate.getDate();
 let month = newDate.getMonth() + 1;
 let year = newDate.getFullYear();
 let setday = day + "/" + month + "/" + year;
+
 class Service extends React.Component {
     OnClick() {
         const cld: any = document.querySelector('.daytime-picker-caledar')

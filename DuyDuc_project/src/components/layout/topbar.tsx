@@ -12,15 +12,13 @@ type titlepros = {
 export const Topbar = (props: titlepros) => {
 
     const handleNotice = () => {
-        const btn: any = document.querySelector(".notice")
+        const bell: any = document.querySelector(".notice")
         const notice: any = document.querySelector(".notice-user")
-        if (btn.classList.toggle("button-notice-active")) {
+        if (bell.classList.toggle("button-notice-active")) {
             notice.style.display = 'flex';
         } else {
             notice.style.display = 'none';
         }
-
-
     }
     return (
         <div className='topbar'>
