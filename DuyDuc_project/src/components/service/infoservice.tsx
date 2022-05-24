@@ -100,7 +100,72 @@ class InfoService extends React.Component {
 
                             </div>
                         </div>
-
+                        <div className="table-service-tt">
+                            <div className="table-service-tt-colum-stt">
+                                <div className="row-stt1"><p>Số thứ tự</p></div>
+                                <div className="row-chung2"><p>2010001</p></div>
+                                <div className="row-chung3"><p>2010002</p></div>
+                                <div className="row-chung2"><p>2010003</p></div>
+                                <div className="row-chung3"><p>2010004</p></div>
+                                <div className="row-chung2"><p>2010005</p></div>
+                                <div className="row-chung3"><p>2010006</p></div>
+                                <div className="row-chung2"><p>2010007</p></div>
+                                <div className="row-stt4"><p>2010008</p></div>
+                            </div>
+                            <div className="table-service-tt-colum-tt">
+                                <div className="row-tt1">
+                                    <p>Trạng thái</p>
+                                </div>
+                                <div className="row-chung2">
+                                    <div className="div-center">
+                                        <p style={{ color: " #35C75A", fontSize: '30px', margin: 'auto' }}>•</p>
+                                        <p>Đã hoàn thành</p>
+                                    </div>
+                                </div>
+                                <div className="row-chung3">
+                                    <div className="div-center">
+                                        <p style={{ color: " #5490EB", fontSize: '30px', margin: 'auto' }}>•</p>
+                                        <p>Đang thực hiện</p>
+                                    </div>
+                                </div>
+                                <div className="row-chung2">
+                                    <div className="div-center">
+                                        <p style={{ color: " #35C75A", fontSize: '30px', margin: 'auto' }}>•</p>
+                                        <p>Đã hoàn thành</p>
+                                    </div>
+                                </div>
+                                <div className="row-chung3">
+                                    <div className="div-center">
+                                        <p style={{ color: " #6C7585", fontSize: '30px', margin: 'auto' }}>•</p>
+                                        <p>Vắng</p>
+                                    </div>
+                                </div>
+                                <div className="row-chung2">
+                                    <div className="div-center">
+                                        <p style={{ color: " #35C75A", fontSize: '30px', margin: 'auto' }}>•</p>
+                                        <p>Đã hoàn thành</p>
+                                    </div>
+                                </div>
+                                <div className="row-chung3">
+                                    <div className="div-center">
+                                        <p style={{ color: " #5490EB", fontSize: '30px', margin: 'auto' }}>•</p>
+                                        <p>Đang thực hiện</p>
+                                    </div>
+                                </div>
+                                <div className="row-chung2">
+                                    <div className="div-center">
+                                        <p style={{ color: " #6C7585", fontSize: '30px', margin: 'auto' }}>•</p>
+                                        <p>Vắng</p>
+                                    </div>
+                                </div>
+                                <div className="row-tt4">
+                                    <div className="div-center">
+                                        <p style={{ color: " #35C75A", fontSize: '30px', margin: 'auto' }}>•</p>
+                                        <p>Đã hoàn thành</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div className='daytime-picker-caledar-infoscv' id='cldsv'>
