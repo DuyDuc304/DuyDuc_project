@@ -79,7 +79,10 @@ class Login extends React.Component {
                     <p >Mật khẩu *</p>
                     <div className='row-myform'>
                       <input className='input-have-eye' type="password" id="pw" name='password' placeholder="Nhập mật khẩu"></input>
-                      <a className='button-eye' onClick={this.showpw} id='eye'> <FiEyeOff className='icon-eye' id='show' /> <FiEye className='icon-eye' id='hide' style={{ display: 'none' }} /></a>
+                      <a className='button-eye' onClick={this.showpw} id='eye'>
+                        <FiEyeOff className='icon-eye' id='show' />
+                        <FiEye className='icon-eye' id='hide' style={{ display: 'none' }} />
+                      </a>
                     </div>
                     <div style={{ margin: "0px 0px 0px 3px" }}><a className='myform-a' href='/ressetpw'>Quên mật khẩu?</a></div>
                   </div>

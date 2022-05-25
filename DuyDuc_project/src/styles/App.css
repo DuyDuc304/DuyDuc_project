@@ -282,7 +282,7 @@
  }
 
  .menubar {
-   position: relative;
+   position: absolute;
    width: 200px;
    height: 810px;
    background: #FFFFFF;
@@ -1323,6 +1323,7 @@
    display: flex;
    flex-direction: row;
    gap: 32px;
+   cursor: pointer;
  }
 
  .div-more {
@@ -2440,15 +2441,116 @@
    flex-direction: row;
    justify-content: space-between;
    align-items: center;
-
    gap: 24px;
-
    width: 400px;
    height: 44px;
-
-
    background: #FFFFFF;
    margin-bottom: 80px;
    border: 1.5px solid #D4D4D7;
    border-radius: 8px;
+ }
+
+ .popup {
+   display: none;
+   position: absolute;
+   z-index: 1;
+
+   left: 0;
+   top: 0;
+   width: 1440px;
+   height: 810px;
+   overflow: auto;
+   background-color: rgba(0, 0, 0, 0.6);
+   border-radius: 16px;
+ }
+
+ .popup-content {
+   width: 469px;
+   height: 385px;
+   background: #FFFFFF;
+   border-radius: 24px;
+   margin: auto;
+   margin-top: 220px;
+   display: flex;
+   flex-direction: column;
+ }
+
+ .popup-content-time {
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+   padding-top: 20px;
+   width: 469px;
+   height: 90px;
+   background: #FF9138;
+   border-bottom-left-radius: 24px;
+   border-bottom-right-radius: 24px;
+ }
+
+ .popup-content-time p {
+   font-style: normal;
+   font-weight: 600;
+   font-size: 22px;
+   line-height: 33px;
+   color: #FFFFFF;
+   padding-left: 67px;
+ }
+
+ .popup-content-info {
+   display: flex;
+
+   flex-direction: column;
+   border-top-left-radius: 24px;
+   border-top-right-radius: 24px;
+   width: 469px;
+   height: 275px;
+ }
+
+ .popup-content-info-sttdc {
+
+
+   display: flex;
+   margin: auto;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 32px;
+   line-height: 48px;
+   color: #535261;
+   margin-top: 48px;
+ }
+
+ .popup-content-info-num {
+   left: 117px;
+   top: 120px;
+   display: flex;
+   margin: auto;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 56px;
+   line-height: 60px;
+   color: #FF7506;
+ }
+
+ .popup-content-info-dvsd {
+   display: flex;
+   margin: auto;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 27px;
+   color: #282739;
+   margin-bottom: 44px;
+ }
+
+ .close-popup {
+   position: absolute;
+   width: 24px;
+   height: 24px;
+   margin-top: 16px;
+   margin-left: 429px;
+ }
+
+ .icon-close-popup {
+   font-size: 24px;
+   color: #FF9138;
  }

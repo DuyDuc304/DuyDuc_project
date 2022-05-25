@@ -40,10 +40,7 @@ class RessetPW extends React.Component {
 
     changeform(e: React.SyntheticEvent) {
         e.preventDefault();
-        const target = e.target as typeof e.target & {
-            email: { value: string };
-        };
-        const email = target.email.value;
+
         const resetpw: any = document.querySelector(".login")
         const restpwstep2: any = document.querySelector(".loginfail")
         restpwstep2.style.display = 'block';
