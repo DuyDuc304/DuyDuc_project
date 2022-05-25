@@ -2671,3 +2671,62 @@
    background: #FFFFFF;
    outline: none;
  }
+
+ .roleuser-pqcn {
+   overflow-y: scroll;
+   overflow-x: hidden;
+   margin-top: 8px;
+
+   width: 560px;
+   height: 420px;
+   right: 24px;
+   top: 90px;
+   background-color: #FFF2E7;
+   border-radius: 8px;
+ }
+
+ .roleuser-layout {
+   position: absolute;
+   width: 1192px;
+   height: 534px;
+   left: 224px;
+   top: 172px;
+   display: flex;
+   flex-direction: column;
+   background: #FFFFFF;
+   box-shadow: 2px 2px 8px rgba(232, 239, 244, 0.8);
+   border-radius: 16px
+ }
+
+
+ .roleuser-pqcn::-webkit-scrollbar {
+   width: 4px;
+ }
+
+ .roleuser-pqcn::-webkit-scrollbar-thumb {
+   position: absolute;
+   width: 4px;
+   height: 64px;
+   background: #FFC89B;
+   border-radius: 43px
+ }
+
+ .div-ncn {
+   display: flex;
+   flex-direction: column;
+
+   margin: auto;
+   width: 560px;
+   height: 210px;
+
+ }
+
+ .title-ncn {
+   margin-top: 12px;
+   margin-left: 12px;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 30px;
+   color: #FF7506;
+ }

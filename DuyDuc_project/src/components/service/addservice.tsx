@@ -38,7 +38,7 @@ class AddService extends React.Component {
                                             <p className='text-mota'>Mô tả:</p>
                                         </ div>
 
-                                        <textarea name='MatKhau' placeholder="Mô tả dịch vụ" className='input-mota'></textarea>
+                                        <textarea name='Mota' placeholder="Mô tả dịch vụ" className='input-mota'></textarea>
 
                                     </div>
                                 </div>
