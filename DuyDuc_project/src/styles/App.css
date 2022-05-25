@@ -1803,7 +1803,6 @@
  .input-mota {
    box-sizing: border-box;
    display: flex;
-   margin-top: 8px;
    word-wrap: break-word;
    word-break: break-all;
    flex-direction: row;
@@ -2675,12 +2674,10 @@
  .roleuser-pqcn {
    overflow-y: scroll;
    overflow-x: hidden;
-   margin-top: 8px;
 
    width: 560px;
-   height: 420px;
-   right: 24px;
-   top: 90px;
+   height: 415px;
+
    background-color: #FFF2E7;
    border-radius: 8px;
  }
@@ -2691,6 +2688,7 @@
    height: 534px;
    left: 224px;
    top: 172px;
+   padding-right: 0px;
    display: flex;
    flex-direction: column;
    background: #FFFFFF;
@@ -2714,10 +2712,9 @@
  .div-ncn {
    display: flex;
    flex-direction: column;
-
    margin: auto;
    width: 560px;
-   height: 210px;
+   height: 200px;
 
  }
 

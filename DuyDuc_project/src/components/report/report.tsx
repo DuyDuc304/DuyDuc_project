@@ -41,7 +41,7 @@ class Report extends React.Component {
                     </a>
                     <div className='ctg-report '>
                         <p className='ctg-report-p'>Chọn thời gian</p>
-                        <div className='ctg-row '>
+                        <div className='ctg-row ' style={{ marginTop: '-5px' }}>
                             <div className='daytime-picker-qlcs' onClick={this.OnClick} >
                                 <FaRegCalendarAlt className='icon-calendar' />
                                 <p>{setday}</p>

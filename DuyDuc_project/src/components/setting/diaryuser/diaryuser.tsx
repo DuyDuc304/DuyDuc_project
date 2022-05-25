@@ -32,7 +32,7 @@ class DiaryUser extends React.Component {
                 <div className="Backgroundapp">
                     <div className='ctg-report '>
                         <p className='ctg-report-p'>Chọn thời gian</p>
-                        <div className='ctg-row '>
+                        <div className='ctg-row ' style={{ marginTop: '-5px' }}>
                             <div className='daytime-picker-qlcs' onClick={this.OnClick} >
                                 <FaRegCalendarAlt className='icon-calendar' />
                                 <p>{setday}</p>
@@ -46,7 +46,7 @@ class DiaryUser extends React.Component {
                     </div>
                     <div className="tk-diary">
                         <p>Từ khóa</p>
-                        <div className='sreach-qlcs' >
+                        <div className='sreach-qlcs' style={{ marginTop: '-5px' }} >
                             <form  >
                                 <input type="text" name='timkiem' placeholder="Nhập từ khóa ..." style={{ fontSize: '14px' }} ></input>
                                 <button className="sreach-sv-button" type='submit'><AiOutlineSearch /></button>
