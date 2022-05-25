@@ -1,0 +1,48 @@
+.tk-diary {
+    position: absolute;
+    width: 240px;
+    height: 72px;
+    left: 1092px;
+    top: 104px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+}
+
+.tk-diary p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #282739;
+    padding-bottom: 10px;
+}
+
+.col1-diary {
+    display: flex;
+    width: 266px;
+    height: 49px;
+    border-right: 1px solid #FFE3CD;
+}
+
+.col2-diary {
+    display: flex;
+    width: 240px;
+    height: 49px;
+    border-right: 1px solid #FFE3CD;
+}
+
+.col3-diary {
+    display: flex;
+    width: 216px;
+    height: 49px;
+    border-right: 1px solid #FFE3CD;
+}
+
+.col4-diary {
+    display: flex;
+    width: 386px;
+    height: 49px;
+
+}

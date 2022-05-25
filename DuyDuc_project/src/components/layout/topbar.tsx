@@ -42,49 +42,49 @@ export const Topbar = (props: titlepros) => {
                 <div className="notice-title"><p>Thông báo</p></div>
                 <div className="notice-list" id="style-1" >
                     <ul >
-                        <a href="#" className="notline">
+                        <a href="/NumberOrder/InfoNumberOrder" className="notline">
                             <li className="notice-item">
                                 <p className="notice-name-user"> Người dùng: Nguyễn Duy Đức</p>
                                 <p className="notice-content-user">Thời gian nhận sô: 12h ngày 18/05/2022</p>
                             </li>
                         </a>
-                        <a href="#" className="notline">
+                        <a href="/NumberOrder/InfoNumberOrder" className="notline">
                             <li className="notice-item">
                                 <p className="notice-name-user"> Người dùng: Nguyễn Duy Đức</p>
                                 <p className="notice-content-user">Thời gian nhận sô: 12h ngày 18/05/2022</p>
                             </li>
                         </a>
-                        <a href="#" className="notline">
+                        <a href="/NumberOrder/InfoNumberOrder" className="notline">
                             <li className="notice-item">
                                 <p className="notice-name-user"> Người dùng: Nguyễn Duy Đức</p>
                                 <p className="notice-content-user">Thời gian nhận sô: 12h ngày 18/05/2022</p>
                             </li>
                         </a>
-                        <a href="#" className="notline">
+                        <a href="/NumberOrder/InfoNumberOrder" className="notline">
                             <li className="notice-item">
                                 <p className="notice-name-user"> Người dùng: Nguyễn Duy Đức</p>
                                 <p className="notice-content-user">Thời gian nhận sô: 12h ngày 18/05/2022</p>
                             </li>
                         </a>
-                        <a href="#" className="notline">
+                        <a href="/NumberOrder/InfoNumberOrder" className="notline">
                             <li className="notice-item">
                                 <p className="notice-name-user"> Người dùng: Nguyễn Duy Đức</p>
                                 <p className="notice-content-user">Thời gian nhận sô: 12h ngày 18/05/2022</p>
                             </li>
                         </a>
-                        <a href="#" className="notline">
+                        <a href="/NumberOrder/InfoNumberOrder" className="notline">
                             <li className="notice-item">
                                 <p className="notice-name-user"> Người dùng: Nguyễn Duy Đức</p>
                                 <p className="notice-content-user">Thời gian nhận sô: 12h ngày 18/05/2022</p>
                             </li>
                         </a>
-                        <a href="#" className="notline">
+                        <a href="/NumberOrder/InfoNumberOrder" className="notline">
                             <li className="notice-item">
                                 <p className="notice-name-user"> Người dùng: Nguyễn Duy Đức</p>
                                 <p className="notice-content-user">Thời gian nhận sô: 12h ngày 18/05/2022</p>
                             </li>
                         </a>
-                        <a href="#" className="notline">
+                        <a href="/NumberOrder/InfoNumberOrder" className="notline">
                             <li className="notice-item">
                                 <p className="notice-name-user"> Người dùng: Nguyễn Duy Đức</p>
                                 <p className="notice-content-user">Thời gian nhận sô: 12h ngày 18/05/2022</p>
