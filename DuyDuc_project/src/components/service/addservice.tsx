@@ -1,5 +1,5 @@
 import React from 'react';
-import Calendar from 'react-calendar';
+
 import { Menubar } from '../layout/menubar';
 import { Topbar } from '../layout/topbar';
 

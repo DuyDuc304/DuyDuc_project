@@ -1,0 +1,52 @@
+.col2-accuser {
+    display: flex;
+    width: 166px;
+    height: 49px;
+    border-right: 1px solid #FFE3CD;
+}
+
+.col1-accuser {
+    display: flex;
+    width: 150px;
+    height: 49px;
+    border-right: 1px solid #FFE3CD;
+}
+
+.col3-accuser {
+    display: flex;
+    width: 130px;
+    height: 49px;
+    border-right: 1px solid #FFE3CD;
+}
+
+.col4-accuser {
+    display: flex;
+    width: 255px;
+    height: 49px;
+    border-right: 1px solid #FFE3CD;
+}
+
+.col5-accuser {
+    display: flex;
+    width: 114px;
+    height: 49px;
+    border-right: 1px solid #FFE3CD;
+}
+
+.col6-accuser {
+    display: flex;
+    width: 193px;
+    height: 49px;
+    border-right: 1px solid #FFE3CD;
+}
+
+.col7-accuser {
+    display: flex;
+    width: 99px;
+    height: 49px;
+}
+
+.col7-accuser a {
+    padding-left: 14px;
+    padding-top: 14px;
+}

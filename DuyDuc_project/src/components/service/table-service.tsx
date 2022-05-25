@@ -50,7 +50,7 @@ class TableService extends React.Component {
                     <div className="colum4-service">
                         <div className="div-center">
                             <p style={{ color: " #35C75A", fontSize: '30px', margin: 'auto' }}>•</p>
-                            <p>Kết nối</p>
+                            <p>Hoạt động</p>
                         </div>
                     </div>
                     <div className="colum5-service">
@@ -73,7 +73,7 @@ class TableService extends React.Component {
                     <div className="colum4-service">
                         <div className="div-center">
                             <p style={{ color: " #35C75A", fontSize: '30px', margin: 'auto' }}>•</p>
-                            <p>Kết nối</p>
+                            <p>Hoạt động</p>
                         </div>
                     </div>
                     <div className="colum5-service">
@@ -96,7 +96,7 @@ class TableService extends React.Component {
                     <div className="colum4-service">
                         <div className="div-center">
                             <p style={{ color: " #EC3740", fontSize: '30px', margin: 'auto' }}>•</p>
-                            <p>Ngừng kết nối</p>
+                            <p>Ngừng hoạt động</p>
                         </div>
                     </div>
                     <div className="colum5-service">
@@ -119,7 +119,7 @@ class TableService extends React.Component {
                     <div className="colum4-service">
                         <div className="div-center">
                             <p style={{ color: " #35C75A", fontSize: '30px', margin: 'auto' }}>•</p>
-                            <p>Kết nối</p>
+                            <p>Hoạt động</p>
                         </div>
                     </div>
                     <div className="colum5-service">
@@ -142,7 +142,7 @@ class TableService extends React.Component {
                     <div className="colum4-service">
                         <div className="div-center">
                             <p style={{ color: " #35C75A", fontSize: '30px', margin: 'auto' }}>•</p>
-                            <p>Kết nối</p>
+                            <p>Hoạt động</p>
                         </div>
                     </div>
                     <div className="colum5-service">
@@ -165,7 +165,7 @@ class TableService extends React.Component {
                     <div className="colum4-service">
                         <div className="div-center">
                             <p style={{ color: " #35C75A", fontSize: '30px', margin: 'auto' }}>•</p>
-                            <p>Kết nối</p>
+                            <p>Hoạt động</p>
                         </div>
                     </div>
                     <div className="colum5-service">
@@ -188,7 +188,7 @@ class TableService extends React.Component {
                     <div className="colum4-service">
                         <div className="div-center">
                             <p style={{ color: " #EC3740", fontSize: '30px', margin: 'auto' }}>•</p>
-                            <p>Ngừng kết nối</p>
+                            <p>Ngừng hoạt động</p>
                         </div>
                     </div>
                     <div className="colum5-service">
@@ -211,7 +211,7 @@ class TableService extends React.Component {
                     <div className="colum4-service">
                         <div className="div-center">
                             <p style={{ color: " #35C75A", fontSize: '30px', margin: 'auto' }}>•</p>
-                            <p>Kết nối</p>
+                            <p>Hoạt động</p>
                         </div>
                     </div>
                     <div className="colum5-service">
@@ -234,7 +234,7 @@ class TableService extends React.Component {
                     <div className="colum4-service">
                         <div className="div-center">
                             <p style={{ color: " #35C75A", fontSize: '30px', margin: 'auto' }}>•</p>
-                            <p>Kết nối</p>
+                            <p>Hoạt động</p>
                         </div>
                     </div>
                     <div className="colum5-service">

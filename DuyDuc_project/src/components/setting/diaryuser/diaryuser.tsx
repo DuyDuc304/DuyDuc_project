@@ -18,7 +18,7 @@ let setday = day + "/" + month + "/" + year;
 class DiaryUser extends React.Component {
     OnClick() {
         const cld: any = document.getElementById('cldsv')
-        if (cld.style.display == "none") {
+        if (cld.style.display === "none") {
             cld.style.display = "block";
         } else {
             cld.style.display = 'none';

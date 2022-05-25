@@ -111,7 +111,7 @@ class Login extends React.Component {
                     </div>
                     <div style={{ display: 'flex', margin: "0px 0px 0px 2px" }}>
 
-                      <BiErrorCircle className='icon' style={{ color: 'red', flex: 'none' }} /> <p style={{ flex: '4', margin: 'auto', color: 'red', fontSize: '14px' }}>Sai mật khẩu và hoặc tên đăng nhập</p>
+                      <BiErrorCircle className='icon' style={{ color: 'red', flex: 'none', marginRight: '4px' }} /> <p style={{ flex: '4', margin: 'auto', color: 'red', fontSize: '14px' }}>Sai mật khẩu hoặc tên đăng nhập</p>
                     </div>
                   </div>
                   <div className='col2'>

@@ -32,18 +32,20 @@ class InfoService extends React.Component {
                     <div className="colum-service-ttdv">
                         <p className='text-tttb'>Thông tin dịch vụ</p>
                         <table className='table-infoservice'>
-                            <tr>
-                                <th>Mã dịch vụ:</th>
-                                <td>201</td>
-                            </tr>
-                            <tr>
-                                <th>Tên dịch vụ:</th>
-                                <td>Khám tim mạch</td>
-                            </tr>
-                            <tr>
-                                <th>Mô tả:</th>
-                                <td>Chuyên các bệnh lý về tim</td>
-                            </tr>
+                            <tbody>
+                                <tr>
+                                    <th>Mã dịch vụ:</th>
+                                    <td>201</td>
+                                </tr>
+                                <tr>
+                                    <th>Tên dịch vụ:</th>
+                                    <td>Khám tim mạch</td>
+                                </tr>
+                                <tr>
+                                    <th>Mô tả:</th>
+                                    <td>Chuyên các bệnh lý về tim</td>
+                                </tr>
+                            </tbody>
                         </table>
                         <p className='text-tttb'>Quy tắc cấp số</p>
                         <div className='row-checkbox' style={{ marginLeft: '-35px' }}>

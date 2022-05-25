@@ -2101,7 +2101,7 @@
    display: none;
    background: #FFFFFF;
    left: 806px;
-   top: 244px;
+   top: 263px;
    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
    border-radius: 8px;
  }
@@ -2324,7 +2324,11 @@
  }
 
  .select-tdv {
-
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 24px;
+   color: #535261;
    width: 154px;
    height: 44px;
    left: 224px;
@@ -2389,7 +2393,7 @@
    display: none;
    background: #FFFFFF;
    left: 736px;
-   top: 230px;
+   top: 227px;
    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
    border-radius: 8px;
  }
@@ -2626,7 +2630,7 @@
    display: none;
    background: #FFFFFF;
    left: 224px;
-   top: 186px;
+   top: 179px;
    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
    border-radius: 8px;
  }

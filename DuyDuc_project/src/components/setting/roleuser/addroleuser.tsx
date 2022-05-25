@@ -176,7 +176,7 @@ class AddRoleUser extends React.Component {
                             </div>
                         </div>
                         <div className='buton-device'>
-                            <a href="/Service" className='button-huy' > Hủy bỏ</a>
+                            <a href="/RoleUser" className='button-huy' > Hủy bỏ</a>
                             <button className='myform-button ' type='submit'>Thêm thiêt bị</button>
                         </div>
                     </form>

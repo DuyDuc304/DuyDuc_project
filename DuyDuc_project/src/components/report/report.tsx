@@ -19,7 +19,7 @@ let setday = day + "/" + month + "/" + year;
 class Report extends React.Component {
     OnClick() {
         const cld: any = document.getElementById('cldsv')
-        if (cld.style.display == "none") {
+        if (cld.style.display === "none") {
             cld.style.display = "block";
         } else {
             cld.style.display = 'none';
@@ -31,7 +31,7 @@ class Report extends React.Component {
         return (
             <div className='bg'>
                 <div className="Backgroundapp">
-                    <a href='#'>
+                    <a href='/Report'>
                         <div className='div-add-download' >
                             <FaFileDownload className='download' />
                             <div className='add'>

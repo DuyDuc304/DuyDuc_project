@@ -17,34 +17,39 @@ class InfoDevice extends React.Component {
                             <div className='div-rowdevice'>
                                 <div className='div-coldevice '>
                                     <table className='table-info'>
-                                        <tr>
-                                            <th>Mã thiết bị:</th>
-                                            <td>KIO_01</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Tên thiết bị:</th>
-                                            <td>Kiosk</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Địa chỉ IP:</th>
-                                            <td>128.172.308</td>
-                                        </tr>
+                                        <tbody>
+                                            <tr>
+                                                <th>Mã thiết bị:</th>
+                                                <td>KIO_01</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Tên thiết bị:</th>
+                                                <td>Kiosk</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Địa chỉ IP:</th>
+                                                <td>128.172.308</td>
+                                            </tr>
+                                        </tbody>
                                     </table>
                                 </div>
                                 <div className='div-coldevice '>
                                     <table className='table-info'>
-                                        <tr>
-                                            <th>Loại thiết bị:</th>
-                                            <td>Kiosk</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Tên đăng nhập:</th>
-                                            <td>linhkyo011</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Mật khẩu:</th>
-                                            <td>CMS</td>
-                                        </tr>
+                                        <tbody>
+                                            <tr>
+                                                <th>Loại thiết bị:</th>
+                                                <td>Kiosk</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Tên đăng nhập:</th>
+                                                <td>linhkyo011</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Mật khẩu:</th>
+                                                <td>CMS</td>
+                                            </tr>
+                                        </tbody>
+
                                     </table>
                                 </div>
                             </div>
