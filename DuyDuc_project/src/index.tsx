@@ -26,6 +26,10 @@ import UpdateDevice from './components/device/updatedevice';
 import UpdateService from './components/service/updateservice';
 import InfoService from './components/service/infoservice';
 import InfoNumberOrder from './components/numberoder/infonumberorder';
+import UpdateRoleUser from './components/setting/roleuser/updateroleuser';
+import AddRoleUser from './components/setting/roleuser/addroleuser';
+import UpdateAccountUser from './components/setting/accountuser/updataaccountuser';
+import AddAccountUser from './components/setting/accountuser/addaccountuser';
 
 
 
@@ -37,23 +41,37 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Login />} />
+        <Route path="/ressetpw" element={<RessetPW />} />
+        <Route path="/login" element={<Login />} />
+
+        <Route path="/Dashboard" element={<Dashboard />} />
+        <Route path="/Report" element={<Report />} />
+        <Route path="/Info" element={<Info />} />
+        {/* Device */}
+        <Route path="/Device" element={<Device />} />
         <Route path="/Device/AddDevice" element={<AddDevice />} />
         <Route path="/Device/InfoDevice" element={<InfoDevice />} />
         <Route path="/Device/UpdateDevice" element={<UpdateDevice />} />
-        <Route path="/Dashboard" element={<Dashboard />} />
-        <Route path="/Device" element={<Device />} />
-        <Route path="/Service" element={<Service />} />
-        <Route path="/Report" element={<Report />} />
-        <Route path="/AccountUser" element={<AccountUser />} />
-        <Route path="/RoleUser" element={<RoleUser />} />
+
+        {/* NumberoOrder */}
         <Route path='/NumberOrder' element={<NumberOrder />} />
-        <Route path="/DiaryUser" element={<DiaryUser />} />
-        <Route path="/Info" element={<Info />} />
-        <Route path="/login" element={<Login />} />
         <Route path="/NumberOrder/AddNumber" element={<AddNumber />} />
         <Route path="/NumberOrder/InfoNumberOrder" element={<InfoNumberOrder />} />
+        {/* RoleUser */}
+        <Route path="/RoleUser" element={<RoleUser />} />
+        <Route path="/RoleUser/UpdateRoleUser" element={<UpdateRoleUser />} />
+        <Route path="/RoleUser/AddRoleUser" element={<AddRoleUser />} />
+        {/* AccountUser */}
+        <Route path="/AccountUser" element={<AccountUser />} />
+        <Route path="/AccountUser/UpdateAccountUser" element={<UpdateAccountUser />} />
+        <Route path="/AccountUser/AddAccountUser" element={<AddAccountUser />} />
+        {/* Diary */}
+        <Route path="/DiaryUser" element={<DiaryUser />} />
+
+
+        {/* Service */}
+        <Route path="/Service" element={<Service />} />
         <Route path="/Service/AddService" element={<AddService />} />
-        <Route path="/ressetpw" element={<RessetPW />} />
         <Route path="/Service/UpdateService" element={<UpdateService />} />
         <Route path="/Service/InfoService" element={<InfoService />} />
 
