@@ -126,6 +126,7 @@ class UpdateAccountUser extends React.Component {
                             <button className='myform-button ' type='submit'>Cập nhật</button>
                         </div>
                     </form>
+                    <div className='title-report-type'>Quản lý tài khoản</div>
                     <Topbar nametitle1='Cài đặt hệ thống ﹥ ' nametitle2='Quản lý tài khoản ﹥' nametitle3='Cập nhật tài khoản' href='/AccountUser' href2='' nametitle21='' />
                     <Menubar buttonid="qltk" />
                 </div>

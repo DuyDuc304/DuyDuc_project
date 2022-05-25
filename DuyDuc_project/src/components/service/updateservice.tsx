@@ -9,6 +9,7 @@ class UpdateService extends React.Component {
         return (
             <div className='bg'>
                 <div className="Backgroundapp">
+                    <div className='title-report-type'>Quản lý dịch vụ</div>
                     <form >
                         <div className='add-device'>
                             <p className='text-tttb'>Thông tin thiết bị</p>

@@ -130,7 +130,9 @@
     border-right: 1px solid #FFE3CD;
 }
 
-
+.colum6 a {
+    cursor: pointer;
+}
 
 
 .colum6 {

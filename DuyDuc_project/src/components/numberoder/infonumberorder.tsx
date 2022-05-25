@@ -77,9 +77,9 @@ class InfoNumberOrder extends React.Component {
                             </div>
                         </div>
                     </a>
-                    <div className='title-report-type'>Quản lý Cấp sô</div>
-                    <Topbar nametitle1='Thiết bị ﹥ ' nametitle2='Danh sách thiết bị ﹥' nametitle3='Chi tiết thiết bị' href='/Device' href2='' nametitle21='' />
-                    <Menubar buttonid="tb" />
+                    <div className='title-report-type'>Quản lý cấp sô</div>
+                    <Topbar nametitle1='Cấp số﹥ ' nametitle2='Danh sách cấp số ﹥' nametitle3='Chi tiết cấp số' href='/NumberOrder' href2='' nametitle21='' />
+                    <Menubar buttonid="cs" />
 
                 </div>
             </div>

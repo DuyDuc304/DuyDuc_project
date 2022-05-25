@@ -28,7 +28,7 @@ class InfoService extends React.Component {
         return (
             <div className='bg'>
                 <div className="Backgroundapp">
-                    <div className='title-report-type'>Quản lý thiết bị</div>
+                    <div className='title-report-type'>Quản lý dịch vụ</div>
                     <div className="colum-service-ttdv">
                         <p className='text-tttb'>Thông tin dịch vụ</p>
                         <table className='table-infoservice'>
