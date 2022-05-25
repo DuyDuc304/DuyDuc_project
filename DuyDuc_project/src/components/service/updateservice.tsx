@@ -75,7 +75,6 @@ class UpdateService extends React.Component {
                                     <input name='reset' type="checkbox" ></input>
                                     <span className="checkmark"></span>
                                 </label>
-
                             </div>
                             <div className='row-ttbc'><p style={{ color: 'red', fontFamily: 'Nunito', margin: '4px' }}>*</p>
                                 <p className='text-ttbc'>Là trường thông tin bắt buộc</p></div>

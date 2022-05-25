@@ -37,7 +37,8 @@ class TableNumber extends React.Component {
                         <div className="div-center">
                             <p style={{ color: " #6C7585", fontSize: '30px', margin: 'auto' }}>•</p>
                             <p>Đã sư dụng</p>
-                        </div></div>
+                        </div>
+                    </div>
                     <div className="col-num7"><p >Kiosk</p></div>
                     <div className="col-num8"><a href="/NumberOrder/InfoNumberOrder">Chi tiết</a></div>
                 </div>
@@ -135,7 +136,8 @@ class TableNumber extends React.Component {
                         <div className="div-center">
                             <p style={{ color: " #E73F3F", fontSize: '30px', margin: 'auto' }}>•</p>
                             <p>Bỏ qua</p>
-                        </div></div>
+                        </div>
+                    </div>
                     <div className="col-num7"><p >Kiosk</p></div>
                     <div className="col-num8"><a href="/NumberOrder/InfoNumberOrder">Chi tiết</a></div>
                 </div>
