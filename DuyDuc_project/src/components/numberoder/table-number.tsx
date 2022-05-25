@@ -39,7 +39,7 @@ class TableNumber extends React.Component {
                             <p>Đã sư dụng</p>
                         </div></div>
                     <div className="col-num7"><p >Kiosk</p></div>
-                    <div className="col-num8"><a href="#">Chi tiết</a></div>
+                    <div className="col-num8"><a href="/NumberOrder/InfoNumberOrder">Chi tiết</a></div>
                 </div>
                 <div className='row3'>
                     <div className="col-num1"><p >2010002</p></div>
@@ -53,7 +53,7 @@ class TableNumber extends React.Component {
                             <p>Đang chờ</p>
                         </div></div>
                     <div className="col-num7"><p >Kiosk</p></div>
-                    <div className="col-num8"><a href="#">Chi tiết</a></div>
+                    <div className="col-num8"><a href="/NumberOrder/InfoNumberOrder">Chi tiết</a></div>
                 </div>
                 <div className='row2'>
                     <div className="col-num1"><p >2010003</p></div>
@@ -67,7 +67,7 @@ class TableNumber extends React.Component {
                             <p>Đang chờ</p>
                         </div></div>
                     <div className="col-num7"><p >Kiosk</p></div>
-                    <div className="col-num8"><a href="#">Chi tiết</a></div>
+                    <div className="col-num8"><a href="/NumberOrder/InfoNumberOrder">Chi tiết</a></div>
                 </div>
                 <div className='row3'>
                     <div className="col-num1"><p >2010004</p></div>
@@ -81,7 +81,7 @@ class TableNumber extends React.Component {
                             <p>Đang chờ</p>
                         </div></div>
                     <div className="col-num7"><p >Kiosk</p></div>
-                    <div className="col-num8"><a href="#">Chi tiết</a></div>
+                    <div className="col-num8"><a href="/NumberOrder/InfoNumberOrder">Chi tiết</a></div>
                 </div>
                 <div className='row2'>
                     <div className="col-num1"><p >2010005</p></div>
@@ -95,7 +95,7 @@ class TableNumber extends React.Component {
                             <p>Bỏ qua</p>
                         </div></div>
                     <div className="col-num7"><p >Kiosk</p></div>
-                    <div className="col-num8"><a href="#">Chi tiết</a></div>
+                    <div className="col-num8"><a href="/NumberOrder/InfoNumberOrder">Chi tiết</a></div>
                 </div>
                 <div className='row3'>
                     <div className="col-num1"><p >2010006</p></div>
@@ -109,7 +109,7 @@ class TableNumber extends React.Component {
                             <p>Đang chờ</p>
                         </div></div>
                     <div className="col-num7"><p >Kiosk</p></div>
-                    <div className="col-num8"><a href="#">Chi tiết</a></div>
+                    <div className="col-num8"><a href="/NumberOrder/InfoNumberOrder">Chi tiết</a></div>
                 </div>
                 <div className='row2'>
                     <div className="col-num1"><p >2010007</p></div>
@@ -123,7 +123,7 @@ class TableNumber extends React.Component {
                             <p>Đã sử dụng</p>
                         </div></div>
                     <div className="col-num7"><p >Kiosk</p></div>
-                    <div className="col-num8"><a href="#">Chi tiết</a></div>
+                    <div className="col-num8"><a href="/NumberOrder/InfoNumberOrder">Chi tiết</a></div>
                 </div>
                 <div className='row3'>
                     <div className="col-num1"><p >2010008</p></div>
@@ -137,7 +137,7 @@ class TableNumber extends React.Component {
                             <p>Bỏ qua</p>
                         </div></div>
                     <div className="col-num7"><p >Kiosk</p></div>
-                    <div className="col-num8"><a href="#">Chi tiết</a></div>
+                    <div className="col-num8"><a href="/NumberOrder/InfoNumberOrder">Chi tiết</a></div>
                 </div>
                 <div className='row4'>
                     <div className="col-num1"><p >2010009</p></div>
@@ -151,7 +151,7 @@ class TableNumber extends React.Component {
                             <p>Đã sử dụng</p>
                         </div></div>
                     <div className="col-num7"><p >Kiosk</p></div>
-                    <div className="col-num8"><a href="#">Chi tiết</a></div>
+                    <div className="col-num8"><a href="/NumberOrder/InfoNumberOrder">Chi tiết</a></div>
                 </div>
 
             </div>

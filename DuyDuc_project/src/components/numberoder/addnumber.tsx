@@ -1,5 +1,6 @@
 import React from 'react';
 import { IoMdClose } from 'react-icons/io';
+
 import { Menubar } from '../layout/menubar';
 import { Topbar } from '../layout/topbar';
 
@@ -33,7 +34,7 @@ class AddNumber extends React.Component<any, any> {
                                     <option value="KhamRangHamMat">Khám răng hàm mặt</option>
                                 </select>
                                 <div className='rowbtn' >
-                                    <a href="/login" className='button-huy' style={{ width: '115px' }} > Hủy bỏ</a>
+                                    <a href="/NumberOrder" className='button-huy' style={{ width: '115px' }} > Hủy bỏ</a>
                                     <button className='myform-button ' type='submit' onClick={this.popup} style={{ width: '115px' }}>In số</button>
                                 </div>
                             </form>
@@ -61,6 +62,7 @@ class AddNumber extends React.Component<any, any> {
                             </div>
                         </div>
                     </div>
+
                     <div className='title-report-type'>Quản lý cấp số</div>
                     <Topbar nametitle1='Cấp số ﹥ ' nametitle2='Danh sách cấp số ﹥ ' nametitle3='Thêm số mới' href='/NumberOrder' href2='' nametitle21='' />
                     <Menubar buttonid="cs" />

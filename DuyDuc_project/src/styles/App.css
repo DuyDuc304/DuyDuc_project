@@ -1377,7 +1377,6 @@
    display: flex;
    flex-direction: column;
    margin-left: 24px;
-
  }
 
  .text-tttb {
@@ -2553,4 +2552,35 @@
  .icon-close-popup {
    font-size: 24px;
    color: #FF9138;
+ }
+
+ .table-info-num tr {
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 24px;
+   align-items: center;
+   color: #535261;
+ }
+
+ .table-info-num th {
+   font-style: normal;
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 24px;
+   display: flex;
+   padding-top: 10px;
+   align-items: center;
+   color: #282739;
+   flex: none;
+   order: 0;
+   flex-grow: 0;
+ }
+
+ .div-col-infonum {
+   height: 100px;
+   width: 350px;
+   display: flex;
+   flex-direction: column;
+   margin-left: 24px;
  }
