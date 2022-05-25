@@ -182,7 +182,7 @@ class TableReport extends React.Component {
                     <div className="drop-item-report"><p className="report-p">2040007</p></div>
                     <div className="drop-item-report"><p className="report-p">2040008</p></div>
                 </div>
-                <div className="drop-report" id="tdv" onClick={() => this.dropdown('tdv')} style={{ marginLeft: '226px', width: '232px' }}>
+                <div className="drop-report" id="tdv" onClick={() => this.dropdown('tdv')} style={{ marginLeft: '227px', width: '232px' }}>
                     <div className="drop-item-report">
                         <p className="report-p">Tất cả</p>
                         <label className="container" style={{ marginLeft: "auto" }}>

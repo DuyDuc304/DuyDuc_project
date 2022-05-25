@@ -40,7 +40,7 @@ class Report extends React.Component {
                         </div>
                     </a>
                     <div className='ctg-report '>
-                        <p>Chọn thời gian</p>
+                        <p className='ctg-report-p'>Chọn thời gian</p>
                         <div className='ctg-row '>
                             <div className='daytime-picker-qlcs' onClick={this.OnClick} >
                                 <FaRegCalendarAlt className='icon-calendar' />

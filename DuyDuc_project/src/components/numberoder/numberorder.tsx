@@ -41,7 +41,7 @@ class NumberOrder extends React.Component {
                     </a>
                     <div className='qlcs'>
                         <div className='qlcs-tdv'>
-                            <p>Tên dịch vụ:</p>
+                            <p>Tên dịch vụ</p>
                             <select className='select-tdv'>
                                 <option value="all">Tất cả</option>
                                 <option value="conect">Phụ sản</option>
@@ -49,7 +49,7 @@ class NumberOrder extends React.Component {
                             </select>
                         </div>
                         <div className='qlcs-tdv'>
-                            <p>Tình trạng:</p>
+                            <p>Tình trạng</p>
                             <select className='select-tdv'>
                                 <option value="all">Tất cả</option>
                                 <option value="conect">Phụ sản</option>
@@ -57,7 +57,7 @@ class NumberOrder extends React.Component {
                             </select>
                         </div>
                         <div className='qlcs-tdv'>
-                            <p>Nguồn cấp:</p>
+                            <p>Nguồn cấp</p>
                             <select className='select-tdv'>
                                 <option value="all">Tất cả</option>
                                 <option value="conect">Phụ sản</option>
