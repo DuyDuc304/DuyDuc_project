@@ -120,49 +120,49 @@ class InfoService extends React.Component {
                                 </div>
                                 <div className="row-chung2">
                                     <div className="div-center">
-                                        <p style={{ color: " #35C75A", fontSize: '30px', margin: 'auto' }}>•</p>
+                                        <p style={{ color: " #35C75A", fontSize: '24px', margin: 'auto' }}>•</p>
                                         <p>Đã hoàn thành</p>
                                     </div>
                                 </div>
                                 <div className="row-chung3">
                                     <div className="div-center">
-                                        <p style={{ color: " #5490EB", fontSize: '30px', margin: 'auto' }}>•</p>
+                                        <p style={{ color: " #5490EB", fontSize: '24px', margin: 'auto' }}>•</p>
                                         <p>Đang thực hiện</p>
                                     </div>
                                 </div>
                                 <div className="row-chung2">
                                     <div className="div-center">
-                                        <p style={{ color: " #35C75A", fontSize: '30px', margin: 'auto' }}>•</p>
+                                        <p style={{ color: " #35C75A", fontSize: '24px', margin: 'auto' }}>•</p>
                                         <p>Đã hoàn thành</p>
                                     </div>
                                 </div>
                                 <div className="row-chung3">
                                     <div className="div-center">
-                                        <p style={{ color: " #6C7585", fontSize: '30px', margin: 'auto' }}>•</p>
+                                        <p style={{ color: " #6C7585", fontSize: '24px', margin: 'auto' }}>•</p>
                                         <p>Vắng</p>
                                     </div>
                                 </div>
                                 <div className="row-chung2">
                                     <div className="div-center">
-                                        <p style={{ color: " #35C75A", fontSize: '30px', margin: 'auto' }}>•</p>
+                                        <p style={{ color: " #35C75A", fontSize: '24px', margin: 'auto' }}>•</p>
                                         <p>Đã hoàn thành</p>
                                     </div>
                                 </div>
                                 <div className="row-chung3">
                                     <div className="div-center">
-                                        <p style={{ color: " #5490EB", fontSize: '30px', margin: 'auto' }}>•</p>
+                                        <p style={{ color: " #5490EB", fontSize: '24px', margin: 'auto' }}>•</p>
                                         <p>Đang thực hiện</p>
                                     </div>
                                 </div>
                                 <div className="row-chung2">
                                     <div className="div-center">
-                                        <p style={{ color: " #6C7585", fontSize: '30px', margin: 'auto' }}>•</p>
+                                        <p style={{ color: " #6C7585", fontSize: '24px', margin: 'auto' }}>•</p>
                                         <p>Vắng</p>
                                     </div>
                                 </div>
                                 <div className="row-tt4">
                                     <div className="div-center">
-                                        <p style={{ color: " #35C75A", fontSize: '30px', margin: 'auto' }}>•</p>
+                                        <p style={{ color: " #35C75A", fontSize: '24px', margin: 'auto' }}>•</p>
                                         <p>Đã hoàn thành</p>
                                     </div>
                                 </div>

@@ -49,7 +49,7 @@ class TableService extends React.Component {
                     </div>
                     <div className="colum4-service">
                         <div className="div-center">
-                            <p style={{ color: " #35C75A", fontSize: '30px', margin: 'auto' }}>•</p>
+                            <p style={{ color: " #35C75A", fontSize: '24px', margin: 'auto' }}>•</p>
                             <p>Hoạt động</p>
                         </div>
                     </div>
@@ -72,7 +72,7 @@ class TableService extends React.Component {
                     </div>
                     <div className="colum4-service">
                         <div className="div-center">
-                            <p style={{ color: " #35C75A", fontSize: '30px', margin: 'auto' }}>•</p>
+                            <p style={{ color: " #35C75A", fontSize: '24px', margin: 'auto' }}>•</p>
                             <p>Hoạt động</p>
                         </div>
                     </div>
@@ -95,7 +95,7 @@ class TableService extends React.Component {
                     </div>
                     <div className="colum4-service">
                         <div className="div-center">
-                            <p style={{ color: " #EC3740", fontSize: '30px', margin: 'auto' }}>•</p>
+                            <p style={{ color: " #EC3740", fontSize: '24px', margin: 'auto' }}>•</p>
                             <p>Ngừng hoạt động</p>
                         </div>
                     </div>
@@ -118,7 +118,7 @@ class TableService extends React.Component {
                     </div>
                     <div className="colum4-service">
                         <div className="div-center">
-                            <p style={{ color: " #35C75A", fontSize: '30px', margin: 'auto' }}>•</p>
+                            <p style={{ color: " #35C75A", fontSize: '24px', margin: 'auto' }}>•</p>
                             <p>Hoạt động</p>
                         </div>
                     </div>
@@ -141,7 +141,7 @@ class TableService extends React.Component {
                     </div>
                     <div className="colum4-service">
                         <div className="div-center">
-                            <p style={{ color: " #35C75A", fontSize: '30px', margin: 'auto' }}>•</p>
+                            <p style={{ color: " #35C75A", fontSize: '24px', margin: 'auto' }}>•</p>
                             <p>Hoạt động</p>
                         </div>
                     </div>
@@ -164,7 +164,7 @@ class TableService extends React.Component {
                     </div>
                     <div className="colum4-service">
                         <div className="div-center">
-                            <p style={{ color: " #35C75A", fontSize: '30px', margin: 'auto' }}>•</p>
+                            <p style={{ color: " #35C75A", fontSize: '24px', margin: 'auto' }}>•</p>
                             <p>Hoạt động</p>
                         </div>
                     </div>
@@ -187,7 +187,7 @@ class TableService extends React.Component {
                     </div>
                     <div className="colum4-service">
                         <div className="div-center">
-                            <p style={{ color: " #EC3740", fontSize: '30px', margin: 'auto' }}>•</p>
+                            <p style={{ color: " #EC3740", fontSize: '24px', margin: 'auto' }}>•</p>
                             <p>Ngừng hoạt động</p>
                         </div>
                     </div>
@@ -210,7 +210,7 @@ class TableService extends React.Component {
                     </div>
                     <div className="colum4-service">
                         <div className="div-center">
-                            <p style={{ color: " #35C75A", fontSize: '30px', margin: 'auto' }}>•</p>
+                            <p style={{ color: " #35C75A", fontSize: '24px', margin: 'auto' }}>•</p>
                             <p>Hoạt động</p>
                         </div>
                     </div>
@@ -233,7 +233,7 @@ class TableService extends React.Component {
                     </div>
                     <div className="colum4-service">
                         <div className="div-center">
-                            <p style={{ color: " #35C75A", fontSize: '30px', margin: 'auto' }}>•</p>
+                            <p style={{ color: " #35C75A", fontSize: '24px', margin: 'auto' }}>•</p>
                             <p>Hoạt động</p>
                         </div>
                     </div>

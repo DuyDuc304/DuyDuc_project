@@ -56,7 +56,7 @@ class TableReport extends React.Component {
                     <div className="col3-report"><p>07:20 - 07/10/2021</p></div>
                     <div className="col4-report">
                         <div className="div-center">
-                            <p style={{ color: " #4277FF", fontSize: '30px', margin: 'auto' }}>•</p>
+                            <p style={{ color: " #4277FF", fontSize: '24px', margin: 'auto' }}>•</p>
                             <p>Đang chờ</p>
                         </div>
                     </div>
@@ -68,7 +68,7 @@ class TableReport extends React.Component {
                     <div className="col3-report"><p>07:20 - 07/10/2021</p></div>
                     <div className="col4-report">
                         <div className="div-center">
-                            <p style={{ color: " #6C7585", fontSize: '30px', margin: 'auto' }}>•</p>
+                            <p style={{ color: " #6C7585", fontSize: '24px', margin: 'auto' }}>•</p>
                             <p>Đã sư dụng</p>
                         </div>
                     </div>
@@ -80,7 +80,7 @@ class TableReport extends React.Component {
                     <div className="col3-report"><p>07:20 - 07/10/2021</p></div>
                     <div className="col4-report">
                         <div className="div-center">
-                            <p style={{ color: " #E73F3F", fontSize: '30px', margin: 'auto' }}>•</p>
+                            <p style={{ color: " #E73F3F", fontSize: '24px', margin: 'auto' }}>•</p>
                             <p>Bỏ qua</p>
                         </div>
                     </div>
@@ -92,7 +92,7 @@ class TableReport extends React.Component {
                     <div className="col3-report"><p>07:20 - 07/10/2021</p></div>
                     <div className="col4-report">
                         <div className="div-center">
-                            <p style={{ color: " #6C7585", fontSize: '30px', margin: 'auto' }}>•</p>
+                            <p style={{ color: " #6C7585", fontSize: '24px', margin: 'auto' }}>•</p>
                             <p>Đã sư dụng</p>
                         </div>
                     </div>
@@ -104,7 +104,7 @@ class TableReport extends React.Component {
                     <div className="col3-report"><p>07:20 - 07/10/2021</p></div>
                     <div className="col4-report">
                         <div className="div-center">
-                            <p style={{ color: " #4277FF", fontSize: '30px', margin: 'auto' }}>•</p>
+                            <p style={{ color: " #4277FF", fontSize: '24px', margin: 'auto' }}>•</p>
                             <p>Đang chờ</p>
                         </div>
                     </div>
@@ -116,7 +116,7 @@ class TableReport extends React.Component {
                     <div className="col3-report"><p>07:20 - 07/10/2021</p></div>
                     <div className="col4-report">
                         <div className="div-center">
-                            <p style={{ color: " #E73F3F", fontSize: '30px', margin: 'auto' }}>•</p>
+                            <p style={{ color: " #E73F3F", fontSize: '24px', margin: 'auto' }}>•</p>
                             <p>Bỏ qua</p>
                         </div>
                     </div>
@@ -128,7 +128,7 @@ class TableReport extends React.Component {
                     <div className="col3-report"><p>07:20 - 07/10/2021</p></div>
                     <div className="col4-report">
                         <div className="div-center">
-                            <p style={{ color: " #4277FF", fontSize: '30px', margin: 'auto' }}>•</p>
+                            <p style={{ color: " #4277FF", fontSize: '24px', margin: 'auto' }}>•</p>
                             <p>Đang chờ</p>
                         </div>
                     </div>
@@ -140,7 +140,7 @@ class TableReport extends React.Component {
                     <div className="col3-report"><p>07:20 - 07/10/2021</p></div>
                     <div className="col4-report">
                         <div className="div-center">
-                            <p style={{ color: " #E73F3F", fontSize: '30px', margin: 'auto' }}>•</p>
+                            <p style={{ color: " #E73F3F", fontSize: '24px', margin: 'auto' }}>•</p>
                             <p>Bỏ qua</p>
                         </div>
                     </div>
@@ -152,7 +152,7 @@ class TableReport extends React.Component {
                     <div className="col3-report"><p>07:20 - 07/10/2021</p></div>
                     <div className="col4-report">
                         <div className="div-center">
-                            <p style={{ color: " #4277FF", fontSize: '30px', margin: 'auto' }}>•</p>
+                            <p style={{ color: " #4277FF", fontSize: '24px', margin: 'auto' }}>•</p>
                             <p>Đang chờ</p>
                         </div>
                     </div>
@@ -164,7 +164,7 @@ class TableReport extends React.Component {
                     <div className="col3-report"><p>07:20 - 07/10/2021</p></div>
                     <div className="col4-report">
                         <div className="div-center">
-                            <p style={{ color: " #6C7585", fontSize: '30px', margin: 'auto' }}>•</p>
+                            <p style={{ color: " #6C7585", fontSize: '24px', margin: 'auto' }}>•</p>
                             <p>Đã sư dụng</p>
                         </div>
                     </div>
