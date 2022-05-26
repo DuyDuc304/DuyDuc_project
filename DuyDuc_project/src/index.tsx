@@ -1,13 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './styles/index.css';
-
 import Login from './components/login/login';
 import reportWebVitals from './reportWebVitals';
-
 import { BrowserRouter, Routes, Route, } from "react-router-dom";
 import './styles/App.css';
-
 import Info from './components/info';
 import Device from './components/device/device';
 import NumberOrder from './components/numberoder/numberorder';

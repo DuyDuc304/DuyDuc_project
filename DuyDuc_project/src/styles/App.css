@@ -1065,13 +1065,12 @@
 .title-chart-type-item-name {
   display: flex;
   flex-direction: row;
-
   flex: 5;
 }
 
 .title-chart-type-item-name p {
 
-  width: 80px;
+  width: 70px;
   height: 36px;
   margin: 15px;
   font-style: normal;
