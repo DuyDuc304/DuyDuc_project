@@ -177,7 +177,7 @@ class UpdateRoleUser extends React.Component {
                         </div>
                         <div className='buton-device'>
                             <a href="/RoleUser" className='button-huy' > Hủy bỏ</a>
-                            <button className='myform-button ' type='submit'>Thêm thiêt bị</button>
+                            <button className='myform-button ' type='submit'>Cập nhật</button>
                         </div>
                     </form>
                     <Topbar nametitle1='Cài đặt hệ thống ﹥ ' nametitle2='Quản lý vai trò ﹥' nametitle3='Cập nhật vai trò' href='/RoleUser' href2='' nametitle21='' />

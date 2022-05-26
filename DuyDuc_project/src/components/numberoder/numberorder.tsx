@@ -44,24 +44,26 @@ class NumberOrder extends React.Component {
                             <p>Tên dịch vụ</p>
                             <select className='select-tdv'>
                                 <option value="all">Tất cả</option>
-                                <option value="conect">Phụ sản</option>
-                                <option value="unconect">Tổng quát</option>
+                                <option value="PhuSan">Phụ sản</option>
+                                <option value="TongQuat">Tổng quát</option>
+                                <option value="RangHamMat">Răng hàm mặt</option>
                             </select>
                         </div>
                         <div className='qlcs-tdv'>
                             <p>Tình trạng</p>
                             <select className='select-tdv'>
                                 <option value="all">Tất cả</option>
-                                <option value="conect">Phụ sản</option>
-                                <option value="unconect">Tổng quát</option>
+                                <option value="wati">Đa chờ</option>
+                                <option value="used">Đã sử dụng</option>
+                                <option value="next">Bỏ qua</option>
                             </select>
                         </div>
                         <div className='qlcs-tdv'>
                             <p>Nguồn cấp</p>
                             <select className='select-tdv'>
                                 <option value="all">Tất cả</option>
-                                <option value="conect">Phụ sản</option>
-                                <option value="unconect">Tổng quát</option>
+                                <option value="Kiosk">Kiosk</option>
+                                <option value="HeThong">Hệ thống</option>
                             </select>
                         </div>
                         <div className='qlcs-tdv'>

@@ -123,7 +123,7 @@ class AddAccountUser extends React.Component {
                         </div>
                         <div className='buton-device'>
                             <a href="/AccountUser" className='button-huy' > Hủy bỏ</a>
-                            <button className='myform-button ' type='submit'>Thêm tài khoản</button>
+                            <button className='myform-button ' type='submit'>Thêm </button>
                         </div>
                     </form>
                     <div className='title-report-type'>Quản lý tài khoản</div>
