@@ -32,7 +32,7 @@ class UpdateRoleUser extends React.Component {
                                     </div>
 
                                     <div className='row-ttbc' style={{ marginTop: '100px', marginLeft: '0px' }}>
-                                        <p style={{ color: 'red', fontFamily: 'Nunito', margin: '4px' }}>*</p>
+                                        <p style={{ color: 'red', fontWeight: '700', margin: '4px' }}>*</p>
                                         <p className='text-ttbc'>Là trường thông tin bắt buộc</p>
                                     </div>
 

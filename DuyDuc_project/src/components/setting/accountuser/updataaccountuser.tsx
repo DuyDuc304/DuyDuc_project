@@ -119,7 +119,7 @@ class UpdateAccountUser extends React.Component {
                             </div>
 
 
-                            <div className='row-ttbc'><p style={{ color: 'red', fontFamily: 'Nunito', margin: '4px' }}>*</p><p className='text-ttbc'>Là trường thông tin bắt buộc</p></div>
+                            <div className='row-ttbc'><p style={{ color: 'red', fontWeight: '700', margin: '4px' }}>*</p><p className='text-ttbc'>Là trường thông tin bắt buộc</p></div>
                         </div>
                         <div className='buton-device'>
                             <a href="/AccountUser" className='button-huy' > Hủy bỏ</a>
