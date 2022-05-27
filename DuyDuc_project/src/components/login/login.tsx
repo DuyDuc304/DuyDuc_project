@@ -6,6 +6,9 @@ import { BiErrorCircle } from "react-icons/bi";
 import Dashboard from '../dashboard/dashboard';
 
 import { FiEyeOff, FiEye } from 'react-icons/fi';
+import { BrowserRouter, Route } from 'react-router-dom';
+
+
 
 
 
@@ -42,7 +45,10 @@ class Login extends React.Component {
   }
 
   checklogin
+
     (e: React.SyntheticEvent) {
+
+
     const login: any = document.querySelector(".login")
     const loginfail: any = document.querySelector(".loginfail")
     e.preventDefault();
@@ -54,7 +60,8 @@ class Login extends React.Component {
     const password = target.password.value;
     if (name === "duc" && password === "123"
     ) {
-      return (render(<Dashboard />));
+      var parser = document.location.href = "/Dashboard";
+      return (parser);
     }
     else {
       loginfail.style.display = 'block';
@@ -84,7 +91,7 @@ class Login extends React.Component {
                         <FiEye className='icon-eye' id='hide' style={{ display: 'none' }} />
                       </a>
                     </div>
-                    <div style={{ margin: "0px 0px 0px 3px" }}><a className='myform-a' href='/ressetpw'>Quên mật khẩu?</a></div>
+                    <div style={{ margin: "0px 0px 0px 3px" }}><a className='myform-a' href='/Ressetpw'>Quên mật khẩu?</a></div>
                   </div>
                   <div className='col2'>
                     <div>
@@ -118,7 +125,7 @@ class Login extends React.Component {
                     <button className='myform-button ' type='submit' >Đăng nhập</button>
                     <br />
                     <div style={{ display: 'flex' }}>
-                      <a className='myform-a' style={{ margin: "auto" }} href='/ressetpw'>Quên mật khẩu?</a>
+                      <a className='myform-a' style={{ margin: "auto" }} href='/Ressetpw'>Quên mật khẩu?</a>
                     </div>
                   </div>
 

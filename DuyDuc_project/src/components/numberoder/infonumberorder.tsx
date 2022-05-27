@@ -3,7 +3,6 @@ import React from 'react';
 import '../layout/menubar';
 import { Topbar } from '../layout/topbar';
 import { Menubar } from '../layout/menubar';
-import { FaPen } from 'react-icons/fa';
 import { RiArrowGoBackLine } from 'react-icons/ri';
 
 
@@ -91,5 +90,3 @@ class InfoNumberOrder extends React.Component {
 }
 
 export default InfoNumberOrder;
-
-

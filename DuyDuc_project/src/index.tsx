@@ -37,8 +37,8 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Login />} />
-        <Route path="/ressetpw" element={<RessetPW />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/Ressetpw" element={<RessetPW />} />
+        <Route path="/Login" element={<Login />} />
 
         <Route path="/Dashboard" element={<Dashboard />} />
         <Route path="/Report" element={<Report />} />

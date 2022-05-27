@@ -740,6 +740,8 @@
   border-bottom-right-radius: 8px;
 }
 
+
+
 .button-qlvt {
   background: #FF7506;
   color: #FFFF;
@@ -767,6 +769,11 @@
 }
 
 .button-active {
+  background: #FF7506;
+
+}
+
+.button-active:hover {
   background: #FF7506;
 
 }

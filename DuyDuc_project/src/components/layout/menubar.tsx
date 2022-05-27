@@ -45,7 +45,7 @@ export const Menubar = (id: idbuton) => {
                         <a href="/Report" className='ab'> <MdOutlinePoll className='icon' /><p>Báo cáo</p></a>
                     </div>
                     <div className='btnmenubar' id='setting'>
-                        <div className="dropdown">
+                        <div className="dropdown" >
                             <RiSettingsLine className='icon1' /> <p> Cài đặt hệ thống</p>   <MdMoreVert className='icon1' />
                             <div className="dropdown-content">
                                 <a href="/RoleUser" id='qlvt'><p>Quản lý vai trò</p></a>
@@ -60,7 +60,7 @@ export const Menubar = (id: idbuton) => {
 
             </div>
             <div className='logout'>
-                <a href="/login"> <MdLogout className='icon' /> <p> Đăng xuất</p></a>
+                <a href="/Login"> <MdLogout className='icon' /> <p> Đăng xuất</p></a>
             </div>
         </div>
     );

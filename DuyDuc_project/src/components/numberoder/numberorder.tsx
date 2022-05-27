@@ -10,10 +10,7 @@ import { FaRegCalendarAlt } from 'react-icons/fa';
 import Calendar from 'react-calendar';
 
 let newDate = new Date()
-let day = newDate.getDate();
-let month = newDate.getMonth() + 1;
-let year = newDate.getFullYear();
-let setday = day + "/" + month + "/" + year;
+
 
 class NumberOrder extends React.Component {
     OnClick() {
@@ -71,12 +68,12 @@ class NumberOrder extends React.Component {
                             <div className='ctg-row '>
                                 <div className='daytime-picker-qlcs' onClick={this.OnClick} >
                                     <FaRegCalendarAlt className='icon-calendar' />
-                                    <p>{setday}</p>
+                                    <p>{newDate.toLocaleDateString()}</p>
                                 </div>
                                 <p style={{ color: '#535261', margin: '10px', display: 'flex' }} >▸</p>
                                 <div className='daytime-picker-qlcs' >
                                     <FaRegCalendarAlt className='icon-calendar' />
-                                    <p>{setday}</p>
+                                    <p>{newDate.toLocaleDateString()}</p>
                                 </div>
                             </div>
                         </div>
