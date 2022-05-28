@@ -26,8 +26,6 @@ import UpdateRoleUser from './components/setting/roleuser/updateroleuser';
 import AddRoleUser from './components/setting/roleuser/addroleuser';
 import UpdateAccountUser from './components/setting/accountuser/updataaccountuser';
 import AddAccountUser from './components/setting/accountuser/addaccountuser';
-import Test from './components/text';
-
 
 
 const root = ReactDOM.createRoot(
@@ -37,14 +35,16 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Test />} />
-        {/* <Route path="/" element={<Login />} /> */}
+        {/* Login */}
+        <Route path="/" element={<Login />} />
         <Route path="/Ressetpw" element={<RessetPW />} />
         <Route path="/Login" element={<Login />} />
 
+        {/* Dashboard, Report, Infouser */}
         <Route path="/Dashboard" element={<Dashboard />} />
         <Route path="/Report" element={<Report />} />
         <Route path="/Info" element={<Info />} />
+
         {/* Device */}
         <Route path="/Device" element={<Device />} />
         <Route path="/Device/AddDevice" element={<AddDevice />} />
