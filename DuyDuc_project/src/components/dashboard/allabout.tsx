@@ -4,7 +4,8 @@ import Calendar from "./calendar/calenda"
 import { MdDesktopWindows, MdOutlineForum } from "react-icons/md"
 import Dervice from './dervice.svg';
 import Numberorder from './numberoder.svg';
-
+import '@rhazegh/react-circular-progressbar/dist/styles.css';
+import { buildStyles, CircularProgressbar, CircularProgressbarWithChildren } from '@rhazegh/react-circular-progressbar';
 import { ImStack } from "react-icons/im";
 
 
@@ -21,8 +22,30 @@ class AllAbout extends React.Component {
 
                         <a href="/Device" className="notline">
                             <div className="sumary-item">
-                                <div id="dvchart" className='sumary-item-img' >
-                                    <img src={Service} className='sumary-item-img' />
+                                <div className='chart-circula ' >
+                                    <CircularProgressbarWithChildren
+                                        value={90}
+                                        strokeWidth={5}
+                                        text={'90%'}
+                                        styles={buildStyles({
+                                            textColor: '#535261',
+
+                                            textSize: '24px',
+                                            pathColor: "#FF7506",
+
+                                        })}
+                                    >
+                                        <div style={{ width: "84%" }}>
+                                            <CircularProgressbar
+                                                value={10}
+
+                                                strokeWidth={5}
+                                                styles={buildStyles({
+                                                    pathColor: "#7E7D88",
+                                                })}
+                                            />
+                                        </div>
+                                    </CircularProgressbarWithChildren>
                                 </div>
                                 <div className="info-sumary">
                                     <p className="number-sumary">4.221</p>
@@ -46,7 +69,30 @@ class AllAbout extends React.Component {
 
                         <a href="/Service" className="notline">
                             <div className="sumary-item">
-                                <img src={Dervice} className='sumary-item-img' />
+                                <div className='chart-circula '>
+                                    <CircularProgressbarWithChildren
+                                        value={76}
+                                        strokeWidth={5}
+                                        text={'76%'}
+                                        styles={buildStyles({
+                                            textColor: '#535261',
+
+                                            textSize: '24px',
+                                            pathColor: "#4277FF",
+
+                                        })}
+                                    >
+                                        <div style={{ width: "84%" }}>
+                                            <CircularProgressbar
+                                                value={24}
+                                                strokeWidth={5}
+                                                styles={buildStyles({
+                                                    pathColor: "#7E7D88",
+                                                })}
+                                            />
+                                        </div>
+                                    </CircularProgressbarWithChildren>
+                                </div>
                                 <div className="info-sumary">
                                     <p className="number-sumary">276</p>
                                     <span className="name-item-sumary "><MdOutlineForum className='icon-sumary' style={{ color: "#4277FF" }} />  <p className="name-sumary" style={{ color: "#4277FF" }}>Dịch vụ</p></span>
@@ -67,7 +113,41 @@ class AllAbout extends React.Component {
                         </a>
                         <a href="/NumberOrder" className="notline">
                             <div className="sumary-item">
-                                <img src={Numberorder} className='sumary-item-img' />
+                                <div className='chart-circula ' >
+                                    <CircularProgressbarWithChildren
+                                        value={86}
+                                        strokeWidth={5}
+                                        text={'86%'}
+                                        styles={buildStyles({
+                                            textColor: '#535261',
+                                            textSize: '24px',
+                                            pathColor: "#35C75A",
+
+                                        })}
+                                    >
+                                        <div style={{ width: "84%" }}>
+                                            <CircularProgressbarWithChildren
+                                                value={11}
+
+                                                strokeWidth={5}
+                                                styles={buildStyles({
+                                                    pathColor: "#7E7D88",
+                                                })}
+                                            >
+                                                <div style={{ width: "84%" }}>
+                                                    <CircularProgressbar
+                                                        value={3}
+                                                        strokeWidth={5}
+                                                        styles={buildStyles({
+                                                            pathColor: "#F178B6",
+                                                        })}
+                                                    />
+                                                </div>
+                                            </CircularProgressbarWithChildren>
+                                        </div>
+
+                                    </CircularProgressbarWithChildren>
+                                </div>
                                 <div className="info-sumary">
                                     <p className="number-sumary">4.221</p>
                                     <span className="name-item-sumary "><ImStack className='icon-sumary' style={{ color: "#35C75A" }} />  <p className="name-sumary" style={{ color: "#35C75A" }}>Cấp số</p></span>

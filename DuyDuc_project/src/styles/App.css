@@ -734,19 +734,6 @@
   color: #FFFF;
 }
 
-.button-nknd {
-  background: #FF7506;
-  color: #FFFF;
-  border-bottom-right-radius: 8px;
-}
-
-
-
-.button-qlvt {
-  background: #FF7506;
-  color: #FFFF;
-  border-top-right-radius: 8px;
-}
 
 
 
@@ -779,6 +766,10 @@
 }
 
 .button-active .icon {
+  color: #FFFF;
+}
+
+.button-active .icon1 {
   color: #FFFF;
 }
 
@@ -951,13 +942,7 @@
   height: 60px;
 }
 
-.sumary-item-img {
-  width: 60px;
-  height: 60px;
-  display: flex;
-  margin: auto;
-  flex: 2;
-}
+
 
 .info-sumary {
   display: flex;
@@ -2477,7 +2462,6 @@
   display: none;
   position: absolute;
   z-index: 1;
-
   left: 0;
   top: 0;
   width: 1440px;
@@ -2745,4 +2729,13 @@ button {
   font-size: 20px;
   line-height: 30px;
   color: #FF7506;
+}
+
+.chart-circula {
+  display: flex;
+  margin: auto;
+  margin-left: 16px;
+  margin-right: 12px;
+  width: 60px;
+  height: 60px;
 }

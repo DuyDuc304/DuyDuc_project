@@ -8,7 +8,7 @@ const Calenda = () => {
     return (
         <div className='calendar'>
             <Calendar onChange={onChange} value={date} locale='en' />
-            <p>{date.toLocaleDateString()}</p>
+
         </div>
     );
 };

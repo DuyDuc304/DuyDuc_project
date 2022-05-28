@@ -26,6 +26,7 @@ import UpdateRoleUser from './components/setting/roleuser/updateroleuser';
 import AddRoleUser from './components/setting/roleuser/addroleuser';
 import UpdateAccountUser from './components/setting/accountuser/updataaccountuser';
 import AddAccountUser from './components/setting/accountuser/addaccountuser';
+import Test from './components/text';
 
 
 
@@ -36,7 +37,8 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Login />} />
+        <Route path="/" element={<Test />} />
+        {/* <Route path="/" element={<Login />} /> */}
         <Route path="/Ressetpw" element={<RessetPW />} />
         <Route path="/Login" element={<Login />} />
 

@@ -13,12 +13,22 @@ export const Menubar = (id: idbuton) => {
         const btn: any = document.getElementById(id);
         btn.classList.toggle("button-active");
         if (id === "nknd") {
-            const btn: any = document.getElementById("nknd");
-            btn.classList.toggle("button-nknd");
+            const btn1: any = document.getElementById("nknd");
+            btn1.classList.toggle("button-nknd");
+            const btnst: any = document.getElementById('cd')
+            btnst.classList.toggle('button-cd')
         }
         if (id === "qlvt") {
-            const btn: any = document.getElementById("qlvt");
-            btn.classList.toggle("button-qlvt");
+            const btn2: any = document.getElementById("qlvt");
+            btn2.classList.toggle("button-qlvt");
+            const btnst: any = document.getElementById('cd')
+            btnst.classList.toggle('button-cd')
+        }
+        if (id === "qltk") {
+            const btn3: any = document.getElementById("qltk");
+            btn3.classList.toggle("button-qltk");
+            const btnst: any = document.getElementById('cd')
+            btnst.classList.toggle('button-cd')
         }
     }
 
@@ -44,13 +54,13 @@ export const Menubar = (id: idbuton) => {
                     <div className='btnmenubar' id='bc'>
                         <a href="/Report" className='ab'> <MdOutlinePoll className='icon' /><p>Báo cáo</p></a>
                     </div>
-                    <div className='btnmenubar' id='setting'>
-                        <div className="dropdown" >
+                    <div className='btnmenubar' >
+                        <div className="dropdown" id='cd'>
                             <RiSettingsLine className='icon1' /> <p> Cài đặt hệ thống</p>   <MdMoreVert className='icon1' />
                             <div className="dropdown-content">
-                                <a href="/RoleUser" id='qlvt'><p>Quản lý vai trò</p></a>
-                                <a href="/AccountUser" id='qltk'><p>Quản lý tài khoản</p></a>
-                                <a href="/DiaryUser" id='nknd'><p>Nhật ký người dùng</p></a>
+                                <div className='dropdown-content-div'><a href="/RoleUser" id='qlvt'><p>Quản lý vai trò</p></a></div>
+                                <div className='dropdown-content-div'><a href="/AccountUser" id='qltk'><p>Quản lý tài khoản</p></a></div>
+                                <div className='dropdown-content-div'><a href="/DiaryUser" id='nknd'><p>Nhật ký người dùng</p></a></div>
                             </div>
                         </div >
                     </div>

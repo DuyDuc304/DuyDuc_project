@@ -4,7 +4,6 @@ import '../layout/menubar';
 import { Topbar } from '../layout/topbar';
 import { Menubar } from '../layout/menubar';
 import Chart from './chart';
-
 import sttdc from './sttdc.svg';
 import sttdd from './sttdd.svg';
 import sttc from './sttc.svg';
