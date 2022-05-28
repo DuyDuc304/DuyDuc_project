@@ -1,8 +1,8 @@
 import * as React from "react"
-import Service from "./service.svg"
+
 import Calendar from "./calendar/calenda"
 import { MdDesktopWindows, MdOutlineForum } from "react-icons/md"
-import Dervice from './dervice.svg';
+
 import Numberorder from './numberoder.svg';
 import '@rhazegh/react-circular-progressbar/dist/styles.css';
 import { buildStyles, CircularProgressbar, CircularProgressbarWithChildren } from '@rhazegh/react-circular-progressbar';
