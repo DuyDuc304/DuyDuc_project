@@ -84,14 +84,7 @@ export const Chart: FC<FruitProps> = ({ defaulchart }) => {
             },
 
         ],
-        options: {
-            plugins: {
-                legend: {
-                    display: false,
 
-                }
-            },
-        },
 
     };
     const daytime = (a: string) => {
