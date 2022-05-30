@@ -13,6 +13,13 @@ import { ImStack } from "react-icons/im";
 
 class AllAbout extends React.Component {
 
+    // value chart cricle
+    tbdhd: number = 90;
+    dvdhd: number = 76;
+    csdc: number = 86;
+    csdsd: number = 10;
+
+
     render() {
         return (
             < div className="allabout">
@@ -24,9 +31,9 @@ class AllAbout extends React.Component {
                             <div className="sumary-item">
                                 <div className='chart-circula ' >
                                     <CircularProgressbarWithChildren
-                                        value={90}
+                                        value={this.tbdhd}
                                         strokeWidth={5}
-                                        text={'90%'}
+                                        text={this.tbdhd + '%'}
                                         styles={buildStyles({
                                             textColor: '#535261',
 
@@ -37,7 +44,7 @@ class AllAbout extends React.Component {
                                     >
                                         <div style={{ width: "84%" }}>
                                             <CircularProgressbar
-                                                value={10}
+                                                value={100 - this.tbdhd}
 
                                                 strokeWidth={5}
                                                 styles={buildStyles({
@@ -71,9 +78,9 @@ class AllAbout extends React.Component {
                             <div className="sumary-item">
                                 <div className='chart-circula '>
                                     <CircularProgressbarWithChildren
-                                        value={76}
+                                        value={this.dvdhd}
                                         strokeWidth={5}
-                                        text={'76%'}
+                                        text={this.dvdhd + '%'}
                                         styles={buildStyles({
                                             textColor: '#535261',
 
@@ -84,7 +91,7 @@ class AllAbout extends React.Component {
                                     >
                                         <div style={{ width: "84%" }}>
                                             <CircularProgressbar
-                                                value={24}
+                                                value={100 - this.dvdhd}
                                                 strokeWidth={5}
                                                 styles={buildStyles({
                                                     pathColor: "#7E7D88",
@@ -115,9 +122,9 @@ class AllAbout extends React.Component {
                             <div className="sumary-item">
                                 <div className='chart-circula ' >
                                     <CircularProgressbarWithChildren
-                                        value={86}
+                                        value={this.csdc}
                                         strokeWidth={5}
-                                        text={'86%'}
+                                        text={this.csdc + '%'}
                                         styles={buildStyles({
                                             textColor: '#535261',
                                             textSize: '24px',
@@ -127,7 +134,7 @@ class AllAbout extends React.Component {
                                     >
                                         <div style={{ width: "84%" }}>
                                             <CircularProgressbarWithChildren
-                                                value={11}
+                                                value={this.csdsd}
 
                                                 strokeWidth={5}
                                                 styles={buildStyles({
@@ -136,7 +143,7 @@ class AllAbout extends React.Component {
                                             >
                                                 <div style={{ width: "84%" }}>
                                                     <CircularProgressbar
-                                                        value={3}
+                                                        value={100 - (this.csdc + this.csdsd)}
                                                         strokeWidth={5}
                                                         styles={buildStyles({
                                                             pathColor: "#F178B6",
