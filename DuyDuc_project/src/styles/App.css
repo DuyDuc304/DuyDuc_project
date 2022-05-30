@@ -2750,3 +2750,35 @@ button {
   width: 60px;
   height: 60px;
 }
+
+.select-drop-down {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: auto;
+  height: auto;
+  left: 90px;
+  top: 44px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 6px #E7E9F2;
+  border-radius: 8px;
+
+}
+
+.select-drop-down-item {
+  display: flex;
+  margin: auto;
+  width: 106px;
+  height: 44px;
+  background: #FFFFFF;
+  border-radius: 8px;
+}
+
+.select-drop-down-item a {
+  display: flex;
+  margin: auto;
+}
+
+.select-drop-down-item:hover {
+  background-color: #FFF2E7;
+}
