@@ -8,13 +8,33 @@ import TableService from './table-service';
 import Nextpage from '../layout/nextpage';
 import { FaRegCalendarAlt } from 'react-icons/fa';
 import Calendar from 'react-calendar';
+import { RiArrowDownSLine, RiArrowUpSLine } from 'react-icons/ri';
 
 
 let newDate = new Date()
 
 
 class Service extends React.Component {
+    Chose = (id: string, input: string) => {
+        const ip: any = document.getElementById(input)
+        const text: any = document.getElementById(id)
+        ip.value = text.innerText
+    }
 
+    show = (id: string, u: string, d: string) => {
+        const ip: any = document.getElementById(id)
+        const up: any = document.getElementById(u)
+        const down: any = document.getElementById(d)
+        if (ip.style.display == 'none') {
+            ip.style.display = 'block';
+            up.style.display = 'flex';
+            down.style.display = 'none';
+        } else {
+            ip.style.display = 'none';
+            down.style.display = 'flex';
+            up.style.display = 'none';
+        }
+    }
     OnClick() {
         const cld: any = document.querySelector('.daytime-picker-caledar')
         if (cld.style.display == "none") {
@@ -29,6 +49,7 @@ class Service extends React.Component {
         return (
             <div className='bg'>
                 <div className="Backgroundapp">
+                    <TableService />
                     <div className='title-report-type'>Quản lý dịch vụ</div>
                     <a href='/Service/AddService'>
                         <div className='div-add'>
@@ -41,11 +62,16 @@ class Service extends React.Component {
                     </a>
                     <div className='tthd'>
                         <p className='ppp'>Trạng thái hoạt động</p>
-                        <select className='tb-select' >
-                            <option value="all">Tất cả</option>
-                            <option value="act">Hoạt động</option>
-                            <option value="notatc">Ngừng hoạt động</option>
-                        </select>
+                        <div className="sreach">
+                            <input onClick={() => this.show('tthd', 'up', 'down')} id='ip' className='tb-select' value={'Tất cả'} style={{ marginLeft: '4px', fontSize: '16px' }}></input>
+                            <button onClick={() => this.show('tthd', 'up', 'down')} id='down'><RiArrowDownSLine /></button>
+                            <button onClick={() => this.show('tthd', 'up', 'down')} id='up' style={{ display: 'none' }}><RiArrowUpSLine /></button>
+                        </div>
+                        <div id='tthd' className='select-drop-down' onClick={() => this.show('tthd', 'up', 'down')}>
+                            <div className='select-drop-down-item ' onClick={() => this.Chose('tc', 'ip')}><a id='tc'>Tất cả</a></div>
+                            <div className='select-drop-down-item ' onClick={() => this.Chose('hd', 'ip')}><a id='hd'>Hoạt động</a></div>
+                            <div className='select-drop-down-item ' onClick={() => this.Chose('nhd', 'ip')}><a id='nhd'>Ngừng hoạt động</a></div>
+                        </div>
                     </div>
                     <div className='tk'>
                         <p className='ppp'>Từ khóa</p>
@@ -72,7 +98,7 @@ class Service extends React.Component {
                         </div>
                     </div>
 
-                    <TableService />
+
                     <div className='daytime-picker-caledar' id='cld'>
                         <Calendar locale='en' selectRange />
                     </div>

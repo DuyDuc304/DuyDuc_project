@@ -6,12 +6,35 @@ import { Menubar } from '../layout/menubar';
 import { AiOutlinePlus, AiOutlineSearch } from "react-icons/ai";
 import TableDevice from './tabale-device';
 import Nextpage from '../layout/nextpage';
+import { RiArrowDownSLine, RiArrowUpSLine } from 'react-icons/ri';
 
 class Device extends React.Component {
+    Chose = (id: string, input: string) => {
+        const ip: any = document.getElementById(input)
+        const text: any = document.getElementById(id)
+        ip.value = text.innerText
+    }
+
+    show = (id: string, u: string, d: string) => {
+        const ip: any = document.getElementById(id)
+        const up: any = document.getElementById(u)
+        const down: any = document.getElementById(d)
+        if (ip.style.display == 'none') {
+            ip.style.display = 'block';
+            up.style.display = 'flex';
+            down.style.display = 'none';
+        } else {
+            ip.style.display = 'none';
+            down.style.display = 'flex';
+            up.style.display = 'none';
+        }
+    }
     render() {
         return (
+
             <div className='bg'>
                 <div className="Backgroundapp">
+                    <TableDevice />
                     <a href='/Device/AddDevice'>
                         <div className='div-add'>
                             <div className='plus'><AiOutlinePlus className='cong' /></div>
@@ -24,19 +47,30 @@ class Device extends React.Component {
 
                     <div className='tthd'>
                         <p className='ppp'>Trạng thái hoạt động</p>
-                        <select className='tb-select' >
-                            <option value="all">Tất cả</option>
-                            <option value="act">Hoạt động</option>
-                            <option value="notatc">Ngừng hoạt động</option>
-                        </select>
+                        <div className="sreach">
+                            <input onClick={() => this.show('tthd', 'up', 'down')} id='ip' className='tb-select' value={'Tất cả'} style={{ marginLeft: '4px', fontSize: '16px' }}></input>
+                            <button onClick={() => this.show('tthd', 'up', 'down')} id='down'><RiArrowDownSLine /></button>
+                            <button onClick={() => this.show('tthd', 'up', 'down')} id='up' style={{ display: 'none' }}><RiArrowUpSLine /></button>
+                        </div>
+                        <div id='tthd' className='select-drop-down' onClick={() => this.show('tthd', 'up', 'down')}>
+                            <div className='select-drop-down-item ' onClick={() => this.Chose('tc', 'ip')}><a id='tc'>Tất cả</a></div>
+                            <div className='select-drop-down-item ' onClick={() => this.Chose('hd', 'ip')}><a id='hd'>Hoạt động</a></div>
+                            <div className='select-drop-down-item ' onClick={() => this.Chose('nhd', 'ip')}><a id='nhd'>Ngừng hoạt động</a></div>
+                        </div>
+
                     </div>
                     <div className='ttkn'>
                         <p className='ppp'>Trạng thái kết nối</p>
-                        <select className='tb-select'>
-                            <option value="all">Tất cả</option>
-                            <option value="conect">Kết nối</option>
-                            <option value="unconect">Mất kết nối</option>
-                        </select>
+                        <div className="sreach">
+                            <input onClick={() => this.show('ttkn', 'up1', 'down1')} id='ip1' className='tb-select' value={'Tất cả'} style={{ marginLeft: '4px', fontSize: '16px' }}></input>
+                            <button onClick={() => this.show('ttkn', 'up1', 'down1')} id='down1'><RiArrowDownSLine /></button>
+                            <button onClick={() => this.show('ttkn', 'up1', 'down1')} id='up1' style={{ display: 'none' }}><RiArrowUpSLine /></button>
+                        </div>
+                        <div id='ttkn' className='select-drop-down' onClick={() => this.show('ttkn', 'up1', 'down1')}>
+                            <div className='select-drop-down-item ' onClick={() => this.Chose('tc1', 'ip1')}><a id='tc1'>Tất cả</a></div>
+                            <div className='select-drop-down-item ' onClick={() => this.Chose('kn', 'ip1')}><a id='kn'>Kết nối</a></div>
+                            <div className='select-drop-down-item ' onClick={() => this.Chose('mkn', 'ip1')}><a id='mkn'>Mất kết nối</a></div>
+                        </div>
                     </div>
                     <div className='tk'>
                         <p className='ppp'>Từ khóa</p>
@@ -48,7 +82,7 @@ class Device extends React.Component {
                         </div>
                     </div>
                     <div className='title-report-type'>Danh sách thiết bị</div>
-                    <TableDevice />
+
                     <Nextpage />
                     <Topbar nametitle1='Thiết bị ﹥ ' nametitle2='' nametitle3='Danh sách thiết bị' href='' href2='' nametitle21='' />
                     <Menubar buttonid="tb" />
