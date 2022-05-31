@@ -35,11 +35,11 @@ class Login extends React.Component {
     const type = eye.getAttribute("type") === "password" ? "text" : "password";
     eye.setAttribute("type", type);
     if (type === "password") {
-      show.style.display = 'block';
+      show.style.display = 'flex';
       hide.style.display = 'none';
     }
     else {
-      hide.style.display = 'block';
+      hide.style.display = 'flex';
       show.style.display = 'none';
     }
   }
