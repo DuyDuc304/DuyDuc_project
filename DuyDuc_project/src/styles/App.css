@@ -2772,12 +2772,14 @@ button {
   height: 44px;
   background: #FFFFFF;
   border-radius: 8px;
+
 }
 
 .select-drop-down-item a {
   display: flex;
   padding-top: 12px;
   padding-left: 12px;
+
 }
 
 .select-drop-down-item:hover {
