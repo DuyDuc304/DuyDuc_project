@@ -17,6 +17,9 @@ import AllAbout from './allabout';
 
 
 class Dashboard extends React.Component {
+    numberwating: number = 3721;
+    numberuse: number = 486;
+    numbernext: number = 102;
     render() {
         return (
             <div className='bg'>
@@ -34,7 +37,7 @@ class Dashboard extends React.Component {
                                 </div>
                                 <div className='title-chart-type-item-name'>
 
-                                    <label className='solieu'>4.520</label>
+                                    <label className='solieu'>{this.numbernext + this.numberuse + this.numberwating}</label>
                                     <div className='phantram'><BsArrowUpShort className='phantram-up' /><a className='phantram-a'>32.41%</a></div>
                                 </div>
                             </div>
@@ -47,7 +50,7 @@ class Dashboard extends React.Component {
                                 </div>
                                 <div className='title-chart-type-item-name'>
 
-                                    <label className='solieu'>3.721</label>
+                                    <label className='solieu'>{this.numberuse}</label>
                                     <div className='phantram' style={{ background: 'rgba(231, 63, 63, 0.15)' }}><BsArrowDownShort className='phantram-down' /><a className='phantram-a' style={{ color: '#E73F3F ' }}>32.41%</a></div>
                                 </div>
                             </div>
@@ -59,7 +62,7 @@ class Dashboard extends React.Component {
                                     <p>Số thứ tự đang chờ</p>
                                 </div>
                                 <div className='title-chart-type-item-name'>
-                                    <label className='solieu'>468</label>
+                                    <label className='solieu'>{this.numberwating}</label>
                                     <div className='phantram'><BsArrowUpShort className='phantram-up' /><a className='phantram-a'>56.41%</a></div>
                                 </div>
                             </div>
@@ -72,7 +75,7 @@ class Dashboard extends React.Component {
                                 </div>
                                 <div className='title-chart-type-item-name'>
 
-                                    <label className='solieu'>32</label>
+                                    <label className='solieu'>{this.numbernext}</label>
                                     <div className='phantram' style={{ background: 'rgba(231, 63, 63, 0.15)' }}>
                                         <BsArrowDownShort className='phantram-down' />
                                         <a className='phantram-a' style={{ color: '#E73F3F ' }}>22.41%</a></div>

@@ -3,7 +3,6 @@ import * as React from "react"
 import Calendar from "./calendar/calenda"
 import { MdDesktopWindows, MdOutlineForum } from "react-icons/md"
 
-import Numberorder from './numberoder.svg';
 import '@rhazegh/react-circular-progressbar/dist/styles.css';
 import { buildStyles, CircularProgressbar, CircularProgressbarWithChildren } from '@rhazegh/react-circular-progressbar';
 import { ImStack } from "react-icons/im";
@@ -164,7 +163,7 @@ class AllAbout extends React.Component {
                                     </CircularProgressbarWithChildren>
                                 </div>
                                 <div className="info-sumary">
-                                    <p className="number-sumary">{this.numberuse + this.numberuse + this.numberwating}</p>
+                                    <p className="number-sumary">{this.numberuse + this.numbernext + this.numberwating}</p>
                                     <span className="name-item-sumary "><ImStack className='icon-sumary' style={{ color: "#35C75A" }} />  <p className="name-sumary" style={{ color: "#35C75A" }}>Cấp số</p></span>
                                 </div>
                                 <div className="info-sumary2">
@@ -188,6 +187,7 @@ class AllAbout extends React.Component {
                         </a>
                     </div>
                 </div >
+
                 <Calendar />
             </div >
         )
