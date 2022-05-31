@@ -68,7 +68,7 @@ class AddDevice extends React.Component {
                                             <p style={{ color: 'red', fontFamily: 'Nunito', margin: '4px' }}>*</p>
                                         </div>
                                         <div className='box' style={{ width: '540px' }}>
-                                            <input name='LoaiThietBi' onClick={() => this.show('tdv', 'up', 'down')} id='ip' value={'Chọn loại thiêt bị'} style={{ fontSize: '16px', width: '500px' }}></input>
+                                            <input name='LoaiThietBi' onClick={() => this.show('tdv', 'up', 'down')} id='ip' value={'Chọn loại thiêt bị'} style={{ fontSize: '16px', width: '500px', cursor: 'pointer' }}></input>
                                             <a className='box-button' onClick={() => this.show('tdv', 'up', 'down')} style={{ marginLeft: '500px', position: 'absolute' }} id='down'><TiArrowSortedDown /></a>
                                             <a className='box-button' onClick={() => this.show('tdv', 'up', 'down')} style={{ marginLeft: '500px', position: 'absolute', display: 'none' }} id='up' ><TiArrowSortedUp /></a>
                                         </div>

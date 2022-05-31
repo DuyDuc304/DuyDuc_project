@@ -80,7 +80,7 @@ class UpdateDevice extends React.Component {
                                         <div className='box' style={{ width: '540px' }}>
                                             <input name='LoaiThietBi' onClick={() => this.show('tdv', 'up', 'down')}
                                                 id='ip' value={'Kiosk'}
-                                                style={{ fontSize: '16px', width: '500px' }}></input>
+                                                style={{ fontSize: '16px', width: '500px', cursor: 'pointer' }}></input>
                                             <a className='box-button' onClick={() => this.show('tdv', 'up', 'down')}
                                                 style={{ marginLeft: '500px', position: 'absolute' }}
                                                 id='down'>
@@ -148,7 +148,7 @@ class UpdateDevice extends React.Component {
                         </div>
                         <div className='buton-device'>
                             <a href="/Device" className='button-huy' > Hủy bỏ</a>
-                            <button className='myform-button ' type='submit'>Thêm thiêt bị</button>
+                            <button className='myform-button ' type='submit'>Cập nhật</button>
                         </div>
                     </form>
                     <div className='title-report-type'>Quản lý thiết bị</div>

@@ -63,7 +63,7 @@ class NumberOrder extends React.Component {
                         <div className='qlcs-tdv'>
                             <p>Tên dịch vụ</p>
                             <div className="box">
-                                <input onClick={() => this.show('tdv', 'up', 'down')} id='ip' value={'Tất cả'} style={{ marginLeft: '4px', fontSize: '16px' }}></input>
+                                <input onClick={() => this.show('tdv', 'up', 'down')} id='ip' value={'Tất cả'} style={{ marginLeft: '4px', fontSize: '16px', cursor: 'pointer' }}></input>
                                 <button className='box-button' onClick={() => this.show('tdv', 'up', 'down')} id='down'><TiArrowSortedDown /></button>
                                 <button className='box-button' onClick={() => this.show('tdv', 'up', 'down')} id='up' style={{ display: 'none' }}><TiArrowSortedUp /></button>
                             </div>
@@ -78,7 +78,7 @@ class NumberOrder extends React.Component {
                         <div className='qlcs-tdv'>
                             <p>Tình trạng</p>
                             <div className="box">
-                                <input onClick={() => this.show('tt', 'up1', 'down1')} id='iptt' value={'Tất cả'} style={{ marginLeft: '4px', fontSize: '16px' }}></input>
+                                <input onClick={() => this.show('tt', 'up1', 'down1')} id='iptt' value={'Tất cả'} style={{ marginLeft: '4px', fontSize: '16px', cursor: 'pointer' }}></input>
                                 <button className='box-button' onClick={() => this.show('tt', 'up1', 'down1')} id='down1'><TiArrowSortedDown /></button>
                                 <button className='box-button' onClick={() => this.show('tt', 'up1', 'down1')} id='up1' style={{ display: 'none' }}><TiArrowSortedUp /></button>
                             </div>
@@ -93,7 +93,7 @@ class NumberOrder extends React.Component {
                         <div className='qlcs-tdv'>
                             <p>Nguồn cấp</p>
                             <div className="box">
-                                <input onClick={() => this.show('nc', 'up2', 'down2')} id='ipnc' value={'Tất cả'} style={{ marginLeft: '4px', fontSize: '16px' }}></input>
+                                <input onClick={() => this.show('nc', 'up2', 'down2')} id='ipnc' value={'Tất cả'} style={{ marginLeft: '4px', fontSize: '16px', cursor: 'pointer' }}></input>
                                 <button className='box-button' onClick={() => this.show('nc', 'up2', 'down2')} id='down2'><TiArrowSortedDown /></button>
                                 <button className='box-button' onClick={() => this.show('nc', 'up2', 'down2')} id='up2' style={{ display: 'none' }}><TiArrowSortedUp /></button>
                             </div>

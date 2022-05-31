@@ -66,7 +66,7 @@ class RessetPW extends React.Component {
                                             <br />
                                             <br />
                                             <div className='rowbtn'>
-                                                <a href="/login" className='button-huy' > Hủy</a>
+                                                <a href="/login" className='button-huy' style={{ background: '#F7F7F7' }} > Hủy</a>
                                                 <button className='myform-button ' type='submit'>Tiếp tục</button>
                                             </div>
                                         </div>

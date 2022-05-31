@@ -53,7 +53,7 @@ class AddNumber extends React.Component<any, any> {
                             <form onSubmit={this.popup} >
 
                                 <div className="sreach" style={{ width: '400px', marginBottom: '80px' }}>
-                                    <input name='TenDichVu' onClick={() => this.show('tdv', 'up', 'down')} id='ip' value={'Tất cả'} style={{ fontSize: '16px', width: '350px' }}></input>
+                                    <input name='TenDichVu' onClick={() => this.show('tdv', 'up', 'down')} id='ip' value={'Tất cả'} style={{ fontSize: '16px', width: '350px', cursor: 'pointer' }}></input>
                                     <a className='box-button' onClick={() => this.show('tdv', 'up', 'down')} id='down'><TiArrowSortedDown /></a>
                                     <a className='box-button' onClick={() => this.show('tdv', 'up', 'down')} id='up' style={{ display: 'none' }}><TiArrowSortedUp /></a>
                                 </div>
