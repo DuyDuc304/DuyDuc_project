@@ -3,9 +3,31 @@ import React from 'react';
 import '../layout/menubar';
 import { Topbar } from '../layout/topbar';
 import { Menubar } from '../layout/menubar';
+import { RiArrowDownSLine, RiArrowUpSLine } from 'react-icons/ri';
+import { TiArrowSortedDown, TiArrowSortedUp } from 'react-icons/ti';
 
 
 class AddDevice extends React.Component {
+    Chose = (id: string, input: string) => {
+        const ip: any = document.getElementById(input)
+        const text: any = document.getElementById(id)
+        ip.value = text.innerText
+    }
+
+    show = (id: string, u: string, d: string) => {
+        const ip: any = document.getElementById(id)
+        const up: any = document.getElementById(u)
+        const down: any = document.getElementById(d)
+        if (ip.style.display == 'none') {
+            ip.style.display = 'block';
+            up.style.display = 'flex';
+            down.style.display = 'none';
+        } else {
+            ip.style.display = 'none';
+            down.style.display = 'flex';
+            up.style.display = 'none';
+        }
+    }
     render() {
         return (
             <div className='bg'>
@@ -45,12 +67,11 @@ class AddDevice extends React.Component {
                                             <p>Loại thiết bị:</p>
                                             <p style={{ color: 'red', fontFamily: 'Nunito', margin: '4px' }}>*</p>
                                         </div>
-
-                                        <select className='select-type-device' name='LoaiThietbi' >
-                                            <option value="Kiosk">Kiosk</option>
-                                            <option value="Displaycounter">Display counter</option>
-
-                                        </select>
+                                        <div className='box' style={{ width: '540px' }}>
+                                            <input name='LoaiThietBi' onClick={() => this.show('tdv', 'up', 'down')} id='ip' value={'Chọn loại thiêt bị'} style={{ fontSize: '16px', width: '500px' }}></input>
+                                            <a className='box-button' onClick={() => this.show('tdv', 'up', 'down')} style={{ marginLeft: '500px', position: 'absolute' }} id='down'><TiArrowSortedDown /></a>
+                                            <a className='box-button' onClick={() => this.show('tdv', 'up', 'down')} style={{ marginLeft: '500px', position: 'absolute', display: 'none' }} id='up' ><TiArrowSortedUp /></a>
+                                        </div>
 
                                     </div>
                                     <div className='col-update-device-item'>
@@ -66,6 +87,11 @@ class AddDevice extends React.Component {
                                             <p style={{ color: 'red', fontFamily: 'Nunito', margin: '4px' }}>*</p>
                                         </div>
                                         <input type="text" name='MatKhau' placeholder="Nhập mật khẩu"></input>
+                                    </div>
+                                    <div id='tdv' className='select-drop-down' onClick={() => this.show('tdv', 'up', 'down')} style={{ width: '540px', marginLeft: '590px', marginTop: '74px' }}>
+                                        <div className='select-drop-down-item ' style={{ width: '540px' }} onClick={() => this.Chose('kiosk', 'ip')}><a id='kiosk'>Kiosk</a></div>
+                                        <div className='select-drop-down-item ' style={{ width: '540px' }} onClick={() => this.Chose('ht', 'ip')}><a id='ht'>Hệ thống</a></div>
+
                                     </div>
                                 </div>
                             </div>

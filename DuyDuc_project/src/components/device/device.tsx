@@ -7,6 +7,7 @@ import { AiOutlinePlus, AiOutlineSearch } from "react-icons/ai";
 import TableDevice from './tabale-device';
 import Nextpage from '../layout/nextpage';
 import { RiArrowDownSLine, RiArrowUpSLine } from 'react-icons/ri';
+import { TiArrowSortedDown, TiArrowSortedUp } from 'react-icons/ti';
 
 class Device extends React.Component {
     Chose = (id: string, input: string) => {
@@ -49,8 +50,8 @@ class Device extends React.Component {
                         <p className='ppp'>Trạng thái hoạt động</p>
                         <div className="sreach">
                             <input onClick={() => this.show('tthd', 'up', 'down')} id='ip' className='tb-select' value={'Tất cả'} style={{ marginLeft: '4px', fontSize: '16px' }}></input>
-                            <button onClick={() => this.show('tthd', 'up', 'down')} id='down'><RiArrowDownSLine /></button>
-                            <button onClick={() => this.show('tthd', 'up', 'down')} id='up' style={{ display: 'none' }}><RiArrowUpSLine /></button>
+                            <button onClick={() => this.show('tthd', 'up', 'down')} id='down'><TiArrowSortedDown /></button>
+                            <button onClick={() => this.show('tthd', 'up', 'down')} id='up' style={{ display: 'none' }}><TiArrowSortedUp /></button>
                         </div>
                         <div id='tthd' className='select-drop-down' onClick={() => this.show('tthd', 'up', 'down')}>
                             <div className='select-drop-down-item ' onClick={() => this.Chose('tc', 'ip')}><a id='tc'>Tất cả</a></div>
@@ -63,8 +64,8 @@ class Device extends React.Component {
                         <p className='ppp'>Trạng thái kết nối</p>
                         <div className="sreach">
                             <input onClick={() => this.show('ttkn', 'up1', 'down1')} id='ip1' className='tb-select' value={'Tất cả'} style={{ marginLeft: '4px', fontSize: '16px' }}></input>
-                            <button onClick={() => this.show('ttkn', 'up1', 'down1')} id='down1'><RiArrowDownSLine /></button>
-                            <button onClick={() => this.show('ttkn', 'up1', 'down1')} id='up1' style={{ display: 'none' }}><RiArrowUpSLine /></button>
+                            <button onClick={() => this.show('ttkn', 'up1', 'down1')} id='down1'><TiArrowSortedDown /></button>
+                            <button onClick={() => this.show('ttkn', 'up1', 'down1')} id='up1' style={{ display: 'none' }}><TiArrowSortedUp /></button>
                         </div>
                         <div id='ttkn' className='select-drop-down' onClick={() => this.show('ttkn', 'up1', 'down1')}>
                             <div className='select-drop-down-item ' onClick={() => this.Chose('tc1', 'ip1')}><a id='tc1'>Tất cả</a></div>

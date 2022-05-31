@@ -1,6 +1,7 @@
 import React from 'react';
 import { IoMdClose } from 'react-icons/io';
 import { RiArrowDownSLine, RiArrowUpSLine } from 'react-icons/ri';
+import { TiArrowSortedDown, TiArrowSortedUp } from 'react-icons/ti';
 
 import { Menubar } from '../layout/menubar';
 import { Topbar } from '../layout/topbar';
@@ -53,8 +54,8 @@ class AddNumber extends React.Component<any, any> {
 
                                 <div className="sreach" style={{ width: '400px', marginBottom: '80px' }}>
                                     <input name='TenDichVu' onClick={() => this.show('tdv', 'up', 'down')} id='ip' value={'Tất cả'} style={{ fontSize: '16px', width: '350px' }}></input>
-                                    <a className='box-button' onClick={() => this.show('tdv', 'up', 'down')} id='down'><RiArrowDownSLine /></a>
-                                    <a className='box-button' onClick={() => this.show('tdv', 'up', 'down')} id='up' style={{ display: 'none' }}><RiArrowUpSLine /></a>
+                                    <a className='box-button' onClick={() => this.show('tdv', 'up', 'down')} id='down'><TiArrowSortedDown /></a>
+                                    <a className='box-button' onClick={() => this.show('tdv', 'up', 'down')} id='up' style={{ display: 'none' }}><TiArrowSortedUp /></a>
                                 </div>
 
                                 <div className='rowbtn' >

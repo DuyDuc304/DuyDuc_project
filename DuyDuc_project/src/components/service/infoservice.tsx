@@ -3,6 +3,7 @@ import Calendar from "react-calendar";
 import { AiOutlineSearch } from "react-icons/ai";
 import { FaPen, FaRegCalendarAlt } from "react-icons/fa";
 import { RiArrowGoBackLine } from "react-icons/ri";
+import { TiArrowSortedUp, TiArrowSortedDown } from "react-icons/ti";
 import { Menubar } from "../layout/menubar";
 import Nextpage from "../layout/nextpage";
 import { Topbar } from "../layout/topbar";
@@ -23,6 +24,26 @@ class InfoService extends React.Component {
         }
 
 
+    }
+    Chose = (id: string, input: string) => {
+        const ip: any = document.getElementById(input)
+        const text: any = document.getElementById(id)
+        ip.value = text.innerText
+    }
+
+    show = (id: string, u: string, d: string) => {
+        const ip: any = document.getElementById(id)
+        const up: any = document.getElementById(u)
+        const down: any = document.getElementById(d)
+        if (ip.style.display == 'none') {
+            ip.style.display = 'block';
+            up.style.display = 'flex';
+            down.style.display = 'none';
+        } else {
+            ip.style.display = 'none';
+            down.style.display = 'flex';
+            up.style.display = 'none';
+        }
     }
     render() {
         return (
@@ -70,12 +91,12 @@ class InfoService extends React.Component {
                         <div className="service-row">
                             <div className="service-trangthai ">
                                 <p>Trạng thái</p>
-                                <select className='select-trangthai'>
-                                    <option value="all">Tất cả</option>
-                                    <option value="DaHoangThanh">Đã hoàn thành</option>
-                                    <option value="DaThucHien">Đã thực hiện</option>
-                                    <option value="null">Vắng</option>
-                                </select>
+                                <div className="box">
+                                    <input onClick={() => this.show('tt', 'up1', 'down1')} id='iptt' value={'Tất cả'} style={{ marginLeft: '4px', fontSize: '16px' }}></input>
+                                    <button className='box-button' onClick={() => this.show('tt', 'up1', 'down1')} id='down1'>< TiArrowSortedDown /></button>
+                                    <button className='box-button' onClick={() => this.show('tt', 'up1', 'down1')} id='up1' style={{ display: 'none' }}><TiArrowSortedUp /></button>
+                                </div>
+
                             </div>
                             <div className="service-trangthai ">
                                 <p>Chọn thời gian</p> <div className='ctg-row '>
@@ -167,6 +188,13 @@ class InfoService extends React.Component {
                                     </div>
                                 </div>
                             </div>
+
+                        </div>
+                        <div id='tt' className='select-drop-down' style={{ width: '154px', marginLeft: '10px', marginTop: '20px' }} onClick={() => this.show('tt', 'up1', 'down1')}>
+                            <div className='select-drop-down-item ' style={{ width: '154px' }} onClick={() => this.Chose('tc', 'iptt')}><a id='tc'>Tất cả</a></div>
+                            <div className='select-drop-down-item ' style={{ width: '154px' }} onClick={() => this.Chose('dc', 'iptt')}><a id='dc'>Đã hoàn thành</a></div>
+                            <div className='select-drop-down-item ' style={{ width: '154px' }} onClick={() => this.Chose('dsd', 'iptt')}><a id='dsd'>Đã thực hiện</a></div>
+                            <div className='select-drop-down-item ' style={{ width: '154px' }} onClick={() => this.Chose('bq', 'iptt')}><a id='bq'>Vắng</a></div>
                         </div>
                     </div>
 

@@ -6,7 +6,7 @@ import { Menubar } from '../../layout/menubar';
 import { AiOutlinePlus, AiOutlineSearch } from 'react-icons/ai';
 import TableAccountUser from './table-accountser';
 import Nextpage from '../../layout/nextpage';
-import { RiArrowDownSLine, RiArrowUpSLine } from 'react-icons/ri';
+import { TiArrowSortedDown, TiArrowSortedUp } from 'react-icons/ti';
 
 
 class AccountUser extends React.Component {
@@ -48,8 +48,8 @@ class AccountUser extends React.Component {
                         <p className='ppp'> Tên vai trò</p>
                         <div className="sreach">
                             <input onClick={() => this.show('tthd', 'up', 'down')} id='ip' className='tb-select' value={'Tất cả'} style={{ marginLeft: '4px', fontSize: '16px' }}></input>
-                            <button onClick={() => this.show('tthd', 'up', 'down')} id='down'><RiArrowDownSLine /></button>
-                            <button onClick={() => this.show('tthd', 'up', 'down')} id='up' style={{ display: 'none' }}><RiArrowUpSLine /></button>
+                            <button onClick={() => this.show('tthd', 'up', 'down')} id='down'><TiArrowSortedDown /></button>
+                            <button onClick={() => this.show('tthd', 'up', 'down')} id='up' style={{ display: 'none' }}><TiArrowSortedUp /></button>
                         </div>
                         <div id='tthd' className='select-drop-down' onClick={() => this.show('tthd', 'up', 'down')}>
                             <div className='select-drop-down-item ' onClick={() => this.Chose('tc', 'ip')}><a id='tc'>Tất cả</a></div>

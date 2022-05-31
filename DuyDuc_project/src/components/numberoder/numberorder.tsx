@@ -9,6 +9,7 @@ import Nextpage from '../layout/nextpage';
 import { FaRegCalendarAlt } from 'react-icons/fa';
 import Calendar from 'react-calendar';
 import { RiArrowDownSLine, RiArrowUpSLine } from 'react-icons/ri';
+import { TiArrowSortedDown, TiArrowSortedUp } from 'react-icons/ti';
 
 let newDate = new Date()
 
@@ -63,8 +64,8 @@ class NumberOrder extends React.Component {
                             <p>Tên dịch vụ</p>
                             <div className="box">
                                 <input onClick={() => this.show('tdv', 'up', 'down')} id='ip' value={'Tất cả'} style={{ marginLeft: '4px', fontSize: '16px' }}></input>
-                                <button className='box-button' onClick={() => this.show('tdv', 'up', 'down')} id='down'><RiArrowDownSLine /></button>
-                                <button className='box-button' onClick={() => this.show('tdv', 'up', 'down')} id='up' style={{ display: 'none' }}><RiArrowUpSLine /></button>
+                                <button className='box-button' onClick={() => this.show('tdv', 'up', 'down')} id='down'><TiArrowSortedDown /></button>
+                                <button className='box-button' onClick={() => this.show('tdv', 'up', 'down')} id='up' style={{ display: 'none' }}><TiArrowSortedUp /></button>
                             </div>
                             <div id='tdv' className='select-drop-down' style={{ width: '154px' }} onClick={() => this.show('tdv', 'up', 'down')}>
                                 <div className='select-drop-down-item ' style={{ width: '154px' }} onClick={() => this.Chose('tc', 'ip')}><a id='tc'>Tất cả</a></div>
@@ -78,8 +79,8 @@ class NumberOrder extends React.Component {
                             <p>Tình trạng</p>
                             <div className="box">
                                 <input onClick={() => this.show('tt', 'up1', 'down1')} id='iptt' value={'Tất cả'} style={{ marginLeft: '4px', fontSize: '16px' }}></input>
-                                <button className='box-button' onClick={() => this.show('tt', 'up1', 'down1')} id='down1'><RiArrowDownSLine /></button>
-                                <button className='box-button' onClick={() => this.show('tt', 'up1', 'down1')} id='up1' style={{ display: 'none' }}><RiArrowUpSLine /></button>
+                                <button className='box-button' onClick={() => this.show('tt', 'up1', 'down1')} id='down1'><TiArrowSortedDown /></button>
+                                <button className='box-button' onClick={() => this.show('tt', 'up1', 'down1')} id='up1' style={{ display: 'none' }}><TiArrowSortedUp /></button>
                             </div>
                             <div id='tt' className='select-drop-down' style={{ width: '154px', marginLeft: '175px' }} onClick={() => this.show('tt', 'up1', 'down1')}>
                                 <div className='select-drop-down-item ' style={{ width: '154px' }} onClick={() => this.Chose('tc', 'iptt')}><a id='tc'>Tất cả</a></div>
@@ -93,8 +94,8 @@ class NumberOrder extends React.Component {
                             <p>Nguồn cấp</p>
                             <div className="box">
                                 <input onClick={() => this.show('nc', 'up2', 'down2')} id='ipnc' value={'Tất cả'} style={{ marginLeft: '4px', fontSize: '16px' }}></input>
-                                <button className='box-button' onClick={() => this.show('nc', 'up2', 'down2')} id='down2'><RiArrowDownSLine /></button>
-                                <button className='box-button' onClick={() => this.show('nc', 'up2', 'down2')} id='up2' style={{ display: 'none' }}><RiArrowUpSLine /></button>
+                                <button className='box-button' onClick={() => this.show('nc', 'up2', 'down2')} id='down2'><TiArrowSortedDown /></button>
+                                <button className='box-button' onClick={() => this.show('nc', 'up2', 'down2')} id='up2' style={{ display: 'none' }}><TiArrowSortedUp /></button>
                             </div>
                             <div id='nc' className='select-drop-down' style={{ width: '154px', marginLeft: '345px' }} onClick={() => this.show('nc', 'up2', 'down2')}>
                                 <div className='select-drop-down-item ' style={{ width: '154px' }} onClick={() => this.Chose('tc', 'ipnc')}><a id='tc'>Tất cả</a></div>
