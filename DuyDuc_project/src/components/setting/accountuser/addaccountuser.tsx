@@ -1,9 +1,30 @@
 import React from "react";
 import { FiEye, FiEyeOff } from "react-icons/fi";
+import { TiArrowSortedDown, TiArrowSortedUp } from "react-icons/ti";
 import { Menubar } from "../../layout/menubar";
 import { Topbar } from "../../layout/topbar";
 
 class AddAccountUser extends React.Component {
+    Chose = (id: string, input: string) => {
+        const ip: any = document.getElementById(input)
+        const text: any = document.getElementById(id)
+        ip.value = text.innerText
+    }
+
+    show = (id: string, u: string, d: string) => {
+        const ip: any = document.getElementById(id)
+        const up: any = document.getElementById(u)
+        const down: any = document.getElementById(d)
+        if (ip.style.display == 'none') {
+            ip.style.display = 'block';
+            up.style.display = 'flex';
+            down.style.display = 'none';
+        } else {
+            ip.style.display = 'none';
+            down.style.display = 'flex';
+            up.style.display = 'none';
+        }
+    }
     showpw() {
         const show: any = document.getElementById('show')
         const hide: any = document.getElementById('hide')
@@ -71,11 +92,17 @@ class AddAccountUser extends React.Component {
                                             <p>Vai trò:</p>
                                             <p style={{ color: 'red', fontFamily: 'Nunito', margin: '4px' }}>*</p>
                                         </div>
-                                        <select className='select-type-device' name='Vaitro' >
-                                            <option value="KeToan">Kế toán</option>
-                                            <option value="QuanLy">Quản lý</option>
-                                            <option value="admin">Admin</option>
-                                        </select>
+                                        <div className='box' style={{ width: '540px' }}>
+                                            <input name='VaiTro' onClick={() => this.show('tdv', 'up', 'down')} id='ip' value={'Chọn vai trò'} style={{ fontSize: '16px', width: '500px' }}></input>
+                                            <a className='box-button' onClick={() => this.show('tdv', 'up', 'down')} style={{ marginLeft: '500px', position: 'absolute' }} id='down'><TiArrowSortedDown /></a>
+                                            <a className='box-button' onClick={() => this.show('tdv', 'up', 'down')} style={{ marginLeft: '500px', position: 'absolute', display: 'none' }} id='up' ><TiArrowSortedUp /></a>
+                                        </div>
+                                        <div id='tdv' className='select-drop-down' onClick={() => this.show('tdv', 'up', 'down')} style={{ width: '540px', marginLeft: '24px', marginTop: '348px' }}>
+                                            <div className='select-drop-down-item ' style={{ width: '540px' }} onClick={() => this.Chose('kt', 'ip')}><a id='kt'>Kế toán</a></div>
+                                            <div className='select-drop-down-item ' style={{ width: '540px' }} onClick={() => this.Chose('ql', 'ip')}><a id='ql'>Quản lý</a></div>
+                                            <div className='select-drop-down-item ' style={{ width: '540px' }} onClick={() => this.Chose('ad', 'ip')}><a id='ad'>Admin</a></div>
+
+                                        </div>
                                     </div>
                                 </div>
                                 <div className='col-update-device'>
@@ -108,13 +135,19 @@ class AddAccountUser extends React.Component {
                                             <p>Tình trạng:</p>
                                             <p style={{ color: 'red', fontFamily: 'Nunito', margin: '4px' }}>*</p>
                                         </div>
-                                        <select className='select-type-device' name='TinhTrang' >
-                                            <option value="all">Tất cả</option>
-                                            <option value="act">Hoạt động</option>
-                                            <option value="unact">Ngừng hoạt đông</option>
+                                        <div className='box' style={{ width: '540px' }}>
+                                            <input name='TinhTrang' onClick={() => this.show('tt', 'up1', 'down1')} id='iptt' value={'Chọn tình trạng'} style={{ fontSize: '16px', width: '500px' }}></input>
+                                            <a className='box-button' onClick={() => this.show('tt', 'up1', 'down1')} style={{ marginLeft: '500px', position: 'absolute' }} id='down1'><TiArrowSortedDown /></a>
+                                            <a className='box-button' onClick={() => this.show('tt', 'up1', 'down1')} style={{ marginLeft: '500px', position: 'absolute', display: 'none' }} id='up1' ><TiArrowSortedUp /></a>
+                                        </div>
+                                        <div id='tt' className='select-drop-down' onClick={() => this.show('tt', 'up1', 'down1')} style={{ width: '540px', marginLeft: '590px', marginTop: '348px' }}>
+                                            <div className='select-drop-down-item ' style={{ width: '540px' }} onClick={() => this.Chose('tc', 'iptt')}><a id='tc'>Tất cả</a></div>
+                                            <div className='select-drop-down-item ' style={{ width: '540px' }} onClick={() => this.Chose('nhd', 'iptt')}><a id='nhd'>Ngừng hoạt động</a></div>
+                                            <div className='select-drop-down-item ' style={{ width: '540px' }} onClick={() => this.Chose('hd', 'iptt')}><a id='hd'>Hoạt động</a></div>
+                                        </div>
 
-                                        </select>
                                     </div>
+
                                 </div>
                             </div>
 
