@@ -9,7 +9,7 @@ class AddRoleUser extends React.Component {
             <div className='bg'>
                 <div className="Backgroundapp">
                     <div className='title-report-type'>Danh sách vai trò</div>
-                    <form >
+                    <form autoComplete="off">
                         <div className='roleuser-layout'>
                             <p className='text-tttb'>Thông tin vai trò</p>
 
