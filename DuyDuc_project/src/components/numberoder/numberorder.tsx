@@ -121,7 +121,7 @@ class NumberOrder extends React.Component {
                         <div className='qlcs-tdv'>
                             <p >Từ khóa</p>
                             <div className='sreach-qlcs' >
-                                <form  >
+                                <form autoComplete="off" >
                                     <input type="text" name='timkiem' placeholder="Nhập từ khóa ..." style={{ fontSize: '14px' }} ></input>
                                     <button className="sreach-sv-button" type='submit'><AiOutlineSearch /></button>
                                 </form>

@@ -76,7 +76,7 @@ class Service extends React.Component {
                     <div className='tk'>
                         <p className='ppp'>Từ khóa</p>
                         <div className='sreach'>
-                            <form >
+                            <form autoComplete="off">
                                 <input type="text" name='timkiem' placeholder="Nhập từ khóa ..."></input>
                                 <button type='submit'><AiOutlineSearch /></button>
                             </form>

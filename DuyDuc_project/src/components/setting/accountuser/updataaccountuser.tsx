@@ -5,6 +5,24 @@ import { Menubar } from "../../layout/menubar";
 import { Topbar } from "../../layout/topbar";
 
 class UpdateAccountUser extends React.Component {
+    setvalue() {
+        const ht: any = document.getElementById('ht')
+        ht.value = 'Nguyễn Duy Đức';
+        const sdt: any = document.getElementById('sdt')
+        sdt.value = '0379439567';
+        const mail: any = document.getElementById('email')
+        mail.value = 'ducpy30042000@gmail.com';
+        const vt: any = document.getElementById('ip')
+        vt.value = 'Kế toán';
+        const tdn: any = document.getElementById('tdn')
+        tdn.value = 'ducpy';
+        const mk: any = document.getElementById('pw')
+        mk.value = 'Duc30042k';
+        const mk2: any = document.getElementById('pw1')
+        mk2.value = 'Duc30042k';
+        const tt: any = document.getElementById('iptt')
+        tt.value = 'Hoạt động';
+    }
     Chose = (id: string, input: string) => {
         const ip: any = document.getElementById(input)
         const text: any = document.getElementById(id)
@@ -58,8 +76,8 @@ class UpdateAccountUser extends React.Component {
     render() {
         return (
             <div className='bg'>
-                <div className="Backgroundapp">
-                    <form >
+                <div className="Backgroundapp" onLoad={() => this.setvalue()}>
+                    <form autoComplete="off" >
                         <div className='add-device'>
                             <p className='text-tttb'>Thông tin tài khoản</p>
 
@@ -70,7 +88,7 @@ class UpdateAccountUser extends React.Component {
                                             <p>Họ tên:</p>
                                             <p style={{ color: 'red', fontFamily: 'Nunito', margin: '4px' }}>*</p>
                                         </div>
-                                        <input type="text" name='HoTen' placeholder="Nhập họ và tên" value={'Nguyễn Duy Đức'}></input>
+                                        <input id="ht" type="text" name='HoTen' placeholder="Nhập họ và tên" ></input>
                                     </div>
 
                                     <div className='col-update-device-item'>
@@ -78,14 +96,14 @@ class UpdateAccountUser extends React.Component {
                                             <p>Số điện thoại:</p>
                                             <p style={{ color: 'red', fontFamily: 'Nunito', margin: '4px' }}>*</p>
                                         </div>
-                                        <input type="text" name='SoDienThoai' placeholder="Nhập số điện thoại" value={'0379439567'}></input>
+                                        <input id="sdt" type="text" name='SoDienThoai' placeholder="Nhập số điện thoại" ></input>
                                     </div>
                                     <div className='col-update-device-item'>
                                         <div className='row'>
                                             <p>Email:</p>
                                             <p style={{ color: 'red', fontFamily: 'Nunito', margin: '4px' }}>*</p>
                                         </div>
-                                        <input type="email" name='Email' placeholder="Nhập email" value={'ducpy30042000@gmail.com'}></input>
+                                        <input id="email" type="email" name='Email' placeholder="Nhập email" ></input>
                                     </div>
                                     <div className='col-update-device-item'>
                                         <div className='row'>
@@ -93,7 +111,7 @@ class UpdateAccountUser extends React.Component {
                                             <p style={{ color: 'red', fontFamily: 'Nunito', margin: '4px' }}>*</p>
                                         </div>
                                         <div className='box' style={{ width: '540px' }}>
-                                            <input name='VaiTro' onClick={() => this.show('tdv', 'up', 'down')} id='ip' value={'Kế toán'} style={{ fontSize: '16px', width: '500px', cursor: 'pointer' }}></input>
+                                            <input name='VaiTro' onClick={() => this.show('tdv', 'up', 'down')} id='ip' style={{ fontSize: '16px', width: '500px', cursor: 'pointer' }}></input>
                                             <a className='box-button' onClick={() => this.show('tdv', 'up', 'down')} style={{ marginLeft: '500px', position: 'absolute' }} id='down'><TiArrowSortedDown /></a>
                                             <a className='box-button' onClick={() => this.show('tdv', 'up', 'down')} style={{ marginLeft: '500px', position: 'absolute', display: 'none' }} id='up' ><TiArrowSortedUp /></a>
                                         </div>
@@ -111,7 +129,7 @@ class UpdateAccountUser extends React.Component {
                                             <p>Tên đăng nhập:</p>
                                             <p style={{ color: 'red', fontFamily: 'Nunito', margin: '4px' }}>*</p>
                                         </div>
-                                        <input type="text" name='TenDangNhap' placeholder="Nhập tên đăng nhập" value={'ducpy'}></input>
+                                        <input id="tdn" type="text" name='TenDangNhap' placeholder="Nhập tên đăng nhập"></input>
 
                                     </div>
                                     <div className='col-update-device-item'>
@@ -119,7 +137,7 @@ class UpdateAccountUser extends React.Component {
                                             <p>Mật khẩu:</p>
                                             <p style={{ color: 'red', fontFamily: 'Nunito', margin: '4px' }}>*</p>
                                         </div>
-                                        <input className='row-password-input' type="password" id="pw" name='password' placeholder="Nhập mật khẩu" value={'Duc30042k'}></input>
+                                        <input className='row-password-input' type="password" id="pw" name='password' placeholder="Nhập mật khẩu" ></input>
                                         <a className='input-have-eye-account' onClick={this.showpw} id='eye'> <FiEyeOff className='icon-eye' id='show' /> <FiEye className='icon-eye' id='hide' style={{ display: 'none' }} /></a>
                                     </div>
                                     <div className='col-update-device-item'>
@@ -127,7 +145,7 @@ class UpdateAccountUser extends React.Component {
                                             <p>Nhập lại mật khẩu:</p>
                                             <p style={{ color: 'red', fontFamily: 'Nunito', margin: '4px' }}>*</p>
                                         </div>
-                                        <input className='row-password-input' type="password" id="pw1" name='password2' placeholder="Nhập mật khẩu" value={'Duc30042k'}></input>
+                                        <input className='row-password-input' type="password" id="pw1" name='password2' placeholder="Nhập mật khẩu" ></input>
                                         <a className='input-have-eye-account' onClick={this.showpw1} id='eye'> <FiEyeOff className='icon-eye' id='show' /> <FiEye className='icon-eye' id='hide' style={{ display: 'none' }} /></a>
                                     </div>
                                     <div className='col-update-device-item'>
@@ -136,7 +154,7 @@ class UpdateAccountUser extends React.Component {
                                             <p style={{ color: 'red', fontFamily: 'Nunito', margin: '4px' }}>*</p>
                                         </div>
                                         <div className='box' style={{ width: '540px' }}>
-                                            <input name='TinhTrang' onClick={() => this.show('tt', 'up1', 'down1')} id='iptt' value={'Hoạt động '} style={{ fontSize: '16px', width: '500px', cursor: 'pointer' }}></input>
+                                            <input name='TinhTrang' onClick={() => this.show('tt', 'up1', 'down1')} id='iptt' style={{ fontSize: '16px', width: '500px', cursor: 'pointer' }}></input>
                                             <a className='box-button' onClick={() => this.show('tt', 'up1', 'down1')} style={{ marginLeft: '500px', position: 'absolute' }} id='down1'><TiArrowSortedDown /></a>
                                             <a className='box-button' onClick={() => this.show('tt', 'up1', 'down1')} style={{ marginLeft: '500px', position: 'absolute', display: 'none' }} id='up1' ><TiArrowSortedUp /></a>
                                         </div>

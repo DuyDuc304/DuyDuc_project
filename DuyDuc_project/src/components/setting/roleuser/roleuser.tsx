@@ -25,7 +25,7 @@ class RoleUser extends React.Component {
                     <div className="tk-diary">
                         <p>Từ khóa</p>
                         <div className='sreach-qlcs' style={{ marginTop: '-8px' }} >
-                            <form  >
+                            <form autoComplete="off" >
                                 <input type="text" name='timkiem' placeholder="Nhập từ khóa ..." style={{ fontSize: '14px' }} ></input>
                                 <button className="sreach-sv-button" type='submit'><AiOutlineSearch /></button>
                             </form>

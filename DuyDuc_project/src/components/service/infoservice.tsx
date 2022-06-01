@@ -15,6 +15,9 @@ let year = newDate.getFullYear();
 let setday = day + "/" + month + "/" + year;
 
 class InfoService extends React.Component {
+    setvalue() {
+
+    }
     OnClick() {
         const cld: any = document.querySelector('.daytime-picker-caledar-infoscv')
         if (cld.style.display == "none") {
@@ -71,13 +74,13 @@ class InfoService extends React.Component {
                         <p className='text-tttb'>Quy tắc cấp số</p>
                         <div className='row-checkbox' style={{ marginLeft: '-35px' }}>
                             <label className="container" >Tăng tự động từ:</label>
-                            <input className='row-checkbox-input' type="text" value={'0001'}></input>
+                            <div className='row-checkbox-input' ><p style={{ marginTop: '10px' }}>0001</p></div>
                             <label >đến</label>
-                            <input className='row-checkbox-input' type="text" value={'9999'}></input>
+                            <div className='row-checkbox-input'  ><p style={{ marginTop: '10px' }}>9999</p></div>
                         </div>
                         <div className='row-checkbox' style={{ marginLeft: '-35px' }}>
                             <label className="container">Prefix: </label>
-                            <input className='row-checkbox-input' type="text" value={'0001'} style={{ marginLeft: '82px' }}></input>
+                            <div className='row-checkbox-input' style={{ marginLeft: '82px' }}> <p style={{ marginTop: '10px' }}>0001</p></div>
 
                         </div><div className='row-checkbox' style={{ marginLeft: '-35px' }}>
                             <label className="container">Reset mỗi ngày </label>
@@ -114,7 +117,7 @@ class InfoService extends React.Component {
                             <div className="service-trangthai ">
                                 <p >Từ khóa</p>
                                 <div className='sreach-sv' >
-                                    <form  >
+                                    <form autoComplete="off" >
                                         <input type="text" name='timkiem' placeholder="Nhập từ khóa ..." style={{ fontSize: '14px' }} ></input>
                                         <button className="sreach-sv-button" type='submit'><AiOutlineSearch /></button>
                                     </form>
