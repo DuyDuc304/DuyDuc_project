@@ -1,12 +1,9 @@
 import React from 'react';
 import logo from './images/logo.svg';
 import htqlxh from './images/htqlxh.svg';
-import { render } from '@testing-library/react';
 import { BiErrorCircle } from "react-icons/bi";
-import Dashboard from '../dashboard/dashboard';
-
 import { FiEyeOff, FiEye } from 'react-icons/fi';
-import { BrowserRouter, Route } from 'react-router-dom';
+
 
 
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import '../layout/menubar';
 import { Topbar } from '../layout/topbar';
@@ -25,7 +25,7 @@ class Service extends React.Component {
         const ip: any = document.getElementById(id)
         const up: any = document.getElementById(u)
         const down: any = document.getElementById(d)
-        if (ip.style.display == 'none') {
+        if (ip.style.display === 'none') {
             ip.style.display = 'block';
             up.style.display = 'flex';
             down.style.display = 'none';
@@ -37,7 +37,7 @@ class Service extends React.Component {
     }
     OnClick() {
         const cld: any = document.querySelector('.daytime-picker-caledar')
-        if (cld.style.display == "none") {
+        if (cld.style.display === "none") {
             cld.style.display = "block";
         } else {
             cld.style.display = 'none';

@@ -6,7 +6,7 @@ import { Menubar } from '../layout/menubar';
 import { AiOutlinePlus, AiOutlineSearch } from "react-icons/ai";
 import TableDevice from './tabale-device';
 import Nextpage from '../layout/nextpage';
-import { RiArrowDownSLine, RiArrowUpSLine } from 'react-icons/ri';
+
 import { TiArrowSortedDown, TiArrowSortedUp } from 'react-icons/ti';
 
 class Device extends React.Component {
@@ -20,7 +20,7 @@ class Device extends React.Component {
         const ip: any = document.getElementById(id)
         const up: any = document.getElementById(u)
         const down: any = document.getElementById(d)
-        if (ip.style.display == 'none') {
+        if (ip.style.display === 'none') {
             ip.style.display = 'block';
             up.style.display = 'flex';
             down.style.display = 'none';

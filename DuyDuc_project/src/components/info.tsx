@@ -14,7 +14,7 @@ class Info extends React.Component {
         const mail: any = document.getElementById('email')
         mail.value = 'ducpy30042000@gmail.com';
         const ttk: any = document.getElementById('ttk')
-        ttk.value = 'duc304';
+        ttk.value = 'ducpy304';
         const mk: any = document.getElementById('mk')
         mk.value = 'Ducvippro';
         const vt: any = document.getElementById('vt')
@@ -40,7 +40,7 @@ class Info extends React.Component {
                                         <input id='sdt' type="number" name='SoDienThoai' ></input>
                                     </div><div className='itemcol'>
                                         <label>Email</label>
-                                        <input id='email' type="text" name='Email' ></input>
+                                        <input id='email' type="email" name='Email' ></input>
                                     </div>
                                 </div>
                                 <div className='infocol'>
@@ -57,7 +57,7 @@ class Info extends React.Component {
                                         <input name='VaiTro' type="text" id='vt' ></input>
                                     </div>
                                 </div>
-                            </div>
+                            </div>  <button></button>
                         </div>
 
                     </form>

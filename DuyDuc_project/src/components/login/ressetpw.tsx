@@ -52,7 +52,7 @@ class RessetPW extends React.Component {
                 <div className="Backgroundapp">
                     <div>
                         <div className='logo'>
-                            <img src={logo} />
+                            <img src={logo} alt='logo' />
                         </div>
                         <div className='resetpw'>
                             <div className='myform'>
@@ -113,7 +113,7 @@ class RessetPW extends React.Component {
                     </div >
                     <div className='imagedangnhap'>
                         <div className='hinh'>
-                            <img src={ressetpw} />
+                            <img src={ressetpw} alt='ressetpw' />
                         </div>
                     </div>
                 </div >

@@ -642,7 +642,7 @@ textarea::placeholder {
   border: 0px;
   box-shadow: none;
   width: 352px;
-  color: #535261;
+  color: black;
   opacity: 0.5;
 }
 

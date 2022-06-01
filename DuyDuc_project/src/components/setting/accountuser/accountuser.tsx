@@ -20,7 +20,7 @@ class AccountUser extends React.Component {
         const ip: any = document.getElementById(id)
         const up: any = document.getElementById(u)
         const down: any = document.getElementById(d)
-        if (ip.style.display == 'none') {
+        if (ip.style.display === 'none') {
             ip.style.display = 'block';
             up.style.display = 'flex';
             down.style.display = 'none';

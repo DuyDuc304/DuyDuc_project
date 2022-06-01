@@ -1,8 +1,8 @@
 import 'chart.js/auto';
 import { FC, useState } from 'react';
 import 'chart.js/auto';
-import { Doughnut, Line } from 'react-chartjs-2';
-import Calendar from 'react-calendar';
+import { Line } from 'react-chartjs-2';
+
 type FruitProps = {
     defaulchart: string;
 }

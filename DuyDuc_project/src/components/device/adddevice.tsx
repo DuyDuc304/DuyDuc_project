@@ -1,9 +1,7 @@
 import React from 'react';
-
 import '../layout/menubar';
 import { Topbar } from '../layout/topbar';
 import { Menubar } from '../layout/menubar';
-import { RiArrowDownSLine, RiArrowUpSLine } from 'react-icons/ri';
 import { TiArrowSortedDown, TiArrowSortedUp } from 'react-icons/ti';
 
 
@@ -18,7 +16,7 @@ class AddDevice extends React.Component {
         const ip: any = document.getElementById(id)
         const up: any = document.getElementById(u)
         const down: any = document.getElementById(d)
-        if (ip.style.display == 'none') {
+        if (ip.style.display === 'none') {
             ip.style.display = 'block';
             up.style.display = 'flex';
             down.style.display = 'none';

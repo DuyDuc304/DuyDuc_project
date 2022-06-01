@@ -8,7 +8,6 @@ import TableNumber from './table-number';
 import Nextpage from '../layout/nextpage';
 import { FaRegCalendarAlt } from 'react-icons/fa';
 import Calendar from 'react-calendar';
-import { RiArrowDownSLine, RiArrowUpSLine } from 'react-icons/ri';
 import { TiArrowSortedDown, TiArrowSortedUp } from 'react-icons/ti';
 
 let newDate = new Date()
@@ -25,7 +24,7 @@ class NumberOrder extends React.Component {
         const ip: any = document.getElementById(id)
         const up: any = document.getElementById(u)
         const down: any = document.getElementById(d)
-        if (ip.style.display == 'none') {
+        if (ip.style.display === 'none') {
             ip.style.display = 'block';
             up.style.display = 'flex';
             down.style.display = 'none';
@@ -37,7 +36,7 @@ class NumberOrder extends React.Component {
     }
     OnClick() {
         const cld: any = document.querySelector('.daytime-picker-caledar-qlcs')
-        if (cld.style.display == "none") {
+        if (cld.style.display === "none") {
             cld.style.display = "block";
         } else {
             cld.style.display = 'none';

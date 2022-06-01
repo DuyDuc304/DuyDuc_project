@@ -1,6 +1,5 @@
 import React from 'react';
 import { IoMdClose } from 'react-icons/io';
-import { RiArrowDownSLine, RiArrowUpSLine } from 'react-icons/ri';
 import { TiArrowSortedDown, TiArrowSortedUp } from 'react-icons/ti';
 
 import { Menubar } from '../layout/menubar';
@@ -29,7 +28,7 @@ class AddNumber extends React.Component<any, any> {
         const ip: any = document.getElementById(id)
         const up: any = document.getElementById(u)
         const down: any = document.getElementById(d)
-        if (ip.style.display == 'none') {
+        if (ip.style.display === 'none') {
             ip.style.display = 'block';
             up.style.display = 'flex';
             down.style.display = 'none';

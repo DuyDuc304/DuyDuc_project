@@ -32,45 +32,45 @@ class Dashboard extends React.Component {
                         <a href="/NumberOrder" className='notline'>
                             <div className='report-chart-type-item'>
                                 <div className='title-chart-type-item-name'>
-                                    <img src={sttdc} className="title-chart-type-item-name-img" />
+                                    <img src={sttdc} className="title-chart-type-item-name-img" alt='SoThuTuDaCap' />
                                     <p>Số thứ tự đã cấp</p>
                                 </div>
                                 <div className='title-chart-type-item-name'>
 
                                     <label className='solieu'>{this.numbernext + this.numberuse + this.numberwating}</label>
-                                    <div className='phantram'><BsArrowUpShort className='phantram-up' /><a className='phantram-a'>32.41%</a></div>
+                                    <div className='phantram'><BsArrowUpShort className='phantram-up' /><label className='phantram-a'>32.41%</label></div>
                                 </div>
                             </div>
                         </a>
                         <a href="/NumberOrder" className='notline'>
                             <div className='report-chart-type-item'>
                                 <div className='title-chart-type-item-name'>
-                                    <img src={sttdd} className="title-chart-type-item-name-img" />
+                                    <img src={sttdd} className="title-chart-type-item-name-img" alt='SoThuTuDaSuDung' />
                                     <p>Số thứ tự đã sử dụng</p>
                                 </div>
                                 <div className='title-chart-type-item-name'>
 
                                     <label className='solieu'>{this.numberuse}</label>
-                                    <div className='phantram' style={{ background: 'rgba(231, 63, 63, 0.15)' }}><BsArrowDownShort className='phantram-down' /><a className='phantram-a' style={{ color: '#E73F3F ' }}>32.41%</a></div>
+                                    <div className='phantram' style={{ background: 'rgba(231, 63, 63, 0.15)' }}><BsArrowDownShort className='phantram-down' /><label className='phantram-a' style={{ color: '#E73F3F ' }}>32.41%</label></div>
                                 </div>
                             </div>
                         </a>
                         <a href="/NumberOrder" className='notline'>
                             <div className='report-chart-type-item'>
                                 <div className='title-chart-type-item-name'>
-                                    <img src={sttc} className="title-chart-type-item-name-img" />
+                                    <img src={sttc} className="title-chart-type-item-name-img" alt='SoThuTuDangCho' />
                                     <p>Số thứ tự đang chờ</p>
                                 </div>
                                 <div className='title-chart-type-item-name'>
                                     <label className='solieu'>{this.numberwating}</label>
-                                    <div className='phantram'><BsArrowUpShort className='phantram-up' /><a className='phantram-a'>56.41%</a></div>
+                                    <div className='phantram'><BsArrowUpShort className='phantram-up' /><label className='phantram-a'>56.41%</label></div>
                                 </div>
                             </div>
                         </a>
                         <a href="/NumberOrder" className='notline'>
                             <div className='report-chart-type-item'>
                                 <div className='title-chart-type-item-name'>
-                                    <img src={sttdx} className="title-chart-type-item-name-img" />
+                                    <img src={sttdx} className="title-chart-type-item-name-img" alt='SoThuTuDaBoQua' />
                                     <p>Số thứ tự đã bỏ qua</p>
                                 </div>
                                 <div className='title-chart-type-item-name'>
@@ -78,7 +78,7 @@ class Dashboard extends React.Component {
                                     <label className='solieu'>{this.numbernext}</label>
                                     <div className='phantram' style={{ background: 'rgba(231, 63, 63, 0.15)' }}>
                                         <BsArrowDownShort className='phantram-down' />
-                                        <a className='phantram-a' style={{ color: '#E73F3F ' }}>22.41%</a></div>
+                                        <label className='phantram-a' style={{ color: '#E73F3F ' }}>22.41%</label></div>
                                 </div>
                             </div>
                         </a>
