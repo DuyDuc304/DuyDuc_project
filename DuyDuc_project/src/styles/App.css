@@ -2791,7 +2791,7 @@ button {
 
 }
 
-.select-drop-down-item a {
+.select-drop-down-item label {
   display: flex;
   padding-top: 12px;
   padding-left: 12px;

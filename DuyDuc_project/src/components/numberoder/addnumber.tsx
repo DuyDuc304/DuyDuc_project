@@ -53,8 +53,8 @@ class AddNumber extends React.Component<any, any> {
 
                                 <div className="sreach" style={{ width: '400px', marginBottom: '80px' }} onClick={() => this.show('tdv', 'up', 'down')} >
                                     <input name='TenDichVu' id='ip' placeholder={'Chọn dịch vụ'} style={{ fontSize: '16px', width: '350px', cursor: 'pointer' }}></input>
-                                    <a className='box-button' id='down'><TiArrowSortedDown /></a>
-                                    <a className='box-button' id='up' style={{ display: 'none' }}><TiArrowSortedUp /></a>
+                                    <label className='box-button' id='down'><TiArrowSortedDown /></label>
+                                    <label className='box-button' id='up' style={{ display: 'none' }}><TiArrowSortedUp /></label>
                                 </div>
 
                                 <div className='rowbtn' >
@@ -62,11 +62,11 @@ class AddNumber extends React.Component<any, any> {
                                     <button className='myform-button ' type='submit' onClick={this.popup} style={{ width: '115px' }}>In số</button>
                                 </div>
                                 <div id='tdv' className='select-drop-down' onClick={() => this.show('tdv', 'up', 'down')} style={{ width: '400px', marginTop: '108px', marginLeft: '0px' }}>
-                                    <div className='select-drop-down-item ' style={{ width: '400px' }} onClick={() => this.Chose('tc', 'ip')}><a id='tc'>Tất cả</a></div>
-                                    <div className='select-drop-down-item ' style={{ width: '400px' }} onClick={() => this.Chose('ps', 'ip')}><a id='ps'>Phụ sản</a></div>
-                                    <div className='select-drop-down-item ' style={{ width: '400px' }} onClick={() => this.Chose('tq', 'ip')}><a id='tq'>Tổng quát</a></div>
-                                    <div className='select-drop-down-item ' style={{ width: '400px' }} onClick={() => this.Chose('rhm', 'ip')}><a id='rhm'>Răng hàm mặt</a></div>
-                                    <div className='select-drop-down-item ' style={{ width: '400px' }} onClick={() => this.Chose('tm', 'ip')}><a id='tm'>Tim mạch</a></div>
+                                    <div className='select-drop-down-item ' style={{ width: '400px' }} onClick={() => this.Chose('tc', 'ip')}><label id='tc'>Tất cả</label></div>
+                                    <div className='select-drop-down-item ' style={{ width: '400px' }} onClick={() => this.Chose('ps', 'ip')}><label id='ps'>Phụ sản</label></div>
+                                    <div className='select-drop-down-item ' style={{ width: '400px' }} onClick={() => this.Chose('tq', 'ip')}><label id='tq'>Tổng quát</label></div>
+                                    <div className='select-drop-down-item ' style={{ width: '400px' }} onClick={() => this.Chose('rhm', 'ip')}><label id='rhm'>Răng hàm mặt</label></div>
+                                    <div className='select-drop-down-item ' style={{ width: '400px' }} onClick={() => this.Chose('tm', 'ip')}><label id='tm'>Tim mạch</label></div>
                                 </div>
                             </form>
 

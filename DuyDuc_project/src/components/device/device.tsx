@@ -54,9 +54,9 @@ class Device extends React.Component {
                             <button id='up' style={{ display: 'none' }}><TiArrowSortedUp /></button>
                         </div>
                         <div id='tthd' className='select-drop-down' onClick={() => this.show('tthd', 'up', 'down')}>
-                            <div className='select-drop-down-item ' onClick={() => this.Chose('tc', 'ip')}><a id='tc'>Tất cả</a></div>
-                            <div className='select-drop-down-item ' onClick={() => this.Chose('hd', 'ip')}><a id='hd'>Hoạt động</a></div>
-                            <div className='select-drop-down-item ' onClick={() => this.Chose('nhd', 'ip')}><a id='nhd'>Ngừng hoạt động</a></div>
+                            <div className='select-drop-down-item ' onClick={() => this.Chose('tc', 'ip')}><label id='tc'>Tất cả</label></div>
+                            <div className='select-drop-down-item ' onClick={() => this.Chose('hd', 'ip')}><label id='hd'>Hoạt động</label></div>
+                            <div className='select-drop-down-item ' onClick={() => this.Chose('nhd', 'ip')}><label id='nhd'>Ngừng hoạt động</label></div>
                         </div>
 
                     </div>
@@ -68,9 +68,9 @@ class Device extends React.Component {
                             <button id='up1' style={{ display: 'none' }}><TiArrowSortedUp /></button>
                         </div>
                         <div id='ttkn' className='select-drop-down' onClick={() => this.show('ttkn', 'up1', 'down1')}>
-                            <div className='select-drop-down-item ' onClick={() => this.Chose('tc1', 'ip1')}><a id='tc1'>Tất cả</a></div>
-                            <div className='select-drop-down-item ' onClick={() => this.Chose('kn', 'ip1')}><a id='kn'>Kết nối</a></div>
-                            <div className='select-drop-down-item ' onClick={() => this.Chose('mkn', 'ip1')}><a id='mkn'>Mất kết nối</a></div>
+                            <div className='select-drop-down-item ' onClick={() => this.Chose('tc1', 'ip1')}><label id='tc1'>Tất cả</label></div>
+                            <div className='select-drop-down-item ' onClick={() => this.Chose('kn', 'ip1')}><label id='kn'>Kết nối</label></div>
+                            <div className='select-drop-down-item ' onClick={() => this.Chose('mkn', 'ip1')}><label id='mkn'>Mất kết nối</label></div>
                         </div>
                     </div>
                     <div className='tk'>

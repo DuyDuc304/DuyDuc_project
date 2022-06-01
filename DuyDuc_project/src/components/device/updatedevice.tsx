@@ -97,16 +97,16 @@ class UpdateDevice extends React.Component {
                                             <input name='LoaiThietBi' onClick={() => this.show('tdv', 'up', 'down')}
                                                 id='ip'
                                                 style={{ fontSize: '16px', width: '500px', cursor: 'pointer' }}></input>
-                                            <a className='box-button' onClick={() => this.show('tdv', 'up', 'down')}
+                                            <label className='box-button' onClick={() => this.show('tdv', 'up', 'down')}
                                                 style={{ marginLeft: '500px', position: 'absolute' }}
                                                 id='down'>
                                                 <TiArrowSortedDown />
-                                            </a>
-                                            <a className='box-button' onClick={() => this.show('tdv', 'up', 'down')}
+                                            </label>
+                                            <label className='box-button' onClick={() => this.show('tdv', 'up', 'down')}
                                                 style={{ marginLeft: '500px', position: 'absolute', display: 'none' }}
                                                 id='up' >
                                                 <TiArrowSortedUp />
-                                            </a>
+                                            </label>
                                         </div>
 
                                     </div>
@@ -125,8 +125,8 @@ class UpdateDevice extends React.Component {
                                         <input id='mk' type="text" name='MatKhau' placeholder="Nhập mật khẩu" ></input>
                                     </div>
                                     <div id='tdv' className='select-drop-down' onClick={() => this.show('tdv', 'up', 'down')} style={{ width: '540px', marginLeft: '590px', marginTop: '74px' }}>
-                                        <div className='select-drop-down-item ' style={{ width: '540px' }} onClick={() => this.Chose('kiosk', 'ip')}><a id='kiosk'>Kiosk</a></div>
-                                        <div className='select-drop-down-item ' style={{ width: '540px' }} onClick={() => this.Chose('ht', 'ip')}><a id='ht'>Hệ thống</a></div>
+                                        <div className='select-drop-down-item ' style={{ width: '540px' }} onClick={() => this.Chose('kiosk', 'ip')}><label id='kiosk'>Kiosk</label></div>
+                                        <div className='select-drop-down-item ' style={{ width: '540px' }} onClick={() => this.Chose('ht', 'ip')}><label id='ht'>Hệ thống</label></div>
 
                                     </div>
                                 </div>

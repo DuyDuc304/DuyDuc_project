@@ -67,8 +67,8 @@ class AddDevice extends React.Component {
                                         </div>
                                         <div className='box' style={{ width: '540px' }} onClick={() => this.show('tdv', 'up', 'down')}>
                                             <input name='LoaiThietBi' id='ip' placeholder="Chọn loại thiêt bị" style={{ fontSize: '16px', width: '500px', cursor: 'pointer' }}></input>
-                                            <a className='box-button' style={{ marginLeft: '500px', position: 'absolute', cursor: 'pointer' }} id='down'><TiArrowSortedDown /></a>
-                                            <a className='box-button' style={{ marginLeft: '500px', position: 'absolute', cursor: 'pointer', display: 'none' }} id='up' ><TiArrowSortedUp /></a>
+                                            <label className='box-button' style={{ marginLeft: '500px', position: 'absolute', cursor: 'pointer' }} id='down'><TiArrowSortedDown /></label>
+                                            <label className='box-button' style={{ marginLeft: '500px', position: 'absolute', cursor: 'pointer', display: 'none' }} id='up' ><TiArrowSortedUp /></label>
                                         </div>
 
                                     </div>
@@ -87,8 +87,8 @@ class AddDevice extends React.Component {
                                         <input type="text" name='MatKhau' placeholder="Nhập mật khẩu"></input>
                                     </div>
                                     <div id='tdv' className='select-drop-down' onClick={() => this.show('tdv', 'up', 'down')} style={{ width: '540px', marginLeft: '590px', marginTop: '74px' }}>
-                                        <div className='select-drop-down-item ' style={{ width: '540px' }} onClick={() => this.Chose('kiosk', 'ip')}><a id='kiosk'>Kiosk</a></div>
-                                        <div className='select-drop-down-item ' style={{ width: '540px' }} onClick={() => this.Chose('ht', 'ip')}><a id='ht'>Hệ thống</a></div>
+                                        <div className='select-drop-down-item ' style={{ width: '540px' }} onClick={() => this.Chose('kiosk', 'ip')}><label id='kiosk'>Kiosk</label></div>
+                                        <div className='select-drop-down-item ' style={{ width: '540px' }} onClick={() => this.Chose('ht', 'ip')}><label id='ht'>Hệ thống</label></div>
 
                                     </div>
                                 </div>
