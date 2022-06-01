@@ -20,33 +20,33 @@ class TableReport extends React.Component {
             <div className='div-table-report' >
                 <div className='row1'>
                     <div className="col1-report">
-                        <div className="row-title-report">
+                        <div className="row-title-report" onClick={() => this.dropdown('stt')}>
                             <p className="col1-report-p">Số thứ tự</p>
-                            <TiArrowUnsorted className="icon-updown-report" onClick={() => this.dropdown('stt')} />
+                            <TiArrowUnsorted className="icon-updown-report" />
                         </div>
                     </div>
                     <div className="col2-report">
-                        <div className="row-title-report">
+                        <div className="row-title-report" onClick={() => this.dropdown('tdv')}>
                             <p className="col1-report-p">Tên dịch vụ</p>
-                            <TiArrowUnsorted className="icon-updown-report" style={{ marginLeft: '105px' }} onClick={() => this.dropdown('tdv')} />
+                            <TiArrowUnsorted className="icon-updown-report" style={{ marginLeft: '105px' }} />
                         </div>
                     </div>
                     <div className="col3-report">
-                        <div className="row-title-report">
+                        <div className="row-title-report" onClick={() => this.dropdown('tgc')}>
                             <p className="col1-report-p">Thời gian cấp</p>
-                            <TiArrowUnsorted className="icon-updown-report" style={{ marginLeft: '95px' }} onClick={() => this.dropdown('tgc')} />
+                            <TiArrowUnsorted className="icon-updown-report" style={{ marginLeft: '95px' }} />
                         </div>
                     </div>
                     <div className="col4-report">
-                        <div className="row-title-report">
+                        <div className="row-title-report" onClick={() => this.dropdown('tt')}>
                             <p className="col1-report-p">Tình trạng</p>
-                            <TiArrowUnsorted className="icon-updown-report" style={{ marginLeft: '95px' }} onClick={() => this.dropdown('tt')} />
+                            <TiArrowUnsorted className="icon-updown-report" style={{ marginLeft: '95px' }} />
                         </div>
                     </div>
                     <div className="col5-report">
-                        <div className="row-title-report">
+                        <div className="row-title-report" onClick={() => this.dropdown('nc')}>
                             <p className="col1-report-p">Nguồn cấp</p>
-                            <TiArrowUnsorted className="icon-updown-report" style={{ marginLeft: '70px' }} onClick={() => this.dropdown('nc')} />
+                            <TiArrowUnsorted className="icon-updown-report" style={{ marginLeft: '70px' }} />
                         </div>
                     </div>
                 </div>

@@ -2092,12 +2092,15 @@ textarea::placeholder {
 }
 
 .sreach-sv-button {
-  margin-top: 4px;
+  margin-top: 10px;
+  height: 26px;
+  width: 26px;
   position: absolute;
   border: none;
   background: #FFFFFF;
   color: #FF7506;
-  font-size: 30px;
+  font-size: 24px;
+
 }
 
 .daytime-picker-caledar-infoscv {

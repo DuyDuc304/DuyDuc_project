@@ -2,6 +2,7 @@ import 'chart.js/auto';
 import { FC, useState } from 'react';
 import 'chart.js/auto';
 import { Doughnut, Line } from 'react-chartjs-2';
+import Calendar from 'react-calendar';
 type FruitProps = {
     defaulchart: string;
 }
@@ -161,6 +162,7 @@ export const Chart: FC<FruitProps> = ({ defaulchart }) => {
 
 
         </div>
+
     )
 }
 
@@ -168,4 +170,4 @@ export const Chart: FC<FruitProps> = ({ defaulchart }) => {
 
 
 export default Chart;
-//  <img src={ChartImg} alt="chart" />
+
