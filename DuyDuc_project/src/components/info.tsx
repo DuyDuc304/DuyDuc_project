@@ -6,7 +6,7 @@ import { Topbar } from './layout/topbar';
 class Info extends React.Component {
     setvalue() {
         const tnd: any = document.getElementById('tnd')
-        tnd.value = 'Nguyễn Duy Đức';
+        tnd.value = 'Nguyễn Duy Đức ';
         const name: any = document.getElementById('name')
         name.innerText = tnd.value
         const sdt: any = document.getElementById('sdt')
