@@ -41,8 +41,8 @@ class RessetPW extends React.Component {
     changeform(e: React.SyntheticEvent) {
         e.preventDefault();
 
-        const resetpw: any = document.querySelector(".login")
-        const restpwstep2: any = document.querySelector(".loginfail")
+        const resetpw: any = document.querySelector(".resetpw")
+        const restpwstep2: any = document.querySelector(".resetpwstep2")
         restpwstep2.style.display = 'block';
         resetpw.style.display = 'none';
     }
@@ -54,7 +54,7 @@ class RessetPW extends React.Component {
                         <div className='logo'>
                             <img src={logo} />
                         </div>
-                        <div className='login'>
+                        <div className='resetpw'>
                             <div className='myform'>
                                 <form onSubmit={this.changeform}>
                                     <div className='col2'>
@@ -74,7 +74,7 @@ class RessetPW extends React.Component {
                                 </form>
                             </div>
                         </div>
-                        <div className='loginfail'>
+                        <div className='resetpwstep2' style={{ display: 'none' }}>
                             <div className='myform'>
                                 <form>
                                     <div className='col2'>
