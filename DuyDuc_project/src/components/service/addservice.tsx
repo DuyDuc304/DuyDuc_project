@@ -5,12 +5,22 @@ import { Topbar } from '../layout/topbar';
 
 
 class AddService extends React.Component {
+    setvalue() {
+        const ttdt: any = document.getElementById('ttdt')
+        ttdt.value = '0001'
+        const ttdd: any = document.getElementById('ttdd')
+        ttdd.value = '9999'
+        const prf: any = document.getElementById('prf')
+        prf.value = '0000'
+        const sf: any = document.getElementById('sf')
+        sf.value = '0000'
+    }
     render() {
         return (
             <div className='bg'>
-                <div className="Backgroundapp">
+                <div className="Backgroundapp" onLoad={() => this.setvalue()}>
                     <div className='title-report-type'>Quản lý dịch vụ</div>
-                    <form >
+                    <form autoComplete="off">
                         <div className='add-device'>
                             <p className='text-tttb'>Thông tin thiết bị</p>
 
@@ -44,20 +54,20 @@ class AddService extends React.Component {
 
                             <p className='text-tttb'>Loại thiết bị:</p>
                             <div className='row-checkbox'>
-                                <label className="container">Tăng tự động từ:
+                                <label className="container">Tăng tự động từ :
                                     <input name='TangTuDong' type="checkbox"></input>
                                     <span className="checkmark"></span>
                                 </label>
-                                <input className='row-checkbox-input' type="text" value={'0001'}></input>
+                                <input id='ttdt' className='row-checkbox-input' type="text"></input>
                                 <label >đến</label>
-                                <input className='row-checkbox-input' type="text" value={'9999'}></input>
+                                <input id='ttdd' className='row-checkbox-input' type="text" ></input>
                             </div>
                             <div className='row-checkbox'>
                                 <label className="container">Prefix:
                                     <input name='Prefix' type="checkbox"></input>
                                     <span className="checkmark"></span>
                                 </label>
-                                <input className='row-checkbox-input' type="text" value={'0001'} style={{ marginLeft: '82px' }}></input>
+                                <input id='prf' className='row-checkbox-input' type="text" style={{ marginLeft: '82px' }}></input>
 
                             </div>
                             <div className='row-checkbox'>
@@ -65,7 +75,7 @@ class AddService extends React.Component {
                                     <input name='Surfix' type="checkbox"></input>
                                     <span className="checkmark"></span>
                                 </label>
-                                <input className='row-checkbox-input' type="text" value={'0001'} style={{ marginLeft: '82px' }}></input>
+                                <input id='sf' className='row-checkbox-input' type="text" style={{ marginLeft: '82px' }}></input>
 
                             </div>
                             <div className='row-checkbox'>

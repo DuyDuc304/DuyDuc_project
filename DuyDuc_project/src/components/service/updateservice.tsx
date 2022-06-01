@@ -5,12 +5,36 @@ import { Topbar } from '../layout/topbar';
 
 
 class UpdateService extends React.Component {
+    setvalue() {
+        const mdv: any = document.getElementById('mdv')
+        mdv.value = '201'
+        const tdv: any = document.getElementById('tdv')
+        tdv.value = 'Khám tim mạch'
+        const mt: any = document.getElementById('mt')
+        mt.value = ''
+        const checkttd: any = document.getElementById('checkttd')
+        checkttd.checked = true
+        const ttdt: any = document.getElementById('ttdt')
+        ttdt.value = '0001'
+        const ttdd: any = document.getElementById('ttdd')
+        ttdd.value = '9999'
+        const checkprf: any = document.getElementById('checkprf')
+        checkprf.checked = false
+        const prf: any = document.getElementById('prf')
+        prf.value = '0000'
+        const checksf: any = document.getElementById('checksf')
+        checksf.checked = false
+        const sf: any = document.getElementById('sf')
+        sf.value = '0000'
+        const checkrs: any = document.getElementById('checkrs')
+        checkrs.checked = false
+    }
     render() {
         return (
             <div className='bg'>
-                <div className="Backgroundapp">
+                <div className="Backgroundapp" onLoad={() => this.setvalue()}>
                     <div className='title-report-type'>Quản lý dịch vụ</div>
-                    <form >
+                    <form autoComplete="off">
                         <div className='add-device'>
                             <p className='text-tttb'>Thông tin thiết bị</p>
 
@@ -21,7 +45,7 @@ class UpdateService extends React.Component {
                                             <p>Mã dịch vụ :</p>
                                             <p style={{ color: 'red', fontFamily: 'Nunito', margin: '4px' }}>*</p>
                                         </div>
-                                        <input type="text" name='MaDichVu' placeholder="Nhập mã dịch vụ" value={'KIO_01'}></input>
+                                        <input id='mdv' type="text" name='MaDichVu' placeholder="Nhập mã dịch vụ" ></input>
                                     </div>
 
                                     <div className='col-update-device-item'>
@@ -29,7 +53,7 @@ class UpdateService extends React.Component {
                                             <p>Tên dịch vụ:</p>
                                             <p style={{ color: 'red', fontFamily: 'Nunito', margin: '4px' }}>*</p>
                                         </div>
-                                        <input type="text" name='TenDichVu' placeholder="Nhập tên dịch vụ" value={'Khám tim mạch'}></input>
+                                        <input id='tdv' type="text" name='TenDichVu' placeholder="Nhập tên dịch vụ" ></input>
                                     </div>
 
                                 </div>
@@ -39,7 +63,7 @@ class UpdateService extends React.Component {
                                         <p className='text-mota' style={{ marginBottom: '8px' }}>Mô tả:</p>
 
 
-                                        <textarea name='MatKhau' placeholder="Mô tả dịch vụ" className='input-mota'></textarea>
+                                        <textarea id='mt' name='MatKhau' placeholder="Mô tả dịch vụ" className='input-mota'></textarea>
 
                                     </div>
                                 </div>
@@ -47,33 +71,33 @@ class UpdateService extends React.Component {
 
                             <p className='text-tttb'>Loại thiết bị:</p>
                             <div className='row-checkbox'>
-                                <label className="container">Tăng tự động từ:
-                                    <input name='TangTuDong' type="checkbox" checked></input>
+                                <label className="container">Tăng tự động từ :
+                                    <input id='checkttd' name='TangTuDong' type="checkbox"></input>
                                     <span className="checkmark"></span>
                                 </label>
-                                <input className='row-checkbox-input' type="text" value={'0001'}></input>
+                                <input id='ttdt' className='row-checkbox-input' type="number" ></input>
                                 <label >đến</label>
-                                <input className='row-checkbox-input' type="text" value={'9999'}></input>
+                                <input id='ttdd' className='row-checkbox-input' type="number" ></input>
                             </div>
                             <div className='row-checkbox'>
                                 <label className="container">Prefix:
-                                    <input name='Prefix' type="checkbox"></input>
+                                    <input id='checkprf' name='Prefix' type="checkbox"></input>
                                     <span className="checkmark"></span>
                                 </label>
-                                <input className='row-checkbox-input' type="text" value={'0001'} style={{ marginLeft: '82px' }}></input>
+                                <input id='prf' className='row-checkbox-input' type="number" style={{ marginLeft: '82px' }}></input>
 
                             </div>
                             <div className='row-checkbox'>
                                 <label className="container">Surfix:
-                                    <input name='Surfix' type="checkbox"></input>
+                                    <input id='checksf' name='Surfix' type="checkbox"></input>
                                     <span className="checkmark"></span>
                                 </label>
-                                <input className='row-checkbox-input' type="text" value={'0001'} style={{ marginLeft: '82px' }}></input>
+                                <input id='sf' className='row-checkbox-input' type="number" style={{ marginLeft: '82px' }}></input>
 
                             </div>
                             <div className='row-checkbox'>
                                 <label className="container">Reset mỗi ngày
-                                    <input name='reset' type="checkbox" ></input>
+                                    <input id='checkrs' name='reset' type="checkbox" ></input>
                                     <span className="checkmark"></span>
                                 </label>
                             </div>

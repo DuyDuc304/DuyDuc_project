@@ -8,27 +8,30 @@ type idbuton = {
 }
 
 export const Menubar = (id: idbuton) => {
+
     var idbtn: string = id.buttonid;
     const changebutton = (id: string) => {
-        const btn: any = document.getElementById(id);
-        btn.classList.toggle("button-active");
-        if (id === "nknd") {
-            const btn1: any = document.getElementById("nknd");
-            btn1.classList.toggle("button-nknd");
-            const btnst: any = document.getElementById('cd')
-            btnst.classList.toggle('button-cd')
-        }
-        if (id === "qlvt") {
-            const btn2: any = document.getElementById("qlvt");
-            btn2.classList.toggle("button-qlvt");
-            const btnst: any = document.getElementById('cd')
-            btnst.classList.toggle('button-cd')
-        }
-        if (id === "qltk") {
-            const btn3: any = document.getElementById("qltk");
-            btn3.classList.toggle("button-qltk");
-            const btnst: any = document.getElementById('cd')
-            btnst.classList.toggle('button-cd')
+        if (id != null) {
+            const btn: any = document.getElementById(id);
+            btn.classList.toggle("button-active");
+            if (id === "nknd") {
+                const btn1: any = document.getElementById("nknd");
+                btn1.classList.toggle("button-nknd");
+                const btnst: any = document.getElementById('cd')
+                btnst.classList.toggle('button-cd')
+            }
+            if (id === "qlvt") {
+                const btn2: any = document.getElementById("qlvt");
+                btn2.classList.toggle("button-qlvt");
+                const btnst: any = document.getElementById('cd')
+                btnst.classList.toggle('button-cd')
+            }
+            if (id === "qltk") {
+                const btn3: any = document.getElementById("qltk");
+                btn3.classList.toggle("button-qltk");
+                const btnst: any = document.getElementById('cd')
+                btnst.classList.toggle('button-cd')
+            }
         }
     }
 
@@ -64,11 +67,13 @@ export const Menubar = (id: idbuton) => {
                             </div>
                         </div >
                     </div>
+
                 </div>
 
 
 
             </div>
+            <div id='a'></div>
             <div className='logout'>
                 <a href="/Login"> <MdLogout className='icon' /> <p> Đăng xuất</p></a>
             </div>

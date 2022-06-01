@@ -79,7 +79,7 @@ class Login extends React.Component {
             </div>
             <div className='login'>
               <div className='myform'>
-                <form onSubmit={this.checklogin}>
+                <form onSubmit={this.checklogin} autoComplete="off">
                   <div className='col1'>
                     <p >Tên đăng nhập *</p>
                     <input className='input-myform' type="text" id="name" name='name' placeholder="Nhập tài khoản "></input>
@@ -106,7 +106,7 @@ class Login extends React.Component {
             </div>
             <div className='loginfail'>
               <div className='myform'>
-                <form onSubmit={this.checklogin}>
+                <form onSubmit={this.checklogin} autoComplete="off">
                   <div className='col1'>
                     <p >Tên đăng nhập *</p>
                     <input className='input-myform' type="text" id="name" name='name' style={{ border: "1.5px solid red" }} placeholder="Nhập tài khoản"></input>

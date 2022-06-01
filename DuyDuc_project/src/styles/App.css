@@ -9,7 +9,15 @@
   font-family: 'Nunito';
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
+input {
+  color: black !important;
+}
 
 .App {
   text-align: center;

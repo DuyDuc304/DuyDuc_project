@@ -56,7 +56,7 @@ class RessetPW extends React.Component {
                         </div>
                         <div className='resetpw'>
                             <div className='myform'>
-                                <form onSubmit={this.changeform}>
+                                <form onSubmit={this.changeform} autoComplete="off">
                                     <div className='col2'>
                                         <div className='align-text'>
                                             <label>Đặt lại mật khẩu</label>
@@ -76,7 +76,7 @@ class RessetPW extends React.Component {
                         </div>
                         <div className='resetpwstep2' style={{ display: 'none' }}>
                             <div className='myform'>
-                                <form>
+                                <form autoComplete="off">
                                     <div className='col2'>
                                         <label >Đặt lại mật khẩu mới</label>
                                         <div >

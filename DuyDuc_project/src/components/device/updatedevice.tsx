@@ -6,7 +6,23 @@ import { Menubar } from '../layout/menubar';
 import { IoMdClose } from "react-icons/io";
 import { TiArrowSortedDown, TiArrowSortedUp } from 'react-icons/ti';
 
+
 class UpdateDevice extends React.Component {
+    setvalue() {
+        const mtb: any = document.getElementById('mtb')
+        mtb.value = "KIO_01"
+        const ttb: any = document.getElementById('ttb')
+        ttb.value = "kiosk"
+        const dcip: any = document.getElementById('dcip')
+        dcip.value = "192.168.1.10"
+        const ltb: any = document.getElementById('ip')
+        ltb.value = "Kiosk"
+        const tdn: any = document.getElementById('tdn')
+        tdn.value = "ducpy3004"
+        const mk: any = document.getElementById('mk')
+        mk.value = "CMS"
+    }
+
     showmore() {
 
         const btn: any = document.getElementById('dd')
@@ -22,8 +38,8 @@ class UpdateDevice extends React.Component {
         const ip: any = document.getElementById(input)
         const text: any = document.getElementById(id)
         ip.value = text.innerText
-    }
 
+    }
     show = (id: string, u: string, d: string) => {
         const ip: any = document.getElementById(id)
         const up: any = document.getElementById(u)
@@ -41,7 +57,7 @@ class UpdateDevice extends React.Component {
     render() {
         return (
             <div className='bg'>
-                <div className="Backgroundapp">
+                <div className="Backgroundapp" onLoad={() => this.setvalue()}>
                     <form >
                         <div className='add-device'>
                             <p className='text-tttb'>Thông tin thiết bị</p>
@@ -53,7 +69,7 @@ class UpdateDevice extends React.Component {
                                             <p>Mã thiết bị:</p>
                                             <p style={{ color: 'red', fontFamily: 'Nunito', margin: '4px' }}>*</p>
                                         </div>
-                                        <input type="text" name='MaThietBi' placeholder="Nhập mã thiết bị" value={"KIO_01"}></input>
+                                        <input id='mtb' type="text" name='MaThietBi' placeholder="Nhập mã thiết bị" ></input>
                                     </div>
 
                                     <div className='col-update-device-item'>
@@ -61,14 +77,14 @@ class UpdateDevice extends React.Component {
                                             <p>Tên thiết bị:</p>
                                             <p style={{ color: 'red', fontFamily: 'Nunito', margin: '4px' }}>*</p>
                                         </div>
-                                        <input type="text" name='TenThietBi' placeholder="Nhập tên thiết bị" value={"Kiosk"}></input>
+                                        <input id='ttb' type="text" name='TenThietBi' placeholder="Nhập tên thiết bị" ></input>
                                     </div>
                                     <div className='col-update-device-item'>
                                         <div className='row'>
                                             <p>Địa chỉ IP:</p>
                                             <p style={{ color: 'red', fontFamily: 'Nunito', margin: '4px' }}>*</p>
                                         </div>
-                                        <input type="text" name='DiaChiIP' placeholder="Nhập địa chỉ IP" value={"128.172.380"}></input>
+                                        <input id='dcip' type="text" name='DiaChiIP' placeholder="Nhập địa chỉ IP" ></input>
                                     </div>
                                 </div>
                                 <div className='col-update-device'>
@@ -79,7 +95,7 @@ class UpdateDevice extends React.Component {
                                         </div>
                                         <div className='box' style={{ width: '540px' }}>
                                             <input name='LoaiThietBi' onClick={() => this.show('tdv', 'up', 'down')}
-                                                id='ip' value={'Kiosk'}
+                                                id='ip'
                                                 style={{ fontSize: '16px', width: '500px', cursor: 'pointer' }}></input>
                                             <a className='box-button' onClick={() => this.show('tdv', 'up', 'down')}
                                                 style={{ marginLeft: '500px', position: 'absolute' }}
@@ -99,14 +115,14 @@ class UpdateDevice extends React.Component {
                                             <p>Tên đăng nhập:</p>
                                             <p style={{ color: 'red', fontFamily: 'Nunito', margin: '4px' }}>*</p>
                                         </div>
-                                        <input type="text" name='TenDangNhap' placeholder="Nhập tên đăng nhập" value={'linkkyo011'}></input>
+                                        <input id='tdn' type="text" name='TenDangNhap' placeholder="Nhập tên đăng nhập" ></input>
                                     </div>
                                     <div className='col-update-device-item'>
                                         <div className='row'>
                                             <p>Mật khẩu:</p>
                                             <p style={{ color: 'red', fontFamily: 'Nunito', margin: '4px' }}>*</p>
                                         </div>
-                                        <input type="text" name='MatKhau' placeholder="Nhập mật khẩu" value={"CMS"}></input>
+                                        <input id='mk' type="text" name='MatKhau' placeholder="Nhập mật khẩu" ></input>
                                     </div>
                                     <div id='tdv' className='select-drop-down' onClick={() => this.show('tdv', 'up', 'down')} style={{ width: '540px', marginLeft: '590px', marginTop: '74px' }}>
                                         <div className='select-drop-down-item ' style={{ width: '540px' }} onClick={() => this.Chose('kiosk', 'ip')}><a id='kiosk'>Kiosk</a></div>

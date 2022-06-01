@@ -59,7 +59,7 @@ class AddAccountUser extends React.Component {
         return (
             <div className='bg'>
                 <div className="Backgroundapp">
-                    <form >
+                    <form autoComplete="off">
                         <div className='add-device'>
                             <p className='text-tttb'>Thông tin tài khoản</p>
 
@@ -93,7 +93,7 @@ class AddAccountUser extends React.Component {
                                             <p style={{ color: 'red', fontFamily: 'Nunito', margin: '4px' }}>*</p>
                                         </div>
                                         <div className='box' style={{ width: '540px' }}>
-                                            <input name='VaiTro' onClick={() => this.show('tdv', 'up', 'down')} id='ip' value={'Chọn vai trò'} style={{ fontSize: '16px', width: '500px', cursor: 'pointer' }}></input>
+                                            <input name='VaiTro' onClick={() => this.show('tdv', 'up', 'down')} id='ip' placeholder='Chọn vai trò' style={{ fontSize: '16px', width: '500px', cursor: 'pointer' }}></input>
                                             <a className='box-button' onClick={() => this.show('tdv', 'up', 'down')} style={{ marginLeft: '500px', position: 'absolute' }} id='down'><TiArrowSortedDown /></a>
                                             <a className='box-button' onClick={() => this.show('tdv', 'up', 'down')} style={{ marginLeft: '500px', position: 'absolute', display: 'none' }} id='up' ><TiArrowSortedUp /></a>
                                         </div>
@@ -136,7 +136,7 @@ class AddAccountUser extends React.Component {
                                             <p style={{ color: 'red', fontFamily: 'Nunito', margin: '4px' }}>*</p>
                                         </div>
                                         <div className='box' style={{ width: '540px' }}>
-                                            <input name='TinhTrang' onClick={() => this.show('tt', 'up1', 'down1')} id='iptt' value={'Chọn tình trạng'} style={{ fontSize: '16px', width: '500px', cursor: 'pointer' }}></input>
+                                            <input name='TinhTrang' onClick={() => this.show('tt', 'up1', 'down1')} id='iptt' placeholder='Chọn tình trạng' style={{ fontSize: '16px', width: '500px', cursor: 'pointer' }}></input>
                                             <a className='box-button' onClick={() => this.show('tt', 'up1', 'down1')} style={{ marginLeft: '500px', position: 'absolute' }} id='down1'><TiArrowSortedDown /></a>
                                             <a className='box-button' onClick={() => this.show('tt', 'up1', 'down1')} style={{ marginLeft: '500px', position: 'absolute', display: 'none' }} id='up1' ><TiArrowSortedUp /></a>
                                         </div>

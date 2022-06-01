@@ -3,13 +3,26 @@ import { Menubar } from "../../layout/menubar";
 import { Topbar } from "../../layout/topbar";
 
 class UpdateRoleUser extends React.Component {
-
+    setvalue() {
+        const tvt: any = document.getElementById('tvt')
+        tvt.value = 'Kế toán'
+        const mt: any = document.getElementById('mt');
+        mt.value = 'Chịu trách nhiệm thống kê số liệu và kiểm toán'
+        const checktc: any = document.getElementById('checktc')
+        checktc.checked = true
+        const checkx: any = document.getElementById('checkx')
+        checkx.checked = true
+        const checky: any = document.getElementById('checky')
+        checky.checked = true
+        const checkz: any = document.getElementById('checkz')
+        checkz.checked = true
+    }
     render() {
         return (
             <div className='bg'>
-                <div className="Backgroundapp">
+                <div className="Backgroundapp" onLoad={() => this.setvalue()}>
                     <div className='title-report-type'>Danh sách vai trò</div>
-                    <form >
+                    <form autoComplete="off">
                         <div className='roleuser-layout'>
                             <p className='text-tttb'>Thông tin vai trò</p>
 
@@ -20,7 +33,7 @@ class UpdateRoleUser extends React.Component {
                                             <p>Tên vai trò</p>
                                             <p style={{ color: 'red', fontFamily: 'Nunito', margin: '4px' }}>*</p>
                                         </div>
-                                        <input type="text" name='TenVaiTro' placeholder="Nhập tên vai trò" value={'Kế toán'}></input>
+                                        <input id="tvt" type="text" name='TenVaiTro' placeholder="Nhập tên vai trò" ></input>
                                     </div>
 
                                     <div className='col-update-device-item'>
@@ -28,7 +41,7 @@ class UpdateRoleUser extends React.Component {
                                             <p>Mô tả</p>
                                             <p style={{ color: 'red', fontFamily: 'Nunito', margin: '4px' }} >*</p>
                                         </div>
-                                        <textarea name='Mota' placeholder="Nhập mô tả" className='input-mota' value={'Chịu trách nhiệm thống kê số liệu và kiểm toán'}></textarea>
+                                        <textarea id="mt" name='Mota' placeholder="Nhập mô tả" className='input-mota' ></textarea>
                                     </div>
 
                                     <div className='row-ttbc' style={{ marginTop: '100px', marginLeft: '0px' }}>
@@ -50,28 +63,28 @@ class UpdateRoleUser extends React.Component {
                                                 <p className="title-ncn">Nhóm chức năng A</p>
                                                 <div className='row-checkbox' style={{ margin: '0px', height: '30px' }}>
                                                     <label className="container">
-                                                        <input name='TatCa' type="checkbox" checked></input>
+                                                        <input id="checktc" name='TatCa' type="checkbox"></input>
                                                         <span className="checkmark" ></span>
                                                         <p>Tất cả</p>
                                                     </label>
                                                 </div>
                                                 <div className='row-checkbox' style={{ margin: '0px', height: '30px' }}>
                                                     <label className="container">
-                                                        <input name='ChucNangX' type="checkbox" checked></input>
+                                                        <input id="checkx" name='ChucNangX' type="checkbox" ></input>
                                                         <span className="checkmark" ></span>
                                                         <p>Chức năng x</p>
                                                     </label>
                                                 </div>
                                                 <div className='row-checkbox' style={{ margin: '0px', height: '30px' }}>
                                                     <label className="container">
-                                                        <input name='ChucNangY' type="checkbox" checked></input>
+                                                        <input id="checky" name='ChucNangY' type="checkbox" ></input>
                                                         <span className="checkmark" ></span>
                                                         <p>Chức năng y</p>
                                                     </label>
                                                 </div>
                                                 <div className='row-checkbox' style={{ margin: '0px', height: '30px' }}>
                                                     <label className="container">
-                                                        <input name='ChucNangZ' type="checkbox" checked></input>
+                                                        <input id="checkz" name='ChucNangZ' type="checkbox" ></input>
                                                         <span className="checkmark"></span>
                                                         <p>Chức năng z</p>
                                                     </label>
