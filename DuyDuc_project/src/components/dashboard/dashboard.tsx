@@ -30,14 +30,13 @@ class Dashboard extends React.Component {
 
 
                         <a href="/NumberOrder" className='notline'>
-                            <div className='report-chart-type-item'>
+                            <div className='report-chart-type-item' >
                                 <div className='title-chart-type-item-name'>
                                     <img src={sttdc} className="title-chart-type-item-name-img" alt='SoThuTuDaCap' />
                                     <p>Số thứ tự đã cấp</p>
                                 </div>
                                 <div className='title-chart-type-item-name'>
-
-                                    <label className='solieu'>{this.numbernext + this.numberuse + this.numberwating}</label>
+                                    <label className='solieu' style={{ cursor: 'pointer' }}>{this.numbernext + this.numberuse + this.numberwating}</label>
                                     <div className='phantram'><BsArrowUpShort className='phantram-up' /><label className='phantram-a'>32.41%</label></div>
                                 </div>
                             </div>
@@ -50,7 +49,7 @@ class Dashboard extends React.Component {
                                 </div>
                                 <div className='title-chart-type-item-name'>
 
-                                    <label className='solieu'>{this.numberuse}</label>
+                                    <label style={{ cursor: 'pointer' }} className='solieu'>{this.numberuse}</label>
                                     <div className='phantram' style={{ background: 'rgba(231, 63, 63, 0.15)' }}><BsArrowDownShort className='phantram-down' /><label className='phantram-a' style={{ color: '#E73F3F ' }}>32.41%</label></div>
                                 </div>
                             </div>
@@ -62,7 +61,7 @@ class Dashboard extends React.Component {
                                     <p>Số thứ tự đang chờ</p>
                                 </div>
                                 <div className='title-chart-type-item-name'>
-                                    <label className='solieu'>{this.numberwating}</label>
+                                    <label style={{ cursor: 'pointer' }} className='solieu'>{this.numberwating}</label>
                                     <div className='phantram'><BsArrowUpShort className='phantram-up' /><label className='phantram-a'>56.41%</label></div>
                                 </div>
                             </div>
@@ -75,7 +74,7 @@ class Dashboard extends React.Component {
                                 </div>
                                 <div className='title-chart-type-item-name'>
 
-                                    <label className='solieu'>{this.numbernext}</label>
+                                    <label style={{ cursor: 'pointer' }} className='solieu'>{this.numbernext}</label>
                                     <div className='phantram' style={{ background: 'rgba(231, 63, 63, 0.15)' }}>
                                         <BsArrowDownShort className='phantram-down' />
                                         <label className='phantram-a' style={{ color: '#E73F3F ' }}>22.41%</label></div>
