@@ -67,10 +67,10 @@ class AddDevice extends React.Component {
                                             <p>Loại thiết bị:</p>
                                             <p style={{ color: 'red', fontFamily: 'Nunito', margin: '4px' }}>*</p>
                                         </div>
-                                        <div className='box' style={{ width: '540px' }}>
-                                            <input name='LoaiThietBi' onClick={() => this.show('tdv', 'up', 'down')} id='ip' placeholder="Chọn loại thiêt bị" style={{ fontSize: '16px', width: '500px', cursor: 'pointer' }}></input>
-                                            <a className='box-button' onClick={() => this.show('tdv', 'up', 'down')} style={{ marginLeft: '500px', position: 'absolute' }} id='down'><TiArrowSortedDown /></a>
-                                            <a className='box-button' onClick={() => this.show('tdv', 'up', 'down')} style={{ marginLeft: '500px', position: 'absolute', display: 'none' }} id='up' ><TiArrowSortedUp /></a>
+                                        <div className='box' style={{ width: '540px' }} onClick={() => this.show('tdv', 'up', 'down')}>
+                                            <input name='LoaiThietBi' id='ip' placeholder="Chọn loại thiêt bị" style={{ fontSize: '16px', width: '500px', cursor: 'pointer' }}></input>
+                                            <a className='box-button' style={{ marginLeft: '500px', position: 'absolute', cursor: 'pointer' }} id='down'><TiArrowSortedDown /></a>
+                                            <a className='box-button' style={{ marginLeft: '500px', position: 'absolute', cursor: 'pointer', display: 'none' }} id='up' ><TiArrowSortedUp /></a>
                                         </div>
 
                                     </div>

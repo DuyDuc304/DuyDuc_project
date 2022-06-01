@@ -50,12 +50,12 @@ class AddNumber extends React.Component<any, any> {
 
                             <p className='addnewnum-title'>Cấp số mới </p>
                             <p className='addnewnum-cdv'>Dịch vụ khách hàng lựa chọn</p>
-                            <form onSubmit={this.popup} >
+                            <form autoComplete='off' onSubmit={this.popup} >
 
-                                <div className="sreach" style={{ width: '400px', marginBottom: '80px' }}>
-                                    <input name='TenDichVu' onClick={() => this.show('tdv', 'up', 'down')} id='ip' value={'Tất cả'} style={{ fontSize: '16px', width: '350px', cursor: 'pointer' }}></input>
-                                    <a className='box-button' onClick={() => this.show('tdv', 'up', 'down')} id='down'><TiArrowSortedDown /></a>
-                                    <a className='box-button' onClick={() => this.show('tdv', 'up', 'down')} id='up' style={{ display: 'none' }}><TiArrowSortedUp /></a>
+                                <div className="sreach" style={{ width: '400px', marginBottom: '80px' }} onClick={() => this.show('tdv', 'up', 'down')} >
+                                    <input name='TenDichVu' id='ip' placeholder={'Chọn dịch vụ'} style={{ fontSize: '16px', width: '350px', cursor: 'pointer' }}></input>
+                                    <a className='box-button' id='down'><TiArrowSortedDown /></a>
+                                    <a className='box-button' id='up' style={{ display: 'none' }}><TiArrowSortedUp /></a>
                                 </div>
 
                                 <div className='rowbtn' >

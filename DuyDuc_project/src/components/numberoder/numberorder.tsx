@@ -62,10 +62,10 @@ class NumberOrder extends React.Component {
                     <div className='qlcs'>
                         <div className='qlcs-tdv'>
                             <p>Tên dịch vụ</p>
-                            <div className="box">
-                                <input onClick={() => this.show('tdv', 'up', 'down')} id='ip' value={'Tất cả'} style={{ marginLeft: '4px', fontSize: '16px', cursor: 'pointer' }}></input>
-                                <button className='box-button' onClick={() => this.show('tdv', 'up', 'down')} id='down'><TiArrowSortedDown /></button>
-                                <button className='box-button' onClick={() => this.show('tdv', 'up', 'down')} id='up' style={{ display: 'none' }}><TiArrowSortedUp /></button>
+                            <div className="box" onClick={() => this.show('tdv', 'up', 'down')} >
+                                <input disabled id='ip' value={'Tất cả'} style={{ marginLeft: '4px', fontSize: '16px', cursor: 'pointer' }}></input>
+                                <button className='box-button' id='down'><TiArrowSortedDown /></button>
+                                <button className='box-button' id='up' style={{ display: 'none' }}><TiArrowSortedUp /></button>
                             </div>
                             <div id='tdv' className='select-drop-down' style={{ width: '154px' }} onClick={() => this.show('tdv', 'up', 'down')}>
                                 <div className='select-drop-down-item ' style={{ width: '154px' }} onClick={() => this.Chose('tc', 'ip')}><a id='tc'>Tất cả</a></div>
@@ -77,10 +77,10 @@ class NumberOrder extends React.Component {
                         </div>
                         <div className='qlcs-tdv'>
                             <p>Tình trạng</p>
-                            <div className="box">
-                                <input onClick={() => this.show('tt', 'up1', 'down1')} id='iptt' value={'Tất cả'} style={{ marginLeft: '4px', fontSize: '16px', cursor: 'pointer' }}></input>
-                                <button className='box-button' onClick={() => this.show('tt', 'up1', 'down1')} id='down1'><TiArrowSortedDown /></button>
-                                <button className='box-button' onClick={() => this.show('tt', 'up1', 'down1')} id='up1' style={{ display: 'none' }}><TiArrowSortedUp /></button>
+                            <div className="box" onClick={() => this.show('tt', 'up1', 'down1')}>
+                                <input id='iptt' disabled value={'Tất cả'} style={{ marginLeft: '4px', fontSize: '16px', cursor: 'pointer' }}></input>
+                                <button className='box-button' id='down1'><TiArrowSortedDown /></button>
+                                <button className='box-button' id='up1' style={{ display: 'none' }}><TiArrowSortedUp /></button>
                             </div>
                             <div id='tt' className='select-drop-down' style={{ width: '154px', marginLeft: '175px' }} onClick={() => this.show('tt', 'up1', 'down1')}>
                                 <div className='select-drop-down-item ' style={{ width: '154px' }} onClick={() => this.Chose('tc', 'iptt')}><a id='tc'>Tất cả</a></div>
@@ -92,10 +92,10 @@ class NumberOrder extends React.Component {
                         </div>
                         <div className='qlcs-tdv'>
                             <p>Nguồn cấp</p>
-                            <div className="box">
-                                <input onClick={() => this.show('nc', 'up2', 'down2')} id='ipnc' value={'Tất cả'} style={{ marginLeft: '4px', fontSize: '16px', cursor: 'pointer' }}></input>
-                                <button className='box-button' onClick={() => this.show('nc', 'up2', 'down2')} id='down2'><TiArrowSortedDown /></button>
-                                <button className='box-button' onClick={() => this.show('nc', 'up2', 'down2')} id='up2' style={{ display: 'none' }}><TiArrowSortedUp /></button>
+                            <div className="box" onClick={() => this.show('nc', 'up2', 'down2')}>
+                                <input id='ipnc' disabled value={'Tất cả'} style={{ marginLeft: '4px', fontSize: '16px', cursor: 'pointer' }}></input>
+                                <button className='box-button' id='down2'><TiArrowSortedDown /></button>
+                                <button className='box-button' id='up2' style={{ display: 'none' }}><TiArrowSortedUp /></button>
                             </div>
                             <div id='nc' className='select-drop-down' style={{ width: '154px', marginLeft: '345px' }} onClick={() => this.show('nc', 'up2', 'down2')}>
                                 <div className='select-drop-down-item ' style={{ width: '154px' }} onClick={() => this.Chose('tc', 'ipnc')}><a id='tc'>Tất cả</a></div>

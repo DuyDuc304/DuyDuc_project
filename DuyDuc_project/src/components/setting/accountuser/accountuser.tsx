@@ -46,10 +46,10 @@ class AccountUser extends React.Component {
                     </a>
                     <div className='tthd'>
                         <p className='ppp'> Tên vai trò</p>
-                        <div className="sreach">
-                            <input onClick={() => this.show('tthd', 'up', 'down')} id='ip' className='tb-select' value={'Tất cả'} style={{ marginLeft: '4px', fontSize: '16px', cursor: 'pointer' }}></input>
-                            <button onClick={() => this.show('tthd', 'up', 'down')} id='down'><TiArrowSortedDown /></button>
-                            <button onClick={() => this.show('tthd', 'up', 'down')} id='up' style={{ display: 'none' }}><TiArrowSortedUp /></button>
+                        <div className="sreach" onClick={() => this.show('tthd', 'up', 'down')}>
+                            <input disabled id='ip' className='tb-select' value={'Tất cả'} style={{ marginLeft: '4px', fontSize: '16px', cursor: 'pointer' }}></input>
+                            <button id='down'><TiArrowSortedDown /></button>
+                            <button id='up' style={{ display: 'none' }}><TiArrowSortedUp /></button>
                         </div>
                         <div id='tthd' className='select-drop-down' onClick={() => this.show('tthd', 'up', 'down')}>
                             <div className='select-drop-down-item ' onClick={() => this.Chose('tc', 'ip')}><a id='tc'>Tất cả</a></div>

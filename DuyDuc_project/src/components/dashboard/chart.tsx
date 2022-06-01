@@ -147,8 +147,6 @@ export const Chart: FC<FruitProps> = ({ defaulchart }) => {
             <div className='chart-line' id='ngay' style={{ display: "block" }} >
                 <Line data={datangay} options={options} />
 
-
-
             </div>
             <div className='chart-line' id='tuan' style={{ display: "none" }} >
 
