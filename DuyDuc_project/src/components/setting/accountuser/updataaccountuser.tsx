@@ -112,13 +112,13 @@ class UpdateAccountUser extends React.Component {
                                         </div>
                                         <div className='box' style={{ width: '540px' }}>
                                             <input name='VaiTro' onClick={() => this.show('tdv', 'up', 'down')} id='ip' style={{ fontSize: '16px', width: '500px', cursor: 'pointer' }}></input>
-                                            <a className='box-button' onClick={() => this.show('tdv', 'up', 'down')} style={{ marginLeft: '500px', position: 'absolute' }} id='down'><TiArrowSortedDown /></a>
-                                            <a className='box-button' onClick={() => this.show('tdv', 'up', 'down')} style={{ marginLeft: '500px', position: 'absolute', display: 'none' }} id='up' ><TiArrowSortedUp /></a>
+                                            <label className='box-button' onClick={() => this.show('tdv', 'up', 'down')} style={{ marginLeft: '500px', position: 'absolute' }} id='down'><TiArrowSortedDown /></label>
+                                            <label className='box-button' onClick={() => this.show('tdv', 'up', 'down')} style={{ marginLeft: '500px', position: 'absolute', display: 'none' }} id='up' ><TiArrowSortedUp /></label>
                                         </div>
                                         <div id='tdv' className='select-drop-down' onClick={() => this.show('tdv', 'up', 'down')} style={{ width: '540px', marginLeft: '24px', marginTop: '348px' }}>
-                                            <div className='select-drop-down-item ' style={{ width: '540px' }} onClick={() => this.Chose('kt', 'ip')}><a id='kt'>Kế toán</a></div>
-                                            <div className='select-drop-down-item ' style={{ width: '540px' }} onClick={() => this.Chose('ql', 'ip')}><a id='ql'>Quản lý</a></div>
-                                            <div className='select-drop-down-item ' style={{ width: '540px' }} onClick={() => this.Chose('ad', 'ip')}><a id='ad'>Admin</a></div>
+                                            <div className='select-drop-down-item ' style={{ width: '540px' }} onClick={() => this.Chose('kt', 'ip')}><label id='kt'>Kế toán</label></div>
+                                            <div className='select-drop-down-item ' style={{ width: '540px' }} onClick={() => this.Chose('ql', 'ip')}><label id='ql'>Quản lý</label></div>
+                                            <div className='select-drop-down-item ' style={{ width: '540px' }} onClick={() => this.Chose('ad', 'ip')}><label id='ad'>Admin</label></div>
 
                                         </div>
                                     </div>
@@ -138,7 +138,7 @@ class UpdateAccountUser extends React.Component {
                                             <p style={{ color: 'red', fontFamily: 'Nunito', margin: '4px' }}>*</p>
                                         </div>
                                         <input className='row-password-input' type="password" id="pw" name='password' placeholder="Nhập mật khẩu" ></input>
-                                        <a className='input-have-eye-account' onClick={this.showpw} id='eye'> <FiEyeOff className='icon-eye' id='show' /> <FiEye className='icon-eye' id='hide' style={{ display: 'none' }} /></a>
+                                        <label style={{ fontSize: '18px' }} className='input-have-eye-account' onClick={this.showpw} id='eye'> <FiEyeOff className='icon-eye' id='show' /> <FiEye className='icon-eye' id='hide' style={{ display: 'none' }} /></label>
                                     </div>
                                     <div className='col-update-device-item'>
                                         <div className='row'>
@@ -146,7 +146,7 @@ class UpdateAccountUser extends React.Component {
                                             <p style={{ color: 'red', fontFamily: 'Nunito', margin: '4px' }}>*</p>
                                         </div>
                                         <input className='row-password-input' type="password" id="pw1" name='password2' placeholder="Nhập mật khẩu" ></input>
-                                        <a className='input-have-eye-account' onClick={this.showpw1} id='eye'> <FiEyeOff className='icon-eye' id='show' /> <FiEye className='icon-eye' id='hide' style={{ display: 'none' }} /></a>
+                                        <label style={{ fontSize: '18px' }} className='input-have-eye-account' onClick={this.showpw1} id='eye'> <FiEyeOff className='icon-eye' id='show1' /> <FiEye className='icon-eye' id='hide1' style={{ display: 'none' }} /></label>
                                     </div>
                                     <div className='col-update-device-item'>
                                         <div className='row'>
@@ -155,13 +155,13 @@ class UpdateAccountUser extends React.Component {
                                         </div>
                                         <div className='box' style={{ width: '540px' }}>
                                             <input name='TinhTrang' onClick={() => this.show('tt', 'up1', 'down1')} id='iptt' style={{ fontSize: '16px', width: '500px', cursor: 'pointer' }}></input>
-                                            <a className='box-button' onClick={() => this.show('tt', 'up1', 'down1')} style={{ marginLeft: '500px', position: 'absolute' }} id='down1'><TiArrowSortedDown /></a>
-                                            <a className='box-button' onClick={() => this.show('tt', 'up1', 'down1')} style={{ marginLeft: '500px', position: 'absolute', display: 'none' }} id='up1' ><TiArrowSortedUp /></a>
+                                            <label className='box-button' onClick={() => this.show('tt', 'up1', 'down1')} style={{ marginLeft: '500px', position: 'absolute' }} id='down1'><TiArrowSortedDown /></label>
+                                            <label className='box-button' onClick={() => this.show('tt', 'up1', 'down1')} style={{ marginLeft: '500px', position: 'absolute', display: 'none' }} id='up1' ><TiArrowSortedUp /></label>
                                         </div>
                                         <div id='tt' className='select-drop-down' onClick={() => this.show('tt', 'up1', 'down1')} style={{ width: '540px', marginLeft: '590px', marginTop: '348px' }}>
-                                            <div className='select-drop-down-item ' style={{ width: '540px' }} onClick={() => this.Chose('tc', 'iptt')}><a id='tc'>Tất cả</a></div>
-                                            <div className='select-drop-down-item ' style={{ width: '540px' }} onClick={() => this.Chose('nhd', 'iptt')}><a id='nhd'>Ngừng hoạt động</a></div>
-                                            <div className='select-drop-down-item ' style={{ width: '540px' }} onClick={() => this.Chose('hd', 'iptt')}><a id='hd'>Hoạt động</a></div>
+                                            <div className='select-drop-down-item ' style={{ width: '540px' }} onClick={() => this.Chose('tc', 'iptt')}><label id='tc'>Tất cả</label></div>
+                                            <div className='select-drop-down-item ' style={{ width: '540px' }} onClick={() => this.Chose('nhd', 'iptt')}><label id='nhd'>Ngừng hoạt động</label></div>
+                                            <div className='select-drop-down-item ' style={{ width: '540px' }} onClick={() => this.Chose('hd', 'iptt')}><label id='hd'>Hoạt động</label></div>
                                         </div>
                                     </div>
                                 </div>

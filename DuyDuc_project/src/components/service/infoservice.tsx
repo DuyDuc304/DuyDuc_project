@@ -194,10 +194,10 @@ class InfoService extends React.Component {
 
                         </div>
                         <div id='tt' className='select-drop-down' style={{ width: '154px', marginLeft: '10px', marginTop: '20px' }} onClick={() => this.show('tt', 'up1', 'down1')}>
-                            <div className='select-drop-down-item ' style={{ width: '154px' }} onClick={() => this.Chose('tc', 'iptt')}><a id='tc'>Tất cả</a></div>
-                            <div className='select-drop-down-item ' style={{ width: '154px' }} onClick={() => this.Chose('dc', 'iptt')}><a id='dc'>Đã hoàn thành</a></div>
-                            <div className='select-drop-down-item ' style={{ width: '154px' }} onClick={() => this.Chose('dsd', 'iptt')}><a id='dsd'>Đã thực hiện</a></div>
-                            <div className='select-drop-down-item ' style={{ width: '154px' }} onClick={() => this.Chose('bq', 'iptt')}><a id='bq'>Vắng</a></div>
+                            <div className='select-drop-down-item ' style={{ width: '154px' }} onClick={() => this.Chose('tc', 'iptt')}><label id='tc'>Tất cả</label></div>
+                            <div className='select-drop-down-item ' style={{ width: '154px' }} onClick={() => this.Chose('dc', 'iptt')}><label id='dc'>Đã hoàn thành</label></div>
+                            <div className='select-drop-down-item ' style={{ width: '154px' }} onClick={() => this.Chose('dsd', 'iptt')}><label id='dsd'>Đã thực hiện</label></div>
+                            <div className='select-drop-down-item ' style={{ width: '154px' }} onClick={() => this.Chose('bq', 'iptt')}><label id='bq'>Vắng</label></div>
                         </div>
                     </div>
 

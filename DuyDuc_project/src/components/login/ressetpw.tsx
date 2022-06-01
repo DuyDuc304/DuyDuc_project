@@ -86,13 +86,13 @@ class RessetPW extends React.Component {
 
                                             <div className='row-myform'>
                                                 <input className='input-have-eye' type="password" id="pw" name='password' placeholder="Nhập mật khẩu"></input>
-                                                <a className='button-eye' onClick={this.showpw} id='eye'> <FiEyeOff className='icon-eye' id='show' /> <FiEye className='icon-eye' id='hide' style={{ display: 'none' }} /></a>
+                                                <label style={{ fontSize: '18px' }} className='button-eye' onClick={this.showpw} id='eye'> <FiEyeOff className='icon-eye' id='show' /> <FiEye className='icon-eye' id='hide' style={{ display: 'none' }} /></label>
                                             </div>
                                             <p >Nhập lại mật khẩu *</p>
 
                                             <div className='row-myform'>
                                                 <input className='input-have-eye' type="password" id="pw1" name='password' placeholder="Nhập mật khẩu"></input>
-                                                <a className='button-eye' onClick={this.showpw1} id='eye'> <FiEyeOff className='icon-eye' id='show1' /> <FiEye className='icon-eye' id='hide1' style={{ display: 'none' }} /></a>
+                                                <label style={{ fontSize: '18px' }} className='button-eye' onClick={this.showpw1} id='eye'> <FiEyeOff className='icon-eye' id='show1' /> <FiEye className='icon-eye' id='hide1' style={{ display: 'none' }} /></label>
                                             </div>
 
 

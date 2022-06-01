@@ -83,10 +83,10 @@ class Login extends React.Component {
                     <p >Mật khẩu *</p>
                     <div className='row-myform'>
                       <input className='input-have-eye' type="password" id="pw" name='password' placeholder="Nhập mật khẩu"></input>
-                      <a className='button-eye' onClick={this.showpw} id='eye'>
+                      <label style={{ fontSize: '18px' }} className='button-eye' onClick={this.showpw} id='eye'>
                         <FiEyeOff className='icon-eye' id='show' />
                         <FiEye className='icon-eye' id='hide' style={{ display: 'none' }} />
-                      </a>
+                      </label>
                     </div>
                     <div style={{ margin: "0px 0px 0px 3px" }}><a className='myform-a' href='/Ressetpw'>Quên mật khẩu?</a></div>
                   </div>
@@ -111,7 +111,7 @@ class Login extends React.Component {
 
                     <div className='row-myform' style={{ border: "1.5px solid red" }}>
                       <input className='input-have-eye' type="password" id="pw1" name='password' placeholder="Nhập mật khẩu"></input>
-                      <a className='button-eye' onClick={this.showpw1} id='eye'> <FiEyeOff className='icon-eye' id='show1' /> <FiEye className='icon-eye' id='hide1' style={{ display: 'none' }} /></a>
+                      <label style={{ fontSize: '18px' }} className='button-eye' onClick={this.showpw1} id='eye'> <FiEyeOff className='icon-eye' id='show1' /> <FiEye className='icon-eye' id='hide1' style={{ display: 'none' }} /></label>
                     </div>
                     <div style={{ display: 'flex', margin: "0px 0px 0px 2px" }}>
 

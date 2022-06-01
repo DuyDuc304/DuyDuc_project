@@ -5,7 +5,7 @@ class TableDevice extends React.Component {
     showmore(id: string) {
 
         const btn: any = document.getElementById(id)
-        if (btn.style.display == 'none')
+        if (btn.style.display === 'none')
             btn.style.display = 'flex';
 
         document.addEventListener("mousedown", (event) => {
@@ -68,7 +68,7 @@ class TableDevice extends React.Component {
                     </div>
                     <div className="colum6">
                         <p>Khám tim mạch, Khám mắt,....</p>
-                        <a onClick={() => this.showmore('c2')}>Xem thêm</a>
+                        <label onClick={() => this.showmore('c2')}>Xem thêm</label>
                         <div className="div-more" id="c2">Khám tim mạch, Khám Sản -
                             Phụ khoa, Khám răng hàm mặt, Khám tai mũi họng, Khám hô hấp, Khám tổng quát</div>
                     </div>
@@ -105,7 +105,7 @@ class TableDevice extends React.Component {
                     </div>
                     <div className="colum6">
                         <p>Khám tim mạch, Khám mắt,....</p>
-                        <a onClick={() => this.showmore('c3')}>Xem thêm</a>
+                        <label onClick={() => this.showmore('c3')}>Xem thêm</label>
                         <div className="div-more" id="c3">Khám tim mạch, Khám Sản -
                             Phụ khoa, Khám răng hàm mặt, Khám tai mũi họng, Khám hô hấp, Khám tổng quát</div>
                     </div>
@@ -141,7 +141,7 @@ class TableDevice extends React.Component {
                     </div>
                     <div className="colum6">
                         <p>Khám tim mạch, Khám mắt,....</p>
-                        <a onClick={() => this.showmore('c4')}>Xem thêm</a>
+                        <label onClick={() => this.showmore('c4')}>Xem thêm</label>
                         <div className="div-more" id="c4">Khám tim mạch, Khám Sản -
                             Phụ khoa, Khám răng hàm mặt, Khám tai mũi họng, Khám hô hấp, Khám tổng quát</div>
                     </div>
@@ -177,7 +177,7 @@ class TableDevice extends React.Component {
                     </div>
                     <div className="colum6">
                         <p>Khám tim mạch, Khám mắt,....</p>
-                        <a onClick={() => this.showmore('c5')}>Xem thêm</a>
+                        <label onClick={() => this.showmore('c5')}>Xem thêm</label>
                         <div className="div-more" id="c5">Khám tim mạch, Khám Sản -
                             Phụ khoa, Khám răng hàm mặt, Khám tai mũi họng, Khám hô hấp, Khám tổng quát</div>
                     </div>
@@ -213,7 +213,7 @@ class TableDevice extends React.Component {
                     </div>
                     <div className="colum6">
                         <p>Khám tim mạch, Khám mắt,....</p>
-                        <a onClick={() => this.showmore('c6')}>Xem thêm</a>
+                        <label onClick={() => this.showmore('c6')}>Xem thêm</label>
                         <div className="div-more" id="c6">Khám tim mạch, Khám Sản -
                             Phụ khoa, Khám răng hàm mặt, Khám tai mũi họng, Khám hô hấp, Khám tổng quát</div>
                     </div>
@@ -249,7 +249,7 @@ class TableDevice extends React.Component {
                     </div>
                     <div className="colum6">
                         <p>Khám tim mạch, Khám mắt,....</p>
-                        <a onClick={() => this.showmore('c7')}>Xem thêm</a>
+                        <label onClick={() => this.showmore('c7')}>Xem thêm</label>
                         <div className="div-more" id="c7">Khám tim mạch, Khám Sản -
                             Phụ khoa, Khám răng hàm mặt, Khám tai mũi họng, Khám hô hấp, Khám tổng quát</div>
                     </div>
@@ -285,7 +285,7 @@ class TableDevice extends React.Component {
                     </div>
                     <div className="colum6">
                         <p>Khám tim mạch, Khám mắt,....</p>
-                        <a onClick={() => this.showmore('c8')}>Xem thêm</a>
+                        <label onClick={() => this.showmore('c8')}>Xem thêm</label>
                         <div className="div-more" id="c8">Khám tim mạch, Khám Sản -
                             Phụ khoa, Khám răng hàm mặt, Khám tai mũi họng, Khám hô hấp, Khám tổng quát</div>
                     </div>
@@ -321,7 +321,7 @@ class TableDevice extends React.Component {
                     </div>
                     <div className="colum6">
                         <p>Khám tim mạch, Khám mắt,....</p>
-                        <a onClick={() => this.showmore('c9')}>Xem thêm</a>
+                        <label onClick={() => this.showmore('c9')}>Xem thêm</label>
                         <div className="div-more" id="c9">Khám tim mạch, Khám Sản -
                             Phụ khoa, Khám răng hàm mặt, Khám tai mũi họng, Khám hô hấp, Khám tổng quát</div>
                     </div>
@@ -356,7 +356,7 @@ class TableDevice extends React.Component {
                     </div>
                     <div className="colum6" >
                         <p>Khám tim mạch, Khám mắt,....</p>
-                        <a onClick={() => this.showmore('c10')}>Xem thêm</a>
+                        <label onClick={() => this.showmore('c10')}>Xem thêm</label>
                         <div className="div-more" id="c10">Khám tim mạch, Khám Sản -
                             Phụ khoa, Khám răng hàm mặt, Khám tai mũi họng, Khám hô hấp, Khám tổng quát</div>
                     </div>

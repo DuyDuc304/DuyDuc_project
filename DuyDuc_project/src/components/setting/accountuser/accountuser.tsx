@@ -52,13 +52,14 @@ class AccountUser extends React.Component {
                             <button id='up' style={{ display: 'none' }}><TiArrowSortedUp /></button>
                         </div>
                         <div id='tthd' className='select-drop-down' onClick={() => this.show('tthd', 'up', 'down')}>
-                            <div className='select-drop-down-item ' onClick={() => this.Chose('tc', 'ip')}><a id='tc'>Tất cả</a></div>
-                            <div className='select-drop-down-item ' onClick={() => this.Chose('kt', 'ip')}><a id='kt'>Kế toán</a></div>
-                            <div className='select-drop-down-item ' onClick={() => this.Chose('bs', 'ip')}><a id='bs'>Bác sĩ</a></div>
-                            <div className='select-drop-down-item ' onClick={() => this.Chose('ad', 'ip')}><a id='ad'>Admin</a></div>
-                            <div className='select-drop-down-item ' onClick={() => this.Chose('sa', 'ip')}><a id='sa'>Super Admin</a></div>
+                            <div className='select-drop-down-item ' onClick={() => this.Chose('tc', 'ip')}><label id='tc'>Tất cả</label></div>
+                            <div className='select-drop-down-item ' onClick={() => this.Chose('kt', 'ip')}><label id='kt'>Kế toán</label></div>
+                            <div className='select-drop-down-item ' onClick={() => this.Chose('bs', 'ip')}><label id='bs'>Bác sĩ</label></div>
+                            <div className='select-drop-down-item ' onClick={() => this.Chose('ad', 'ip')}><label id='ad'>Admin</label></div>
+                            <div className='select-drop-down-item ' onClick={() => this.Chose('sa', 'ip')}><label id='sa'>Super Admin</label></div>
                         </div>
                     </div>
+
                     <div className='tk'>
                         <p className='ppp'>Từ khóa</p>
                         <div className='sreach'>

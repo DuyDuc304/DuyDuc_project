@@ -68,9 +68,9 @@ class Service extends React.Component {
                             <button id='up' style={{ display: 'none' }}><TiArrowSortedUp /></button>
                         </div>
                         <div id='tthd' className='select-drop-down' onClick={() => this.show('tthd', 'up', 'down')}>
-                            <div className='select-drop-down-item ' onClick={() => this.Chose('tc', 'ip')}><a id='tc'>Tất cả</a></div>
-                            <div className='select-drop-down-item ' onClick={() => this.Chose('hd', 'ip')}><a id='hd'>Hoạt động</a></div>
-                            <div className='select-drop-down-item ' onClick={() => this.Chose('nhd', 'ip')}><a id='nhd'>Ngừng hoạt động</a></div>
+                            <div className='select-drop-down-item ' onClick={() => this.Chose('tc', 'ip')}><label id='tc'>Tất cả</label></div>
+                            <div className='select-drop-down-item ' onClick={() => this.Chose('hd', 'ip')}><label id='hd'>Hoạt động</label></div>
+                            <div className='select-drop-down-item ' onClick={() => this.Chose('nhd', 'ip')}><label id='nhd'>Ngừng hoạt động</label></div>
                         </div>
                     </div>
                     <div className='tk'>

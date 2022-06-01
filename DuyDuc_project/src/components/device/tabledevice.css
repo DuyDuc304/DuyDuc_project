@@ -130,8 +130,15 @@
     border-right: 1px solid #FFE3CD;
 }
 
-.colum6 a {
+.colum6 label {
     cursor: pointer;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    padding-left: 12px;
+    text-decoration-line: underline;
+    color: #4277FF;
 }
 
 

@@ -4,16 +4,7 @@ import './tablediary.css'
 
 class TableDiary extends React.Component {
 
-    dropdown(id: string) {
-        const btn: any = document.getElementById(id)
-        if (btn.style.display == 'none') {
-            btn.style.display = 'block';
-        }
-        else {
-            btn.style.display = 'none';
-        }
 
-    }
 
     render() {
         return (

@@ -6,7 +6,7 @@ class TableReport extends React.Component {
 
     dropdown(id: string) {
         const btn: any = document.getElementById(id)
-        if (btn.style.display == 'none') {
+        if (btn.style.display === 'none') {
             btn.style.display = 'block';
         }
         else {
