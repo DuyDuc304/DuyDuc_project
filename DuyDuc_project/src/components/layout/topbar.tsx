@@ -10,10 +10,7 @@ type titlepros = {
 }
 
 export const Topbar = (props: titlepros) => {
-    const setvalue = () => {
-        const name: any = document.getElementById('nameuser')
-        name.innerText = 'Nguyễn Duy Đức'
-    }
+
     const handleNotice = () => {
         const bell: any = document.querySelector(".notice")
         const notice: any = document.querySelector(".notice-user")
@@ -24,7 +21,7 @@ export const Topbar = (props: titlepros) => {
         }
     }
     return (
-        <div className='topbar' onLoad={() => setvalue()}>
+        <div className='topbar' >
             <div className="title">
                 <label className="title1">{props.nametitle1}</label>
                 <a href={props.href}>{props.nametitle2}</a>
@@ -38,7 +35,7 @@ export const Topbar = (props: titlepros) => {
                 </div>
                 <div className='name'>
                     <p>Xin chào</p>
-                    <span id="nameuser"></span>
+                    <span id="nameuser">Nguyễn Duy Đức</span>
                 </div>
             </a>
             <div className="notice-user" id="usernotice" >
