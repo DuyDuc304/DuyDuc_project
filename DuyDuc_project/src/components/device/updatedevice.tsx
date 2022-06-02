@@ -58,7 +58,7 @@ class UpdateDevice extends React.Component {
         return (
             <div className='bg'>
                 <div className="Backgroundapp" onLoad={() => this.setvalue()}>
-                    <form >
+                    <form autoComplete='off'>
                         <div className='add-device'>
                             <p className='text-tttb'>Thông tin thiết bị</p>
 
@@ -94,7 +94,7 @@ class UpdateDevice extends React.Component {
                                             <p style={{ color: 'red', fontFamily: 'Nunito', margin: '4px' }}>*</p>
                                         </div>
                                         <div className='box' style={{ width: '540px' }}>
-                                            <input name='LoaiThietBi' onClick={() => this.show('tdv', 'up', 'down')}
+                                            <input readOnly name='LoaiThietBi' onClick={() => this.show('tdv', 'up', 'down')}
                                                 id='ip'
                                                 style={{ fontSize: '16px', width: '500px', cursor: 'pointer' }}></input>
                                             <label className='box-button' onClick={() => this.show('tdv', 'up', 'down')}
