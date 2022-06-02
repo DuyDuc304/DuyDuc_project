@@ -6,6 +6,40 @@ import { TiArrowSortedDown, TiArrowSortedUp } from 'react-icons/ti';
 
 
 class AddDevice extends React.Component {
+    add(id: string) {
+        const dvsd: any = document.getElementById('dvsd')
+        const goiy: any = document.getElementById('textcdvsd')
+        const chose: any = document.getElementById(id)
+        const dvcc: any = document.createElement('div')
+        dvcc.id = chose.id
+        dvcc.className = 'dvcc'
+        const p: any = document.createElement('p')
+        p.innerText = chose.innerText
+        const icon: any = document.createElement('label')
+        icon.innerText = '× '
+        icon.className = 'icon-delete'
+        icon.onclick = function () {
+            const elem: any = document.getElementById(id);
+            dvsd.removeChild(elem)
+            chose.style.display = 'flex'
+        }
+        dvcc.appendChild(p)
+        dvcc.appendChild(icon)
+        dvsd.appendChild(dvcc)
+        chose.style.display = 'none'
+        goiy.style.display = 'none'
+    }
+    showmore() {
+
+        const btn: any = document.getElementById('dd')
+        if (btn.style.display === 'none')
+            btn.style.display = 'flex';
+        else {
+            btn.style.display = 'none'
+        }
+
+
+    }
     Chose = (id: string, input: string) => {
         const ip: any = document.getElementById(input)
         const text: any = document.getElementById(id)
@@ -95,8 +129,8 @@ class AddDevice extends React.Component {
                             </div>
 
                             <p className='text-dvsd'>Dịch vụ sử dụng</p>
-                            <div className='input-dvsd'>
-                                <input type="text" name='DichVuSuDUng' placeholder="Nhập dịch vụ sử dụng"></input>
+                            <div className='div-dvsd' id='dvsd' onClick={this.showmore} style={{ border: '1.5px solid #A9A9B0' }} >
+                                <p className='goiy' id='textcdvsd'>Chọn dịch vụ sử dụng</p>
                             </div>
                             <div className='row-ttbc'><p style={{ color: 'red', fontWeight: '700', margin: '4px' }}>*</p><p className='text-ttbc'>Là trường thông tin bắt buộc</p></div>
                         </div>
@@ -108,7 +142,17 @@ class AddDevice extends React.Component {
                     <div className='title-report-type'>Quản lý thiết bị</div>
                     <Topbar nametitle1='Thiết bị ﹥ ' nametitle2='Danh sách thiết bị ﹥' nametitle3=' Thêm thiêt bị' href='/Device' href2='' nametitle21='' />
                     <Menubar buttonid="tb" />
-
+                    <div id='dd' className='dd'>
+                        <div className='dropdown-device' id="style-2">
+                            <div id='ktm' className='dropdown-device-item ' onClick={() => this.add('ktm')}>Khám tim mạch </div>
+                            <div id='kpk' className='dropdown-device-item ' onClick={() => this.add('kpk')}>Khám phụ khoa</div>
+                            <div id='krhm' className='dropdown-device-item ' onClick={() => this.add('krhm')}>Khám răng hàm mặt</div>
+                            <div id='ktmh' className='dropdown-device-item ' onClick={() => this.add('ktmh')}>Khám tai mũi họng</div>
+                            <div id='khh' className='dropdown-device-item ' onClick={() => this.add('khh')}>Khám hô hấp</div>
+                            <div id='ktq' className='dropdown-device-item ' onClick={() => this.add('ktq')}>Khám tổng quát  </div>
+                            <p className='enddata'>No data</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         );

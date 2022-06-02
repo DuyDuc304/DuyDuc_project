@@ -3,11 +3,40 @@ import React from 'react';
 import '../layout/menubar';
 import { Topbar } from '../layout/topbar';
 import { Menubar } from '../layout/menubar';
-import { IoMdClose } from "react-icons/io";
+
 import { TiArrowSortedDown, TiArrowSortedUp } from 'react-icons/ti';
 
 
+
 class UpdateDevice extends React.Component {
+    remove(id: string) {
+        const dvsd: any = document.getElementById('dvsd')
+        const chose: any = document.getElementById(id)
+        const elem: any = document.getElementById(id);
+        dvsd.removeChild(elem)
+        chose.style.display = 'flex'
+    }
+    add(id: string) {
+        const dvsd: any = document.getElementById('dvsd')
+        const chose: any = document.getElementById(id)
+        const dvcc: any = document.createElement('div')
+        dvcc.id = chose.id + '1'
+        dvcc.className = 'dvcc'
+        const p: any = document.createElement('p')
+        p.innerText = chose.innerText
+        const icon: any = document.createElement('label')
+        icon.innerText = '× '
+        icon.className = 'icon-delete'
+        icon.onclick = function () {
+            const elem: any = document.getElementById(id + '1');
+            dvsd.removeChild(elem)
+            chose.style.display = 'flex'
+        }
+        dvcc.appendChild(p)
+        dvcc.appendChild(icon)
+        dvsd.appendChild(dvcc)
+        chose.style.display = 'none'
+    }
     setvalue() {
         const mtb: any = document.getElementById('mtb')
         mtb.value = "KIO_01"
@@ -28,10 +57,10 @@ class UpdateDevice extends React.Component {
         const btn: any = document.getElementById('dd')
         if (btn.style.display === 'none')
             btn.style.display = 'flex';
+        else {
+            btn.style.display = 'none'
+        }
 
-        document.addEventListener("mousedown", (event) => {
-            btn.style.display = 'none';
-        })
 
     }
     Chose = (id: string, input: string) => {
@@ -133,31 +162,17 @@ class UpdateDevice extends React.Component {
                             </div>
 
                             <p className='text-dvsd'>Dịch vụ sử dụng</p>
-                            <div className='div-dvsd' id='dvsd' onClick={this.showmore} >
-                                <div className='dvcc'>
+                            <div className='div-dvsd' id='dvsd' onClick={this.showmore}  >
+                                <div id='ktm1' className='dvcc'>
                                     <p>Khám tim mạch </p>
-                                    <IoMdClose className='icon-delete' />
+                                    <label onClick={() => this.remove('ktm1')} className='icon-delete'>×</label>
                                 </div>
-                                <div className='dvcc'>
+                                <div id='kpk1' className='dvcc'>
                                     <p>Khám phụ khoa </p>
-                                    <IoMdClose className='icon-delete' />
+                                    <label onClick={() => this.remove('kpk1')} className='icon-delete'>×</label>
                                 </div>
-                                <div className='dvcc'>
-                                    <p>Khám răng hàm mặt </p>
-                                    <IoMdClose className='icon-delete' />
-                                </div>
-                                <div className='dvcc'>
-                                    <p>Khám tai mũi họng</p>
-                                    <IoMdClose className='icon-delete' />
-                                </div>
-                                <div className='dvcc'>
-                                    <p>Khám hô hấp </p>
-                                    <IoMdClose className='icon-delete' />
-                                </div>
-                                <div className='dvcc'>
-                                    <p>Khám tổng quát  </p>
-                                    <IoMdClose className='icon-delete' href='#' />
-                                </div>
+
+
                             </div>
 
                             <div className='row-ttbc'><p style={{ color: 'red', fontWeight: '700', margin: '4px' }}>*</p><p className='text-ttbc'>Là trường thông tin bắt buộc</p></div>
@@ -172,13 +187,13 @@ class UpdateDevice extends React.Component {
                     <Menubar buttonid="tb" />
                     <div id='dd' className='dd'>
                         <div className='dropdown-device' id="style-2">
-                            <div className='dropdown-device-item '>Tất cả </div>
-                            <div className='dropdown-device-item '>Khám tim mạch </div>
-                            <div className='dropdown-device-item '>Khám phụ khoa</div>
-                            <div className='dropdown-device-item '>Khám răng hàm mặt</div>
-                            <div className='dropdown-device-item '>Khám tai mũi họng</div>
-                            <div className='dropdown-device-item '>Khám hô hấp</div>
-                            <div className='dropdown-device-item '>Khám tổng quát  </div>
+                            <div id='ktm' className='dropdown-device-item ' onClick={() => this.add('ktm')}>Khám tim mạch </div>
+                            <div id='kpk' className='dropdown-device-item ' onClick={() => this.add('kpk')}>Khám phụ khoa</div>
+                            <div id='krhm' className='dropdown-device-item ' onClick={() => this.add('krhm')}>Khám răng hàm mặt</div>
+                            <div id='ktmh' className='dropdown-device-item ' onClick={() => this.add('ktmh')}>Khám tai mũi họng</div>
+                            <div id='khh' className='dropdown-device-item ' onClick={() => this.add('khh')}>Khám hô hấp</div>
+                            <div id='ktq' className='dropdown-device-item ' onClick={() => this.add('ktq')}>Khám tổng quát  </div>
+                            <p className='enddata'>No data</p>
                         </div>
                     </div>
 
