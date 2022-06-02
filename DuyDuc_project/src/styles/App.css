@@ -1411,7 +1411,7 @@ textarea::placeholder {
 
 .text-dvsd {
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
   line-height: 24px;
   display: flex;
@@ -1517,9 +1517,9 @@ textarea::placeholder {
   display: flex;
   padding-top: 50px;
   padding-left: 507px;
-  margin: auto;
   font-size: 24px;
   color: #A9A9B0;
+
 }
 
 .text-ttbc {

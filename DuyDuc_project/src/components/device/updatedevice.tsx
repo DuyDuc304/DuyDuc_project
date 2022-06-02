@@ -188,12 +188,12 @@ class UpdateDevice extends React.Component {
                     <div id='dd' className='dd'>
                         <div className='dropdown-device' id="style-2">
                             <div id='ktm' className='dropdown-device-item ' onClick={() => this.add('ktm')}>Khám tim mạch </div>
-                            <div id='kpk' className='dropdown-device-item ' onClick={() => this.add('kpk')}>Khám phụ khoa</div>
+                            <div id='kpk' className='dropdown-device-item ' onClick={() => this.add('kpk')}>Khám sản - phụ khoa</div>
                             <div id='krhm' className='dropdown-device-item ' onClick={() => this.add('krhm')}>Khám răng hàm mặt</div>
                             <div id='ktmh' className='dropdown-device-item ' onClick={() => this.add('ktmh')}>Khám tai mũi họng</div>
                             <div id='khh' className='dropdown-device-item ' onClick={() => this.add('khh')}>Khám hô hấp</div>
                             <div id='ktq' className='dropdown-device-item ' onClick={() => this.add('ktq')}>Khám tổng quát  </div>
-                            <p className='enddata'>No data</p>
+                            <p className='enddata'>No more data</p>
                         </div>
                     </div>
 
