@@ -49,7 +49,7 @@ class Device extends React.Component {
                     <div className='tthd'>
                         <p className='ppp'>Trạng thái hoạt động</p>
                         <div className="sreach" onClick={() => this.show('tthd', 'up', 'down')} >
-                            <input id='ip' className='tb-select' disabled value={'Tất cả'} style={{ marginLeft: '4px', fontSize: '16px', cursor: 'pointer' }}></input>
+                            <input id='ip' className='tb-select' readOnly value={'Tất cả'} style={{ marginLeft: '4px', fontSize: '16px', cursor: 'pointer' }}></input>
                             <button id='down'><TiArrowSortedDown /></button>
                             <button id='up' style={{ display: 'none' }}><TiArrowSortedUp /></button>
                         </div>
@@ -63,7 +63,7 @@ class Device extends React.Component {
                     <div className='ttkn'>
                         <p className='ppp'>Trạng thái kết nối</p>
                         <div className="sreach" onClick={() => this.show('ttkn', 'up1', 'down1')}>
-                            <input id='ip1' className='tb-select' disabled value={'Tất cả'} style={{ marginLeft: '4px', fontSize: '16px', cursor: 'pointer' }}></input>
+                            <input id='ip1' className='tb-select' readOnly value={'Tất cả'} style={{ marginLeft: '4px', fontSize: '16px', cursor: 'pointer' }}></input>
                             <button id='down1'><TiArrowSortedDown /></button>
                             <button id='up1' style={{ display: 'none' }}><TiArrowSortedUp /></button>
                         </div>

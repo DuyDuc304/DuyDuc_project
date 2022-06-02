@@ -46,7 +46,7 @@ class Info extends React.Component {
                                 <div className='infocol'>
                                     <div className='itemcol'>
                                         <label>Tên tài khoản</label>
-                                        <input name='TenTaiKhoan' type="text" id='ttk'></input>
+                                        <input readOnly name='TenTaiKhoan' type="text" id='ttk'></input>
                                     </div>
                                     <div className='itemcol'>
                                         <label>Mật khẩu</label>

@@ -62,7 +62,7 @@ class NumberOrder extends React.Component {
                         <div className='qlcs-tdv'>
                             <p>Tên dịch vụ</p>
                             <div className="box" onClick={() => this.show('tdv', 'up', 'down')} >
-                                <input disabled id='ip' value={'Tất cả'} style={{ marginLeft: '4px', fontSize: '16px', cursor: 'pointer' }}></input>
+                                <input readOnly id='ip' value={'Tất cả'} style={{ marginLeft: '4px', fontSize: '16px', cursor: 'pointer' }}></input>
                                 <button className='box-button' id='down'><TiArrowSortedDown /></button>
                                 <button className='box-button' id='up' style={{ display: 'none' }}><TiArrowSortedUp /></button>
                             </div>
@@ -77,7 +77,7 @@ class NumberOrder extends React.Component {
                         <div className='qlcs-tdv'>
                             <p>Tình trạng</p>
                             <div className="box" onClick={() => this.show('tt', 'up1', 'down1')}>
-                                <input id='iptt' disabled value={'Tất cả'} style={{ marginLeft: '4px', fontSize: '16px', cursor: 'pointer' }}></input>
+                                <input id='iptt' readOnly value={'Tất cả'} style={{ marginLeft: '4px', fontSize: '16px', cursor: 'pointer' }}></input>
                                 <button className='box-button' id='down1'><TiArrowSortedDown /></button>
                                 <button className='box-button' id='up1' style={{ display: 'none' }}><TiArrowSortedUp /></button>
                             </div>
@@ -92,7 +92,7 @@ class NumberOrder extends React.Component {
                         <div className='qlcs-tdv'>
                             <p>Nguồn cấp</p>
                             <div className="box" onClick={() => this.show('nc', 'up2', 'down2')}>
-                                <input id='ipnc' disabled value={'Tất cả'} style={{ marginLeft: '4px', fontSize: '16px', cursor: 'pointer' }}></input>
+                                <input id='ipnc' readOnly value={'Tất cả'} style={{ marginLeft: '4px', fontSize: '16px', cursor: 'pointer' }}></input>
                                 <button className='box-button' id='down2'><TiArrowSortedDown /></button>
                                 <button className='box-button' id='up2' style={{ display: 'none' }}><TiArrowSortedUp /></button>
                             </div>

@@ -52,7 +52,7 @@ class AddNumber extends React.Component<any, any> {
                             <form autoComplete='off' onSubmit={this.popup} >
 
                                 <div className="sreach" style={{ width: '400px', marginBottom: '80px' }} onClick={() => this.show('tdv', 'up', 'down')} >
-                                    <input name='TenDichVu' id='ip' disabled placeholder={'Chọn dịch vụ'} style={{ fontSize: '16px', width: '350px', cursor: 'pointer' }}></input>
+                                    <input name='TenDichVu' id='ip' readOnly placeholder={'Chọn dịch vụ'} style={{ fontSize: '16px', width: '350px', cursor: 'pointer' }}></input>
                                     <label className='box-button' id='down'><TiArrowSortedDown /></label>
                                     <label className='box-button' id='up' style={{ display: 'none' }}><TiArrowSortedUp /></label>
                                 </div>

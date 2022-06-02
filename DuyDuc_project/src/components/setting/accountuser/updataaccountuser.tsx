@@ -111,7 +111,7 @@ class UpdateAccountUser extends React.Component {
                                             <p style={{ color: 'red', fontFamily: 'Nunito', margin: '4px' }}>*</p>
                                         </div>
                                         <div className='box' style={{ width: '540px' }}>
-                                            <input name='VaiTro' onClick={() => this.show('tdv', 'up', 'down')} id='ip' style={{ fontSize: '16px', width: '500px', cursor: 'pointer' }}></input>
+                                            <input readOnly name='VaiTro' onClick={() => this.show('tdv', 'up', 'down')} id='ip' style={{ fontSize: '16px', width: '500px', cursor: 'pointer' }}></input>
                                             <label className='box-button' onClick={() => this.show('tdv', 'up', 'down')} style={{ marginLeft: '500px', position: 'absolute' }} id='down'><TiArrowSortedDown /></label>
                                             <label className='box-button' onClick={() => this.show('tdv', 'up', 'down')} style={{ marginLeft: '500px', position: 'absolute', display: 'none' }} id='up' ><TiArrowSortedUp /></label>
                                         </div>
@@ -154,7 +154,7 @@ class UpdateAccountUser extends React.Component {
                                             <p style={{ color: 'red', fontFamily: 'Nunito', margin: '4px' }}>*</p>
                                         </div>
                                         <div className='box' style={{ width: '540px' }}>
-                                            <input name='TinhTrang' onClick={() => this.show('tt', 'up1', 'down1')} id='iptt' style={{ fontSize: '16px', width: '500px', cursor: 'pointer' }}></input>
+                                            <input readOnly name='TinhTrang' onClick={() => this.show('tt', 'up1', 'down1')} id='iptt' style={{ fontSize: '16px', width: '500px', cursor: 'pointer' }}></input>
                                             <label className='box-button' onClick={() => this.show('tt', 'up1', 'down1')} style={{ marginLeft: '500px', position: 'absolute' }} id='down1'><TiArrowSortedDown /></label>
                                             <label className='box-button' onClick={() => this.show('tt', 'up1', 'down1')} style={{ marginLeft: '500px', position: 'absolute', display: 'none' }} id='up1' ><TiArrowSortedUp /></label>
                                         </div>

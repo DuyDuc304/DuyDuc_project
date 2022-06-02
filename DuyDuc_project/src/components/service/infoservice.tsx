@@ -95,7 +95,7 @@ class InfoService extends React.Component {
                             <div className="service-trangthai ">
                                 <p>Trạng thái</p>
                                 <div className="box" onClick={() => this.show('tt', 'up1', 'down1')}>
-                                    <input id='iptt' disabled value={'Tất cả'} style={{ marginLeft: '4px', fontSize: '16px', cursor: 'pointer' }}></input>
+                                    <input id='iptt' readOnly value={'Tất cả'} style={{ marginLeft: '4px', fontSize: '16px', cursor: 'pointer' }}></input>
                                     <button className='box-button' id='down1'>< TiArrowSortedDown /></button>
                                     <button className='box-button' id='up1' style={{ display: 'none' }}><TiArrowSortedUp /></button>
                                 </div>

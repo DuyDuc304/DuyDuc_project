@@ -47,7 +47,7 @@ class AccountUser extends React.Component {
                     <div className='tthd'>
                         <p className='ppp'> Tên vai trò</p>
                         <div className="sreach" onClick={() => this.show('tthd', 'up', 'down')}>
-                            <input disabled id='ip' className='tb-select' value={'Tất cả'} style={{ marginLeft: '4px', fontSize: '16px', cursor: 'pointer' }}></input>
+                            <input readOnly id='ip' className='tb-select' value={'Tất cả'} style={{ marginLeft: '4px', fontSize: '16px', cursor: 'pointer' }}></input>
                             <button id='down'><TiArrowSortedDown /></button>
                             <button id='up' style={{ display: 'none' }}><TiArrowSortedUp /></button>
                         </div>
