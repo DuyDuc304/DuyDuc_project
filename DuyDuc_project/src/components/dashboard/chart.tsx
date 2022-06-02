@@ -35,15 +35,6 @@ export const Chart: FC<FruitProps> = ({ defaulchart }) => {
                 borderColor: " #5185F7",
             },
         ],
-        options: {
-            plugins: {
-                legend: {
-                    display: false,
-
-                }
-            },
-        },
-
     };
     const datatuan = {
         labels: ["Tuần 1", "Tuần 2", "Tuần 3", "Tuần 4"],
@@ -60,18 +51,6 @@ export const Chart: FC<FruitProps> = ({ defaulchart }) => {
 
 
     };
-    const options = {
-
-        plugins: {
-            legend: {
-                display: false,
-                labels: {
-                    boxWidth: 0
-                }
-            }
-        },
-
-    }
     const datangay = {
         labels: ["1", '15', '22', '25', '31'],
         datasets: [
@@ -88,6 +67,18 @@ export const Chart: FC<FruitProps> = ({ defaulchart }) => {
 
 
     };
+    const options = {
+
+        plugins: {
+            legend: {
+                display: false,
+                labels: {
+                    boxWidth: 0
+                }
+            }
+        },
+
+    }
     const daytime = (a: string) => {
 
         if (a === 'tuần') {

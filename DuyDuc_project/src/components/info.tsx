@@ -4,60 +4,45 @@ import { Menubar } from './layout/menubar';
 import { Topbar } from './layout/topbar';
 
 class Info extends React.Component {
-    setvalue() {
-        const tnd: any = document.getElementById('tnd')
-        tnd.value = 'Nguyễn Duy Đức ';
-        const name: any = document.getElementById('name')
-        name.innerText = tnd.value
-        const sdt: any = document.getElementById('sdt')
-        sdt.value = '0379439568';
-        const mail: any = document.getElementById('email')
-        mail.value = 'ducpy30042000@gmail.com';
-        const ttk: any = document.getElementById('ttk')
-        ttk.value = 'ducpy304';
-        const mk: any = document.getElementById('mk')
-        mk.value = 'Ducvippro';
-        const vt: any = document.getElementById('vt')
-        vt.value = 'SuperAdmin';
-    }
+
     render() {
         return (
             <div className='bg'>
-                <div className="Backgroundapp" onLoad={() => this.setvalue()}>
+                <div className="Backgroundapp" >
                     <form autoComplete="off">
                         <div className='info'>
                             <img id='avt' src="https://tinhte.vn/store/2016/10/3893837_1_1.jpg" alt='avata' />
                             <a href="/Info"><div className='camera'><FiCamera className='iconcamera' /></div></a>
-                            <label id='name' className='username'></label>
+                            <label id='name' className='username'>Nguyễn Duy Đức</label>
                             <div className='infouser'>
                                 <div className='infocol'>
                                     <div className='itemcol'>
                                         <label>Tên người dùng</label>
-                                        <input id='tnd' type="text" name='TenNguoiDung' ></input>
+                                        <input readOnly id='tnd' type="text" value={'Nguyễn Duy Đức'} name='TenNguoiDung' ></input>
                                     </div>
                                     <div className='itemcol'>
                                         <label>Số điện thoại</label>
-                                        <input id='sdt' type="number" name='SoDienThoai' ></input>
+                                        <input readOnly id='sdt' type="number" value={'0379439568'} name='SoDienThoai' ></input>
                                     </div><div className='itemcol'>
                                         <label>Email</label>
-                                        <input id='email' type="email" name='Email' ></input>
+                                        <input readOnly id='email' type="email" value={'ducpt30042000@gmail.com'} name='Email' ></input>
                                     </div>
                                 </div>
                                 <div className='infocol'>
                                     <div className='itemcol'>
                                         <label>Tên tài khoản</label>
-                                        <input readOnly name='TenTaiKhoan' type="text" id='ttk'></input>
+                                        <input readOnly name='TenTaiKhoan' value={'duc30042k'} type="text" id='ttk'></input>
                                     </div>
                                     <div className='itemcol'>
                                         <label>Mật khẩu</label>
-                                        <input name='MatKhau' type="text" id='mk' ></input>
+                                        <input readOnly name='MatKhau' value={'DucVipPro'} type="text" id='mk' ></input>
                                     </div>
                                     <div className='itemcol'>
                                         <label>Vai Trò</label>
-                                        <input name='VaiTro' type="text" id='vt' ></input>
+                                        <input readOnly name='VaiTro' value={'SuperAdmin'} type="text" id='vt' ></input>
                                     </div>
                                 </div>
-                            </div>  <button></button>
+                            </div>
                         </div>
 
                     </form>
