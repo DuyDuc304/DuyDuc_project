@@ -130,7 +130,7 @@ class AddDevice extends React.Component {
 
                             <p className='text-dvsd'>Dịch vụ sử dụng</p>
                             <div className='div-dvsd' id='dvsd' onClick={this.showmore} style={{ border: '1.5px solid #A9A9B0' }} >
-                                <p className='goiy' id='textcdvsd'>Chọn dịch vụ sử dụng</p>
+                                <p className='goiy' id='textcdvsd'>Nhập dịch vụ sử dụng</p>
                             </div>
                             <div className='row-ttbc'><p style={{ color: 'red', fontWeight: '700', margin: '4px' }}>*</p><p className='text-ttbc'>Là trường thông tin bắt buộc</p></div>
                         </div>
