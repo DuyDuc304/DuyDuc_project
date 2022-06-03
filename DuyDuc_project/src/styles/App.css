@@ -2852,6 +2852,11 @@ button {
   background-color: #FFF2E7;
 }
 
+.select-drop-down-item:active {
+  background-color: #FF9138;
+  color: #FFFFFF;
+}
+
 .box {
   display: flex;
   flex-direction: row;
