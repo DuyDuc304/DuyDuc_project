@@ -1728,6 +1728,20 @@ textarea::placeholder {
 
 }
 
+.page-number-arow {
+  display: flex;
+  cursor: pointer;
+  margin: auto;
+  width: 32px;
+  height: 32px;
+  color: #7E7D88;
+  border-radius: 4px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+}
+
 .page-number-onclick {
   display: flex;
   margin: auto;
@@ -1762,7 +1776,17 @@ textarea::placeholder {
 
 }
 
-.page-number:hover {
+.page-number-arow p {
+  display: flex;
+  margin: auto;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+
+}
+
+.page-number-arow:active {
   background-color: #FF9138;
   color: #FFFFFF;
 }
