@@ -34,7 +34,7 @@ class Nextpage extends React.Component {
         for (let a = 0; a < page.length; a++) {
             if (page[a].className === 'page-number page-number-onclick') {
                 const idpage: string = page[a].id
-                if (parseInt(idpage) < 5) {
+                if (parseInt(idpage) < page.length - 2) {
                     const tg1: number = parseInt(idpage) + 1;
                     const idn: string = tg1.toString();
                     this.page(idn)
@@ -56,6 +56,7 @@ class Nextpage extends React.Component {
                 <div className="page-number" id="3" onClick={() => this.page('3')}><p>3</p></div>
                 <div className="page-number" id="4" onClick={() => this.page('4')} ><p>4</p></div>
                 <div className="page-number" id="5" onClick={() => this.page('5')}><p>5</p></div>
+                <div className="page-number" id="6" onClick={() => this.page('6')}><p>6</p></div>
                 {/* <div className="page-number" id="..." ><p>...</p></div>
                 <div className="page-number" id="10" ><p>10</p></div> */}
                 <div className="page-number-arow" id="next" onClick={() => this.next()}><p>▶</p></div>

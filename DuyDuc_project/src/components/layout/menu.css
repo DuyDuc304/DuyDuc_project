@@ -50,11 +50,13 @@
     background: #FF7506;
     color: #FFFF;
     border-bottom-right-radius: 8px;
+    pointer-events: none !important;
 }
 
 .button-qltk {
     background: #FF7506;
     color: #FFFF;
+    pointer-events: none !important;
 }
 
 .button-cd {
@@ -66,4 +68,5 @@
     background: #FF7506;
     color: #FFFF;
     border-top-right-radius: 8px;
+    pointer-events: none !important;
 }
