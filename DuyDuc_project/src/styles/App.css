@@ -778,13 +778,10 @@ textarea::placeholder {
 
 .button-active {
   background: #FF7506;
-
+  pointer-events: none !important;
 }
 
-.button-active:hover {
-  background: #FF7506;
 
-}
 
 .button-active .icon {
   color: #FFFF;
@@ -1787,6 +1784,11 @@ textarea::placeholder {
   font-size: 16px;
   line-height: 22px;
 
+}
+
+.page-number:active {
+  background-color: #FF9138;
+  color: #FFFFFF;
 }
 
 .page-number-arow:active {
