@@ -28,6 +28,7 @@ class NumberOrder extends React.Component {
             ip.style.display = 'block';
             up.style.display = 'flex';
             down.style.display = 'none';
+
         } else {
             ip.style.display = 'none';
             down.style.display = 'flex';
