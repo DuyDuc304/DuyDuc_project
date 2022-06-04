@@ -3,7 +3,7 @@ import { FC, useState } from 'react';
 import 'chart.js/auto';
 import { Line } from 'react-chartjs-2';
 
-type FruitProps = {
+type DateProps = {
     defaulchart: string;
 }
 
@@ -13,7 +13,7 @@ let month = newDate.getMonth() + 1;
 let year = newDate.getFullYear();
 
 
-export const Chart: FC<FruitProps> = ({ defaulchart }) => {
+export const Chart: FC<DateProps> = ({ defaulchart }) => {
 
     const [currentType, setCurrentType] = useState(defaulchart)
     var setday: string
@@ -52,15 +52,16 @@ export const Chart: FC<FruitProps> = ({ defaulchart }) => {
 
     };
     const datangay = {
-        labels: ["1", '15', '22', '25', '31'],
+        labels: ["1", '5', '10', '15', '20', '25', '31'],
         datasets: [
             {
 
-                data: [3300, 5300, 6500, 4100, 4400],
+                data: [3900, 4300, 4500, 4100, 4400, 4200, 4900],
                 fill: true,
                 backgroundColor: 'rgba(206, 221, 255, 0.5)',
                 tension: 0.3,
                 borderColor: " #5185F7",
+
             },
 
         ],
@@ -75,7 +76,9 @@ export const Chart: FC<FruitProps> = ({ defaulchart }) => {
                 labels: {
                     boxWidth: 0
                 }
+
             }
+
         },
 
     }
