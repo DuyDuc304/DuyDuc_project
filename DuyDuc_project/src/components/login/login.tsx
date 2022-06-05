@@ -47,6 +47,7 @@ class Login extends React.Component {
     const tk: any = document.getElementById('name')
     const qmk1: any = document.getElementById('qmk1')
     const qmk2: any = document.getElementById('qmk2')
+    const wn1: any = document.getElementById('warning1')
     e.preventDefault();
     const target = e.target as typeof e.target & {
       name: { value: string };
@@ -54,17 +55,23 @@ class Login extends React.Component {
     };
     const name = target.name.value;
     const password = target.password.value;
-    if (name === "duc" && password === "123"
-    ) {
-      var parser = document.location.href = "/Dashboard";
-      return (parser);
-    }
-    else {
+    if (name !== '' && password !== '') {
+      if (name === "duc" && password === "123") {
+        var parser = document.location.href = "/Dashboard";
+        return (parser);
+      }
+      else {
+        pw.style.border = "1.5px solid red"
+        tk.style.border = "1.5px solid red"
+        wn.style.display = 'flex'
+        qmk1.style.display = 'none'
+        qmk2.style.display = 'flex'
+        wn1.style.display = 'none'
+      }
+    } else {
+      wn1.innerText = 'Tài khoản và mật khẩu không được để trống '
       pw.style.border = "1.5px solid red"
       tk.style.border = "1.5px solid red"
-      wn.style.display = 'flex'
-      qmk1.style.display = 'none'
-      qmk2.style.display = 'flex'
     }
 
   }
@@ -80,6 +87,7 @@ class Login extends React.Component {
               <div className='myform'>
                 <form onSubmit={this.checklogin} autoComplete="off">
                   <div className='col1'>
+                    <p id='warning1' style={{ color: 'red', fontSize: '14px' }}></p>
                     <p >Tên đăng nhập *</p>
                     <input className='input-myform' type="text" id="name" name='name' placeholder="Nhập tài khoản "></input>
                     <p >Mật khẩu *</p>
