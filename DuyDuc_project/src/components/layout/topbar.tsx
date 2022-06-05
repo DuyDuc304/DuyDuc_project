@@ -10,7 +10,7 @@ type titlepros = {
 }
 
 export const Topbar = (props: titlepros) => {
-
+    var day = new Date();
     const handleNotice = () => {
         const bell: any = document.querySelector(".notice")
         const notice: any = document.querySelector(".notice-user")
@@ -20,9 +20,10 @@ export const Topbar = (props: titlepros) => {
             notice.style.display = 'none';
         }
     }
+
     return (
-        <div className='topbar' >
-            <div className="title">
+        <div className='topbar'>
+            <div className="title" id="title">
                 <label className="title1">{props.nametitle1}</label>
                 <a href={props.href}>{props.nametitle2}</a>
                 <a href={props.href2}>{props.nametitle21}</a>
@@ -45,49 +46,57 @@ export const Topbar = (props: titlepros) => {
                         <a href="/NumberOrder/InfoNumberOrder" className="notline">
                             <li className="notice-item">
                                 <p className="notice-name-user"> Người dùng: Nguyễn Duy Đức</p>
-                                <p className="notice-content-user">Thời gian nhận sô: 12h ngày 18/05/2022</p>
+                                <p className="notice-content-user">Thời gian nhận sô: {day.getHours()}h{day.getMinutes()} ngày {day.toLocaleDateString()}</p>
+                                <p className="boder"></p>
                             </li>
                         </a>
                         <a href="/NumberOrder/InfoNumberOrder" className="notline">
                             <li className="notice-item">
                                 <p className="notice-name-user"> Người dùng: Nguyễn Duy Đức</p>
-                                <p className="notice-content-user">Thời gian nhận sô: 12h ngày 18/05/2022</p>
+                                <p className="notice-content-user">Thời gian nhận sô: {day.getHours()}h{day.getMinutes()} ngày {day.toLocaleDateString()}</p>
+                                <p className="boder"></p>
                             </li>
                         </a>
                         <a href="/NumberOrder/InfoNumberOrder" className="notline">
                             <li className="notice-item">
                                 <p className="notice-name-user"> Người dùng: Nguyễn Duy Đức</p>
-                                <p className="notice-content-user">Thời gian nhận sô: 12h ngày 18/05/2022</p>
+                                <p className="notice-content-user">Thời gian nhận sô: {day.getHours()}h{day.getMinutes()} ngày {day.toLocaleDateString()}</p>
+                                <p className="boder"></p>
                             </li>
                         </a>
                         <a href="/NumberOrder/InfoNumberOrder" className="notline">
                             <li className="notice-item">
                                 <p className="notice-name-user"> Người dùng: Nguyễn Duy Đức</p>
-                                <p className="notice-content-user">Thời gian nhận sô: 12h ngày 18/05/2022</p>
+                                <p className="notice-content-user">Thời gian nhận sô: {day.getHours()}h{day.getMinutes()} ngày {day.toLocaleDateString()}</p>
+                                <p className="boder"></p>
                             </li>
                         </a>
                         <a href="/NumberOrder/InfoNumberOrder" className="notline">
                             <li className="notice-item">
                                 <p className="notice-name-user"> Người dùng: Nguyễn Duy Đức</p>
-                                <p className="notice-content-user">Thời gian nhận sô: 12h ngày 18/05/2022</p>
+                                <p className="notice-content-user">Thời gian nhận sô: {day.getHours()}h{day.getMinutes()} ngày {day.toLocaleDateString()}</p>
+                                <p className="boder"></p>
                             </li>
                         </a>
                         <a href="/NumberOrder/InfoNumberOrder" className="notline">
                             <li className="notice-item">
                                 <p className="notice-name-user"> Người dùng: Nguyễn Duy Đức</p>
-                                <p className="notice-content-user">Thời gian nhận sô: 12h ngày 18/05/2022</p>
+                                <p className="notice-content-user">Thời gian nhận sô: {day.getHours()}h{day.getMinutes()} ngày {day.toLocaleDateString()}</p>
+                                <p className="boder"></p>
                             </li>
                         </a>
                         <a href="/NumberOrder/InfoNumberOrder" className="notline">
                             <li className="notice-item">
                                 <p className="notice-name-user"> Người dùng: Nguyễn Duy Đức</p>
-                                <p className="notice-content-user">Thời gian nhận sô: 12h ngày 18/05/2022</p>
+                                <p className="notice-content-user">Thời gian nhận sô: {day.getHours()}h{day.getMinutes()} ngày {day.toLocaleDateString()}</p>
+                                <p className="boder"></p>
                             </li>
                         </a>
                         <a href="/NumberOrder/InfoNumberOrder" className="notline">
                             <li className="notice-item">
                                 <p className="notice-name-user"> Người dùng: Nguyễn Duy Đức</p>
-                                <p className="notice-content-user">Thời gian nhận sô: 12h ngày 18/05/2022</p>
+                                <p className="notice-content-user">Thời gian nhận sô: {day.getHours()}h{day.getMinutes()} ngày {day.toLocaleDateString()}</p>
+                                <p className="boder"></p>
                             </li>
                         </a>
                     </ul>

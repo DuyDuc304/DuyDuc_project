@@ -19,6 +19,7 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+
 input {
   color: black !important;
 }
@@ -447,14 +448,14 @@ textarea::placeholder {
 }
 
 .title {
-
   display: flex;
   flex-direction: row;
   width: 600px;
   height: 40px;
   padding-top: 29px;
-  padding-left: 20px;
+  padding-left: 24px;
   align-items: flex-start;
+
 }
 
 .title1 {
@@ -467,8 +468,7 @@ textarea::placeholder {
 }
 
 .title a {
-  padding-left: 5px;
-  padding-right: 5px;
+
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -741,14 +741,27 @@ textarea::placeholder {
   height: 80px;
   margin: auto;
   flex-direction: column;
-  border-bottom: 0.5px solid #535261;
+  /* border-bottom: 0.5px solid #535261; */
+}
 
+.boder {
+  display: flex;
+  height: 1.5px;
+  margin: auto;
+  opacity: 0.6;
+  width: 320px;
+  background-color: #535261;
+  border-radius: 8px;
 }
 
 .notice-item:hover {
   background-color: #FFF2E7;
   border-bottom: none;
   border-bottom-left-radius: 10px;
+}
+
+.notice-item:hover .boder {
+  display: none;
 }
 
 .button-alway-active {
