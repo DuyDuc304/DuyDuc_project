@@ -41,13 +41,12 @@ class Login extends React.Component {
     }
   }
 
-  checklogin
-
-    (e: React.SyntheticEvent) {
-
-
-    const login: any = document.querySelector(".login")
-    const loginfail: any = document.querySelector(".loginfail")
+  checklogin(e: React.SyntheticEvent) {
+    const wn: any = document.getElementById('warning')
+    const pw: any = document.getElementById('pass')
+    const tk: any = document.getElementById('name')
+    const qmk1: any = document.getElementById('qmk1')
+    const qmk2: any = document.getElementById('qmk2')
     e.preventDefault();
     const target = e.target as typeof e.target & {
       name: { value: string };
@@ -61,8 +60,11 @@ class Login extends React.Component {
       return (parser);
     }
     else {
-      loginfail.style.display = 'block';
-      login.style.display = 'none';
+      pw.style.border = "1.5px solid red"
+      tk.style.border = "1.5px solid red"
+      wn.style.display = 'flex'
+      qmk1.style.display = 'none'
+      qmk2.style.display = 'flex'
     }
 
   }
@@ -81,54 +83,35 @@ class Login extends React.Component {
                     <p >Tên đăng nhập *</p>
                     <input className='input-myform' type="text" id="name" name='name' placeholder="Nhập tài khoản "></input>
                     <p >Mật khẩu *</p>
-                    <div className='row-myform'>
+                    <div className='row-myform' id='pass'>
                       <input className='input-have-eye' type="password" id="pw" name='password' placeholder="Nhập mật khẩu"></input>
                       <label style={{ fontSize: '18px' }} className='button-eye' onClick={this.showpw} id='eye'>
                         <FiEyeOff className='icon-eye' id='show' />
                         <FiEye className='icon-eye' id='hide' style={{ display: 'none' }} />
                       </label>
                     </div>
-                    <div style={{ margin: "0px 0px 0px 3px" }}><a className='myform-a' href='/Ressetpw'>Quên mật khẩu?</a></div>
-                  </div>
-                  <div className='col2'>
-                    <div>
-                      <button className='myform-button ' type='submit' >Đăng nhập</button>
+                    <div id='qmk1' style={{ margin: "0px 0px 0px 3px" }}>
+                      <a className='myform-a' href='/Ressetpw'>Quên mật khẩu?</a>
                     </div>
-                  </div>
-
-
-                </form>
-
-              </div>
-            </div>
-            <div className='loginfail'>
-              <div className='myform'>
-                <form onSubmit={this.checklogin} autoComplete="off">
-                  <div className='col1'>
-                    <p >Tên đăng nhập *</p>
-                    <input className='input-myform' type="text" id="name" name='name' style={{ border: "1.5px solid red" }} placeholder="Nhập tài khoản"></input>
-                    <p >Mật khẩu *</p>
-
-                    <div className='row-myform' style={{ border: "1.5px solid red" }}>
-                      <input className='input-have-eye' type="password" id="pw1" name='password' placeholder="Nhập mật khẩu"></input>
-                      <label style={{ fontSize: '18px' }} className='button-eye' onClick={this.showpw1} id='eye'> <FiEyeOff className='icon-eye' id='show1' /> <FiEye className='icon-eye' id='hide1' style={{ display: 'none' }} /></label>
-                    </div>
-                    <div style={{ display: 'flex', margin: "0px 0px 0px 2px" }}>
-
-                      <BiErrorCircle className='icon' style={{ color: 'red', flex: 'none', marginRight: '4px' }} /> <p style={{ flex: '4', margin: 'auto', color: 'red', fontSize: '14px' }}>Sai mật khẩu hoặc tên đăng nhập</p>
+                    <div id='warning' style={{ display: 'none', margin: "0px 0px 0px 2px" }}>
+                      <BiErrorCircle className='icon' style={{ color: 'red', flex: 'none', marginRight: '4px' }} />
+                      <p style={{ flex: '4', margin: 'auto', color: 'red', fontSize: '14px' }}>Sai mật khẩu hoặc tên đăng nhập</p>
                     </div>
                   </div>
                   <div className='col2'>
                     <button className='myform-button ' type='submit' >Đăng nhập</button>
                     <br />
-                    <div style={{ display: 'flex' }}>
+                    <div id='qmk2' style={{ display: 'none' }}>
                       <a className='myform-a' style={{ margin: "auto" }} href='/Ressetpw'>Quên mật khẩu?</a>
                     </div>
                   </div>
 
+
                 </form>
+
               </div>
             </div>
+
           </div>
           <div className='imagedangnhap'>
             <div className='hinh'>
