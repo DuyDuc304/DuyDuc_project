@@ -1,7 +1,8 @@
 import small_logo from './small_logo.svg';
-import { MdOutlineDashboard, MdDesktopWindows, MdOutlineForum, MdOutlinePoll, MdLogout, MdMoreVert } from "react-icons/md";
-import { RiSettingsLine } from "react-icons/ri";
+import { MdOutlineDashboard, MdDesktopWindows, MdLogout, MdMoreVert } from "react-icons/md";
+import { RiFileChartLine, RiSettingsLine } from "react-icons/ri";
 import { ImStack } from "react-icons/im";
+import { GoCommentDiscussion } from "react-icons/go";
 import './menu.css';
 type idbuton = {
     buttonid: string
@@ -49,13 +50,13 @@ export const Menubar = (id: idbuton) => {
                         <a href="/Device" className='ab' > <MdDesktopWindows className='icon' />  <p>Thiết bị</p></a>
                     </div>
                     <div className='btnmenubar' id='dv'>
-                        <a href="/Service" className='ab' > <MdOutlineForum className='icon' />  <p>Dịch vụ</p></a>
+                        <a href="/Service" className='ab' > <GoCommentDiscussion className='icon' />  <p>Dịch vụ</p></a>
                     </div>
                     <div className='btnmenubar' id='cs'>
                         <a href="/NumberOrder" className='ab'><ImStack className='icon' />  <p>Cấp số</p></a >
                     </div>
                     <div className='btnmenubar' id='bc'>
-                        <a href="/Report" className='ab'> <MdOutlinePoll className='icon' /><p>Báo cáo</p></a>
+                        <a href="/Report" className='ab'> <RiFileChartLine className='icon' /><p>Báo cáo</p></a>
                     </div>
                     <div className='btnmenubar' >
                         <div className="dropdown" id='cd'>

@@ -1,11 +1,12 @@
 import * as React from "react"
 
 import Calendar from "./calendar/calenda"
-import { MdDesktopWindows, MdOutlineForum } from "react-icons/md"
+import { MdDesktopWindows } from "react-icons/md"
 
 import '@rhazegh/react-circular-progressbar/dist/styles.css';
 import { buildStyles, CircularProgressbar, CircularProgressbarWithChildren } from '@rhazegh/react-circular-progressbar';
 import { ImStack } from "react-icons/im";
+import { GoCommentDiscussion } from "react-icons/go";
 
 
 
@@ -109,7 +110,7 @@ class AllAbout extends React.Component {
                                 </div>
                                 <div className="info-sumary">
                                     <p className="number-sumary">{this.servicenouse + this.serviceuse}</p>
-                                    <span className="name-item-sumary "><MdOutlineForum className='icon-sumary' style={{ color: "#4277FF" }} />  <p className="name-sumary" style={{ color: "#4277FF" }}>Dịch vụ</p></span>
+                                    <span className="name-item-sumary "><GoCommentDiscussion className='icon-sumary' style={{ color: "#4277FF" }} />  <p className="name-sumary" style={{ color: "#4277FF" }}>Dịch vụ</p></span>
                                 </div>
                                 <div className="info-sumary2">
                                     <div className="line">

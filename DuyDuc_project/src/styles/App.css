@@ -1360,13 +1360,13 @@ textarea::placeholder {
 
 .div-more {
   display: none;
-  margin-top: -45px;
+  margin-top: -1px;
   margin-left: 10px;
   flex-direction: row;
   padding: 4px 8px;
-  position: relative;
+  position: absolute;
   width: 394px;
-  height: 50px;
+  height: auto;
   background: #FFFFFF;
   font-style: normal;
   font-weight: 400;
