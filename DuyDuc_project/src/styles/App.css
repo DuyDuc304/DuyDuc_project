@@ -746,7 +746,7 @@ textarea::placeholder {
 
 .boder {
   display: flex;
-  height: 1.5px;
+  height: 1px;
   margin: auto;
   opacity: 0.6;
   width: 320px;

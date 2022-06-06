@@ -138,7 +138,7 @@ class NumberOrder extends React.Component {
 
                     <div className='title-report-type'>Quản lý cấp số</div>
                     <Nextpage />
-                    <Topbar nametitle1='Cấp số ﹥ ' nametitle2='' nametitle3='Danh sách cấp số' href='' href2='' nametitle21='' />
+                    <Topbar nametitle1='Cấp số ﹥' nametitle2='' nametitle3='Danh sách cấp số' href='' href2='' nametitle21='' />
                     <Menubar buttonid="cs" />
 
                 </div>
