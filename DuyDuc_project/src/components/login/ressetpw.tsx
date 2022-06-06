@@ -6,25 +6,10 @@ import ressetpw from './images/ressetpw.svg';
 import { FiEye, FiEyeOff } from 'react-icons/fi';
 
 class RessetPW extends React.Component {
-    showpw() {
-        const show: any = document.getElementById('show')
-        const hide: any = document.getElementById('hide')
-        const eye: any = document.getElementById('pw')
-        const type = eye.getAttribute("type") === "password" ? "text" : "password";
-        eye.setAttribute("type", type);
-        if (type === "password") {
-            show.style.display = 'flex';
-            hide.style.display = 'none';
-        }
-        else {
-            hide.style.display = 'flex';
-            show.style.display = 'none';
-        }
-    }
-    showpw1() {
-        const show: any = document.getElementById('show1')
-        const hide: any = document.getElementById('hide1')
-        const eye: any = document.getElementById('pw1')
+    showpw(ip: string, eyeshow: string, eyehide: string) {
+        const show: any = document.getElementById(eyeshow)
+        const hide: any = document.getElementById(eyehide)
+        const eye: any = document.getElementById(ip)
         const type = eye.getAttribute("type") === "password" ? "text" : "password";
         eye.setAttribute("type", type);
         if (type === "password") {
@@ -138,13 +123,13 @@ class RessetPW extends React.Component {
 
                                             <div className='row-myform' id='pass1'>
                                                 <input className='input-have-eye' type="password" id="pw" name='password1' placeholder="Nhập mật khẩu"></input>
-                                                <label style={{ fontSize: '18px' }} className='button-eye' onClick={this.showpw} id='eye'> <FiEyeOff className='icon-eye' id='show' /> <FiEye className='icon-eye' id='hide' style={{ display: 'none' }} /></label>
+                                                <label style={{ fontSize: '18px' }} className='button-eye' onClick={() => this.showpw('pw', 'show', 'hide')} id='eye'> <FiEyeOff className='icon-eye' id='show' /> <FiEye className='icon-eye' id='hide' style={{ display: 'none' }} /></label>
                                             </div>
                                             <p >Nhập lại mật khẩu *</p>
 
                                             <div className='row-myform' id='pass2'>
                                                 <input className='input-have-eye' type="password" id="pw1" name='password2' placeholder="Nhập mật khẩu"></input>
-                                                <label style={{ fontSize: '18px' }} className='button-eye' onClick={this.showpw1} id='eye'> <FiEyeOff className='icon-eye' id='show1' /> <FiEye className='icon-eye' id='hide1' style={{ display: 'none' }} /></label>
+                                                <label style={{ fontSize: '18px' }} className='button-eye' onClick={() => this.showpw('pw1', 'show1', 'hide1')} id='eye'> <FiEyeOff className='icon-eye' id='show1' /> <FiEye className='icon-eye' id='hide1' style={{ display: 'none' }} /></label>
                                             </div>
 
 

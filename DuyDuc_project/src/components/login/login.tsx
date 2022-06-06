@@ -91,6 +91,7 @@ class Login extends React.Component {
                     <p id='warning1' style={{ color: 'red', fontSize: '14px' }}></p>
                     <p >Tên đăng nhập *</p>
                     <input className='input-myform' type="text" id="name" name='name' placeholder="Nhập tài khoản "></input>
+
                     <p >Mật khẩu *</p>
                     <div className='row-myform' id='pass'>
                       <input className='input-have-eye' type="password" id="pw" name='password' placeholder="Nhập mật khẩu"></input>
@@ -99,6 +100,7 @@ class Login extends React.Component {
                         <FiEye className='icon-eye' id='hide' style={{ display: 'none' }} />
                       </label>
                     </div>
+
                     <div id='qmk1' style={{ margin: "0px 0px 0px 3px" }}>
                       <a className='myform-a' href='/Ressetpw'>Quên mật khẩu?</a>
                     </div>
