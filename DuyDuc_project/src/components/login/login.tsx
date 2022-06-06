@@ -69,6 +69,7 @@ class Login extends React.Component {
         wn1.style.display = 'none'
       }
     } else {
+      wn1.style.display = 'flex'
       wn1.innerText = 'Tài khoản và mật khẩu không được để trống '
       pw.style.border = "1.5px solid red"
       tk.style.border = "1.5px solid red"
