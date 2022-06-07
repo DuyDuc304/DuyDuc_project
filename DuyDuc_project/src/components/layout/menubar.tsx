@@ -9,7 +9,6 @@ type idbuton = {
 }
 
 export const Menubar = (id: idbuton) => {
-
     var idbtn: string = id.buttonid;
     const changebutton = (id: string) => {
         if (id != null) {
