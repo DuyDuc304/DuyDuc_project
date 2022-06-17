@@ -8,6 +8,39 @@ import TableRoleUser from './table-roleuser';
 
 
 class RoleUser extends React.Component {
+    onSumbit(e: React.SyntheticEvent) {
+        e.preventDefault();
+        const target = e.target as typeof e.target & {
+            timkiem: { value: string };
+
+        };
+        const timkiem = target.timkiem.value.trim();
+        const allelm: any = document.getElementById("tbvt")
+        const allrow: any = allelm.children
+        if (timkiem !== '') {
+
+            for (let i = 1; i < allrow.length; i++) {
+                const allelmr: any = allrow[i].children
+                allrow[i].style.display = 'none'
+                for (let j = 0; j < allelmr.length; j++) {
+
+                    const p: any = allelmr[j].children
+                    for (let k = 0; k < p.length; k++) {
+                        if (p[k].innerText.toLowerCase().trim() === timkiem.toLowerCase()) {
+                            allrow[i].style.display = 'flex'
+                        }
+                    }
+
+                }
+            }
+        } else {
+            for (let i = 1; i < allrow.length; i++) {
+
+                allrow[i].style.display = 'flex'
+            }
+        }
+    }
+
     render() {
         return (
             <div className='bg'>
@@ -25,8 +58,8 @@ class RoleUser extends React.Component {
                     <div className="tk-diary">
                         <p>Từ khóa</p>
                         <div className='sreach-qlcs' style={{ marginTop: '-8px' }} >
-                            <form autoComplete="off" >
-                                <input type="text" name='timkiem' placeholder="Nhập từ khóa ..." style={{ fontSize: '14px' }} ></input>
+                            <form autoComplete="off" onSubmit={this.onSumbit}  >
+                                <input type="text" id='tk' name='timkiem' placeholder="Nhập từ khóa ..." style={{ fontSize: '14px' }} ></input>
                                 <button className="sreach-sv-button" type='submit'><AiOutlineSearch /></button>
                             </form>
                         </div>

@@ -8,7 +8,7 @@ class TableRoleUser extends React.Component {
 
     render() {
         return (
-            <div className='div-table-report' >
+            <div className='div-table-report' id="tbvt" >
                 <div className='row1'>
                     <div className="col1-roleuser"> <p className="colulm1-p">Tên vai trò</p></div>
                     <div className="col2-roleuser"> <p className="colulm1-p"> Số người dùng</p></div>

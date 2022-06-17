@@ -10,10 +10,162 @@ import Nextpage from '../layout/nextpage';
 import { TiArrowSortedDown, TiArrowSortedUp } from 'react-icons/ti';
 
 class Device extends React.Component {
+    HoatDong() {
+        const allelm: any = document.getElementById("tbtb")
+        const allrow: any = allelm.children
+        for (let i = 1; i < allrow.length; i++) {
+            const allelmr: any = allrow[i].children
+            allrow[i].style.display = 'none'
+            for (let j = 0; j < allelmr.length; j++) {
+                if (allelmr[j].className === "colum4") {
+                    const div: any = allelmr[j].children
+                    for (let k = 0; k < div.length; k++) {
+                        const p: any = div[k].children
+                        for (let h = 0; h < p.length; h++) {
+                            if (p[h].innerText === 'Hoạt động') {
+                                allrow[i].style.display = 'flex'
+                            }
+
+                        }
+                    }
+
+                }
+
+            }
+        }
+    }
+    NgungHoatDong() {
+        const allelm: any = document.getElementById("tbtb")
+        const allrow: any = allelm.children
+        for (let i = 1; i < allrow.length; i++) {
+            const allelmr: any = allrow[i].children
+            allrow[i].style.display = 'none'
+            for (let j = 0; j < allelmr.length; j++) {
+                if (allelmr[j].className === "colum4") {
+                    const div: any = allelmr[j].children
+                    for (let k = 0; k < div.length; k++) {
+                        const p: any = div[k].children
+                        for (let h = 0; h < p.length; h++) {
+                            if (p[h].innerText === 'Ngừng hoạt động') {
+                                allrow[i].style.display = 'flex'
+                            }
+                        }
+                    }
+
+                }
+
+            }
+        }
+    }
+    KetNoi() {
+        const allelm: any = document.getElementById("tbtb")
+        const allrow: any = allelm.children
+        for (let i = 1; i < allrow.length; i++) {
+            const allelmr: any = allrow[i].children
+            allrow[i].style.display = 'none'
+            for (let j = 0; j < allelmr.length; j++) {
+                if (allelmr[j].className === "colum5") {
+                    const div: any = allelmr[j].children
+                    for (let k = 0; k < div.length; k++) {
+                        const p: any = div[k].children
+                        for (let h = 0; h < p.length; h++) {
+                            if (p[h].innerText === 'Kết nối') {
+                                allrow[i].style.display = 'flex'
+
+                            }
+
+                        }
+                    }
+
+                }
+
+            }
+        }
+    }
+    MatKetNoi() {
+        const allelm: any = document.getElementById("tbtb")
+        const allrow: any = allelm.children
+        for (let i = 1; i < allrow.length; i++) {
+            const allelmr: any = allrow[i].children
+            allrow[i].style.display = 'none'
+            for (let j = 0; j < allelmr.length; j++) {
+                if (allelmr[j].className === "colum5") {
+                    const div: any = allelmr[j].children
+                    for (let k = 0; k < div.length; k++) {
+                        const p: any = div[k].children
+                        for (let h = 0; h < p.length; h++) {
+                            if (p[h].innerText === 'Mất kết nối') {
+                                allrow[i].style.display = 'flex'
+
+                            }
+
+                        }
+                    }
+
+                }
+
+            }
+        }
+    }
+    Tatca() {
+        const allelm: any = document.getElementById("tbtb")
+        const allrow: any = allelm.children
+        for (let i = 1; i < allrow.length; i++) {
+
+            allrow[i].style.display = 'flex'
+        }
+    }
     Chose = (id: string, input: string) => {
         const ip: any = document.getElementById(input)
         const text: any = document.getElementById(id)
         ip.value = text.innerText
+        if (text.innerText === 'Hoạt động') {
+            this.HoatDong()
+        }
+        if (text.innerText === 'Ngừng hoạt động') {
+            this.NgungHoatDong()
+        }
+        if (text.innerText === 'Tất cả') {
+            this.Tatca()
+        }
+        if (text.innerText === 'Kết nối') {
+            this.KetNoi()
+        }
+        if (text.innerText === 'Mất kết nối') {
+            this.MatKetNoi()
+        }
+    }
+    onSumbit(e: React.SyntheticEvent) {
+        e.preventDefault();
+        const target = e.target as typeof e.target & {
+            timkiem: { value: string };
+
+        };
+        const timkiem = target.timkiem.value.trim();
+        const allelm: any = document.getElementById("tbtb")
+        const allrow: any = allelm.children
+        if (timkiem !== '') {
+
+            for (let i = 1; i < allrow.length; i++) {
+                const allelmr: any = allrow[i].children
+                allrow[i].style.display = 'none'
+                for (let j = 0; j < allelmr.length; j++) {
+
+                    const p: any = allelmr[j].children
+                    for (let k = 0; k < p.length; k++) {
+                        if (p[k].innerText.toLowerCase().trim() === timkiem.toLowerCase()) {
+                            allrow[i].style.display = 'flex'
+                        }
+                    }
+
+                }
+            }
+        } else {
+            for (let i = 1; i < allrow.length; i++) {
+
+                allrow[i].style.display = 'flex'
+            }
+        }
     }
 
     show = (id: string, u: string, d: string) => {
@@ -76,7 +228,7 @@ class Device extends React.Component {
                     <div className='tk'>
                         <p className='ppp'>Từ khóa</p>
                         <div className='sreach'>
-                            <form autoComplete="off">
+                            <form autoComplete="off" onSubmit={this.onSumbit}>
                                 <input type="text" name='timkiem' placeholder="Nhập từ khóa ..."></input>
                                 <button type='submit'><AiOutlineSearch /></button>
                             </form>

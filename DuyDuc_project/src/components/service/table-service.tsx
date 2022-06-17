@@ -6,7 +6,7 @@ class TableService extends React.Component {
 
     render() {
         return (
-            <div className='div-layout' >
+            <div className='div-layout' id="tbdv" >
                 <div className='row1'>
                     <div className="colum1-service">
                         <p className="colum1-service-p">Mã dịch vụ</p>
@@ -32,7 +32,7 @@ class TableService extends React.Component {
                         <p >KIO_01</p>
                     </div>
                     <div className="colum2-service">
-                        <p >Kiosk</p>
+                        <p >Kiosk2</p>
                     </div>
                     <div className="colum3-service">
                         <p >Mô tả dịch vụ 1 </p>
@@ -55,7 +55,7 @@ class TableService extends React.Component {
                         <p >KIO_01</p>
                     </div>
                     <div className="colum2-service">
-                        <p >Kiosk</p>
+                        <p >Kiosk1</p>
                     </div>
                     <div className="colum3-service">
                         <p >Hoạt động </p>
@@ -78,7 +78,7 @@ class TableService extends React.Component {
                         <p >KIO_01</p>
                     </div>
                     <div className="colum2-service">
-                        <p >Kiosk</p>
+                        <p >Kiosk1</p>
                     </div>
                     <div className="colum3-service">
                         <p >Hoạt động </p>

@@ -53,8 +53,8 @@ class Login extends React.Component {
       name: { value: string };
       password: { value: string };
     };
-    const name = target.name.value;
-    const password = target.password.value;
+    const name = target.name.value.trim();
+    const password = target.password.value.trim();
     if (name !== '' && password !== '') {
       if (name === "duc" && password === "123") {
         var parser = document.location.href = "/Dashboard";

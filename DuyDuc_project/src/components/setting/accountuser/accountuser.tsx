@@ -10,10 +10,71 @@ import { TiArrowSortedDown, TiArrowSortedUp } from 'react-icons/ti';
 
 
 class AccountUser extends React.Component {
+    Tatca() {
+        const allelm: any = document.getElementById("tbacc")
+        const allrow: any = allelm.children
+        for (let i = 1; i < allrow.length; i++) {
+            allrow[i].style.display = 'flex'
+        }
+    }
+    Locvt(inner: string) {
+        const allelm: any = document.getElementById("tbacc")
+        const allrow: any = allelm.children
+        for (let i = 1; i < allrow.length; i++) {
+            const allelmr: any = allrow[i].children
+            allrow[i].style.display = 'none'
+            for (let j = 0; j < allelmr.length; j++) {
+                if (allelmr[j].className === "col5-accuser") {
+                    const p: any = allelmr[j].children
+                    for (let k = 0; k < p.length; k++) {
+                        if (p[k].innerText === inner) {
+                            allrow[i].style.display = 'flex'
+                        }
+                    }
+
+                }
+
+            }
+        }
+    }
+    onSumbit(e: React.SyntheticEvent) {
+        e.preventDefault();
+        const target = e.target as typeof e.target & {
+            timkiem: { value: string };
+
+        };
+        const timkiem = target.timkiem.value.trim();
+        const allelm: any = document.getElementById("tbacc")
+        const allrow: any = allelm.children
+        if (timkiem !== '') {
+            for (let i = 1; i < allrow.length; i++) {
+                const allelmr: any = allrow[i].children
+                allrow[i].style.display = 'none'
+                for (let j = 0; j < allelmr.length; j++) {
+                    const p: any = allelmr[j].children
+                    for (let k = 0; k < p.length; k++) {
+                        if (p[k].innerText.toLowerCase() === timkiem.toLowerCase()) {
+                            allrow[i].style.display = 'flex'
+                        }
+                    }
+
+                }
+            }
+        } else {
+            for (let i = 1; i < allrow.length; i++) {
+                allrow[i].style.display = 'flex'
+            }
+        }
+    }
+
     Chose = (id: string, input: string) => {
         const ip: any = document.getElementById(input)
         const text: any = document.getElementById(id)
         ip.value = text.innerText
+        this.Locvt(ip.value)
+        if (ip.value === 'Tất cả') {
+            this.Tatca()
+        }
     }
 
     show = (id: string, u: string, d: string) => {
@@ -63,7 +124,7 @@ class AccountUser extends React.Component {
                     <div className='tk'>
                         <p className='ppp'>Từ khóa</p>
                         <div className='sreach'>
-                            <form autoComplete="off" >
+                            <form autoComplete="off" onSubmit={this.onSumbit} >
                                 <input type="text" name='timkiem' placeholder="Nhập từ khóa ..."></input>
                                 <button type='submit'><AiOutlineSearch /></button>
                             </form>

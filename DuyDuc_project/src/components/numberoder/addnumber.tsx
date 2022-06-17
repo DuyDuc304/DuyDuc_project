@@ -5,14 +5,19 @@ import { TiArrowSortedDown, TiArrowSortedUp } from 'react-icons/ti';
 import { Menubar } from '../layout/menubar';
 import { Topbar } from '../layout/topbar';
 
-
 class AddNumber extends React.Component<any, any> {
     popup(e: React.SyntheticEvent) {
         e.preventDefault()
-
+        const inso: any = document.getElementById('ip')
+        const dvk: any = document.getElementById('dvk')
         const modal: any = document.querySelector('.popup')
         if (modal.style.display === "none") {
             modal.style.display = "block";
+            const a: string = inso.value
+            if (inso.value !== '') {
+                dvk.innerText = 'DV: ' + a + ' ( tại quầy số 1)'
+            }
+
         }
         document.addEventListener("mousedown", (event) => {
             modal.style.display = 'none';
@@ -59,7 +64,7 @@ class AddNumber extends React.Component<any, any> {
 
                                 <div className='rowbtn' >
                                     <a href="/NumberOrder" className='button-huy' style={{ width: '115px' }} > Hủy bỏ</a>
-                                    <button className='myform-button ' type='submit' onClick={this.popup} style={{ width: '115px' }}>In số</button>
+                                    <button className='myform-button' type='submit' onClick={this.popup} style={{ width: '115px' }}>In số</button>
                                 </div>
                                 <div id='tdv' className='select-drop-down' onClick={() => this.show('tdv', 'up', 'down')} style={{ width: '400px', marginTop: '108px', marginLeft: '0px' }}>
                                     <div className='select-drop-down-item ' style={{ width: '400px' }} onClick={() => this.Chose('tc', 'ip')}><label id='tc'>Tất cả</label></div>
@@ -79,15 +84,14 @@ class AddNumber extends React.Component<any, any> {
                                 <div className="close-popup"><IoMdClose className='icon-close-popup' /></div>
                                 <p className="popup-content-info-sttdc">Số thứ tự được cấp</p>
                                 <p className="popup-content-info-num">2001201</p>
-                                <p className="popup-content-info-dvsd">DV: Khám răng hàm mặt (tại quầy số 1 )</p>
-
+                                <p className="popup-content-info-dvsd" id='dvk'>DV: Trống</p>
                             </div>
                             <div className="popup-content-time">
                                 <div className="div-center">
-                                    <p>Thời gian cấp:</p><p> 09:30 11/10/2021</p>
+                                    <p>Thời gian cấp:</p><p>9:30 11/10/2021</p>
                                 </div>
                                 <div className="div-center">
-                                    <p>Hạn sử dụng:</p><p> 09:30 11/10/2021</p>
+                                    <p>Hạn sử dụng:</p><p> 9:30 11/10/2021</p>
                                 </div>
 
                             </div>

@@ -16,7 +16,7 @@ class TableDevice extends React.Component {
 
     render() {
         return (
-            <div className='div-layout' >
+            <div className='div-layout' id="tbtb">
                 <div className='row1'>
                     <div className="colum1">
                         <p className="colulm1-p">Mã thiết bị</p>
@@ -48,7 +48,7 @@ class TableDevice extends React.Component {
                         <p>KIO_01</p>
                     </div>
                     <div className="colum2">
-                        <p>Kiosk</p>
+                        <p>Kiosk1</p>
                     </div>
                     <div className="colum3">
                         <p>192.168.1.10</p>
@@ -56,13 +56,13 @@ class TableDevice extends React.Component {
                     <div className="colum4">
                         <div className="div-center">
                             <p style={{ color: " #EC3740", fontSize: '24px', margin: 'auto' }}>•</p>
-                            <p> Ngừng hoạt động</p>
+                            <p>Ngừng hoạt động</p>
                         </div>
                     </div>
                     <div className="colum5">
                         <div className="div-center">
                             <p style={{ color: " #EC3740", fontSize: '24px' }}>•</p>
-                            <p> Ngừng kết nối</p>
+                            <p>Mất kết nối</p>
                         </div>
 
                     </div>
@@ -93,7 +93,7 @@ class TableDevice extends React.Component {
                     <div className="colum4">
                         <div className="div-center">
                             <p style={{ color: " #35C75A", fontSize: '24px', margin: 'auto' }}>•</p>
-                            <p> Hoạt động</p>
+                            <p>Hoạt động</p>
                         </div>
                     </div>
                     <div className="colum5">
@@ -118,18 +118,18 @@ class TableDevice extends React.Component {
                 </div>
                 <div className='row2'>
                     <div className="colum1">
-                        <p>KIO_01</p>
+                        <p>KIO_02</p>
                     </div>
                     <div className="colum2">
-                        <p>Kiosk</p>
+                        <p>Kiosk2</p>
                     </div>
                     <div className="colum3">
-                        <p>192.168.1.10</p>
+                        <p>192.168.1.2</p>
                     </div>
                     <div className="colum4">
                         <div className="div-center">
                             <p style={{ color: " #35C75A", fontSize: '24px', margin: 'auto' }}>•</p>
-                            <p> Hoạt động</p>
+                            <p>Hoạt động</p>
                         </div>
                     </div>
                     <div className="colum5">
@@ -190,24 +190,24 @@ class TableDevice extends React.Component {
                 </div>
                 <div className='row2'>
                     <div className="colum1">
-                        <p>KIO_01</p>
+                        <p>KIO_09</p>
                     </div>
                     <div className="colum2">
-                        <p>Kiosk</p>
+                        <p>Kiosk2</p>
                     </div>
                     <div className="colum3">
-                        <p>192.168.1.10</p>
+                        <p>192.168.1.3</p>
                     </div>
                     <div className="colum4">
                         <div className="div-center">
                             <p style={{ color: " #35C75A", fontSize: '24px', margin: 'auto' }}>•</p>
-                            <p> Hoạt động</p>
+                            <p>Hoạt động</p>
                         </div>
                     </div>
                     <div className="colum5">
                         <div className="div-center">
                             <p style={{ color: " #EC3740", fontSize: '24px' }}>•</p>
-                            <p>Mát kết nối</p>
+                            <p>Mất kết nối</p>
                         </div>
 
                     </div>
@@ -237,7 +237,7 @@ class TableDevice extends React.Component {
                     <div className="colum4">
                         <div className="div-center">
                             <p style={{ color: " #EC3740", fontSize: '24px', margin: 'auto' }}>•</p>
-                            <p> Ngừng hoạt động</p>
+                            <p>Ngừng hoạt động</p>
                         </div>
                     </div>
                     <div className="colum5">
@@ -273,7 +273,7 @@ class TableDevice extends React.Component {
                     <div className="colum4">
                         <div className="div-center">
                             <p style={{ color: " #35C75A", fontSize: '24px', margin: 'auto' }}>•</p>
-                            <p> Hoạt động</p>
+                            <p>Hoạt động</p>
                         </div>
                     </div>
                     <div className="colum5">
@@ -301,7 +301,7 @@ class TableDevice extends React.Component {
                         <p>KIO_01</p>
                     </div>
                     <div className="colum2">
-                        <p>Kiosk</p>
+                        <p>Kiosk1</p>
                     </div>
                     <div className="colum3">
                         <p>192.168.1.10</p>
@@ -309,7 +309,7 @@ class TableDevice extends React.Component {
                     <div className="colum4">
                         <div className="div-center">
                             <p style={{ color: " #EC3740", fontSize: '24px', margin: 'auto' }}>•</p>
-                            <p> Ngừng hoạt động</p>
+                            <p>Ngừng hoạt động</p>
                         </div>
                     </div>
                     <div className="colum5">
@@ -345,7 +345,7 @@ class TableDevice extends React.Component {
                     <div className="colum4">
                         <div className="div-center">
                             <p style={{ color: " #EC3740", fontSize: '24px', margin: 'auto' }}>•</p>
-                            <p> Ngừng hoạt động</p>
+                            <p>Ngừng hoạt động</p>
                         </div>
                     </div>
                     <div className="colum5">

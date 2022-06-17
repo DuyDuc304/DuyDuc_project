@@ -31,8 +31,8 @@ class RessetPW extends React.Component {
             password1: { value: string };
             password2: { value: string };
         };
-        const password1 = target.password1.value;
-        const password2 = target.password2.value;
+        const password1 = target.password1.value.trim();
+        const password2 = target.password2.value.trim();
         if (password2 !== '' && password1 !== '') {
             if (password2 === password1) {
                 var login = document.location.href = "/Login";
@@ -64,7 +64,7 @@ class RessetPW extends React.Component {
             email: { value: string };
 
         };
-        const email = target.email.value;
+        const email = target.email.value.trim();
         if (email !== '') {
             if (email === 'duc@gmail.com') {
                 restpwstep2.style.display = 'block';
