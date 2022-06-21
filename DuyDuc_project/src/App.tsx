@@ -1,9 +1,7 @@
 
 import React from 'react';
-import ReactDOM from 'react-dom/client';
 import Login from './components/login/login';
-import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, Routes, Route, } from "react-router-dom";
+import { Routes, Route, } from "react-router-dom";
 import './styles/App.css';
 import Info from './components/info';
 import Device from './components/device/device';
@@ -31,7 +29,6 @@ import './styles/App.css';
 
 const App: React.FC = () => {
     return (
-
         <div>
             <Routes>
                 {/* Login */}
