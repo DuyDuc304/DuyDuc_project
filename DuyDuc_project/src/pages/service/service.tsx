@@ -13,76 +13,13 @@ let newDate = new Date()
 
 
 class Service extends React.Component {
-    onSumbit(e: React.SyntheticEvent) {
-        e.preventDefault();
-        const target = e.target as typeof e.target & {
-            timkiem: { value: string };
 
-        };
-        const timkiem = target.timkiem.value.trim();
-        const allelm: any = document.getElementById("tbdv")
-        const allrow: any = allelm.children
-        if (timkiem !== '') {
 
-            for (let i = 1; i < allrow.length; i++) {
-                const allelmr: any = allrow[i].children
-                allrow[i].style.display = 'none'
-                for (let j = 0; j < allelmr.length; j++) {
-
-                    const p: any = allelmr[j].children
-                    for (let k = 0; k < p.length; k++) {
-                        if (p[k].innerText.toLowerCase().trim() === timkiem.toLowerCase()) {
-                            allrow[i].style.display = 'flex'
-                        }
-                    }
-
-                }
-            }
-        } else {
-            for (let i = 1; i < allrow.length; i++) {
-
-                allrow[i].style.display = 'flex'
-            }
-        }
-    }
-
-    LocTTHD(tt: string) {
-        const allelm: any = document.getElementById("tbdv")
-        const allrow: any = allelm.children
-        for (let i = 1; i < allrow.length; i++) {
-            const allelmr: any = allrow[i].children
-            allrow[i].style.display = 'none'
-            for (let j = 0; j < allelmr.length; j++) {
-                if (allelmr[j].className === "colum4-service") {
-                    const div: any = allelmr[j].children
-                    for (let k = 0; k < div.length; k++) {
-                        const p: any = div[k].children
-                        for (let h = 0; h < p.length; h++) {
-                            if (p[h].innerText === tt) {
-                                allrow[i].style.display = 'flex'
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    Tatca() {
-        const allelm: any = document.getElementById("tbdv")
-        const allrow: any = allelm.children
-        for (let i = 1; i < allrow.length; i++) {
-
-            allrow[i].style.display = 'flex'
-        }
-    }
     Chose = (id: string, input: string) => {
         const ip: any = document.getElementById(input)
         const text: any = document.getElementById(id)
         ip.value = text.innerText
-        this.LocTTHD(ip.value)
-        if (text.innerText === 'Tất cả') {
-            this.Tatca()
-        }
+
     }
 
     show = (id: string, u: string, d: string) => {
@@ -140,7 +77,7 @@ class Service extends React.Component {
                     <div className='tk'>
                         <p className='ppp'>Từ khóa</p>
                         <div className='sreach'>
-                            <form autoComplete="off" onSubmit={this.onSumbit}>
+                            <form autoComplete="off" >
                                 <input type="text" name='timkiem' placeholder="Nhập từ khóa ..."></input>
                                 <button type='submit'><AiOutlineSearch /></button>
                             </form>

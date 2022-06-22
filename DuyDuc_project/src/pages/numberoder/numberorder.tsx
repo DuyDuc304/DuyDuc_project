@@ -12,207 +12,14 @@ let newDate = new Date()
 
 
 class NumberOrder extends React.Component {
-    onSumbit(e: React.SyntheticEvent) {
-        e.preventDefault();
-        const target = e.target as typeof e.target & {
-            timkiem: { value: string };
 
-        };
-        const timkiem = target.timkiem.value.trim();
-        const allelm: any = document.getElementById("tbno")
-        const allrow: any = allelm.children
-        if (timkiem !== '') {
-            for (let i = 1; i < allrow.length; i++) {
-                const allelmr: any = allrow[i].children
-                allrow[i].style.display = 'none'
-                for (let j = 0; j < allelmr.length; j++) {
-                    const p: any = allelmr[j].children
-                    for (let k = 0; k < p.length; k++) {
-                        if (p[k].innerText.toLowerCase().trim() === timkiem.toLowerCase()) {
-                            allrow[i].style.display = 'flex'
-                        }
-                    }
-
-                }
-            }
-        } else {
-            for (let i = 1; i < allrow.length; i++) {
-                allrow[i].style.display = 'flex'
-            }
-        }
-    }
 
     Chose = (id: string, input: string) => {
         const ip: any = document.getElementById(input)
         const text: any = document.getElementById(id)
-        const tdv: any = document.getElementById('ip')
         ip.value = text.innerText
-        const a: string = 'Khám ' + tdv.value.toLowerCase()
-        this.Loctdv(a)
-        if (text.innerText === 'Đang chờ') {
-            this.DangCho()
-        }
-        if (text.innerText === 'Đã sử dụng') {
-            this.DaSuDung()
-        }
-        if (text.innerText === 'Tất cả') {
-            this.TatCa()
-        }
-        if (text.innerText === 'Bỏ qua') {
-            this.BoQua()
-        }
-        if (text.innerText === 'Kiosk') {
-            this.kiosk()
-        }
-        if (text.innerText === 'Hệ thống') {
-            this.HeThong()
-        }
-    }
-    TatCa() {
-        const allelm: any = document.getElementById("tbno")
-        const allrow: any = allelm.children
-        for (let i = 1; i < allrow.length; i++) {
-
-            allrow[i].style.display = 'flex'
-        }
-    }
-    DaSuDung() {
-        const allelm: any = document.getElementById("tbno")
-        const allrow: any = allelm.children
-        for (let i = 1; i < allrow.length; i++) {
-            const allelmr: any = allrow[i].children
-            allrow[i].style.display = 'none'
-            for (let j = 0; j < allelmr.length; j++) {
-                if (allelmr[j].className === "col-num6") {
-                    const div: any = allelmr[j].children
-                    for (let k = 0; k < div.length; k++) {
-                        const p: any = div[k].children
-                        for (let h = 0; h < p.length; h++) {
-                            if (p[h].innerText === 'Đã sử dụng') {
-                                allrow[i].style.display = 'flex'
-                            }
-
-                        }
-                    }
-
-                }
-
-            }
-        }
-    }
-    DangCho() {
-        const allelm: any = document.getElementById("tbno")
-        const allrow: any = allelm.children
-        for (let i = 1; i < allrow.length; i++) {
-            const allelmr: any = allrow[i].children
-            allrow[i].style.display = 'none'
-            for (let j = 0; j < allelmr.length; j++) {
-                if (allelmr[j].className === "col-num6") {
-                    const div: any = allelmr[j].children
-                    for (let k = 0; k < div.length; k++) {
-                        const p: any = div[k].children
-                        for (let h = 0; h < p.length; h++) {
-                            if (p[h].innerText === 'Đang chờ') {
-                                allrow[i].style.display = 'flex'
-                            }
-
-                        }
-                    }
-
-                }
-
-            }
-        }
-    }
-    BoQua() {
-        const allelm: any = document.getElementById("tbno")
-        const allrow: any = allelm.children
-        for (let i = 1; i < allrow.length; i++) {
-            const allelmr: any = allrow[i].children
-            allrow[i].style.display = 'none'
-            for (let j = 0; j < allelmr.length; j++) {
-                if (allelmr[j].className === "col-num6") {
-                    const div: any = allelmr[j].children
-                    for (let k = 0; k < div.length; k++) {
-                        const p: any = div[k].children
-                        for (let h = 0; h < p.length; h++) {
-                            if (p[h].innerText === 'Bỏ qua') {
-                                allrow[i].style.display = 'flex'
-                            }
-
-                        }
-                    }
-
-                }
-
-            }
-        }
     }
 
-    kiosk() {
-        const allelm: any = document.getElementById("tbno")
-        const allrow: any = allelm.children
-        for (let i = 1; i < allrow.length; i++) {
-            const allelmr: any = allrow[i].children
-            allrow[i].style.display = 'none'
-            for (let j = 0; j < allelmr.length; j++) {
-                if (allelmr[j].className === "col-num7") {
-                    const p: any = allelmr[j].children
-                    for (let k = 0; k < p.length; k++) {
-                        if (p[k].innerText === 'Kiosk') {
-                            allrow[i].style.display = 'flex'
-                        }
-
-
-                    }
-
-                }
-
-            }
-        }
-    }
-    HeThong() {
-        const allelm: any = document.getElementById("tbno")
-        const allrow: any = allelm.children
-        for (let i = 1; i < allrow.length; i++) {
-            const allelmr: any = allrow[i].children
-            allrow[i].style.display = 'none'
-            for (let j = 0; j < allelmr.length; j++) {
-                if (allelmr[j].className === "col-num7") {
-                    const p: any = allelmr[j].children
-                    for (let k = 0; k < p.length; k++) {
-                        if (p[k].innerText === 'Hệ thống') {
-                            allrow[i].style.display = 'flex'
-                        }
-
-
-                    }
-
-                }
-
-            }
-        }
-    }
-    Loctdv(inner: string) {
-        const allelm: any = document.getElementById("tbno")
-        const allrow: any = allelm.children
-        for (let i = 1; i < allrow.length; i++) {
-            const allelmr: any = allrow[i].children
-            allrow[i].style.display = 'none'
-            for (let j = 0; j < allelmr.length; j++) {
-                if (allelmr[j].className === "col-num3") {
-                    const p: any = allelmr[j].children
-                    for (let k = 0; k < p.length; k++) {
-                        if (p[k].innerText === inner) {
-                            allrow[i].style.display = 'flex'
-                        }
-                    }
-
-                }
-
-            }
-        }
-    }
 
     show = (id: string, u: string, d: string) => {
         const ip: any = document.getElementById(id)
@@ -315,7 +122,7 @@ class NumberOrder extends React.Component {
                         <div className='qlcs-tdv'>
                             <p >Từ khóa</p>
                             <div className='sreach-qlcs' >
-                                <form autoComplete="off" onSubmit={this.onSumbit} >
+                                <form autoComplete="off"  >
                                     <input type="text" name='timkiem' placeholder="Nhập từ khóa ..." style={{ fontSize: '14px' }} ></input>
                                     <button className="sreach-sv-button" type='submit'><AiOutlineSearch /></button>
                                 </form>
