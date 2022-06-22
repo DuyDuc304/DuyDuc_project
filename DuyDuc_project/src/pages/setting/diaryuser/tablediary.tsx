@@ -1,82 +1,48 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import './tablediary.css'
 
 
-class TableDiary extends React.Component {
+export const TableDiary = () => {
+    const [data, setdata] = useState([])
+    //call api bằng json server
+    useEffect(() => {
+        var constAPI = ' http://localhost:3000/Dairy'
+        const fetchItem = async () => {
+            const result = await fetch(constAPI).then(function (response) {
+                return response.json()
+            })
+            setdata(result)
+        }
+        fetchItem()
+    }, [])
+    function setcolor(id: number) {
+        if ((id + 1) % 10 === 0) {
+            return 'row-end-report'
+        }
+        if (id % 2 === 0) {
+            return 'row2'
+        } else {
+            return 'row3'
+        }
 
-
-
-    render() {
-        return (
-            <div className='div-table-report' id="tbnk" >
-                <div className='row1'>
-                    <div className="col1-diary"><p className="colulm1-p">Tên đăng nhập</p></div>
-                    <div className="col2-diary"><p className="colulm1-p">Thời gian tác động</p></div>
-                    <div className="col3-diary"><p className="colulm1-p">IP thực hiện</p></div>
-                    <div className="col14-diary"><p className="colulm1-p">Thao tác thực hiện</p></div>
-                </div>
-                <div className='row2'>
-                    <div className="col1-diary"><p>DuyDuc@12</p></div>
-                    <div className="col2-diary"><p>01/12/2021 15:12:17</p></div>
-                    <div className="col3-diary"><p>192.168.3.10</p></div>
-                    <div className="col4-diary"><p>Dịch vụ DV_01</p></div>
-                </div>
-                <div className='row3'>
-                    <div className="col1-diary"><p>Tuyetnguyen@12</p></div>
-                    <div className="col2-diary"><p>01/12/2021 15:12:17</p></div>
-                    <div className="col3-diary"><p>192.168.3.1</p></div>
-                    <div className="col4-diary"><p>Cập nhật thông tin dịch vụ DV_01</p></div>
-                </div>
-                <div className='row2'>
-                    <div className="col1-diary"><p>Tuyetnguyen@12</p></div>
-                    <div className="col2-diary"><p>01/12/2021 15:12:17</p></div>
-                    <div className="col3-diary"><p>192.168.3.1</p></div>
-                    <div className="col4-diary"><p>Cập nhật thông tin dịch vụ DV_01</p></div>
-                </div>
-                <div className='row3'>
-                    <div className="col1-diary"><p>Tuyetnguyen@13</p></div>
-                    <div className="col2-diary"><p>01/12/2021 15:12:17</p></div>
-                    <div className="col3-diary"><p>192.168.3.1</p></div>
-                    <div className="col4-diary"><p>Cập nhật thông tin dịch vụ DV_01</p></div>
-                </div>
-                <div className='row2'>
-                    <div className="col1-diary"><p>Tuyetnguyen@12</p></div>
-                    <div className="col2-diary"><p>01/12/2021 15:12:17</p></div>
-                    <div className="col3-diary"><p>192.168.3.1</p></div>
-                    <div className="col4-diary"><p>Cập nhật thông tin dịch vụ DV_01</p></div>
-                </div>
-                <div className='row3'>
-                    <div className="col1-diary"><p>Tuyetnguyen@12</p></div>
-                    <div className="col2-diary"><p>01/12/2021 15:12:17</p></div>
-                    <div className="col3-diary"><p>192.168.3.1</p></div>
-                    <div className="col4-diary"><p>Cập nhật thông tin dịch vụ DV_01</p></div>
-                </div>
-                <div className='row2'>
-                    <div className="col1-diary"><p>Tuyetnguyen@12</p></div>
-                    <div className="col2-diary"><p>01/12/2021 15:12:17</p></div>
-                    <div className="col3-diary"><p>192.168.3.1</p></div>
-                    <div className="col4-diary"><p>Cập nhật thông tin dịch vụ DV_01</p></div>
-                </div>
-                <div className='row3'>
-                    <div className="col1-diary"><p>Tuyetnguyen@12</p></div>
-                    <div className="col2-diary"><p>01/12/2021 15:12:17</p></div>
-                    <div className="col3-diary"><p>192.168.3.1</p></div>
-                    <div className="col4-diary"><p>Cập nhật thông tin dịch vụ DV_01</p></div>
-                </div>
-                <div className='row2'>
-                    <div className="col1-diary"><p>Tuyetnguyen@12</p></div>
-                    <div className="col2-diary"><p>01/12/2021 15:12:17</p></div>
-                    <div className="col3-diary"><p>192.168.3.1</p></div>
-                    <div className="col4-diary"><p>Cập nhật thông tin dịch vụ DV_01</p></div>
-                </div>
-                <div className='row-end-report'>
-                    <div className="col1-diary"><p>Tuyetnguyen@12</p></div>
-                    <div className="col2-diary"><p>01/12/2021 15:12:17</p></div>
-                    <div className="col3-diary"><p>192.168.3.1</p></div>
-                    <div className="col4-diary"><p>Cập nhật thông tin dịch vụ DV_01</p></div>
-                </div>
-            </div>
-        )
     }
+    return (
+        <div className='div-table-report' id="tbnk" >
+            <div className='row1'>
+                <div className="col1-diary"><p className="colulm1-p">Tên đăng nhập</p></div>
+                <div className="col2-diary"><p className="colulm1-p">Thời gian tác động</p></div>
+                <div className="col3-diary"><p className="colulm1-p">IP thực hiện</p></div>
+                <div className="col14-diary"><p className="colulm1-p">Thao tác thực hiện</p></div>
+            </div>
+            {data.map((item: any, index: any) => (
+                <div className={setcolor(index)} key={item.id}>
+                    <div className="col1-diary"><p>{item.User}</p></div>
+                    <div className="col2-diary"><p>{item.Date} 15:12:17</p></div>
+                    <div className="col3-diary"><p>{item.IP}</p></div>
+                    <div className="col4-diary"><p>{item.Content}</p></div>
+                </div>))}
+        </div>
+    )
+
 }
 export default TableDiary;

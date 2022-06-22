@@ -1,0 +1,564 @@
+{
+    "Device": [
+        {
+            "id": 1,
+            "IDDevice": "KIO_01",
+            "NameDevice": "Kiosk",
+            "IP": "192.168.1.10",
+            "StatusUse": true,
+            "StatusConnect": true,
+            "ServiceUse": "Khám tim mạch, Khám Sản - Phụ khoa, Khám răng hàm mặt, Khám tai mũi họng, Khám hô hấp, Khám tổng quát"
+        },
+        {
+            "id": 2,
+            "IDDevice": "KIO_02",
+            "NameDevice": "Kiosk",
+            "IP": "192.168.1.10",
+            "StatusUse": true,
+            "StatusConnect": false,
+            "ServiceUse": "Khám tim mạch, Khám Sản - Phụ khoa, Khám răng hàm mặt, Khám tai mũi họng, Khám hô hấp, Khám tổng quát"
+        },
+        {
+            "id": 3,
+            "IDDevice": "KIO_03",
+            "NameDevice": "Kiosk",
+            "IP": "192.168.1.10",
+            "StatusUse": false,
+            "StatusConnect": true,
+            "ServiceUse": "Khám tim mạch, Khám Sản - Phụ khoa, Khám răng hàm mặt, Khám tai mũi họng, Khám hô hấp, Khám tổng quát"
+        },
+        {
+            "id": 4,
+            "IDDevice": "KIO_04",
+            "NameDevice": "Kiosk",
+            "IP": "192.168.1.10",
+            "StatusUse": false,
+            "StatusConnect": false,
+            "ServiceUse": "Khám tim mạch, Khám Sản - Phụ khoa, Khám răng hàm mặt, Khám tai mũi họng, Khám hô hấp, Khám tổng quát"
+        },
+        {
+            "id": 5,
+            "IDDevice": "KIO_05",
+            "NameDevice": "Kiosk",
+            "IP": "192.168.1.10",
+            "StatusUse": false,
+            "StatusConnect": true,
+            "ServiceUse": "Khám tim mạch, Khám Sản - Phụ khoa, Khám răng hàm mặt, Khám tai mũi họng, Khám hô hấp, Khám tổng quát"
+        },
+        {
+            "id": 6,
+            "IDDevice": "KIO_06",
+            "NameDevice": "Kiosk",
+            "IP": "192.168.1.10",
+            "StatusUse": false,
+            "StatusConnect": false,
+            "ServiceUse": "Khám tim mạch, Khám Sản - Phụ khoa, Khám răng hàm mặt, Khám tai mũi họng, Khám hô hấp, Khám tổng quát"
+        },
+        {
+            "id": 7,
+            "IDDevice": "KIO_07",
+            "NameDevice": "Kiosk",
+            "IP": "192.168.1.10",
+            "StatusUse": true,
+            "StatusConnect": true,
+            "ServiceUse": "Khám tim mạch, Khám Sản - Phụ khoa, Khám răng hàm mặt, Khám tai mũi họng, Khám hô hấp, Khám tổng quát"
+        },
+        {
+            "id": 8,
+            "IDDevice": "KIO_08",
+            "NameDevice": "Kiosk",
+            "IP": "192.168.1.10",
+            "StatusUse": true,
+            "StatusConnect": false,
+            "ServiceUse": "Khám tim mạch, Khám Sản - Phụ khoa, Khám răng hàm mặt, Khám tai mũi họng"
+        },
+        {
+            "id": 9,
+            "IDDevice": "KIO_09",
+            "NameDevice": "Kiosk",
+            "IP": "192.168.1.10",
+            "StatusUse": true,
+            "StatusConnect": true,
+            "ServiceUse": "Khám tim mạch, Khám Sản - Phụ khoa, Khám răng hàm mặt, Khám tai mũi họng, Khám hô hấp, Khám tổng quát"
+        }
+    ],
+    "Service": [
+        {
+            "id": 1,
+            "IDService": "KIO_01",
+            "NameService": "kiosk",
+            "Describe": "Hoạt động 1",
+            "StatusUse": true,
+            "Date": "17/12/2022"
+        },
+        {
+            "id": 2,
+            "IDService": "KIO_02",
+            "NameService": "kiosk",
+            "Describe": "Hoạt động 2",
+            "StatusUse": false,
+            "Date": "17/12/2022"
+        },
+        {
+            "id": 3,
+            "IDService": "KIO_03",
+            "NameService": "kiosk",
+            "Describe": "Hoạt động 3",
+            "StatusUse": false,
+            "Date": "17/12/2022"
+        },
+        {
+            "id": 4,
+            "IDService": "KIO_04",
+            "NameService": "kiosk",
+            "Describe": "Hoạt động 4",
+            "StatusUse": true,
+            "Date": "17/12/2022"
+        },
+        {
+            "id": 5,
+            "IDService": "KIO_05",
+            "NameService": "kiosk",
+            "Describe": "Hoạt động 5",
+            "StatusUse": true,
+            "Date": "17/12/2022"
+        },
+        {
+            "id": 6,
+            "IDService": "KIO_06",
+            "NameService": "kiosk",
+            "Describe": "Hoạt động 6",
+            "StatusUse": false,
+            "Date": "17/12/2022"
+        },
+        {
+            "id": 7,
+            "IDService": "KIO_07",
+            "NameService": "kiosk",
+            "Describe": "Hoạt động 7",
+            "StatusUse": true,
+            "Date": "17/12/2022"
+        },
+        {
+            "id": 8,
+            "IDService": "KIO_08",
+            "NameService": "kiosk",
+            "Describe": "Hoạt động 8",
+            "StatusUse": false,
+            "Date": "17/12/2022"
+        },
+        {
+            "id": 9,
+            "IDService": "KIO_09",
+            "NameService": "kiosk",
+            "Describe": "Hoạt động 9",
+            "StatusUse": true,
+            "Date": "17/12/2022"
+        }
+    ],
+    "OrderNumber": [
+        {
+            "id": 1,
+            "STT": "2010001",
+            "NameUser": "Lê Quỳnh Ái Vân",
+            "NameService": "Khám tim mạch",
+            "Date": "17/12/2022",
+            "DateEnd": "17/12/2022",
+            "Status": "dsd",
+            "Source": "Kiosk"
+        },
+        {
+            "id": 2,
+            "STT": "2010002",
+            "NameUser": "Lê Quỳnh Ái Vân",
+            "NameService": "Khám tim mạch",
+            "Date": "17/12/2022",
+            "DateEnd": "17/12/2022",
+            "Status": "dc",
+            "Source": "Kiosk"
+        },
+        {
+            "id": 3,
+            "STT": "2010003",
+            "NameUser": "Lê Quỳnh Ái Vân",
+            "NameService": "Khám sản - Phụ Khoa",
+            "Date": "17/12/2022",
+            "DateEnd": "17/12/2022",
+            "Status": "dsd",
+            "Source": "Kiosk"
+        },
+        {
+            "id": 4,
+            "STT": "2010004",
+            "NameUser": "Lê Quỳnh Ái Vân",
+            "NameService": "Khám răng hàm mặt",
+            "Date": "17/12/2022",
+            "DateEnd": "17/12/2022",
+            "Status": "bq",
+            "Source": "Kiosk"
+        },
+        {
+            "id": 5,
+            "STT": "2010005",
+            "NameUser": "Lê Quỳnh Ái Vân",
+            "NameService": "Khám tai mũi họng",
+            "Date": "17/12/2022",
+            "DateEnd": "17/12/2022",
+            "Status": "dc",
+            "Source": "Kiosk"
+        },
+        {
+            "id": 6,
+            "STT": "2010006",
+            "NameUser": "Lê Quỳnh Ái Vân",
+            "NameService": "Khám hô hấp",
+            "Date": "17/12/2022",
+            "DateEnd": "17/12/2022",
+            "Status": "dc",
+            "Source": "Kiosk"
+        },
+        {
+            "id": 7,
+            "STT": "2010007",
+            "NameUser": "Lê Quỳnh Ái Vân",
+            "NameService": "Khám tổng quát",
+            "Date": "17/12/2022",
+            "DateEnd": "17/12/2022",
+            "Status": "dc",
+            "Source": "Kiosk"
+        },
+        {
+            "id": 8,
+            "STT": "2010008",
+            "NameUser": "Lê Quỳnh Ái Vân",
+            "NameService": "Khám tim mạch",
+            "Date": "17/12/2022",
+            "DateEnd": "17/12/2022",
+            "Status": "bq",
+            "Source": "Kiosk"
+        },
+        {
+            "id": 9,
+            "STT": "2010009",
+            "NameUser": "Lê Quỳnh Ái Vân",
+            "NameService": "Khám tai mũi họng",
+            "Date": "17/12/2022",
+            "DateEnd": "17/12/2022",
+            "Status": "dsd",
+            "Source": "Kiosk"
+        }
+    ],
+    "Report": [
+        {
+            "id": 1,
+            "STT": "2010001",
+            "NameUser": "Lê Quỳnh Ái Vân",
+            "NameService": "Khám tim mạch",
+            "Date": "17/12/2022",
+            "DateEnd": "17/12/2022",
+            "Status": "dsd",
+            "Source": "Kiosk"
+        },
+        {
+            "id": 2,
+            "STT": "2010002",
+            "NameUser": "Lê Quỳnh Ái Vân",
+            "NameService": "Khám tim mạch",
+            "Date": "17/12/2022",
+            "DateEnd": "17/12/2022",
+            "Status": "dc",
+            "Source": "Kiosk"
+        },
+        {
+            "id": 3,
+            "STT": "2010003",
+            "NameUser": "Lê Quỳnh Ái Vân",
+            "NameService": "Khám tim mạch",
+            "Date": "17/12/2022",
+            "DateEnd": "17/12/2022",
+            "Status": "bq",
+            "Source": "Hệ thống"
+        },
+        {
+            "id": 4,
+            "STT": "2010004",
+            "NameUser": "Lê Quỳnh Ái Vân",
+            "NameService": "Khám tim mạch",
+            "Date": "17/12/2022",
+            "DateEnd": "17/12/2022",
+            "Status": "dsd",
+            "Source": "Kiosk"
+        },
+        {
+            "id": 5,
+            "STT": "2010005",
+            "NameUser": "Lê Quỳnh Ái Vân",
+            "NameService": "Khám tim mạch",
+            "Date": "17/12/2022",
+            "DateEnd": "17/12/2022",
+            "Status": "dsd",
+            "Source": "Hệ thống"
+        },
+        {
+            "id": 6,
+            "STT": "2010006",
+            "NameUser": "Lê Quỳnh Ái Vân",
+            "NameService": "Khám tim mạch",
+            "Date": "17/12/2022",
+            "DateEnd": "17/12/2022",
+            "Status": "dc",
+            "Source": "Kiosk"
+        },
+        {
+            "id": 7,
+            "STT": "2010007",
+            "NameUser": "Lê Quỳnh Ái Vân",
+            "NameService": "Khám tim mạch",
+            "Date": "17/12/2022",
+            "DateEnd": "17/12/2022",
+            "Status": "dc",
+            "Source": "Hệ thống"
+        },
+        {
+            "id": 8,
+            "STT": "2010008",
+            "NameUser": "Lê Quỳnh Ái Vân",
+            "NameService": "Khám tim mạch",
+            "Date": "17/12/2022",
+            "DateEnd": "17/12/2022",
+            "Status": "bq",
+            "Source": "Kiosk"
+        },
+        {
+            "id": 9,
+            "STT": "2010009",
+            "NameUser": "Lê Quỳnh Ái Vân",
+            "NameService": "Khám tim mạch",
+            "Date": "17/12/2022",
+            "DateEnd": "17/12/2022",
+            "Status": "bq",
+            "Source": "Kiosk"
+        },
+        {
+            "id": 10,
+            "STT": "2010009",
+            "NameUser": "Lê Quỳnh Ái Vân",
+            "NameService": "Khám tim mạch",
+            "Date": "17/12/2022",
+            "DateEnd": "17/12/2022",
+            "Status": "dsd",
+            "Source": "Hệ thống"
+        }
+    ],
+    "Role": [
+        {
+            "id": 1,
+            "NameRole": "Kế toán",
+            "Quantity": "4",
+            "Describe": "Thực hiện nhiệm vụ về thống kê số liệu và tổng hợp số liệu"
+        },
+        {
+            "id": 2,
+            "NameRole": "Bác sĩ",
+            "Quantity": "5",
+            "Describe": "Thực hiện nhiệm vụ về thống kê số liệu và tổng hợp số liệu"
+        },
+        {
+            "id": 3,
+            "NameRole": "Lễ tân",
+            "Quantity": "4",
+            "Describe": "Thực hiện nhiệm vụ về thống kê số liệu và tổng hợp số liệu"
+        },
+        {
+            "id": 4,
+            "NameRole": "Quản lý",
+            "Quantity": "6",
+            "Describe": "Thực hiện nhiệm vụ về thống kê số liệu và tổng hợp số liệu"
+        },
+        {
+            "id": 5,
+            "NameRole": "Admin",
+            "Quantity": "7",
+            "Describe": "Thực hiện nhiệm vụ về thống kê số liệu và tổng hợp số liệu"
+        },
+        {
+            "id": 6,
+            "NameRole": "Super Admin",
+            "Quantity": "1",
+            "Describe": "Thực hiện nhiệm vụ về thống kê số liệu và tổng hợp số liệu"
+        }
+    ],
+    "Account": [
+        {
+            "id": 1,
+            "User": "ducpy@12",
+            "NameUser": "Nguyễn Duy Đức",
+            "Password": "123",
+            "Avata": "https://tinhte.vn/store/2016/10/3893837_1_1.jpg",
+            "Phone": "0379439568",
+            "Email": "ducpy3004@gmail.com",
+            "Role": "Admin",
+            "Status": true
+        },
+        {
+            "id": 2,
+            "User": "tuyetnguyen@12",
+            "NameUser": "Lê Quỳnh Ái Vân",
+            "Password": "123456",
+            "Avata": "https://tinhte.vn/store/2016/10/3893837_1_1.jpg",
+            "Phone": "0379439568",
+            "Email": "tuyetnguyen123@gmail.com",
+            "Role": "Kế toán",
+            "Status": false
+        },
+        {
+            "id": 3,
+            "User": "tuyetnguyen@12",
+            "NameUser": "Lê  Ái Vân",
+            "Password": "123456",
+            "Avata": "https://tinhte.vn/store/2016/10/3893837_1_1.jpg",
+            "Phone": "0379439568",
+            "Email": "tuyetnguyen123@gmail.com",
+            "Role": "Kế toán",
+            "Status": true
+        },
+        {
+            "id": 4,
+            "User": "tuyetnguyen@12",
+            "NameUser": "Lê Quỳnh Ái Vân",
+            "Password": "123456",
+            "Avata": "https://tinhte.vn/store/2016/10/3893837_1_1.jpg",
+            "Phone": "0379439568",
+            "Email": "tuyetnguyen123@gmail.com",
+            "Role": "Kế toán",
+            "Status": false
+        },
+        {
+            "id": 5,
+            "User": "tuyetnguyen@12",
+            "NameUser": "Quỳnh Ái Vân",
+            "Password": "123456",
+            "Avata": "https://tinhte.vn/store/2016/10/3893837_1_1.jpg",
+            "Phone": "0379439568",
+            "Email": "tuyetnguyen123@gmail.com",
+            "Role": "Kế toán",
+            "Status": true
+        },
+        {
+            "id": 6,
+            "User": "tuyetnguyen@12",
+            "NameUser": "Lê Quỳnh Ái Vân",
+            "Password": "123456",
+            "Avata": "https://tinhte.vn/store/2016/10/3893837_1_1.jpg",
+            "Phone": "0379439568",
+            "Email": "tuyetnguyen123@gmail.com",
+            "Role": "Kế toán",
+            "Status": true
+        },
+        {
+            "id": 7,
+            "User": "tuyetnguyen@12",
+            "NameUser": "Lê Quỳnh Ái ",
+            "Password": "123456",
+            "Avata": "https://tinhte.vn/store/2016/10/3893837_1_1.jpg",
+            "Phone": "0379439568",
+            "Email": "tuyetnguyen123@gmail.com",
+            "Role": "Kế toán",
+            "Status": false
+        },
+        {
+            "id": 8,
+            "User": "tuyetnguyen@12",
+            "NameUser": "Lê Quỳnh ",
+            "Password": "123456",
+            "Avata": "https://tinhte.vn/store/2016/10/3893837_1_1.jpg",
+            "Phone": "0379439568",
+            "Email": "tuyetnguyen123@gmail.com",
+            "Role": "Kế toán",
+            "Status": false
+        },
+        {
+            "id": 9,
+            "User": "tuyetnguyen@12",
+            "NameUser": "Lê Vân",
+            "Password": "123456",
+            "Avata": "https://tinhte.vn/store/2016/10/3893837_1_1.jpg",
+            "Phone": "0379439568",
+            "Email": "tuyetnguyen123@gmail.com",
+            "Role": "Kế toán",
+            "Status": true
+        }
+    ],
+    "Dairy": [
+        {
+            "id": 1,
+            "User": "ducpy@12",
+            "Content": "Cập nhật thông tin dịch vụ DV_01",
+            "Date": "12/03/2022",
+            "IP": "192.168.0.1"
+        },
+        {
+            "id": 2,
+            "User": "tuyetnguyen@12",
+            "Content": "Cập nhật thông tin dịch vụ DV_02",
+            "Date": "12/03/2022",
+            "IP": "192.168.0.1"
+        },
+        {
+            "id": 3,
+            "User": "tuyetnguyen@12",
+            "Content": "Cập nhật thông tin dịch vụ DV_03",
+            "Date": "12/03/2022",
+            "IP": "192.168.0.1"
+        },
+        {
+            "id": 4,
+            "User": "tuyetnguyen@12",
+            "Content": "Cập nhật thông tin dịch vụ DV_04",
+            "Date": "12/03/2022",
+            "IP": "192.168.0.1"
+        },
+        {
+            "id": 5,
+            "User": "tuyetnguyen@12",
+            "Content": "Cập nhật thông tin dịch vụ DV_05",
+            "Date": "12/03/2022",
+            "IP": "192.168.0.1"
+        },
+        {
+            "id": 6,
+            "User": "tuyetnguyen@12",
+            "Content": "Cập nhật thông tin dịch vụ DV_06",
+            "Date": "12/03/2022",
+            "IP": "192.168.0.1"
+        },
+        {
+            "id": 7,
+            "User": "tuyetnguyen@12",
+            "Content": "Cập nhật thông tin dịch vụ DV_07",
+            "Date": "12/03/2022",
+            "IP": "192.168.0.1"
+        },
+        {
+            "id": 8,
+            "User": "tuyetnguyen@12",
+            "Content": "Cập nhật thông tin dịch vụ DV_08",
+            "Date": "12/03/2022",
+            "IP": "192.168.0.1"
+        },
+        {
+            "id": 9,
+            "User": "tuyetnguyen@12",
+            "Content": "Cập nhật thông tin dịch vụ DV_09",
+            "Date": "12/03/2022",
+            "IP": "192.168.0.1"
+        },
+        {
+            "id": 10,
+            "User": "tuyetnguyen@12",
+            "Content": "Cập nhật thông tin dịch vụ DV_10",
+            "Date": "12/03/2022",
+            "IP": "192.168.0.1"
+        }
+    ]
+}

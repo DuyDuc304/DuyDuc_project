@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import './tabledevice.css'
 
-class TableDevice extends React.Component {
-    showmore(id: string) {
-
-        const btn: any = document.getElementById(id)
+export const TableDevice = () => {
+    const [data, setdata] = useState([])
+    //call api bằng json server
+    useEffect(() => {
+        var constAPI = ' http://localhost:3000/Device'
+        const fetchItem = async () => {
+            const result = await fetch(constAPI).then(function (response) {
+                return response.json()
+            })
+            setdata(result)
+        }
+        fetchItem()
+    }, [])
+    function showmore(id: number) {
+        const btn: any = document.getElementById(id.toString())
         if (btn.style.display === 'none')
             btn.style.display = 'flex';
 
@@ -13,364 +24,114 @@ class TableDevice extends React.Component {
         })
 
     }
+    function setcolor(id: number) {
+        if ((id + 1) % 9 === 0) {
+            return 'row4'
+        }
+        if (id % 2 === 0) {
+            return 'row2'
+        } else {
+            return 'row3'
+        }
 
-    render() {
-        return (
-            <div className='div-layout' id="tbtb">
-                <div className='row1'>
-                    <div className="colum1">
-                        <p className="colulm1-p">Mã thiết bị</p>
-                    </div>
-                    <div className="colum2">
-                        <p className="colulm1-p">Tên thiết bị</p>
-                    </div>
-                    <div className="colum3">
-                        <p className="colulm1-p">Địa chỉ IP</p>
-                    </div>
-                    <div className="colum4">
-                        <p className="colulm1-p">Trạng thái hoạt động</p>
-                    </div>
-                    <div className="colum5">
-                        <p className="colulm1-p">Trạng thái kết nối</p>
-                    </div>
-                    <div className="colum6">
-                        <p className="colulm1-p">Dịch vụ sử dụng</p>
-                    </div>
-                    <div className="colum7">
-                        <p className="colulm1-p"></p>
-                    </div>
-                    <div className="colum8">
-                        <p className="colulm1-p"></p>
-                    </div>
-                </div>
-                <div className='row2'>
-                    <div className="colum1">
-                        <p>KIO_01</p>
-                    </div>
-                    <div className="colum2">
-                        <p>Kiosk1</p>
-                    </div>
-                    <div className="colum3">
-                        <p>192.168.1.10</p>
-                    </div>
-                    <div className="colum4">
-                        <div className="div-center">
-                            <p style={{ color: " #EC3740", fontSize: '24px', margin: 'auto' }}>•</p>
-                            <p>Ngừng hoạt động</p>
-                        </div>
-                    </div>
-                    <div className="colum5">
-                        <div className="div-center">
-                            <p style={{ color: " #EC3740", fontSize: '24px' }}>•</p>
-                            <p>Mất kết nối</p>
-                        </div>
-
-                    </div>
-                    <div className="colum6">
-                        <p>Khám tim mạch, Khám mắt,....</p>
-                        <label onClick={() => this.showmore('c2')}>Xem thêm</label>
-                        <div className="div-more" id="c2">Khám tim mạch, Khám Sản -
-                            Phụ khoa, Khám răng hàm mặt, Khám tai mũi họng, Khám hô hấp, Khám tổng quát</div>
-                    </div>
-
-                    <div className="colum7">
-                        <a href="/Device/InfoDevice">Chi tiết</a>
-                    </div>
-                    <div className="colum8">
-                        <a href="/Device/UpdateDevice"> Cập nhật</a>
-                    </div>
-                </div>
-                <div className='row3'>
-                    <div className="colum1">
-                        <p>KIO_01</p>
-                    </div>
-                    <div className="colum2">
-                        <p>Kiosk</p>
-                    </div>
-                    <div className="colum3">
-                        <p>192.168.1.10</p>
-                    </div>
-                    <div className="colum4">
-                        <div className="div-center">
-                            <p style={{ color: " #35C75A", fontSize: '24px', margin: 'auto' }}>•</p>
-                            <p>Hoạt động</p>
-                        </div>
-                    </div>
-                    <div className="colum5">
-                        <div className="div-center">
-                            <p style={{ color: " #35C75A", fontSize: '24px' }}>•</p>
-                            <p>Kết nối</p>
-                        </div>
-
-                    </div>
-                    <div className="colum6">
-                        <p>Khám tim mạch, Khám mắt,....</p>
-                        <label onClick={() => this.showmore('c3')}>Xem thêm</label>
-                        <div className="div-more" id="c3">Khám tim mạch, Khám Sản -
-                            Phụ khoa, Khám răng hàm mặt, Khám tai mũi họng, Khám hô hấp, Khám tổng quát</div>
-                    </div>
-                    <div className="colum7">
-                        <a href="/Device/InfoDevice">Chi tiết</a>
-                    </div>
-                    <div className="colum8">
-                        <a href="/Device/UpdateDevice"> Cập nhật</a>
-                    </div>
-                </div>
-                <div className='row2'>
-                    <div className="colum1">
-                        <p>KIO_02</p>
-                    </div>
-                    <div className="colum2">
-                        <p>Kiosk2</p>
-                    </div>
-                    <div className="colum3">
-                        <p>192.168.1.2</p>
-                    </div>
-                    <div className="colum4">
-                        <div className="div-center">
-                            <p style={{ color: " #35C75A", fontSize: '24px', margin: 'auto' }}>•</p>
-                            <p>Hoạt động</p>
-                        </div>
-                    </div>
-                    <div className="colum5">
-                        <div className="div-center">
-                            <p style={{ color: " #EC3740", fontSize: '24px' }}>•</p>
-                            <p>Mất kết nối</p>
-                        </div>
-
-                    </div>
-                    <div className="colum6">
-                        <p>Khám tim mạch, Khám mắt,....</p>
-                        <label onClick={() => this.showmore('c4')}>Xem thêm</label>
-                        <div className="div-more" id="c4">Khám tim mạch, Khám Sản -
-                            Phụ khoa, Khám răng hàm mặt, Khám tai mũi họng, Khám hô hấp, Khám tổng quát</div>
-                    </div>
-                    <div className="colum7">
-                        <a href="/Device/InfoDevice">Chi tiết</a>
-                    </div>
-                    <div className="colum8">
-                        <a href="/Device/UpdateDevice"> Cập nhật</a>
-                    </div>
-                </div>
-                <div className='row3'>
-                    <div className="colum1">
-                        <p>KIO_01</p>
-                    </div>
-                    <div className="colum2">
-                        <p>Kiosk</p>
-                    </div>
-                    <div className="colum3">
-                        <p>192.168.1.10</p>
-                    </div>
-                    <div className="colum4">
-                        <div className="div-center">
-                            <p style={{ color: " #35C75A", fontSize: '24px', margin: 'auto' }}>•</p>
-                            <p>Hoạt động</p>
-                        </div>
-                    </div>
-                    <div className="colum5">
-                        <div className="div-center">
-                            <p style={{ color: " #EC3740", fontSize: '24px' }}>•</p>
-                            <p>Mất kết nối</p>
-                        </div>
-
-                    </div>
-                    <div className="colum6">
-                        <p>Khám tim mạch, Khám mắt,....</p>
-                        <label onClick={() => this.showmore('c5')}>Xem thêm</label>
-                        <div className="div-more" id="c5">Khám tim mạch, Khám Sản -
-                            Phụ khoa, Khám răng hàm mặt, Khám tai mũi họng, Khám hô hấp, Khám tổng quát</div>
-                    </div>
-                    <div className="colum7">
-                        <a href="/Device/InfoDevice">Chi tiết</a>
-                    </div>
-                    <div className="colum8">
-                        <a href="/Device/UpdateDevice"> Cập nhật</a>
-                    </div>
-                </div>
-                <div className='row2'>
-                    <div className="colum1">
-                        <p>KIO_09</p>
-                    </div>
-                    <div className="colum2">
-                        <p>Kiosk2</p>
-                    </div>
-                    <div className="colum3">
-                        <p>192.168.1.3</p>
-                    </div>
-                    <div className="colum4">
-                        <div className="div-center">
-                            <p style={{ color: " #35C75A", fontSize: '24px', margin: 'auto' }}>•</p>
-                            <p>Hoạt động</p>
-                        </div>
-                    </div>
-                    <div className="colum5">
-                        <div className="div-center">
-                            <p style={{ color: " #EC3740", fontSize: '24px' }}>•</p>
-                            <p>Mất kết nối</p>
-                        </div>
-
-                    </div>
-                    <div className="colum6">
-                        <p>Khám tim mạch, Khám mắt,....</p>
-                        <label onClick={() => this.showmore('c6')}>Xem thêm</label>
-                        <div className="div-more" id="c6">Khám tim mạch, Khám Sản -
-                            Phụ khoa, Khám răng hàm mặt, Khám tai mũi họng, Khám hô hấp, Khám tổng quát</div>
-                    </div>
-                    <div className="colum7">
-                        <a href="/Device/InfoDevice">Chi tiết</a>
-                    </div>
-                    <div className="colum8">
-                        <a href="/Device/UpdateDevice"> Cập nhật</a>
-                    </div>
-                </div>
-                <div className='row3'>
-                    <div className="colum1">
-                        <p>KIO_01</p>
-                    </div>
-                    <div className="colum2">
-                        <p>Kiosk</p>
-                    </div>
-                    <div className="colum3">
-                        <p>192.168.1.10</p>
-                    </div>
-                    <div className="colum4">
-                        <div className="div-center">
-                            <p style={{ color: " #EC3740", fontSize: '24px', margin: 'auto' }}>•</p>
-                            <p>Ngừng hoạt động</p>
-                        </div>
-                    </div>
-                    <div className="colum5">
-                        <div className="div-center">
-                            <p style={{ color: " #35C75A", fontSize: '24px' }}>•</p>
-                            <p>Kết nối</p>
-                        </div>
-
-                    </div>
-                    <div className="colum6">
-                        <p>Khám tim mạch, Khám mắt,....</p>
-                        <label onClick={() => this.showmore('c7')}>Xem thêm</label>
-                        <div className="div-more" id="c7">Khám tim mạch, Khám Sản -
-                            Phụ khoa, Khám răng hàm mặt, Khám tai mũi họng, Khám hô hấp, Khám tổng quát</div>
-                    </div>
-                    <div className="colum7">
-                        <a href="/Device/InfoDevice">Chi tiết</a>
-                    </div>
-                    <div className="colum8">
-                        <a href="/Device/UpdateDevice"> Cập nhật</a>
-                    </div>
-                </div>
-                <div className='row2'>
-                    <div className="colum1">
-                        <p>KIO_01</p>
-                    </div>
-                    <div className="colum2">
-                        <p>Kiosk</p>
-                    </div>
-                    <div className="colum3">
-                        <p>192.168.1.10</p>
-                    </div>
-                    <div className="colum4">
-                        <div className="div-center">
-                            <p style={{ color: " #35C75A", fontSize: '24px', margin: 'auto' }}>•</p>
-                            <p>Hoạt động</p>
-                        </div>
-                    </div>
-                    <div className="colum5">
-                        <div className="div-center">
-                            <p style={{ color: " #35C75A", fontSize: '24px' }}>•</p>
-                            <p>Kết nối</p>
-                        </div>
-
-                    </div>
-                    <div className="colum6">
-                        <p>Khám tim mạch, Khám mắt,....</p>
-                        <label onClick={() => this.showmore('c8')}>Xem thêm</label>
-                        <div className="div-more" id="c8">Khám tim mạch, Khám Sản -
-                            Phụ khoa, Khám răng hàm mặt, Khám tai mũi họng, Khám hô hấp, Khám tổng quát</div>
-                    </div>
-                    <div className="colum7">
-                        <a href="/Device/InfoDevice">Chi tiết</a>
-                    </div>
-                    <div className="colum8">
-                        <a href="/Device/UpdateDevice"> Cập nhật</a>
-                    </div>
-                </div>
-                <div className='row3'>
-                    <div className="colum1">
-                        <p>KIO_01</p>
-                    </div>
-                    <div className="colum2">
-                        <p>Kiosk1</p>
-                    </div>
-                    <div className="colum3">
-                        <p>192.168.1.10</p>
-                    </div>
-                    <div className="colum4">
-                        <div className="div-center">
-                            <p style={{ color: " #EC3740", fontSize: '24px', margin: 'auto' }}>•</p>
-                            <p>Ngừng hoạt động</p>
-                        </div>
-                    </div>
-                    <div className="colum5">
-                        <div className="div-center">
-                            <p style={{ color: " #35C75A", fontSize: '24px' }}>•</p>
-                            <p>Kết nối</p>
-                        </div>
-
-                    </div>
-                    <div className="colum6">
-                        <p>Khám tim mạch, Khám mắt,....</p>
-                        <label onClick={() => this.showmore('c9')}>Xem thêm</label>
-                        <div className="div-more" id="c9">Khám tim mạch, Khám Sản -
-                            Phụ khoa, Khám răng hàm mặt, Khám tai mũi họng, Khám hô hấp, Khám tổng quát</div>
-                    </div>
-                    <div className="colum7">
-                        <a href="/Device/InfoDevice">Chi tiết</a>
-                    </div>
-                    <div className="colum8">
-                        <a href="/Device/UpdateDevice"> Cập nhật</a>
-                    </div>
-                </div>
-                <div className='row4'>
-                    <div className="colum1">
-                        <p>KIO_01</p>
-                    </div>
-                    <div className="colum2">
-                        <p>Kiosk</p>
-                    </div>
-                    <div className="colum3">
-                        <p>192.168.1.10</p>
-                    </div>
-                    <div className="colum4">
-                        <div className="div-center">
-                            <p style={{ color: " #EC3740", fontSize: '24px', margin: 'auto' }}>•</p>
-                            <p>Ngừng hoạt động</p>
-                        </div>
-                    </div>
-                    <div className="colum5">
-                        <div className="div-center">
-                            <p style={{ color: " #35C75A", fontSize: '24px' }}>•</p>
-                            <p>Kết nối</p>
-                        </div>
-                    </div>
-                    <div className="colum6" >
-                        <p>Khám tim mạch, Khám mắt,....</p>
-                        <label onClick={() => this.showmore('c10')}>Xem thêm</label>
-                        <div className="div-more" id="c10">Khám tim mạch, Khám Sản -
-                            Phụ khoa, Khám răng hàm mặt, Khám tai mũi họng, Khám hô hấp, Khám tổng quát</div>
-                    </div>
-                    <div className="colum7">
-                        <a href="/Device/InfoDevice">Chi tiết</a>
-                    </div>
-                    <div className="colum8">
-                        <a href="/Device/UpdateDevice"> Cập nhật</a>
-                    </div>
-                </div>
-
-
-            </div>
-        )
     }
+
+    function setStatusUse(status: boolean) {
+        if (status) {
+            return (
+                <div className="div-center">
+                    <p style={{ color: " #34CD26", fontSize: '24px', margin: 'auto' }}>•</p>
+                    <p>Hoạt động</p>
+                </div>
+            )
+        } else {
+            return (
+                <div className="div-center">
+                    <p style={{ color: " #EC3740", fontSize: '24px', margin: 'auto' }}>•</p>
+                    <p>Ngừng hoạt động</p>
+                </div>
+            )
+        }
+    }
+    function setStatusConnect(status: boolean) {
+        if (status) {
+            return (
+                <div className="div-center">
+                    <p style={{ color: " #34CD26", fontSize: '24px', margin: 'auto' }}>•</p>
+                    <p>Kết nối</p>
+                </div>
+            )
+        } else {
+            return (
+                <div className="div-center">
+                    <p style={{ color: " #EC3740", fontSize: '24px', margin: 'auto' }}>•</p>
+                    <p>Mất kết nối</p>
+                </div>
+            )
+        }
+    }
+    return (
+        <div className='div-layout' id="tbtb">
+            <div className='row1'>
+                <div className="colum1">
+                    <p className="colulm1-p">Mã thiết bị</p>
+                </div>
+                <div className="colum2">
+                    <p className="colulm1-p">Tên thiết bị</p>
+                </div>
+                <div className="colum3">
+                    <p className="colulm1-p">Địa chỉ IP</p>
+                </div>
+                <div className="colum4">
+                    <p className="colulm1-p">Trạng thái hoạt động</p>
+                </div>
+                <div className="colum5">
+                    <p className="colulm1-p">Trạng thái kết nối</p>
+                </div>
+                <div className="colum6">
+                    <p className="colulm1-p">Dịch vụ sử dụng</p>
+                </div>
+                <div className="colum7">
+                    <p className="colulm1-p"></p>
+                </div>
+                <div className="colum8">
+                    <p className="colulm1-p"></p>
+                </div>
+            </div>
+            {data.map((item: any, index: any) => (
+                <div className={setcolor(index)} key={item.id}>
+                    <div className="colum1">
+                        <p>{item.IDDevice}</p>
+                    </div>
+                    <div className="colum2">
+                        <p>{item.NameDevice}</p>
+                    </div>
+                    <div className="colum3">
+                        <p>{item.IP}</p>
+                    </div>
+                    <div className="colum4">
+                        {setStatusUse(item.StatusUse)}
+                    </div>
+                    <div className="colum5">
+                        {setStatusConnect(item.StatusConnect)}
+                    </div>
+                    <div className="colum6">
+                        <p>Khám tim mạch, Khám mắt,....</p>
+                        <label onClick={() => showmore(item.id)}>Xem thêm</label>
+                        <div className="div-more" id={item.id}>{item.ServiceUse}</div>
+                    </div>
+
+                    <div className="colum7">
+                        <a href="/Device/InfoDevice">Chi tiết</a>
+                    </div>
+                    <div className="colum8">
+                        <a href="/Device/UpdateDevice"> Cập nhật</a>
+                    </div>
+                </div>
+            ))}
+
+        </div>
+    )
 }
+
 export default TableDevice;
