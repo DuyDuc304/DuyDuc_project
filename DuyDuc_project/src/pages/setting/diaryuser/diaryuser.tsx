@@ -1,0 +1,100 @@
+import React from 'react';
+import { Topbar } from '../../../components/topbar';
+import { Menubar } from '../../../components/menu/menubar';
+import Nextpage from '../../../components/nextpage';
+import Calendar from 'react-calendar';
+import { FaRegCalendarAlt } from 'react-icons/fa';
+import TableDiary from './tablediary';
+import { AiOutlineSearch } from 'react-icons/ai';
+
+let newDate = new Date()
+
+
+class DiaryUser extends React.Component {
+    onSumbit(e: React.SyntheticEvent) {
+        e.preventDefault();
+        const target = e.target as typeof e.target & {
+            timkiem: { value: string };
+
+        };
+        const timkiem = target.timkiem.value.trim();
+        const allelm: any = document.getElementById("tbnk")
+        const allrow: any = allelm.children
+        if (timkiem !== '') {
+            for (let i = 1; i < allrow.length; i++) {
+                const allelmr: any = allrow[i].children
+                allrow[i].style.display = 'none'
+                for (let j = 0; j < allelmr.length; j++) {
+                    const p: any = allelmr[j].children
+                    for (let k = 0; k < p.length; k++) {
+                        if (p[k].innerText.toLowerCase().trim() === timkiem.toLowerCase()) {
+                            allrow[i].style.display = 'flex'
+                        }
+                    }
+
+                }
+            }
+        } else {
+            for (let i = 1; i < allrow.length; i++) {
+                allrow[i].style.display = 'flex'
+            }
+        }
+    }
+
+    OnClick() {
+        const cld: any = document.getElementById('cldsv')
+        if (cld.style.display === "none") {
+            cld.style.display = "block";
+        } else {
+            cld.style.display = 'none';
+        }
+
+
+    }
+    render() {
+        return (
+            <div className='bg'>
+                <div className="Backgroundapp">
+                    <div className='ctg-report '>
+                        <p className='ctg-report-p'>Chọn thời gian</p>
+                        <div className='ctg-row ' style={{ marginTop: '-5px' }}>
+                            <div className='daytime-picker-qlcs' onClick={this.OnClick} >
+                                <FaRegCalendarAlt className='icon-calendar' />
+                                <p>{newDate.toLocaleDateString()}</p>
+                            </div>
+                            <p style={{ color: '#535261', margin: '10px', display: 'flex' }} >▸</p>
+                            <div className='daytime-picker-qlcs' >
+                                <FaRegCalendarAlt className='icon-calendar' />
+                                <p>{newDate.toLocaleDateString()}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="tk-diary">
+                        <p>Từ khóa</p>
+                        <div className='sreach-qlcs' style={{ marginTop: '-5px' }} >
+                            <form autoComplete="off" onSubmit={this.onSumbit}>
+                                <input type="text" name='timkiem' placeholder="Nhập từ khóa ..." style={{ fontSize: '14px' }} ></input>
+                                <button className="sreach-sv-button" type='submit'><AiOutlineSearch /></button>
+                            </form>
+                        </div>
+                    </div>
+                    <TableDiary />
+                    <Topbar nametitle1='Cài đặt hệ thống ﹥' nametitle2='' nametitle3=' Nhật ký người dùng' href='' href2='' nametitle21='' />
+                    <Nextpage />
+                    <div className='daytime-picker-caledar-report' id='cldsv'>
+                        <Calendar locale='en' selectRange />
+                    </div>
+                    <Menubar buttonid="nknd" />
+
+                </div>
+            </div>
+        );
+
+    }
+
+
+}
+
+export default DiaryUser;
+
+
