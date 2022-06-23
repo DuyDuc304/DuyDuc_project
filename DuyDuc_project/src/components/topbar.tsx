@@ -1,4 +1,5 @@
 import { BsFillBellFill } from "react-icons/bs";
+import { useSelector } from "react-redux";
 
 type titlepros = {
     nametitle1?: string | undefined
@@ -10,6 +11,7 @@ type titlepros = {
 }
 
 export const Topbar = (props: titlepros) => {
+    const userInfo = useSelector((state: any) => state.user);
     var day = new Date();
     const handleNotice = () => {
         const bell: any = document.querySelector(".notice")
@@ -32,11 +34,11 @@ export const Topbar = (props: titlepros) => {
             <div className='notice' id="ntc" onClick={() => handleNotice()}><BsFillBellFill className='bell' /></div>
             <a href='/Info' >
                 <div className='avata'>
-                    <img src="https://tinhte.vn/store/2016/10/3893837_1_1.jpg" alt="avata" />
+                    <img src={userInfo.Avatar} alt="avata" />
                 </div>
                 <div className='name'>
                     <p>Xin chào</p>
-                    <span id="nameuser">Nguyễn Duy Đức</span>
+                    <span id="nameuser">{userInfo.Name}</span>
                 </div>
             </a>
             <div className="notice-user" id="usernotice" >
