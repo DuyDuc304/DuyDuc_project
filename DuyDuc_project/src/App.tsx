@@ -1,7 +1,7 @@
 
 import React from 'react';
 import Login from './pages/login/login';
-import { Routes, Route, } from "react-router-dom";
+import { Routes, Route, BrowserRouter, } from "react-router-dom";
 import './styles/App.css';
 import Info from './pages/info';
 import Device from './pages/device/device';
@@ -29,7 +29,7 @@ import './styles/App.css';
 
 const App: React.FC = () => {
     return (
-        <div>
+        <BrowserRouter>
             <Routes>
                 {/* Login */}
                 <Route path="/" element={<Login />} />
@@ -73,7 +73,7 @@ const App: React.FC = () => {
                 <Route path="/Service/InfoService" element={<InfoService />} />
 
             </Routes>
-        </div>
+        </BrowserRouter>
 
     )
 }
