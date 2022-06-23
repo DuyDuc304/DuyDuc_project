@@ -1,9 +1,9 @@
-import React, { ReactEventHandler, useState } from 'react';
+import React, { useState } from 'react';
 import logo from '../../assets/images/logo.svg';
 import htqlxh from '../../assets/images/htqlxh.svg';
 import { BiErrorCircle } from "react-icons/bi";
 import { FiEyeOff, FiEye } from 'react-icons/fi';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 
 
 
