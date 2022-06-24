@@ -1,19 +1,13 @@
-import React, { useEffect, useState } from "react";
+
+import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import './tabledevice.css'
 
 export const TableDevice = () => {
-    const [data, setdata] = useState([])
-    //call api bằng json server
-    useEffect(() => {
-        var constAPI = ' http://localhost:3000/Device'
-        const fetchItem = async () => {
-            const result = await fetch(constAPI).then(function (response) {
-                return response.json()
-            })
-            setdata(result)
-        }
-        fetchItem()
-    }, [])
+    const navigate = useNavigate();
+    const Device = useSelector((state: any) => state.Device);
+
+
     function showmore(id: number) {
         const btn: any = document.getElementById(id.toString())
         if (btn.style.display === 'none')
@@ -98,7 +92,7 @@ export const TableDevice = () => {
                     <p className="colulm1-p"></p>
                 </div>
             </div>
-            {data.map((item: any, index: any) => (
+            {Device.map((item: any, index: any) => (
                 <div className={setcolor(index)} key={item.id}>
                     <div className="colum1">
                         <p>{item.IDDevice}</p>
@@ -122,10 +116,10 @@ export const TableDevice = () => {
                     </div>
 
                     <div className="colum7">
-                        <a href="/Device/InfoDevice">Chi tiết</a>
+                        <span className="spanlink" onClick={() => navigate('/Device/InfoDevice')}>Chi tiết</span>
                     </div>
                     <div className="colum8">
-                        <a href="/Device/UpdateDevice"> Cập nhật</a>
+                        <span className="spanlink" onClick={() => navigate('/Device/UpdateDevice')}> Cập nhật</span>
                     </div>
                 </div>
             ))}

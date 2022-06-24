@@ -4,7 +4,7 @@ import { Menubar } from '../components/menu/menubar';
 import { Topbar } from '../components/topbar';
 import { useSelector } from "react-redux";
 const Info = () => {
-    const userInfo = useSelector((state: any) => state.user);
+    const userInfo = useSelector((state: any) => state.User);
     return (
         <div className='bg'>
             <div className="Backgroundapp" >

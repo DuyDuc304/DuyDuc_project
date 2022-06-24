@@ -351,21 +351,31 @@ textarea::placeholder {
 
 .ab {
   color: #7E7D88;
-
+  margin: 0px;
+  width: 190px;
+  height: 48px;
+  display: flex;
 }
 
 .ab:hover {
   color: #FF9138;
 }
 
-.ab:link {
-  margin: 0px;
-  width: 190px;
-  height: 48px;
-  display: flex;
-  text-decoration: none;
-
+.spanlink {
+  padding-left: 16px;
+  padding-top: 14px;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-decoration-line: underline;
+  color: #4277FF;
 }
+
+
+
+
 
 .cot {
   display: flex;
@@ -469,8 +479,8 @@ textarea::placeholder {
   color: #7E7D88;
 }
 
-.title a {
-
+.title span {
+  cursor: pointer;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -478,11 +488,8 @@ textarea::placeholder {
   color: #7E7D88;
 }
 
-.title a:link {
-  text-decoration: none;
-}
 
-.title a:hover {
+.title span:hover {
   color: #FF9138;
 }
 

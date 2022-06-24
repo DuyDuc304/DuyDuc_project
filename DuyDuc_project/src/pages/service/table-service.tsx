@@ -1,19 +1,12 @@
-import React, { useEffect, useState } from "react";
+
+import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import './tableservice.css'
 
 export const TableService = () => {
-    const [data, setdata] = useState([])
-    //call api bằng json server
-    useEffect(() => {
-        var constAPI = ' http://localhost:3000/Service'
-        const fetchItem = async () => {
-            const result = await fetch(constAPI).then(function (response) {
-                return response.json()
-            })
-            setdata(result)
-        }
-        fetchItem()
-    }, [])
+    const nav = useNavigate()
+    const Service = useSelector((state: any) => state.Service);
+
     function setcolor(id: number) {
         if ((id + 1) % 9 === 0) {
             return 'row4'
@@ -65,7 +58,7 @@ export const TableService = () => {
                     <p className="colum1-service-p"></p>
                 </div>
             </div>
-            {data.map((item: any, index: any) => (
+            {Service.map((item: any, index: any) => (
                 <div className={setcolor(index)} key={item.id}>
                     <div className="colum1-service">
                         <p >{item.IDService}</p>
@@ -80,10 +73,11 @@ export const TableService = () => {
                         {setStatusUse(item.StatusUse)}
                     </div>
                     <div className="colum5-service">
-                        <a href="/Service/InfoService">Chi tiết</a>
+                        <span className="spanlink" onClick={() => nav("/Service/InfoService")}>Chi tiết</span>
                     </div>
                     <div className="colum6-service">
-                        <a href="/Service/UpdateService"> Cập nhật</a>
+                        <span className="spanlink" onClick={() => nav("/Service/UpdateService")}>Cập nhật</span>
+
                     </div>
                 </div>
             ))}

@@ -1,20 +1,12 @@
-import React, { useEffect, useState } from "react";
+
+import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import './tableaccountuser.css'
 
 
 export const TableAccountUser = () => {
-    const [data, setdata] = useState([])
-    //call api bằng json server
-    useEffect(() => {
-        var constAPI = 'http://localhost:3000/Account'
-        const fetchItem = async () => {
-            const result = await fetch(constAPI).then(function (response) {
-                return response.json()
-            })
-            setdata(result)
-        }
-        fetchItem()
-    }, [])
+    const nav = useNavigate()
+    const AccountUser = useSelector((state: any) => state.AccountUser);
     function setStatus(status: boolean) {
         if (status) {
             return (
@@ -53,7 +45,7 @@ export const TableAccountUser = () => {
                 <div className="col6-accuser"><p className="colulm1-p">Trạng thái hoạt động</p></div>
                 <div className="col7-accuser"></div>
             </div>
-            {data.map((item: any, index: any) => (
+            {AccountUser.map((item: any, index: any) => (
                 <div className={setcolor(index)} key={item.id}>
                     <div className="col1-accuser"><p>{item.User}</p></div>
                     <div className="col2-accuser"><p>{item.NameUser}</p></div>
@@ -64,7 +56,7 @@ export const TableAccountUser = () => {
                         {setStatus(item.Status)}
                     </div>
                     <div className="col7-accuser">
-                        <a href="/AccountUser/UpdateAccountUser">Cập nhật</a>
+                        <span className="spanlink" onClick={() => nav('/AccountUser/UpdateAccountUser')} >Cập nhật</span>
                     </div>
                 </div>
             ))}

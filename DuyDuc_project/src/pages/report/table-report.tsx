@@ -1,20 +1,10 @@
-import React, { useEffect, useState } from "react";
+
 import './tablereport.css'
 import { TiArrowUnsorted } from "react-icons/ti";
+import { useSelector } from "react-redux";
 
 export const TableReport = () => {
-    const [data, setdata] = useState([])
-    //call api bằng json server
-    useEffect(() => {
-        var constAPI = 'http://localhost:3000/Report'
-        const fetchItem = async () => {
-            const result = await fetch(constAPI).then(function (response) {
-                return response.json()
-            })
-            setdata(result)
-        }
-        fetchItem()
-    }, [])
+    const Report = useSelector((state: any) => state.Report);
     function setcolor(id: number) {
         if ((id + 1) % 10 === 0) {
             return 'row-end-report'
@@ -95,7 +85,7 @@ export const TableReport = () => {
                     </div>
                 </div>
             </div>
-            {data.map((item: any, index: any) => (
+            {Report.map((item: any, index: any) => (
                 <div className={setcolor(index)} key={item.id}>
                     <div className="col1-report"><p>{item.STT}</p></div>
                     <div className="col2-report"><p>{item.NameService}</p></div>

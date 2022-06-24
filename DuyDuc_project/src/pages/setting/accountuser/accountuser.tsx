@@ -5,18 +5,19 @@ import { AiOutlinePlus, AiOutlineSearch } from 'react-icons/ai';
 import TableAccountUser from './table-accountser';
 import Nextpage from '../../../components/nextpage';
 import { TiArrowSortedDown, TiArrowSortedUp } from 'react-icons/ti';
+import { useNavigate } from 'react-router-dom';
 
 
-class AccountUser extends React.Component {
-
-    Chose = (id: string, input: string) => {
+const AccountUser = () => {
+    const nav = useNavigate()
+    function Chose(id: string, input: string) {
         const ip: any = document.getElementById(input)
         const text: any = document.getElementById(id)
         ip.value = text.innerText
 
     }
 
-    show = (id: string, u: string, d: string) => {
+    function show(id: string, u: string, d: string) {
         const ip: any = document.getElementById(id)
         const up: any = document.getElementById(u)
         const down: any = document.getElementById(d)
@@ -30,58 +31,58 @@ class AccountUser extends React.Component {
             up.style.display = 'none';
         }
     }
-    render() {
-        return (
-            <div className='bg'>
-                <div className="Backgroundapp">
-                    <TableAccountUser />
-                    <a href='/AccountUser/AddAccountUser'>
-                        <div className='div-add' >
-                            <div className='plus'><AiOutlinePlus className='cong' /></div>
-                            <div className='add'>
-                                <p > Thêm </p>
-                                <p >tài khoản</p>
-                            </div>
-                        </div>
-                    </a>
-                    <div className='tthd'>
-                        <p className='ppp'> Tên vai trò</p>
-                        <div className="sreach" onClick={() => this.show('tthd', 'up', 'down')}>
-                            <input readOnly id='ip' className='tb-select' value={'Tất cả'} style={{ marginLeft: '4px', fontSize: '16px', cursor: 'pointer' }}></input>
-                            <button id='down'><TiArrowSortedDown /></button>
-                            <button id='up' style={{ display: 'none' }}><TiArrowSortedUp /></button>
-                        </div>
-                        <div id='tthd' className='select-drop-down' onClick={() => this.show('tthd', 'up', 'down')}>
-                            <div className='select-drop-down-item ' onClick={() => this.Chose('tc', 'ip')}><label id='tc'>Tất cả</label></div>
-                            <div className='select-drop-down-item ' onClick={() => this.Chose('kt', 'ip')}><label id='kt'>Kế toán</label></div>
-                            <div className='select-drop-down-item ' onClick={() => this.Chose('bs', 'ip')}><label id='bs'>Bác sĩ</label></div>
-                            <div className='select-drop-down-item ' onClick={() => this.Chose('ad', 'ip')}><label id='ad'>Admin</label></div>
-                            <div className='select-drop-down-item ' onClick={() => this.Chose('sa', 'ip')}><label id='sa'>Super Admin</label></div>
-                        </div>
-                    </div>
 
-                    <div className='tk'>
-                        <p className='ppp'>Từ khóa</p>
-                        <div className='sreach'>
-                            <form autoComplete="off" >
-                                <input type="text" name='timkiem' placeholder="Nhập từ khóa ..."></input>
-                                <button type='submit'><AiOutlineSearch /></button>
-                            </form>
-                        </div>
-                    </div>
+    return (
+        <div className='bg'>
+            <div className="Backgroundapp">
+                <TableAccountUser />
 
-                    <div className='title-report-type'>Danh sách tài khoản</div>
-                    <Nextpage />
-                    <Topbar nametitle1='Cài đặt hệ thống ﹥' nametitle2='' nametitle3='Quản lý tài khoản' href='' href2='' nametitle21='' />
-                    <Menubar buttonid="qltk" />
+                <div className='div-add' onClick={() => nav('/AccountUser/AddAccountUser')} >
+                    <div className='plus'><AiOutlinePlus className='cong' /></div>
+                    <div className='add'>
+                        <p > Thêm </p>
+                        <p >tài khoản</p>
+                    </div>
                 </div>
-            </div >
-        );
 
-    }
+                <div className='tthd'>
+                    <p className='ppp'> Tên vai trò</p>
+                    <div className="sreach" onClick={() => show('tthd', 'up', 'down')}>
+                        <input readOnly id='ip' className='tb-select' value={'Tất cả'} style={{ marginLeft: '4px', fontSize: '16px', cursor: 'pointer' }}></input>
+                        <button id='down'><TiArrowSortedDown /></button>
+                        <button id='up' style={{ display: 'none' }}><TiArrowSortedUp /></button>
+                    </div>
+                    <div id='tthd' className='select-drop-down' onClick={() => show('tthd', 'up', 'down')}>
+                        <div className='select-drop-down-item ' onClick={() => Chose('tc', 'ip')}><label id='tc'>Tất cả</label></div>
+                        <div className='select-drop-down-item ' onClick={() => Chose('kt', 'ip')}><label id='kt'>Kế toán</label></div>
+                        <div className='select-drop-down-item ' onClick={() => Chose('bs', 'ip')}><label id='bs'>Bác sĩ</label></div>
+                        <div className='select-drop-down-item ' onClick={() => Chose('ad', 'ip')}><label id='ad'>Admin</label></div>
+                        <div className='select-drop-down-item ' onClick={() => Chose('sa', 'ip')}><label id='sa'>Super Admin</label></div>
+                    </div>
+                </div>
 
+                <div className='tk'>
+                    <p className='ppp'>Từ khóa</p>
+                    <div className='sreach'>
+                        <form autoComplete="off" >
+                            <input type="text" name='timkiem' placeholder="Nhập từ khóa ..."></input>
+                            <button type='submit'><AiOutlineSearch /></button>
+                        </form>
+                    </div>
+                </div>
+
+                <div className='title-report-type'>Danh sách tài khoản</div>
+                <Nextpage />
+                <Topbar nametitle1='Cài đặt hệ thống ﹥' nametitle2='' nametitle3='Quản lý tài khoản' href='' href2='' nametitle21='' />
+                <Menubar buttonid="qltk" />
+            </div>
+        </div >
+    );
 
 }
+
+
+
 
 export default AccountUser;
 

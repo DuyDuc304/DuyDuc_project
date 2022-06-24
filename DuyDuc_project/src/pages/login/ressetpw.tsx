@@ -3,9 +3,11 @@ import logo from '../../assets/images/logo.svg';
 import ressetpw from '../../assets/images/ressetpw.svg';
 import { FiEye, FiEyeOff } from 'react-icons/fi';
 import { useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 
 const RessetPW = () => {
-    const userInfo = useSelector((state: any) => state.user);
+    const navigate = useNavigate();
+    const userInfo = useSelector((state: any) => state.User);
     function showpw(ip: string, eyeshow: string, eyehide: string) {
         const show: any = document.getElementById(eyeshow)
         const hide: any = document.getElementById(eyehide)
@@ -35,8 +37,7 @@ const RessetPW = () => {
         const password2 = target.password2.value.trim();
         if (password2 !== '' && password1 !== '') {
             if (password2 === password1) {
-                var login = document.location.href = "/Login";
-                return (login);
+                navigate('/Login')
             }
             else {
                 wn.innerText = 'Mật khẩu không trùng khớp'

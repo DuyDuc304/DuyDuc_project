@@ -1,19 +1,12 @@
-import React, { useEffect, useState } from "react";
+
+import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import './tablenumber.css'
 
 export const TableNumber = () => {
-    const [data, setdata] = useState([])
-    //call api bằng json server
-    useEffect(() => {
-        var constAPI = 'http://localhost:3000/OrderNumber'
-        const fetchItem = async () => {
-            const result = await fetch(constAPI).then(function (response) {
-                return response.json()
-            })
-            setdata(result)
-        }
-        fetchItem()
-    }, [])
+    const nav = useNavigate()
+    const OrderNumber = useSelector((state: any) => state.OrderNumber);
+
     function setcolor(id: number) {
         if ((id + 1) % 9 === 0) {
             return 'row4'
@@ -61,7 +54,7 @@ export const TableNumber = () => {
                 <div className="col-num7"><p className="colulm1-p">Nguồn cấp</p></div>
                 <div className="col-num8"></div>
             </div>
-            {data.map((item: any, index: any) => (
+            {OrderNumber.map((item: any, index: any) => (
                 <div className={setcolor(index)} key={item.id}>
                     <div className="col-num1"><p >{item.STT}</p></div>
                     <div className="col-num2"><p >{item.NameUser}</p></div>
@@ -72,7 +65,9 @@ export const TableNumber = () => {
                         {setStatus(item.Status)}
                     </div>
                     <div className="col-num7"><p >{item.Source}</p></div>
-                    <div className="col-num8"><a href="/NumberOrder/InfoNumberOrder">Chi tiết</a></div>
+                    <div className="col-num8">
+                        <span className="spanlink" onClick={() => nav('/NumberOrder/InfoNumberOrder')} >Chi tiết</span>
+                    </div>
                 </div>
             ))}
         </div>

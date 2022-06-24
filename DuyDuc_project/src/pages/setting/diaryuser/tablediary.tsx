@@ -1,20 +1,10 @@
-import React, { useEffect, useState } from "react";
+
+import { useSelector } from "react-redux";
 import './tablediary.css'
 
 
 export const TableDiary = () => {
-    const [data, setdata] = useState([])
-    //call api bằng json server
-    useEffect(() => {
-        var constAPI = ' http://localhost:3000/Dairy'
-        const fetchItem = async () => {
-            const result = await fetch(constAPI).then(function (response) {
-                return response.json()
-            })
-            setdata(result)
-        }
-        fetchItem()
-    }, [])
+    const DiaryUser = useSelector((state: any) => state.DiaryUser);
     function setcolor(id: number) {
         if ((id + 1) % 10 === 0) {
             return 'row-end-report'
@@ -34,7 +24,7 @@ export const TableDiary = () => {
                 <div className="col3-diary"><p className="colulm1-p">IP thực hiện</p></div>
                 <div className="col14-diary"><p className="colulm1-p">Thao tác thực hiện</p></div>
             </div>
-            {data.map((item: any, index: any) => (
+            {DiaryUser.map((item: any, index: any) => (
                 <div className={setcolor(index)} key={item.id}>
                     <div className="col1-diary"><p>{item.User}</p></div>
                     <div className="col2-diary"><p>{item.Date} 15:12:17</p></div>

@@ -1,20 +1,12 @@
-import React, { useEffect, useState } from "react";
+
+import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import './table-roleuser.css'
 
 
 export const TableRoleUser = () => {
-    const [data, setdata] = useState([])
-    //call api bằng json server
-    useEffect(() => {
-        var constAPI = 'http://localhost:3000/Role'
-        const fetchItem = async () => {
-            const result = await fetch(constAPI).then(function (response) {
-                return response.json()
-            })
-            setdata(result)
-        }
-        fetchItem()
-    }, [])
+    const nav = useNavigate()
+    const RoleUser = useSelector((state: any) => state.RoleUser);
     function setcolor(id: number) {
         if ((id + 1) % 10 === 0) {
             return 'row-end-report'
@@ -35,12 +27,14 @@ export const TableRoleUser = () => {
                 <div className="col3-roleuser"> <p className="colulm1-p">Mô tả</p></div>
                 <div className="col4-roleuser"> </div>
             </div>
-            {data.map((item: any, index: any) => (
+            {RoleUser.map((item: any, index: any) => (
                 <div className={setcolor(index)} key={item.id}>
                     <div className="col1-roleuser"><p>{item.NameRole}</p> </div>
                     <div className="col2-roleuser"><p>{item.Quantity}</p> </div>
                     <div className="col3-roleuser"> <p>{item.Describe}</p></div>
-                    <div className="col4-roleuser"><a href="/RoleUser/UpdateRoleUser">Cập nhật</a> </div>
+                    <div className="col4-roleuser">
+                        <span className="spanlink" onClick={() => nav("/RoleUser/UpdateRoleUser")}>Cập nhật</span>
+                    </div>
                 </div>))}
         </div>
     )

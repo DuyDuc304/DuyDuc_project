@@ -4,6 +4,7 @@ import htqlxh from '../../assets/images/htqlxh.svg';
 import { BiErrorCircle } from "react-icons/bi";
 import { FiEyeOff, FiEye } from 'react-icons/fi';
 import { useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -11,7 +12,8 @@ import { useSelector } from 'react-redux';
 
 
 const Login = () => {
-  const userInfo = useSelector((state: any) => state.user);
+  const navigate = useNavigate();
+  const userInfo = useSelector((state: any) => state.User);
   const [UserName, setUserName] = useState('');
   const [Password, setPassword] = useState('');
 
@@ -50,8 +52,7 @@ const Login = () => {
     const password = Password.trim();
     if (name !== '' && password !== '') {
       if (name === userInfo.UserName && password === userInfo.Password) {
-        var parser = document.location.href = "/Dashboard";
-        return (parser);
+        navigate('/DashBoard')
       }
       else {
         pw.style.border = "1.5px solid red"
@@ -94,7 +95,7 @@ const Login = () => {
                   </div>
 
                   <div id='qmk1' style={{ margin: "0px 0px 0px 3px" }}>
-                    <a className='myform-a' href='/Ressetpw'>Quên mật khẩu?</a>
+                    <span className='myform-a' onClick={() => navigate('/Ressetpw')}>Quên mật khẩu?</span>
                   </div>
                   <div id='warning' style={{ display: 'none', margin: "0px 0px 0px 2px" }}>
                     <BiErrorCircle className='icon' style={{ color: 'red', flex: 'none', marginRight: '4px' }} />
@@ -105,7 +106,7 @@ const Login = () => {
                   <button className='myform-button ' type='submit' >Đăng nhập</button>
                   <br />
                   <div id='qmk2' style={{ display: 'none' }}>
-                    <a className='myform-a' style={{ margin: "auto" }} href='/Ressetpw'>Quên mật khẩu?</a>
+                    <span className='myform-a' style={{ margin: "auto" }} onClick={() => navigate('/Ressetpw')}>Quên mật khẩu?</span>
                   </div>
                 </div>
 

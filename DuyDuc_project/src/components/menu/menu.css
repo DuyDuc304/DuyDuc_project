@@ -22,7 +22,7 @@
 }
 
 
-.dropdown-content-div a {
+.dropdown-content-div-a {
     color: #7E7D88;
     height: 48px;
     width: 188px;
@@ -32,7 +32,7 @@
     margin: auto;
 }
 
-.dropdown-content-div a:hover {
+.dropdown-content-div-a:hover {
     background-color: #FFF2E7;
     color: #FF9138;
     border-bottom-right-radius: 8px;
