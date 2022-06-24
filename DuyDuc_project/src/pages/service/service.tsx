@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Topbar } from '../../components/topbar';
 import { Menubar } from '../../components/menu/menubar';
 import { AiOutlinePlus, AiOutlineSearch } from 'react-icons/ai';
@@ -15,6 +15,7 @@ let newDate = new Date()
 
 const Service = () => {
     const nav = useNavigate()
+    var [date, setdate] = useState(newDate)
 
     function Chose(id: string, input: string) {
         const ip: any = document.getElementById(input)
@@ -89,7 +90,7 @@ const Service = () => {
                     <div className='ctg-row '>
                         <div className='daytime-picker' onClick={OnClick}>
                             <FaRegCalendarAlt className='icon-calendar' />
-                            <p > {newDate.toLocaleDateString()}</p>
+                            <p > {date.toLocaleDateString()}</p>
                         </div>
                         <p style={{ color: '#535261', margin: '10px', display: 'flex' }} >▸</p>
                         <div className='daytime-picker'>
@@ -102,7 +103,7 @@ const Service = () => {
 
 
                 <div className='daytime-picker-caledar' id='cld'>
-                    <Calendar locale='en' selectRange />
+                    <Calendar value={date} onChange={setdate} locale='en' />
                 </div>
                 <Nextpage />
                 <Topbar nametitle1='Dịch vụ ﹥ ' nametitle2='' nametitle3='Danh sách dịch vụ' href='' href2='' nametitle21='' />
