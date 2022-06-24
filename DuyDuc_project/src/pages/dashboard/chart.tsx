@@ -2,19 +2,19 @@ import 'chart.js/auto';
 import { FC, useState } from 'react';
 import 'chart.js/auto';
 import { Line } from 'react-chartjs-2';
+import { useSelector } from 'react-redux';
 
 type DateProps = {
     defaulchart: string;
 }
 
-let newDate = new Date()
-let date = newDate.getDate();
-let month = newDate.getMonth() + 1;
-let year = newDate.getFullYear();
 
 
 export const Chart: FC<DateProps> = ({ defaulchart }) => {
-
+    var newDate = useSelector((state: any) => state.Day)
+    let date = newDate.getDate();
+    let month = newDate.getMonth() + 1;
+    let year = newDate.getFullYear();
     const [currentType, setCurrentType] = useState(defaulchart)
     var setday: string
 

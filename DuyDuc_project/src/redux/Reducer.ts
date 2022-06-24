@@ -105,6 +105,7 @@ const innitState = {
         Role: "Admin",
         Avatar: "https://tinhte.vn/store/2016/10/3893837_1_1.jpg"
     },
+    Day: '',
     Device,
     Service,
     OrderNumber,
@@ -117,8 +118,11 @@ console.log(innitState)
 
 const rootReducer = (state: any = innitState, action: any) => {
     switch (action.type) {
-        case "Login": {
-            return state
+        case "Date/setDate": {
+            return {
+                ...state,
+                Day: action.payload
+            }
         }
         default:
             return state;
